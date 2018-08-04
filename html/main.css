@@ -1,0 +1,174 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Verdana, sans-serif;
+}
+#section1,
+#section2,
+#section3 {
+  width: 80%;
+  padding: 50px 10%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+#section1 {
+  background: #ffffff;
+}
+#section2 {
+  background: #f2f2f2;
+}
+#section3 {
+  background: #36393d;
+}
+.box1 {
+  color: #000000;
+  background: #f2f2f2;
+  padding: 15px;
+  margin: 10px 5px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.box2 {
+  color: #000000;
+  background: #ffffff;
+  padding: 15px;
+  margin: 10px 5px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.box3 {
+  color: #ffffff;
+  background: #2d3033;
+  padding: 15px;
+  margin: 10px 5px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.box1:hover {
+  background: #ffffff;
+  transform: translateY(-4%);
+  transform: scale(1.04);
+}
+.blau:hover {
+  border: 1px solid #00b4f0;
+  box-shadow: 0 5px 20px 0 rgba(0, 180, 240, 0.4);
+}
+.gruen:hover {
+  border: 1px solid #6bf96b;
+  box-shadow: 0 5px 20px 0 rgba(107, 249, 107, 0.4);
+}
+.pink:hover {
+  border: 1px solid #e231d4;
+  box-shadow: 0 5px 20px 0 rgba(226, 49, 212, 0.4);
+}
+.rot:hover {
+  border: 1px solid #e23636;
+  box-shadow: 0 5px 20px 0 rgba(226, 54, 54, 0.4);
+}
+.box2:hover {
+  background: #f2f2f2;
+  border: 1px solid #00b4f0;
+  box-shadow: 0 5px 20px 0 rgba(0, 180, 240, 0.4);
+  transform: translateY(-4%) scale(1.04);
+}
+.box3:hover {
+  background: #2d3033;
+  border: 1px solid #e23636;
+  box-shadow: 0 5px 20px 0 rgba(226, 54, 54, 0.4);
+  transform: translateY(-8px);
+}
+.box1 p,
+.box2 p,
+.box3 p {
+  margin: 0;
+  padding: 0;
+}
+.box1 > .ueberschrift,
+.box2 > .ueberschrift,
+.box3 > .ueberschrift {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.box1 > hr {
+  width: 70%;
+  margin: 0 15% 4px 0;
+  border: none;
+  border-top: 1px solid #000000;
+  box-shadow: 1px 1px 10px #000000;
+}
+.box2 > hr {
+  width: 70%;
+  margin: 0 15% 4px 0;
+  border: none;
+  border-top: 1px solid #000000;
+  box-shadow: 1px 1px 10px #000000;
+}
+.box3 > hr {
+  width: 70%;
+  margin: 0 15% 4px 0;
+  border: none;
+  border-top: 1px solid #ffffff;
+  box-shadow: 1px 1px 10px #ffffff;
+}
+/*@media screen and (max-width: 800px){}*/
+ol[start~="5"]{
+  background: green;
+}
+.bg {
+  width: 100%;
+}
+a {
+  color: grey;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+a::after {
+  content: attr(href);
+  position: absolute;
+  left: -30px; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 7px;
+  transition-duration: 0.2s;
+  transform: scale(0);
+}
+a:hover::after {
+  transform: scale(1);
+  bottom: 120%;
+}
+#a, #b, #c, .d {
+  width: 50px;
+  height: 50px;
+  top: 100px;
+  left: 100px;
+}
+#a {
+  position: relative;
+  background: black;
+}
+#b {
+  position: absolute;
+  background: green;
+}
+#c {
+  position: fixed;
+  background: yellow;
+  cursor: zoom-in;
+}
+.d {
+  position: sticky;
+  background: blue;
+}
