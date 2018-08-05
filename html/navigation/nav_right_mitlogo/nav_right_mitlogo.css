@@ -16,10 +16,13 @@
 header nav {
   position: fixed;
   top: 0; left: 0;
-  text-align: center;
+  text-align: right;
   width: 100%;
   height: 60px;
   background: var(--schwarz);
+}
+header nav ul:last-child {
+  margin-right: 5%;
 }
 
 /* um das da gahts eigentlich.. das da isch alles wo mit em text z'tue hed */
@@ -39,4 +42,18 @@ header nav ul a li:hover {
 /* Weg mit dem grusige unterstrich */
 header nav ul a {
   text-decoration: none;
+}
+
+/* positionierig vom logo */
+header a img {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  height: 30px;
+  transition-duration: 0.5s;
+}
+
+/* weme ufem logo isch sells obere verschwinde */
+.toplogo:hover {
+  opacity: 0;
 }
