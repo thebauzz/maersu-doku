@@ -10,6 +10,7 @@ html {
 :root {
   --rot:     #cc2020;
   --schwarz: #000000;
+ --weiss:   #ffffff;
 }
 
 /* Hasses wenn es wenns kei Rand het.. */
@@ -77,6 +78,6 @@ input[type="reset"] {
 
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-  color: #ffffff;
+  color: var(--weiss);
   background: var(--rot);
 }
