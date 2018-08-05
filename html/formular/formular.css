@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Deklarieren einer Variable */
+:root {
+  --rot:     #cc2020;
+  --schwarz: #000000;
+}
+
+/* Hasses wenn es wenns kei Rand het.. */
+.abstandumalles {
+  margin: 100px;
+}
+
+form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* Label machtme vorenes input ane. An sich hets kei eigeni Eigeschaft */
+label {
+  display: block;
+  margin-bottom: 2px;
+}
+
+/* bi jedem input sell d'farb rot sii weme eppis driischribt */
+input {
+  color: var(--rot);
+}
+
+/* det wome eppis chan ineschriibe chli umstyle */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  min-width: 50%;
+  margin: 0 0 20px 0;
+  border: 1px solid var(--schwarz);
+  font-size: 17px;
+}
+
+/* dass d'box zum driischribe schön usgseht */
+textarea {
+  font-size: 17px;
+  border: 1px solid var(--schwarz);
+  width: 50%;
+  height: 140px;
+  resize: none; /* dassme d'grösse vo dem gagi ned chan verändere !!findi nice */
+  margin: 0 0 20px 0;
+}
+
+/* wenn eis vo dene markiert isch, sell de rahme rot werde */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: 2px solid var(--rot);
+}
+
+/* die zwei fancy buttons ganz unde */
+input[type="submit"],
+input[type="reset"] {
+  padding: 8px 20px;
+  font-size: 18px;
+  color: var(--schwarz);
+  background: rgba(0,0,0,0);
+  box-shadow: none;
+  border: none;
+  border-bottom: 3px solid var(--rot);
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  color: #ffffff;
+  background: var(--rot);
+}

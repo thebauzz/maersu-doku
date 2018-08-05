@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Formular</title>
+  <link href="formular.css" rel="Stylesheet">
+</head>
+<body>
+  <div class="abstandumalles">
+
+    <fieldset>
+      <legend>Kontaktformular</legend>
+      <form action="php">
+
+<!-- Hier folgen alle Optionen, welche in einem Formular benutzt werden können. -->
+<!-- Ganz normales Text Input //
+     MUSS ausgefüllt werden & bei aktualisieren ist Fokus darauf -->
+        <label>Vorname und Nachname</label>
+        <input type="text" required autofocus><br>
+
+<!-- Es Input wo es "@" und ein "." verlangt -->
+        <label>E-Mail</label>
+        <input type="email" required><br>
+
+<!-- Ganz normales Text Input 2 -->
+        <label>Telefon</label>
+        <input type="text"><br>
+
+<!-- Ganz cool dasme au Farbe chan uswähle -->
+        <label>Lieblinsfarbe</label>
+        <input type="color" value="#cc2020"><br><br>
+
+<!-- Checkbox -->
+        <label>Ja zu Salami?!</label>
+        <input type="checkbox"><br><br>
+
+<!-- Für das hochladen von Dateien -->
+        <label>Pornos bitte hier hochladen</label>
+        <input type="file"><br><br>
+
+<!-- Input mit Punkten anstelle von Zeichen -->
+        <label>Passwort</label>
+        <input type="password" required><br>
+
+<!-- Textarea -->
+        <label>Beschreibung</label>
+        <textarea placeholder="Dies ist ein Platzhalter."></textarea><br>
+
+<!-- Dropdown -->
+        <select>
+          <option value="default">Wer isches ächt?</option>
+          <option value="marcel">Marcel</option>
+          <option value="nemo">Nemo</option>
+          <option value="raphi">Raphi</option>
+        </select><br><br>
+
+<!-- Radiobutton -->
+        <input type="radio" name="debescht">Marcel<br>
+        <input type="radio" name="debescht">Nemo<br>
+        <input type="radio" name="debescht">Raphi<br><br>
+
+<!-- Buttons zum absenden und leeren -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Leeren"><br>
+      </form>
+    </fieldset>
+
+
+
+
+
+  </div>
+</body>
+
+</html>
