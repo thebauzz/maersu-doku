@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Navigation Hamburger Only</title>
+  <link href="nav_hamburgeronly.css" rel="Stylesheet">
+  <script src="nav_hamburgeronly.js"></script>
+</head>
+<body>
+
+  <header>
+<!-- der menubalken ganz oben-->
+    <div class="navbalken"></div>
+
+<!-- das Hamburgermenu-->
+    <div id="menu" onclick="nav_ine_use()">
+      <div id="normal1"></div>
+      <div id="normal2"></div>
+      <div id="normal3"></div>
+    </div>
+
+<!-- ist die Navigation geöffnet, erschein ein Container den man anklicken kann, dass sie weg geht -->
+    <div class="nope" id="emptycontainer" onclick="byenav()"></div>
+
+<!-- Die Navigation, duhh.. -->
+    <nav id="navfuerjs">
+      <ul>
+        <a href="#"><li><u>Home</u></li></a>
+        <a href="#"><li>Wer ghört zude qle?
+          <ul>
+            <a href="https://instagram.com/rahphiij" target="_blank"><li>de Raphiij</li></a>
+            <a href="https://instagram.com/thebauzz" target="_blank"><li>de Mäsi</li></a>
+            <a href="https://instagram.com/noeamon" target="_blank"><li>de Nemo</li></a>
+          </ul>
+        </li></a>
+        <a href="#"><li>platzhalter</li></a>
+      </ul>
+    </nav>
+
+<!-- und zum Schluss noch die beiden Logos ganz rechts -->
+    <a href="#">
+      <img id="igi_hover" src="igi_hover.png">
+      <img id="igi" src="igi.png">
+    </a>
+  </header>
+
+</body>
+</html>

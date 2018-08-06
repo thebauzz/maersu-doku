@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Deklarieren einer Variable */
+:root {
+  --rot:     #cc2020;
+  --schwarz: #000000;
+  --weiss:   #ffffff;
+  --grau:    #292929;
+}
+
+/* Das weisse Logo */
+#igi {
+  height: 40px;
+  transition-duration: 0.3s;
+  position: fixed;
+  top: 18px; right: 30px;
+  z-index: 9992;
+}
+
+/* weisses Logo soll verschinden beim hovern*/
+#igi:hover {
+  opacity: 0;
+}
+
+/* das rote logo unten dran */
+#igi_hover {
+  height: 40px;
+  position: fixed;
+  top: 18px; right: 30px;
+  z-index: 9991;
+}
+
+/* der dunkelgraue balken ganz oben */
+.navbalken {
+  display: block;
+  width: 100%;
+  height: 80px;
+  background: var(--schwarz);
+  opacity: 0.8;
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 9990;
+}
+
+/* ein div für die drei striche vom hamburgermenu */
+#menu {
+  cursor: pointer;
+  display: block;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 9999;
+}
+
+/* bei offener navigation soll man daneben klicken können, damit die Navigation weg geht */
+#emptycontainer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 9980;
+  display: block;
+}
+
+/* versteckt das div oberhalb wieder, sobald daneben geklickt wurde */
+.nope {
+  display: none!important;
+}
+
+/* die drei striche vom hamburgermenu */
+div#normal1,
+div#normal2,
+div#normal3 {
+  width: 35px;
+  height: 5px;
+  background-color: var(--weiss);
+  margin: 6px 0;
+  transition-duration: 0.5s;
+}
+
+/* die transformation vom obersten strich */
+div.gedreht1 {
+  transform: matrix(0.85, 0.8, -0.7, 0.7, 0, 11);
+}
+
+/* der zweite strich soll verschwinden */
+div.gedreht2 {
+  opacity: 0;
+}
+
+/* die transformation vom dritten strich */
+div.gedreht3 {
+  transform: matrix(0.85, -0.8, 0.7, 0.7, 0, -11);
+}
+
+/* wenn hover über menu, alle drei striche sollen rot gefärbt werden */
+#menu:hover>#normal1,
+#menu:hover>#normal2,
+#menu:hover>#normal3 {
+  background-color: var(--rot);
+}
+
+/* 0.5s animation, dass die Navigation smooth reinkommt */
+.inemitdem {
+  animation: nachRechts 0.5s forwards;
+}
+
+/* 0.5s animation, dass die Navigation smooth rausgeht */
+.usemitdem {
+  animation: nachLinks 0.5s forwards;
+}
+
+/* animation von der aktuellen Position, 100% nach rechts */
+@keyframes nachRechts {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* animation von der aktuellen position, 100% nach links */
+@keyframes nachLinks {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* dunkelgrauer balken der Navigation */
+header nav {
+  position: fixed;
+  top: 0;
+  left: -400px;
+  width: 400px;
+  height: 100%;
+  padding-top: 80px;
+  background: var(--grau);
+  z-index: 9993;
+}
+
+/* weg mit den Punkten */
+ul {
+  list-style: none;
+}
+
+/* dieser coole weisse Strich unter jedem li */
+header nav ul a li {
+  border-bottom: 1px solid var(--weiss);
+}
+
+/* das styling vom Navigationstext */
+header nav ul a {
+  color: var(--weiss);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Schriftfarbe soll rot werden beim hovern */
+header nav ul a:hover {
+  color: var(--rot);
+}
+
+/* bisschen mehr platz um den text herum */
+header nav ul li {
+  padding: 10px 0px 10px 20px;
+}
+
+/* der aktuelle menupunkt wird rot unterstrichen */
+u {
+  text-decoration: none;
+  border-bottom: 3px solid var(--rot);
+}
+
+/* sobald das display kleiner wird, geht die navigation über die ganze bildschirmbreite */
+@media screen and (max-width: 650px){
+  header nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    background: var(--grau);
+    z-index: 9993;
+  }
+}
