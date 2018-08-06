@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Deklarieren einer Variable */
+:root {
+  --rot:     #cc2020;
+  --schwarz: #000000;
+  --weiss:   #ffffff;
+}
+
+.abstandoben {
+  width: 100%;
+  height: 100px;
+  background: var(--rot);
+}
+.abstandunde {
+  width: 100%;
+  height: 1000px;
+}
+/* Das stylt eifach mal de schwarz Balke */
+header nav {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 60px;
+  background: var(--schwarz);
+}
+header nav ul:last-child {
+  margin-right: 5%;
+}
+
+/* um das da gahts eigentlich.. das da isch alles wo mit em text z'tue hed */
+header nav ul a li {
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 60px; /*vertikali centrierig vom text */
+  color: var(--weiss);
+  transition-duration: 0.5s;
+}
+
+/* en richtig noise hover effect */
+header nav ul a li:hover {
+  background: var(--rot);
+}
+
+/* Weg mit dem grusige unterstrich */
+header nav ul a {
+  text-decoration: none;
+}
+
+/* positionierig vom logo */
+header a img {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  height: 30px;
+  transition-duration: 0.5s;
+}
+
+/* weme ufem logo isch sells obere verschwinde */
+.toplogo:hover {
+  opacity: 0;
+}
+
+/* die klass wird gaddet, sobald 100 abegscrollt isch worde */
+.blibdobe {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
