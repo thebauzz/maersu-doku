@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Deklarieren einer Variable */
+:root {
+  --rot:     #cc2020;
+  --schwarz: #000000;
+  --weiss:   #ffffff;
+  --grau:    #292929;
+}
+
+/* Bisschen Abstand am Rand fürs schöne Aussehen.. */
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* chli abstand vorem grosse Titel */
+h1 {
+  margin-top: 30px;
+}
+
+/* das P muss fett sii, wie de damian (spässli) */
+p {
+  font-weight: bold;
+}
+
+/* Damit eine übersichtlichere Abtrennung entsteht */
+ol,
+ul,
+dl {
+  border-bottom: 1px solid var(--schwarz);
+}
+
+/* versteckt die list items */
+.ul2 li {
+  list-style: none;
+}
+
+/* zeigt alle nebeneinander an mit ein bisschen abstand */
+.ul3 li {
+  list-style: none;
+  display: inline;
+  padding: 0 10px;
+}
+
+/* list items sind ein kreisrahmen */
+.ul4 li {
+  list-style: circle;
+}
+
+/* list items wurden ein wenig nach rechts geschoben */
+.ul5 li {
+  list-style: inside;
+}
+
+/* ein viereck als list item */
+.ul6 li {
+  list-style: square;
+}
+
+/* ganz viel komischi zeiche */
+.ul7 li {
+  list-style: hiragana; /* georgian, katakana-iroha, armenian, telugu, gujarati, persian, myanmar, arabic*/
+}
+
+/* benutzerdefiniertes zeichen */
+.ul8 li {
+  list-style-image: url(icon.png);
+}
