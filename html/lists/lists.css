@@ -70,5 +70,6 @@ dl {
 
 /* benutzerdefiniertes zeichen */
 .ul8 li {
-  list-style-image: url(icon.png);
+  list-style: url(icon.png);
+  list
 }
