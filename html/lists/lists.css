@@ -13,10 +13,13 @@ html, body {
   --grau:     #292929;
   --hellgrau: #e8e8e8;
 }
+
+/* wenn irgendetwas selektiert wird, erhält es diese Farben */
 ::selection {
   color: var(--rot);
   background: var(--hellgrau);
 }
+
 /* Bisschen Abstand am Rand fürs schöne Aussehen.. */
 .content {
   width: 80%;
