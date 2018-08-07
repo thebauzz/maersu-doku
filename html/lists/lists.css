@@ -71,5 +71,17 @@ dl {
 /* benutzerdefiniertes zeichen */
 .ul8 li {
   list-style: url(icon.png);
-  list
 }
+
+/* gefärbter bullet point */
+.ul9 li {
+  list-style: none;
+}
+.ul9 li::before {
+  content: "\25CF";
+  color: var(--rot);
+  margin-right: 2px;
+}
+/* https://www.w3schools.com/charsets/ref_utf_geometric.asp
+ * Mittels backslash und dem Hexcode der Form können custom list types gemacht werden
+*/
