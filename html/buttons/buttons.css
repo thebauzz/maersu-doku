@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+}
+
+/* Deklarieren einer Variable */
+:root {
+  --rot:      #cc2020;
+  --schwarz:  #000000;
+  --weiss:    #ffffff;
+  --hellgrau: #e8e8e8;
+  --grau:     #292929;
+  --blau:     #1b8ac1;
+  --gruen:    #12bc3d;
+}
+
+/* wenn irgendetwas selektiert wird, erhält es diese Farben */
+::selection {
+  color: var(--rot);
+  background: var(--hellgrau);
+}
+
+/* Bisschen Abstand am Rand fürs schöne Aussehen.. */
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Abstand zwischen den Reihen */
+#reihe {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* styling für alle buttons */
+a {
+  padding: 10px 15px;
+  margin: 0 10px;
+  border: 1px solid var(--schwarz);
+  color: var(--schwarz);
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+/*
+Buttons Reihe 1
+*/
+.r1_c2:hover {
+  background: var(--rot);
+  color: var(--weiss);
+  border: 1px solid var(--rot)
+}
+
+.r1_c3:hover {
+  background: var(--gruen);
+  color: var(--weiss);
+  border: 1px solid var(--gruen)
+}
+
+.r1_c4:hover {
+  background: var(--blau);
+  color: var(--weiss);
+  border: 1px solid var(--blau)
+}
+
+/*
+Buttons Reihe 2
+*/
+.r2_c1 {
+  border: 1px solid var(--weiss);
+}
+.r2_c1:hover {
+  border: 1px solid var(--schwarz);
+}
+.r2_c2 {
+  border: 1px solid var(--rot);
+  color: var(--rot);
+}
+.r2_c2:hover {
+  border: 1px solid var(--schwarz);
+  color: var(--schwarz);
+}
+
+.r2_c3 {
+  border: 1px solid var(--gruen);
+  color: var(--gruen);
+}
+.r2_c3:hover {
+  border: 1px solid var(--schwarz);
+  color: var(--schwarz);
+}
+
+.r2_c4 {
+  border: 1px solid var(--blau);
+  color: var(--blau);
+}
+.r2_c4:hover {
+  border: 1px solid var(--schwarz);
+  color: var(--schwarz);
+}
+
+/*
+Buttons Reihe 3
+*/
+.r3_c1 {
+  border-radius: 5px
+}
+.r3_c1:hover {
+  color: var(--weiss);
+  background: var(--schwarz);
+}
+
+.r3_c2 {
+  color: var(--rot);
+  border-radius: 5px
+}
+.r3_c2:hover {
+  background: var(--rot);
+  color: var(--weiss)
+}
+
+.r3_c3 {
+  color: var(--gruen);
+  border-radius: 5px;
+}
+.r3_c3:hover {
+  background: var(--gruen);
+  color: var(--weiss);
+}
+
+.r3_c4 {
+  color: var(--blau);
+  border-radius: 5px;
+}
+.r3_c4:hover {
+  background: var(--blau);
+  color: var(--weiss);
+}
+
+/*
+Buttons Reihe 4
+*/
+.r4_c1 {
+  background: linear-gradient(45deg, var(--schwarz) 50%, var(--weiss) 50%);
+  position: relative;
+}
+.r4_c1:after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(45deg, var(--weiss) 50%, transparent 50%);
+  z-index: -1;
+}
+.r4_c1,
+.r4_c1:after {
+  background-size: 300%;
+  background-position: 100%;
+  transition: 0.5s, color 0.3s;
+}
+.r4_c1:hover,
+.r4_c1:hover:after {
+  color: var(--weiss);
+  background-position: 0;
+}
+
+.r4_c2 {
+  background: linear-gradient(45deg, var(--rot) 50%, var(--weiss) 50%);
+  position: relative;
+  color: var(--rot);
+}
+.r4_c2:after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(45deg, var(--weiss) 50%, transparent 50%);
+  z-index: -1;
+}
+.r4_c2,
+.r4_c2:after {
+  background-size: 300%;
+  background-position: 100%;
+  transition: 0.5s, color 0.3s;
+}
+.r4_c2:hover,
+.r4_c2:hover:after {
+  color: var(--weiss);
+  background-position: 0;
+}
+
+.r4_c3 {
+  background: linear-gradient(45deg, var(--gruen) 50%, var(--weiss) 50%);
+  position: relative;
+  color: var(--gruen);
+}
+.r4_c3:after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(45deg, var(--weiss) 50%, transparent 50%);
+  z-index: -1;
+}
+.r4_c3,
+.r4_c3:after {
+  background-size: 300%;
+  background-position: 100%;
+  transition: 0.5s, color 0.3s;
+}
+.r4_c3:hover,
+.r4_c3:hover:after {
+  color: var(--weiss);
+  background-position: 0;
+}
+
+.r4_c4 {
+  background: linear-gradient(45deg, var(--blau) 50%, var(--weiss) 50%);
+  position: relative;
+  color: var(--blau);
+}
+.r4_c4:after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(45deg, var(--weiss) 50%, transparent 50%);
+  z-index: -1;
+}
+.r4_c4,
+.r4_c4:after {
+  background-size: 300%;
+  background-position: 100%;
+  transition: 0.5s, color 0.3s;
+}
+.r4_c4:hover,
+.r4_c4:hover:after {
+  color: var(--weiss);
+  background-position: 0;
+}
+
+/*
+Buttons Reihe 5
+*/
+.r5_c1 {
+	background: none;
+	position: relative;
+}
+.r5_c1:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	transition: all 0.2s;
+}
+.r5_c1:after {
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: var(--schwarz);
+}
+.r5_c1:hover,
+.r5_c1:active {
+	color: var(--weiss);
+}
+.r5_c1:hover:after,
+.r5_c1:active:after {
+	width: 100%;
+}
+
+.r5_c2 {
+	background: none;
+	position: relative;
+  color: var(--rot);
+}
+.r5_c2:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	transition: all 0.2s;
+}
+.r5_c2:after {
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: var(--rot);
+}
+.r5_c2:hover,
+.r5_c2:active {
+	color: var(--weiss);
+}
+.r5_c2:hover:after,
+.r5_c2:active:after {
+	width: 100%;
+}
+
+.r5_c3 {
+	background: none;
+	position: relative;
+  color: var(--gruen);
+}
+.r5_c3:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	transition: all 0.2s;
+}
+.r5_c3:after {
+	width: 100%;
+	height: 0;
+	top: 0;
+	left: 0;
+	background: var(--gruen);
+}
+.r5_c3:hover,
+.r5_c3:active {
+	color: var(--weiss);
+}
+.r5_c3:hover:after,
+.r5_c3:active:after {
+	height: 100%;
+}
+
+.r5_c4 {
+	background: none;
+	position: relative;
+  color: var(--blau);
+}
+.r5_c4:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	transition: all 0.2s;
+}
+.r5_c4:after {
+	width: 100%;
+	height: 0;
+	top: 0;
+	left: 0;
+	background: var(--blau);
+}
+.r5_c4:hover,
+.r5_c4:active {
+	color: var(--weiss);
+}
+.r5_c4:hover:after,
+.r5_c4:active:after {
+	height: 100%;
+}
+
+/*
+Buttons Reihe 6
+*/
+.r6_c1 {
+  border: none;
+  border-bottom: 2px solid var(--schwarz);
+	background: none;
+	position: relative;
+  color: var(--schwarz);
+}
+.r6_c1:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	transition: all 0.2s;
+}
+.r6_c1:after {
+	width: 100%;
+	height: 0;
+	bottom: 0;
+	left: 0;
+	background: var(--schwarz);
+}
+.r6_c1:hover,
+.r6_c1:active {
+	color: var(--weiss);
+}
+.r6_c1:hover:after,
+.r6_c1:active:after {
+	height: 104%;
+} /* Height auf 104%, damit ich die Höhe vom 2x border-line wieder gut machen kann */
+
+.r6_c2 {
+  border: none;
+  border-bottom: 2px solid var(--rot);
+	background: none;
+	position: relative;
+  color: var(--rot);
+}
+.r6_c2:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	transition: all 0.2s;
+}
+.r6_c2:after {
+	width: 100%;
+	height: 0;
+	bottom: 0;
+	left: 0;
+	background: var(--rot);
+}
+.r6_c2:hover,
+.r6_c2:active {
+	color: var(--weiss);
+}
+.r6_c2:hover:after,
+.r6_c2:active:after {
+	height: 104%;
+}
+
+.r6_c3 {
+  border: none;
+  border-bottom: 2px solid var(--gruen);
+	background: none;
+	position: relative;
+  color: var(--gruen);
+}
+.r6_c3:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	transition: all 0.2s;
+}
+.r6_c3:after {
+	width: 100%;
+	height: 0;
+	bottom: 0;
+	left: 0;
+	background: var(--gruen);
+}
+.r6_c3:hover,
+.r6_c3:active {
+	color: var(--weiss);
+}
+.r6_c3:hover:after,
+.r6_c3:active:after {
+	height: 104%;
+}
+
+.r6_c4 {
+  border: none;
+  border-bottom: 2px solid var(--blau);
+	background: none;
+	position: relative;
+  color: var(--blau);
+}
+.r6_c4:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	transition: all 0.2s;
+}
+.r6_c4:after {
+	width: 100%;
+	height: 0;
+	bottom: 0;
+	left: 0;
+	background: var(--blau);
+}
+.r6_c4:hover,
+.r6_c4:active {
+	color: var(--weiss);
+}
+.r6_c4:hover:after,
+.r6_c4:active:after {
+	height: 104%;
+}
+
+/*
+Buttons Reihe 7
+*/
+.r7_c1 {
+  border: none;
+  border-left: 2px solid var(--schwarz);
+	background: none;
+	position: relative;
+  color: var(--schwarz);
+}
+.r7_c1:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	transition: all 0.2s;
+}
+.r7_c1:after {
+	width: 0;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	background: var(--schwarz);
+}
+.r7_c1:hover,
+.r7_c1:active {
+	color: var(--weiss);
+}
+.r7_c1:hover:after,
+.r7_c1:active:after {
+	width: 104%;
+}
+
+.r7_c2 {
+  border: none;
+  border-left: 2px solid var(--rot);
+	background: none;
+	position: relative;
+  color: var(--rot);
+}
+.r7_c2:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	transition: all 0.2s;
+}
+.r7_c2:after {
+	width: 0;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	background: var(--rot);
+}
+.r7_c2:hover,
+.r7_c2:active {
+	color: var(--weiss);
+}
+.r7_c2:hover:after,
+.r7_c2:active:after {
+	width: 104%;
+}
+
+.r7_c3 {
+  border: none;
+  border-left: 2px solid var(--gruen);
+	background: none;
+	position: relative;
+  color: var(--gruen);
+}
+.r7_c3:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	transition: all 0.2s;
+}
+.r7_c3:after {
+  width: 0;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	background: var(--gruen);
+}
+.r7_c3:hover,
+.r7_c3:active {
+	color: var(--weiss);
+}
+.r7_c3:hover:after,
+.r7_c3:active:after {
+	width: 104%;
+}
+
+.r7_c4 {
+  border: none;
+  border-left: 2px solid var(--blau);
+	background: none;
+	position: relative;
+  color: var(--blau);
+}
+.r7_c4:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	transition: all 0.2s;
+}
+.r7_c4:after {
+  width: 0;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	background: var(--blau);
+}
+.r7_c4:hover,
+.r7_c4:active {
+	color: var(--weiss);
+}
+.r7_c4:hover:after,
+.r7_c4:active:after {
+	width: 104%;
+}
