@@ -7,12 +7,16 @@ html, body {
 
 /* Deklarieren einer Variable */
 :root {
-  --rot:     #cc2020;
-  --schwarz: #000000;
-  --weiss:   #ffffff;
-  --grau:    #292929;
+  --rot:      #cc2020;
+  --schwarz:  #000000;
+  --weiss:    #ffffff;
+  --grau:     #292929;
+  --hellgrau: #e8e8e8;
 }
-
+::selection {
+  color: var(--rot);
+  background: var(--hellgrau);
+}
 /* Bisschen Abstand am Rand fürs schöne Aussehen.. */
 .content {
   width: 80%;
