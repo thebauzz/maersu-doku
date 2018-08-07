@@ -17,12 +17,6 @@ html, body {
   --gruen:    #12bc3d;
 }
 
-/* wenn irgendetwas selektiert wird, erhält es diese Farben */
-::selection {
-  color: var(--rot);
-  background: var(--hellgrau);
-}
-
 /* Bisschen Abstand am Rand fürs schöne Aussehen.. */
 .content {
   width: 80%;
@@ -43,6 +37,7 @@ a {
   color: var(--schwarz);
   text-decoration: none;
   transition-duration: 0.5s;
+  user-select: none;
 }
 
 /*
