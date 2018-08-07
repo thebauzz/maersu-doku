@@ -145,7 +145,7 @@ Buttons Reihe 4
 .r4_c1:after {
   content: ""; /* obwohl kein inhalt da ist, braucht es content, da ansonsten nichts dargestellt wird */
   position: absolute;
-  background: linear-gradient(45deg, var(--weiss) 50%, transparent 50%);
+  background: linear-gradient(45deg, var(--weiss) 50%, rgba(0,0,0,0) 50%);
   z-index: -1;
 }
 .r4_c1,
@@ -168,7 +168,7 @@ Buttons Reihe 4
 .r4_c2:after {
   content: "";
   position: absolute;
-  background: linear-gradient(45deg, var(--weiss) 50%, transparent 50%);
+  background: linear-gradient(45deg, var(--weiss) 50%, rgba(0,0,0,0) 50%);
   z-index: -1;
 }
 .r4_c2,
@@ -191,7 +191,7 @@ Buttons Reihe 4
 .r4_c3:after {
   content: "";
   position: absolute;
-  background: linear-gradient(45deg, var(--weiss) 50%, transparent 50%);
+  background: linear-gradient(45deg, var(--weiss) 50%, rgba(0,0,0,0) 50%);
   z-index: -1;
 }
 .r4_c3,
@@ -214,7 +214,7 @@ Buttons Reihe 4
 .r4_c4:after {
   content: "";
   position: absolute;
-  background: linear-gradient(45deg, var(--weiss) 50%, transparent 50%);
+  background: linear-gradient(45deg, var(--weiss) 50%, rgba(0,0,0,0) 50%);
   z-index: -1;
 }
 .r4_c4,
