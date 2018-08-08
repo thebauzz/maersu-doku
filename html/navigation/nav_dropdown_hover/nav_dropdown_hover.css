@@ -20,82 +20,60 @@
 header { user-select: none; }
 a  { text-decoration: none; }
 
-/* Das stylt eifach mal de schwarz Balke */
-nav {
-  position: fixed;
-  top: 0; left: 0;
-  text-align: left;
-  width: 100%;
-  height: 60px;
-  background: var(--schwarz);
-  z-index: 9998;
+.nav ul li {
+	display: inline-block;
+	vertical-align: middle;
 }
 
-/* chli abstand ganz rechts & links vom zweite A-Tag sells en trenner ha */
-nav ul a:nth-child(1) {
-  margin-left: 2%;
-  border-right: 1px solid var(--weiss);
+.nav ul li a {
+	color: lightgrey;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	line-height: 30px;
+	padding: 5px 25px 5px 25px;
+	border-bottom: 3px solid rgba(0,0,0,0);
 }
 
-/* um das da gahts eigentlich.. das da isch alles wo mit em text z'tue hed */
-nav ul a li {
-  min-width: 150px;
-  display: inline-block;
-  padding: 0 15px;
-  cursor: pointer;
-  text-align: center;
-  line-height: 60px; /*vertikali centrierig vom text */
-  color: var(--weiss);
-  transition: 0.3s;
+.nav ul li a:hover {
+  transition-duration: 0.3s;
+  color: white;
+	border-bottom: 3px solid #cc2020;
 }
 
-/* en richtig noise hover effect */
-nav ul a li:hover {
-  background: var(--rot);
-}
-
-/* de container vom dropdown - positionierig isc da s'wichtigste */
-header aside {
-  position: fixed;
-  left: 180px;
-  top: -120px;
-  margin-left: 2%;
-  line-height: 60px;
-  z-index: 9997;
-  transition: 0.3s;
-}
-
-/* nachem drücke vom dropdown, muesses da unde sii */
-.dunde {
-  top: 60px;
-}
-
-/* da inne befindet ich de text vom dropdown */
-header aside ul li {
-  min-width: 150px;
-  padding: 0 15px;
-  text-align: center;
-  line-height: 60px; /*vertikali centrierig vom text */
-  color: var(--weiss);
-  background: var(--schwarz);
-  transition-duration: 0.5s;
-  list-style: none;
-}
-
-/* dropdown hover effect */
-header aside ul li:hover {
-  background: var(--rot);
-}
-
-/* ist die navigation geöffnet, kann man nebendran klicken damit diese verschwindet */
-#leerecontainer {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0; left: 0;
-}
-.nope {
+.nav ul li ul {
+  margin-top: 0px;
+  padding-left: 0px;
+  position: absolute;
   display: none;
+}
+
+.nav ul li:hover ul {
+  display: block;
+}
+
+.nav ul li ul li {
+  display: block;
+}
+
+.nav ul li ul li ul {
+  margin-left: 100%;
+  margin-top: -30px;
+  visibility: hidden;
+}
+
+.nav ul li ul li:hover ul {
+  margin-left: 100%;
+  visibility: visible;
+}
+#dropdown {
+	background: rgba(80,80,80,.6);
+	border-bottom: 3px solid #505050;
+}
+#dropdown:hover {
+	background: rgba(80,80,80,.9);
+	border-bottom: 3px solid #cc2020;
 }
 
 /* Positionierig vom Logo */
