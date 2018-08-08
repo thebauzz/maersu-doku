@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Navigation mit Dropdownmenu zum hovern</title>
+  <link href="nav_dropdown_hover.css" rel="Stylesheet">
+</head>
+<body>
+
+  <header>
+<!-- ich bring es normals dropdown ned ane.. drum machis jetzt eifach mitemne aside -->
+    <aside id="dasmuessabe">
+      <ul>
+        <a href="https://instagram.com/raphiij"  target="_blank"><li>Raphi</li></a>
+        <a href="https://instagram.com/thebauzz" target="_blank"><li>Märsu</li></a>
+        <a href="https://instagram.com/noeamon"  target="_blank"><li>Neemo</li></a>
+    </aside>
+
+<!-- Die Kommentär bide nav bruchts nid.. die dienet eifach dezue, dass alli direkt anenand hanged & es kei whitespace dezwüsche git.. -->
+    <nav>
+      <ul>
+        <a href="#"><li>Home</li></a><!--
+     --><a onclick="chumabe()"><li>Wer simmer ?</li></a>
+      </ul>
+    </nav>
+
+<!-- joa s'logo halt.. wichtig isch uf die chronologisch reihefolg z'achte.. -->
+    <a href="#">
+      <img src="igi_hover.png" draggable="false">
+      <img src="igi.png"       draggable="false" class="toplogo">
+    </a>
+
+<!-- ist die Navigation geöffnet, erschein ein Container den man anklicken kann, dass sie weg geht -->
+    <div class="nope" id="leerecontainer" onclick="chumabe()"></div>
+  </header>
+
+
+  <div style="height:1000px"></div>
+</body>
+</html>
