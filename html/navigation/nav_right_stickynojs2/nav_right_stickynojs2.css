@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Deklarieren einer Variable */
+:root {
+  --rot:       #cc2020;
+  --dunkelrot: #590808;
+  --schwarz:   #000000;
+  --weiss:     #ffffff;
+  --hellgrau:  #e8e8e8;
+  --grau:      #292929;
+  --blau:      #1b8ac1;
+  --gruen:     #12bc3d;
+}
+
+nav {
+  padding-left: 3%;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: var(--schwarz);
+  z-index: 9999;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+nav ul a li {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--weiss);
+}
+
+nav ul a li:hover {
+  background: var(--rot)
+}
+
+.abstandoben {
+  width: 100%;
+  height: 100px;
+  background: var(--rot);
+}
+.abstandunde {
+  height: 1000px;
+}
