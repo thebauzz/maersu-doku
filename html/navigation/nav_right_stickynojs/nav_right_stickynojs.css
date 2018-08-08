@@ -26,6 +26,7 @@ header nav#eins {
   padding-right: 5%;
   height: 60px;
   background: var(--schwarz);
+  box-shadow: 0 0 30px var(--schwarz); /* null nach rechts, null nach links, 30px blurr & schwarz */
 }
 header nav#zwei {
   position: absolute;
