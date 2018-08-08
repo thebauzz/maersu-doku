@@ -20,60 +20,46 @@
 header { user-select: none; }
 a  { text-decoration: none; }
 
-.nav ul li {
+/* Der schwarze Balken ganz oben */
+nav {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  background: var(--schwarz);
+  height: 60px;
+  line-height: 60px;
+}
+
+/* stellt die list items nebeneinander an */
+nav ul li {
 	display: inline-block;
-	vertical-align: middle;
 }
 
-.nav ul li a {
-	color: lightgrey;
-	font-weight: bold;
-	text-decoration: none;
+/* hiermit stylt man den text an ich (zählt auch für das dropdown)*/
+nav ul li a {
+  width: 150px;
+  display: block;
 	text-align: center;
-	display: block;
-	line-height: 30px;
-	padding: 5px 25px 5px 25px;
-	border-bottom: 3px solid rgba(0,0,0,0);
-}
-
-.nav ul li a:hover {
+  color: var(--weiss);
+  background: var(--schwarz);
   transition-duration: 0.3s;
-  color: white;
-	border-bottom: 3px solid #cc2020;
 }
 
-.nav ul li ul {
-  margin-top: 0px;
-  padding-left: 0px;
+/* Der Hovereffekt (zählt auch für das dropdown) */
+nav ul li a:hover {
+	background: var(--rot);
+}
+
+/* Standard soll das dropdown nicht angezeigt werden*/
+nav ul li ul {
   position: absolute;
   display: none;
 }
 
-.nav ul li:hover ul {
+/* beim hovern wird das dropdown korrekt angezeigt */
+nav ul li:hover ul,
+nav ul li ul li {
   display: block;
-}
-
-.nav ul li ul li {
-  display: block;
-}
-
-.nav ul li ul li ul {
-  margin-left: 100%;
-  margin-top: -30px;
-  visibility: hidden;
-}
-
-.nav ul li ul li:hover ul {
-  margin-left: 100%;
-  visibility: visible;
-}
-#dropdown {
-	background: rgba(80,80,80,.6);
-	border-bottom: 3px solid #505050;
-}
-#dropdown:hover {
-	background: rgba(80,80,80,.9);
-	border-bottom: 3px solid #cc2020;
 }
 
 /* Positionierig vom Logo */
