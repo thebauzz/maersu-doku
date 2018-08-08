@@ -62,6 +62,11 @@ header a img {
   left: 0;
 }
 
+.abstandoben {
+  width: 100%;
+  height: 100px;
+  background: var(--rot);
+}
 .abstandunde {
   height: 1000px;
 }
