@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Deklarieren einer Variable */
+:root {
+  --rot:      #cc2020;
+  --schwarz:  #000000;
+  --weiss:    #ffffff;
+  --hellgrau: #e8e8e8;
+  --grau:     #292929;
+  --blau:     #1b8ac1;
+  --gruen:    #12bc3d;
+}
+
+/* Es paar Grundiistellige wo mir gfalled aber ned zwingend sind */
+header { user-select: none; }
+a  { text-decoration: none; }
+
+/* Das stylt eifach mal de schwarz Balke */
+nav {
+  position: fixed;
+  top: 0; left: 0;
+  text-align: left;
+  width: 100%;
+  height: 60px;
+  background: var(--schwarz);
+  z-index: 9998;
+}
+
+/* chli abstand ganz rechts & links vom zweite A-Tag sells en trenner ha */
+nav ul a:nth-child(1) {
+  margin-left: 2%;
+  border-right: 1px solid var(--weiss);
+}
+
+/* um das da gahts eigentlich.. das da isch alles wo mit em text z'tue hed */
+nav ul a li {
+  min-width: 150px;
+  display: inline-block;
+  padding: 0 15px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 60px; /*vertikali centrierig vom text */
+  color: var(--weiss);
+  transition: 0.3s;
+}
+
+/* en richtig noise hover effect */
+nav ul a li:hover {
+  background: var(--rot);
+}
+
+/* de container vom dropdown - positionierig isc da s'wichtigste */
+header aside {
+  position: fixed;
+  left: 180px;
+  top: -120px;
+  margin-left: 2%;
+  line-height: 60px;
+  z-index: 9997;
+  transition: 0.3s;
+}
+
+/* nachem drücke vom dropdown, muesses da unde sii */
+.dunde {
+  top: 60px;
+}
+
+/* da inne befindet ich de text vom dropdown */
+header aside ul li {
+  min-width: 150px;
+  padding: 0 15px;
+  text-align: center;
+  line-height: 60px; /*vertikali centrierig vom text */
+  color: var(--weiss);
+  background: var(--schwarz);
+  transition-duration: 0.5s;
+  list-style: none;
+}
+
+/* dropdown hover effect */
+header aside ul li:hover {
+  background: var(--rot);
+}
+
+/* ist die navigation geöffnet, kann man nebendran klicken damit diese verschwindet */
+#leerecontainer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0; left: 0;
+}
+.nope {
+  display: none;
+}
+
+/* Positionierig vom Logo */
+header a img {
+  position: fixed;
+  right: 20px;
+  top: 15px;
+  height: 30px;
+  transition-duration: 0.5s;
+  z-index: 9999;
+}
+
+/* weme ufem logo isch sells obere verschwinde */
+.toplogo:hover {
+  opacity: 0;
+}
