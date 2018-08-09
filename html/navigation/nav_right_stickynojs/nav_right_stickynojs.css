@@ -30,7 +30,7 @@ header nav#eins {
 }
 header nav#zwei {
   position: absolute;
-  top: 100px;
+  top: 125px;
   text-align: right;
   width: 95%;
   padding-right: 5%;
@@ -74,9 +74,16 @@ header nav#zwei a img {
   position: absolute;
   top: 0; left: 0;
   width: 100%;
-  height: 100px;
+  height: 125px;
   background: var(--rot);
+  z-index: 9999;
+
+  line-height: 125px;
+  font-size: 35px;
+  text-align: center;
+  color: var(--weiss);
+  user-select: none;
 }
 .abstandunde {
-  height: 1000px;
+  height: 1500px;
 }
