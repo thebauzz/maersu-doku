@@ -25,6 +25,7 @@ nav {
   height: 60px;
   line-height: 60px;
   background: var(--schwarz);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
   z-index: 9999;
 }
 
