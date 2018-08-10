@@ -25,7 +25,6 @@ function nav_ine_use() {
   }
 }
 
-
 /* Funktion, damit man ausserhalb der Navigation klicken kann, damit diese verschwindet */
 function byenav() {
 
