@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
+html, body, p {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Deklariere vo allne Variable */
+:root {
+  --weiss:       #ffffff;
+  --hellgrau:    #e8e8e8;
+  --mittelgrau:  #a3a3a3;
+  --grau:        #292929;
+  --schwarz:     #000000;
+  --gruen:       #12bc3d;
+  --dunkelgruen: #017a20;
+  --rot:         #cc2020;
+  --dunkelrot:   #590808;
+  --blau:        #1b8ac1;
+  --dunkelblau:  #00568c;
+  --themefarbe_haupt: var(--mittelgrau);
+  --themefarbe_sek:   var(--grau);
+}
+
+/* graue Balken */
+header {
+  height: 60px;
+  width: 95%;
+  padding-left: 5%;
+  background: var(--hellgrau);
+  line-height: 60px;
+}
+
+/* De text "Theme: " */
+.themetext {
+  font-size: 22px;
+  font-weight: bold;
+  float: left;
+}
+
+/* Styling für alli viereckli zum aaklicke */
+.viereck {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: 15px 5px;
+  border-radius: 5px;
+  border: 2px solid var(--hellgrau);
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+/* die vier farbe, weme mit de Muus drüber isch & de rahme, wenn eppis usgwählt isch*/
+.default { background: var(--mittelgrau); }
+.default:hover { background: var(--grau); }
+
+.gruen { background: var(--gruen); }
+.gruen:hover { background: var(--dunkelgruen); }
+
+.rot { background: var(--rot); }
+.rot:hover { background: var(--dunkelrot); }
+
+.blau { background: var(--blau); }
+.blau:hover { background: var(--dunkelblau); }
+
+.selected { border: 2px solid #ff9e28; }
+
+/* content styling */
+.content {
+  width: 90%;
+  margin: 0 auto;
+}
+h2 {
+  text-align: center;
+}
+.link {
+  color: var(--themefarbe_haupt);
+  text-decoration: none;
+}
+.link:hover {
+  color: var(--themefarbe_sek);
+}
+.knopf {
+  padding: 10px 15px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  color: var(--weiss);
+  background: var(--themefarbe_haupt);
+}
+.knopf:hover {
+  background: var(--themefarbe_sek);
+  color: var(--weiss);
+}

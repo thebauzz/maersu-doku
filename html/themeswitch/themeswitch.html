@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Projekt zum ändern der Themes</title>
+  <link href="themeswitch.css" rel="Stylesheet">
+  <script src="themeswitch.js"></script>
+</head>
+<body>
+  <header>
+    <p class="themetext">Theme:&nbsp;&nbsp;&nbsp;</p>
+    <div>
+      <div onclick="setdefault()" id="default" class="viereck selected default"></div>
+      <div onclick="setgruen()"   id="gruen"   class="viereck gruen"></div>
+      <div onclick="setrot()"     id="rot"     class="viereck rot"></div>
+      <div onclick="setblau()"    id="blau"    class="viereck blau"></div>
+    </div>
+  </header>
+
+  <div class="content">
+    <h2>Ob das wohl funktionieren wird..</h2>
+    <a href="#" class="link">ein Link</a><br><br><br>
+    <a href="#" class="knopf">Absenden</a><br><br>
+    <p style="color: var(--themefarbe_haupt)">Hallo</p>
+  </div>
+
+</body>
+</html>
