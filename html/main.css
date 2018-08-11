@@ -149,3 +149,10 @@ a:hover::after {
   transform: scale(1);
   bottom: 120%;
 }
+details {
+  cursor: pointer;
+  user-select: none;
+}
+summary:focus {
+  outline: none;
+}
