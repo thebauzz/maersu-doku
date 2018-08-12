@@ -15,7 +15,7 @@ html, body, p {
   --gruen:            #12bc3d;
   --dunkelgruen:      #017a20;
   --rot:              #cc2020;
-  --dunkelrot:        #590808;
+  --dunkelrot:        #960a0a;
   --blau:             #1b8ac1;
   --dunkelblau:       #00568c;
   --themefarbe_haupt: var(--mittelgrau);
@@ -109,4 +109,8 @@ h2 {
 .knopf:hover {
   background: var(--themefarbe_sek);
   color: var(--weiss);
+}
+::selection {
+  color: var(--weiss);
+  background: var(--themefarbe_sek);
 }
