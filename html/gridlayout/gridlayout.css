@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
+html, body, p {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Deklariere vo allne Variable */
+:root {
+  --weiss:            #ffffff;
+  --hellgrau:         #e8e8e8;
+  --mittelgrau:       #a3a3a3;
+  --grau:             #292929;
+  --schwarz:          #000000;
+  --gruen:            #12bc3d;
+  --dunkelgruen:      #017a20;
+  --rot:              #cc2020;
+  --dunkelrot:        #960a0a;
+  --blau:             #1b8ac1;
+  --dunkelblau:       #00568c;
+  --themefarbe_haupt: var(--mittelgrau);
+  --themefarbe_sek:   var(--grau);
+}
+hr {
+  border: none;
+  border-bottom: solid 2px var(--rot);
+  margin: 0 auto 20px auto;
+  height: 20px;
+  width: 75%;
+}
+
+/* chli abstand um das züg */
+main,
+section,
+aside {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* immer 3 Columns, verteilt uf 3 "Fractions", 10px abstand um jedes item */
+main {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+main > div {
+  background: var(--hellgrau);
+  padding: 10px;
+}
+
+/* immer soviel Columns wies grad Platz het, 1 Fraction hed 200px breiti */
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+section > div {
+  background: var(--mittelgrau);
+  padding: 10px;
+}
+
+/* standardmässig 3 Fractions */
+aside {
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-gap: 10px;
+}
+aside > div {
+  background: var(--grau);
+  color: var(--hellgrau);
+  padding: 10px;
+}
+/* s'letschte item sell es fullwidth item sii */
+aside > div:last-child {
+  grid-column: 1 / 4; /* Beginnt bei Column-Line 1 und endet bei Column-Line 4 (Anzahl reihen + 1) */
+}
+
+/* wenn 3 Fractions kei platz hend, sells uf 2 Fractions wechsle */
+@media screen and (max-width: 700px) {
+  aside {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-gap: 10px;
+  }
+/* da nurno 2 Fractions, isch s'max jetzt 3 (2 Fractions + 1) */
+  aside > div:last-child {
+    grid-column: 1 / 3;
+  }
+}
