@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.darktheme {
+  --main:             var(--dunkelgrau);
+  --hover:            var(--mittelgrau);
+  --hintergrund:      var(--dunklergrau);
+  --box_default:      var(--dunklertgrau);
+  --font:             var(--weiss);
+}
+
+/* Deklariere vo allne Variable */
+:root {
+  --weiss:            #ffffff;
+  --hellgrau:         #e8e8e8;
+  --mittelgrau:       #a3a3a3;
+  --grau:             #5a5a5a;
+  --dunkelgrau:       #474747;
+  --dunklergrau:      #333333;
+  --dunklestgrau:     #202020;
+  --schwarz:          #000000;
+
+  --main:             var(--hellgrau);
+  --font:             var(--schwarz);
+  --hover:            var(--grau);
+  --hintergrund:      var(--weiss);
+}
+
+.hintergrundbild {
+  position: fixed;
+  background: var(--hintergrund);
+  width: 100%;
+  height: 100%;
+}
+/* nüt im header darf selektiert werde */
+header {
+  user-select: none;
+}
+
+/* de text wo seid "theme:  " */
+.themetext {
+  position: fixed;
+  font-size: 19px;
+  line-height: 35px;
+  padding-left: 15px;
+  color: var(--font);
+}
+
+/* chli styling füre navigations balke */
+header nav {
+  position: fixed;
+  top: 0; left: 0;
+  text-align: right;
+  width: 100%;
+  height: 70px;
+  line-height: 40px;
+  background: var(--main);
+}
+header nav ul:last-child {
+  margin-right: 5%;
+}
+header nav ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+/* styling vom navigations text */
+header nav ul li a {
+  transition-duration: 0.5s;
+  text-decoration: none;
+  color: var(--font);
+  font-weight: bold;
+  font-size: 19px;
+  border-bottom: 3px solid transparent;
+}
+
+/* en richtig noise hover effect */
+header nav ul li a:hover {
+  color: var(--hover);
+  border-bottom: 2px solid var(--font);
+}
+
+/* de grau / blau Balke */
+.switch {
+  position: fixed;
+  top: 23px;
+  left: 125px;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+.slider {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  cursor: pointer;
+  background-color: #cccccc;
+  transition: 0.4s;
+  border-radius: 26px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--weiss);
+  transition: 0.4s;
+  border-radius: 18px;
+}
+input:checked + .slider {
+  background-color: var(--schwarz);
+}
+input:checked + .slider:before {
+  transform: translateX(24px);
+}

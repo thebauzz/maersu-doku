@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Deklariere vo allne Variable */
+:root {
+  --weiss:            #ffffff;
+  --hellgrau:         #e8e8e8;
+  --mittelgrau:       #a3a3a3;
+  --grau:             #5a5a5a;
+  --dunkelgrau:       #474747;
+  --dunklergrau:      #333333;
+  --dunklestgrau:     #202020;
+  --schwarz:          #000000;
+
+  --hintergrund:      var(--weiss);
+  --main:             var(--hellgrau);
+  --hover:            var(--grau);
+  --font:             var(--schwarz);
+  --section_default:  var(--hellgrau);
+}
+
+section {
+  width: 80%;
+  padding: 100px 10%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  background: var(--hintergrund);
+}
+
+.box {
+  color: var(--font);
+  background: var(--box_default);
+  padding: 15px;
+  margin: 10px 5px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  border: 1px solid #00b4f0;
+  box-shadow: 0 5px 20px 0 rgba(0, 180, 240, 0.4);
+}
+.box:hover {
+  background: var(--main);
+  transform: translateY(-4%);
+}
+.box p {
+  margin: 0;
+  padding: 0;
+}
+.box > .ueberschrift {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.box > hr {
+  width: 70%;
+  margin: 0 15% 4px 0;
+  border: none;
+  border-top: 1px solid var(--font);
+  box-shadow: 1px 1px 10px var(--font);
+}
