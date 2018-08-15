@@ -104,7 +104,7 @@ header nav ul li a {
   font-weight: bold;
   color: var(--navfont);
   border-bottom: 3px solid transparent;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 /* hover über navigationstext */
 header nav ul li a:hover {
@@ -122,7 +122,7 @@ header nav ul li a:hover {
 #one,
 #two {
   position: fixed;
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
   cursor: pointer;
   z-index: 9999;
 }
@@ -245,7 +245,7 @@ aside p {
   left: 0; right: 0;
   cursor: pointer;
   background-color: var(--hellgrau);
-  transition: 0.4s;
+  transition: 0.5s;
   border-radius: 26px;
 }
 /* de wiss kreis wo sich hin und her bewegt */
@@ -257,7 +257,7 @@ aside p {
   left: 4px;
   bottom: 4px;
   background-color: var(--weiss);
-  transition: 0.4s;
+  transition: 0.5s;
   border-radius: 18px;
 }
 /* was sett demit passiere wenns aklickt worde isch? */
@@ -304,7 +304,7 @@ aside select:focus {
   border-radius: 26px;
   border: 2px solid transparent;
   cursor: pointer;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
 /* die drü farbe, weme mit de Muus drüber isch & de rahme, wenn eppis usgwählt isch*/
