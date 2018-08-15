@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Projekt zum ändern der Themes 2</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="settingtheme.css" rel="Stylesheet">
+  <script src="settingtheme.js"></script>
+</head>
+<body id="body" class="font1">
+
+  <header>
+
+<!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li><!--
+     --><li><a href="#">Über uns</a></li><!--
+     --><li><a href="https://github.com/thebauzz/wiss-doku/tree/master/html" target="_blank">Github</a></li>
+      </ul>
+    </nav>
+
+<!-- Die beide Icons ganz obe links -->
+    <div class="icons">
+      <div id="two" class="close begone"></div>
+      <div id="one" class="gear" onclick="sideSetting()"></div>
+    </div>
+
+<!-- unsichtbarer container fürs wegklicken der navigation -->
+    <div class="containerdisplay" id="emptycontainer" onclick="sideSetting()"></div>
+
+<!-- das settings menu -->
+    <aside id="settings">
+
+<!-- dark mode an oder ausschalten -->
+      <p>Dark Mode:</p>
+      <label class="switch">
+        <input type="checkbox" id="box" onclick="switchtheme()">
+        <span class="slider round"></span>
+      </label>
+
+<!-- zwischen den schriftarten auswählen -->
+      <p>Font Selection:</p>
+      <div class="select-wrapper">
+      <select id="fontchange" onchange="fontchange()" class="font1">
+        <option value="default">Standard (Ubuntu)</option>
+        <option value="mina">Titillium</option>
+      </select>
+      </div>
+
+<!-- zwischen den hoverfarben hin und her wechseln -->
+      <p>Color Selection:</p>
+      <div class="colorselect">
+        <div onclick="setblau()"  id="blau"  class="kreis selected blau"></div>
+        <div onclick="setgruen()" id="gruen" class="kreis gruen"></div>
+        <div onclick="setrot()"   id="rot"   class="kreis rot"></div>
+      </div>
+
+    </aside>
+  </header>
+
+<!-- Main Content -->
+  <main>
+
+    <section class="boxsection">
+      <div class="box">
+        <p class="ueberschrift">Raphiij Schilling</p>
+        <hr>
+        <a href="https://instagram.com/raphiij" target="_blank">zum Instagram</a>
+        <a href="https://github.com/raphij" target="_blank">zum Github</a>
+      </div>
+
+      <div class="box">
+        <p class="ueberschrift">Märsu Gretsch</p>
+        <hr>
+        <a href="https://instagram.com/thebauzz" target="_blank">zum Instagram</a>
+        <a href="https://github.com/thebauzz" target="_blank">zum Github</a>
+      </div>
+
+      <div class="box">
+        <p class="ueberschrift">Neemo Fisch</p>
+        <hr>
+        <a href="https://instagram.com/noeamon" target="_blank">zum Instagram</a>
+        <a href="https://github.com/neeemoo" target="_blank">zum Github</a>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

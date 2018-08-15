@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700');
+html, body, li, ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: var(--body);
+}
+.font1 { font-family: var(--schrift1); }
+.font2 { font-family: var(--schrift2); }
+
+:root {
+--schrift1: "Ubuntu";
+--schrift2: "Titillium Web", sans-serif;
+--weiss:            #ffffff;
+--hellstesgrau:     #f4f4f4;
+--hellgrau:         #dbdbdb;
+--mittelgrau:       #a3a3a3;
+--grau:             #5a5a5a;
+--dunkelgrau:       #474747;
+--dunklergrau:      #333333;
+--dunklestgrau:     #202020;
+--schwarz:          #000000;
+--gruen:            #12bc3d;
+--dunkelgruen:      #017a20;
+--hellrot:          #fc5353;
+--rot:              #cc2020;
+--dunkelrot:        #960a0a;
+--borderclr:        #00b4f0ff;
+--shadowclr:        #00b4f066;
+--blau:             #1b8ac1;
+--dunkelblau:       #00568c;
+
+/* Default Farbwerte der Variablen */
+  --navbar:     var(--hellgrau);
+  --navfont:    var(--schwarz);
+  --navhover:   var(--schwarz);
+  --icons:      var(--dunkelgrau);
+  --closeicon:  var(--rot);
+  --body:       var(--weiss);
+  --aside:      var(--weiss);
+  --asidetext:  var(--schwarz);
+  --select:     var(--hellgrau);
+  --boxbg:      var(--hellstesgrau);
+  --boxhover:   var(--weiss);
+  --hoverfarbe: var(--blau);
+}
+/* Farbwerte für den Nightmode */
+.darkmode {
+  --navbar:     var(--dunkelgrau);
+  --navfont:    var(--weiss);
+  --navhover:   var(--weiss);
+  --icons:      var(--weiss);
+  --closeicon:  var(--hellrot);
+  --body:       var(--dunklergrau);
+  --aside:      var(--grau);
+  --asidetext:  var(--weiss);
+  --select:     var(--dunkelgrau);
+  --boxbg:      var(--dunkelgrau);
+  --boxhover:   var(--dunklergrau);
+}
+.rothover {
+  --hoverfarbe: var(--rot);
+  --borderclr:  #fc5353ff;
+  --shadowclr:  #fc535366;
+}
+.hellrothover {
+  --hoverfarbe: var(--hellrot);
+  --borderclr:  #fc5353ff;
+  --shadowclr:  #fc535366;
+}
+.gruenhover {
+  --hoverfarbe: var(--gruen);
+  --borderclr:  #12bc3dff;
+  --shadowclr:  #12bc3d66;
+}
+/*
+ *
+ * HEADER
+ *
+*/
+
+/* de ober balke */
+header { user-select: none; }
+header nav {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  position: fixed;
+  top: 0; left: 0;
+  text-align: right;
+  background: var(--navbar);
+  z-index: 9989;
+}
+/* styling dasses uf ei linie gaht */
+header nav ul li {
+  display: inline;
+  padding: 0 20px;
+}
+/* Navigationstext */
+header nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--navfont);
+  border-bottom: 3px solid transparent;
+  transition: 0.3s;
+}
+/* hover über navigationstext */
+header nav ul li a:hover {
+  color: var(--hoverfarbe);
+  border-bottom: 2px solid var(--navhover);
+}
+
+/*
+ *
+ * SETTINGS
+ *
+*/
+
+/* styling für die zwei icons */
+#one,
+#two {
+  position: fixed;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  z-index: 9999;
+}
+/* div für das settings icon */
+.gear {
+  -webkit-mask: url("gear.svg") no-repeat center;
+  mask: url("gear.svg") no-repeat center;
+  background: var(--icons);
+  height: 35px;
+  width: 35px;
+  top: 17px;
+  left: 30px;
+}
+/* div für das schliessen icon */
+.close {
+  -webkit-mask: url("close.svg") no-repeat center;
+  mask: url("close.svg") no-repeat center;
+  background: var(--closeicon);
+  height: 30px;
+  width: 30px;
+  top: 20px;
+  left: 30px;
+}
+/* hovering über die beide icons */
+div.icons:hover > #two,
+div.icons:hover > #one {
+  background: var(--hoverfarbe);
+}
+
+/* verschwinde / erschiine weme druf klickt */
+.begone {
+  opacity: 0;
+  transform: rotate(360deg);
+}
+
+/* settings balke wo vo links inechunt */
+aside {
+  position: fixed;
+  top: 0;
+  left: -403px;
+  width: 400px;
+  height: 100%;
+  padding-top: 80px;
+  background: var(--aside);
+  border-right: 3px solid var(--navbar);
+  z-index: 9991;
+}
+@media screen and (max-width: 650px){
+  aside {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    background: var(--aside);
+  }
+}
+/* 0.5s animation, dass die Navigation smooth reinkommt */
+.inemitdem {
+  animation: nachRechts 0.5s forwards;
+}
+/* 0.5s animation, dass die Navigation smooth rausgeht */
+.usemitdem {
+  animation: nachLinks 0.5s forwards;
+}
+/* animation von der aktuellen Position, 100% nach rechts */
+@keyframes nachRechts {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+/* animation von der aktuellen position, 100% nach links */
+@keyframes nachLinks {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* unsichtbare container, dass weme drufklickt settings weg gaht */
+#emptycontainer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0; left: 0;
+  cursor: pointer;
+  z-index: 9990;
+}
+.containerdisplay {
+  display: none;
+}
+
+/* de text links vom on/off switch */
+aside p {
+  color: var(--asidetext);
+  font-weight: bold;
+  padding-left: 30px;
+  line-height: 26px;
+}
+
+/* positioniere vom on/off switch */
+.switch {
+  position: absolute;
+  top: 95px;
+  left: 165px;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+/* de grau / blau hintergrundbalke */
+.slider {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  cursor: pointer;
+  background-color: var(--hellgrau);
+  transition: 0.4s;
+  border-radius: 26px;
+}
+/* de wiss kreis wo sich hin und her bewegt */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--weiss);
+  transition: 0.4s;
+  border-radius: 18px;
+}
+/* was sett demit passiere wenns aklickt worde isch? */
+input:checked + .slider {
+  background-color: #24a5e5;
+}
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+/* schriftart auswählen */
+aside select {
+  position: absolute;
+  left: 165px;
+  top: 138px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--select);
+  color: var(--navfont);
+  height: 26px;
+  font-size: 15px;
+  padding-left: 8px;
+  border-radius: 13px;
+  width: 175px;
+}
+aside select:focus {
+  outline: none;
+}
+
+/* afangstpunkt fürs div vo dene 3 kreis für d'farbuswahl */
+.colorselect {
+  position: absolute;
+  left: 165px;
+  top: 162px;
+}
+
+/* Styling für alli kreisli zum aaklicke */
+.kreis {
+  float: left;
+  width: 26px;
+  height: 26px;
+  margin: 15px 5px;
+  border-radius: 26px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+/* die drü farbe, weme mit de Muus drüber isch & de rahme, wenn eppis usgwählt isch*/
+.rot { background: var(--rot); }
+.rot:hover { background: var(--dunkelrot); }
+
+.gruen { background: var(--gruen); }
+.gruen:hover { background: var(--dunkelgruen); }
+
+.blau { background: var(--blau); }
+.blau:hover { background: var(--dunkelblau); }
+
+.selected { border: 2px solid #ff9e28; }
+
+
+section.boxsection {
+  width: 80%;
+  padding: 100px 10%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  background: var(--body);
+}
+
+.box {
+  color: var(--navfont);
+  background: var(--boxbg);
+  padding: 15px;
+  margin: 10px 5px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition-duration: 0.2s;
+  border: 1px solid var(--borderclr);
+  box-shadow: 0 5px 20px 0 var(--shadowclr);
+}
+.box:hover {
+  background: var(--boxhover);
+  transform: translateY(-4%);
+}
+.box p {
+  margin: 0;
+  padding: 0;
+}
+.box > .ueberschrift {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.box > hr {
+  width: 70%;
+  margin: 0 15% 4px 0;
+  border: none;
+  border-top: 1px solid var(--navfont);
+  box-shadow: 1px 1px 10px var(--navfont);
+}
+
+div.box a {
+  display: block;
+  padding-top: 10px;
+  color: var(--navfont);
+  text-decoration: none;
+}
+div.box a:hover {
+  color: var(--hoverfarbe);
+}
