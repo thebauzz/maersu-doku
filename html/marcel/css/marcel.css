@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+  height: 100%;
+  width: 100vw;
+}
+:root {
+  --default-ad:   0.5s;
+  --weiss:        #ffffff;
+  --hellstesgrau: #f4f4f4;
+  --hellgrau:     #dbdbdb;
+  --mittelgrau:   #a3a3a3;
+  --grau:         #5a5a5a;
+  --dunkelgrau:   #474747;
+  --dunklergrau:  #333333;
+  --dunklestgrau: #202020;
+  --schwarz:      #000000;
+  --gruen:        #12bc3d;
+  --dunkelgruen:  #017a20;
+  --hellrot:      #fc5353;
+  --rot:          #cc2020;
+  --dunkelrot:    #960a0a;
+  --hellblau:     #47c2ff;
+  --blau:         #1b8ac1;
+  --dunkelblau:   #00568c;
+  --borderclr:    #00b4f0ff;
+  --shadowclr:    #00b4f066;
+
+  --icons:      var(--dunkelgrau);
+  --closeicon:  var(--rot);
+  --hoverfarbe: var(--blau);
+  --navbg:      var(--hellstesgrau);
+  --navsub:     var(--schwarz);
+  --font:       var(--schwarz);
+  --fonthover:  var(--weiss);
+}
+
+/*
+ * INHALTLICHES
+*/
+section {
+  height: 300px;
+  width: 100%;
+  border-bottom: 3px solid var(--weiss);
+  position: relative;
+}
+.abstandwegennav {
+  margin-top: 70px;
+}
+
+#section1 {
+  background: url("../img/lebenslauf-1.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+#section2 {
+  background: url("../img/lebenslauf-2.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+#section3 {
+  background: url("../img/lebenslauf-3.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+#section1 p,
+#section2 p,
+#section3 p {
+  width: 100%;
+  color: var(--weiss);
+  font-size: 18px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

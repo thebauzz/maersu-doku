@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Marcel's Projekt</title>
+  <link href="css/navigation.css" rel="Stylesheet">
+  <link href="css/marcel.css" rel="Stylesheet">
+  <script src="marcel.js"></script>
+</head>
+
+<body>
+  <header>
+<!-- bild meiner heimatstadt bern + logo -->
+    <div class="bilder">
+      <div class="headerbg"></div>
+      <div class="headerbild">
+        <p>m</p><!-- das "logo" -->
+      </div>
+    </div>
+
+    <nav id="navigation">
+<!-- Die zwei Icons für den Einstellungsblock -->
+      <div class="icons">
+        <div id="two" class="close begone"></div>
+        <div id="one" class="gear" onclick="sideSetting()"></div>
+      </div>
+
+<!-- das Hamburgermenu-->
+      <div id="menu" onclick="nav_ine_use()">
+        <div id="normal1"></div>
+        <div id="normal2"></div>
+        <div id="normal3"></div>
+      </div>
+
+<!-- ab da folgt die richtig Navigation -->
+      <ul>
+        <li><a href="javascript:void(0)">Home</a></li><!--
+     --><li><a href="javascript:void(0)">Lebenslauf</a></li><!--
+     --><li><a href="javascript:void(0)" onclick="chumAbe()">Mehr über mich <i class="" id="dropdownicon"></i></a></li>
+      </ul>
+  <!-- s'Dropdown Menu -->
+      <aside class="" id="dasmuessabe">
+        <ul>
+          <li><a href="">Github</a></li>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">Projekte</a></li>
+        </ul>
+      </aside>
+    </nav>
+    <div class="nope" id="leerecontainer" onclick="chumabe()"></div>
+  </header>
+
+  <main>
+    <section id="section1">
+      <p><strong>31.07.1999</strong><br>geboren<br>im Kantonsspital Baar</p>
+    </section>
+
+    <section id="section2">
+      <p><strong>2006 - 2011</strong><br>Primarschule<br>im Schulhaus Riedmatt, Zug</p>
+    </section>
+
+    <section id="section3">
+      <p><strong>2011 - 2014</strong><br>Sekundarstufe Niveau A<br>im Schulhaus Loreto, Zug</p>
+    </section>
+
+  </main>
+
+</body>
+</html>
