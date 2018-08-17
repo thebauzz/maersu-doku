@@ -71,10 +71,24 @@ function nav_ine_use() {
   }
 }
 
-function sideSetting() {
-  open  = document.getElementById("one");
-  close = document.getElementById("two");
+function unsichtbar() {
 
-  close.classList.toggle("begone");
-  open.classList.toggle("begone");
+  menu = document.getElementById("menu");
+  menustrich = document.getElementById("normal1");
+  setting = document.getElementById("customsetting");
+  settingicon = document.getElementById("one");
+
+  if (menustrich.classList.contains("gedreht1")) {
+    setting.classList.add("nope");
+  }
+  else {
+    setting.classList.remove("nope");
+  }
+
+  if (settingicon.classList.contains("begone")) {
+    menu.classList.add("nope");
+  }
+  else {
+    menu.classList.remove("nope");
+  }
 }
