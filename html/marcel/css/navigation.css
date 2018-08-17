@@ -1,7 +1,10 @@
 /*
  * NAVIGATION + HEADER
 */
-header { user-select: none; }
+
+header {
+  user-select: none;
+}
 
 .headerbild {
   width: 100%;
@@ -32,7 +35,8 @@ header { user-select: none; }
   width: 100%;
   height: 280px;
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   background: var(--navbg);
 }
 
@@ -138,7 +142,7 @@ nav.mobileview aside#dasmuessabe.dunde {
   -webkit-transform: rotate(45deg);
 }
 
-nav ul li a:hover > #dropdownicon,
+nav ul li a:hover>#dropdownicon,
 #dropdownicon:hover {
   border: solid var(--hoverfarbe);
   border-width: 0 3px 3px 0;
@@ -188,8 +192,8 @@ nav ul li a:hover > #dropdownicon,
 }
 
 /* hovering über die beide icons */
-div.icons:hover > #two,
-div.icons:hover > #one {
+div.icons:hover>#two,
+div.icons:hover>#one {
   background: var(--hoverfarbe);
 }
 
@@ -275,13 +279,16 @@ div.gedreht3 {
 .nope {
   display: none;
 }
+
 #leerecontainer {
   width: 100%;
   height: 100%;
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   z-index: 5000;
 }
+
 @media screen and (max-width: 470px) {
   #menu {
     cursor: pointer;
