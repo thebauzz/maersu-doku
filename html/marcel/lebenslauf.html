@@ -8,7 +8,8 @@
   <title>Marcel's Projekt</title>
   <link href="css/navigation.css" rel="Stylesheet">
   <link href="css/marcel.css" rel="Stylesheet">
-  <script src="marcel.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/settingchange.js"></script>
 </head>
 
 <body>
@@ -23,13 +24,13 @@
 
     <nav class="deskview" id="navigation">
 <!-- Die zwei Icons für den Einstellungsblock -->
-      <div class="icons">
+      <div class="icons" id="customsetting">
         <div id="two" class="close begone"></div>
-        <div id="one" class="gear" onclick="sideSetting()"></div>
+        <div id="one" class="gear" onclick="sideSetting();unsichtbar()"></div>
       </div>
 
 <!-- das Hamburgermenu-->
-      <div id="menu" onclick="nav_ine_use()">
+      <div id="menu" onclick="nav_ine_use();unsichtbar()">
         <div id="normal1"></div>
         <div id="normal2"></div>
         <div id="normal3"></div>
@@ -50,6 +51,34 @@
           <li><a href="https://teamstocker.github.io/"  target="_blank">Projekte</a></li>
         </ul>
       </aside>
+<!-- das settings menu -->
+      <article id="settings">
+
+<!-- dark mode an oder ausschalten -->
+        <p>Dark Mode:</p>
+        <label class="switch">
+          <input type="checkbox" id="box" onclick="switchtheme()">
+          <span class="slider round"></span>
+        </label>
+
+<!-- zwischen den schriftarten auswählen -->
+        <p>Font Selection:</p>
+        <div class="select-wrapper">
+          <select id="fontchange" onchange="fontchange()" class="font1">
+            <option value="default">Standard (Ubuntu)</option>
+            <option value="mina">Titillium</option>
+          </select>
+        </div>
+
+<!-- zwischen den hoverfarben hin und her wechseln -->
+        <p>Color Selection:</p>
+        <div class="colorselect">
+          <div onclick="setblau()"  id="blau"  class="kreis selected blau"></div>
+          <div onclick="setgruen()" id="gruen" class="kreis gruen"></div>
+          <div onclick="setrot()"   id="rot"   class="kreis rot"></div>
+        </div>
+
+      </article>
     </nav>
     <div class="nope" id="leerecontainer" onclick="nav_ine_use()"></div>
   </header>

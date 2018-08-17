@@ -277,7 +277,7 @@ div.gedreht3 {
 }
 
 .nope {
-  display: none;
+  display: none!important;
 }
 
 #leerecontainer {
@@ -299,3 +299,93 @@ div.gedreht3 {
     z-index: 9999;
   }
 }
+
+/* positioniere vom on/off switch */
+.switch {
+  position: absolute;
+  top: 95px;
+  left: 165px;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+/* de grau / blau hintergrundbalke */
+.slider {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  cursor: pointer;
+  background-color: var(--hellgrau);
+  transition: 0.5s;
+  border-radius: 26px;
+}
+/* de wiss kreis wo sich hin und her bewegt */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--weiss);
+  transition: 0.5s;
+  border-radius: 18px;
+}
+/* was sett demit passiere wenns aklickt worde isch? */
+input:checked + .slider {
+  background-color: #24a5e5;
+}
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+/* schriftart auswählen */
+article select {
+  position: absolute;
+  left: 165px;
+  top: 138px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--select);
+  color: var(--navfont);
+  height: 26px;
+  font-size: 15px;
+  padding-left: 8px;
+  border-radius: 13px;
+  width: 175px;
+}
+article select:focus {
+  outline: none;
+}
+
+/* afangstpunkt fürs div vo dene 3 kreis für d'farbuswahl */
+.colorselect {
+  position: absolute;
+  left: 165px;
+  top: 162px;
+}
+
+/* Styling für alli kreisli zum aaklicke */
+.kreis {
+  float: left;
+  width: 26px;
+  height: 26px;
+  margin: 15px 5px;
+  border-radius: 26px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* die drü farbe, weme mit de Muus drüber isch & de rahme, wenn eppis usgwählt isch*/
+.rot { background: var(--rot); }
+.rot:hover { background: var(--dunkelrot); }
+
+.gruen { background: var(--gruen); }
+.gruen:hover { background: var(--dunkelgruen); }
+
+.blau { background: var(--blau); }
+.blau:hover { background: var(--dunkelblau); }
+
+.selected { border: 2px solid #ff9e28; }

@@ -39,8 +39,8 @@ body {
   --icons:      var(--dunkelgrau);
   --closeicon:  var(--rot);
   --body:       var(--weiss);
-  --aside:      var(--weiss);
-  --asidetext:  var(--schwarz);
+  --article:      var(--weiss);
+  --articletext:  var(--schwarz);
   --select:     var(--hellgrau);
   --boxbg:      var(--hellstesgrau);
   --boxhover:   var(--weiss);
@@ -54,8 +54,8 @@ body {
   --icons:      var(--weiss);
   --closeicon:  var(--hellrot);
   --body:       var(--dunklergrau);
-  --aside:      var(--grau);
-  --asidetext:  var(--weiss);
+  --article:      var(--grau);
+  --articletext:  var(--weiss);
   --select:     var(--dunkelgrau);
   --boxbg:      var(--dunkelgrau);
   --boxhover:   var(--dunklergrau);
@@ -159,26 +159,26 @@ div.icons:hover > #one {
 }
 
 /* settings balke wo vo links inechunt */
-aside {
+article {
   position: fixed;
   top: 0;
   left: -403px;
   width: 400px;
   height: 100%;
   padding-top: 80px;
-  background: var(--aside);
+  background: var(--article);
   border-right: 3px solid var(--navbar);
   z-index: 9991;
 }
 @media screen and (max-width: 650px){
-  aside {
+  article {
     position: fixed;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
     padding-top: 80px;
-    background: var(--aside);
+    background: var(--article);
   }
 }
 /* 0.5s animation, dass die Navigation smooth reinkommt */
@@ -222,8 +222,8 @@ aside {
 }
 
 /* de text links vom on/off switch */
-aside p {
-  color: var(--asidetext);
+article p {
+  color: var(--articletext);
   font-weight: bold;
   padding-left: 30px;
   line-height: 26px;
@@ -269,7 +269,7 @@ input:checked + .slider:before {
 }
 
 /* schriftart auswählen */
-aside select {
+article select {
   position: absolute;
   left: 165px;
   top: 138px;
@@ -284,7 +284,7 @@ aside select {
   border-radius: 13px;
   width: 175px;
 }
-aside select:focus {
+article select:focus {
   outline: none;
 }
 
