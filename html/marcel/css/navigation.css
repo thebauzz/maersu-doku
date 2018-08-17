@@ -1,6 +1,7 @@
 /*
  * NAVIGATION + HEADER
 */
+header { user-select: none; }
 
 .headerbild {
   width: 100%;
@@ -20,7 +21,6 @@
   font-weight: bold;
   color: var(--weiss);
   background: #0000004d;
-  user-select: none;
 }
 
 .headerbild p::after {
@@ -36,8 +36,7 @@
   background: var(--navbg);
 }
 
-/* das stylt eifach mal de nav Balke */
-nav {
+nav.deskview {
   position: relative;
   text-align: left;
   width: 97%;
@@ -47,13 +46,31 @@ nav {
   background: var(--navbg);
   z-index: 9000;
 }
+nav.mobileview {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  padding: 0;
+  height: 70px;
+  background: var(--navbg);
+  z-index: 9000;
+}
 
-nav > ul > li {
+nav.deskview > ul > li {
   display: inline;
   padding: 0 20px;
 }
+nav.mobileview > ul {
+  position: absolute;
+  top: 70px;
+  left: calc(-100% - 20px);
+  padding-left: 20px;
+  list-style-type: none;
+  line-height: 60px;
+  background: var(--navbg);
+  width: calc(100% - 20px);
+}
 
-/* Navigationstext */
 nav ul li a,
 aside#dasmuessabe ul li a {
   text-decoration: none;
@@ -63,14 +80,13 @@ aside#dasmuessabe ul li a {
   transition: var(--default-ad);
 }
 
-/* hover über navigationstext */
 nav ul li a:hover,
 aside#dasmuessabe ul li a:hover {
   color: var(--hoverfarbe);
   border-bottom: 2px solid var(--navsub);
 }
 
-aside#dasmuessabe {
+nav.deskview aside#dasmuessabe {
   line-height: 50px;
   position: absolute;
   left: calc(3vw + 205px);
@@ -79,18 +95,33 @@ aside#dasmuessabe {
   transition: var(--default-ad);
   z-index: 9000;
 }
+nav.mobileview aside#dasmuessabe {
+  line-height: 50px;
+  position: absolute;
+  top: 250px;
+  opacity: 0;
+  transition: var(--default-ad);
+}
 
-aside#dasmuessabe > ul {
+nav.deskview aside#dasmuessabe > ul {
   list-style-type: none;
   text-align: center;
-  width: 160px;
+  width: 170px;
+  background: var(--navbg);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+nav.mobileview aside#dasmuessabe > ul {
+  list-style-type: none;
+  width: 200px;
+  padding-left: 20px;
   background: var(--navbg);
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 
-/* nachem drücke vom dropdown, muesses da unde sii */
-#dasmuessabe.dunde {
+nav.deskview aside#dasmuessabe.dunde,
+nav.mobileview aside#dasmuessabe.dunde {
   opacity: 1;
 }
 
@@ -119,7 +150,8 @@ nav ul li a:hover > #dropdownicon,
 }
 
 /* die klass wird gaddet, sobald 100 abegscrollt isch worde */
-.blibdobe {
+.deskview.blibdobe,
+.mobileview.blibdobe {
   position: fixed;
   top: 0;
   left: 0;
@@ -226,20 +258,30 @@ div.gedreht3 {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(calc(100% + 20px));
   }
 }
 
 /* animation von der aktuellen position, 100% nach links */
 @keyframes nachLinks {
   0% {
-    transform: translateX(100%);
+    transform: translateX(calc(100% + 20px));
   }
   100% {
     transform: translateX(0);
   }
 }
 
+.nope {
+  display: none;
+}
+#leerecontainer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 5000;
+}
 @media screen and (max-width: 470px) {
   #menu {
     cursor: pointer;

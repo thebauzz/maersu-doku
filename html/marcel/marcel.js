@@ -1,8 +1,23 @@
+window.onresize = displayWindowSize;
+window.onload = displayWindowSize;
+
+function displayWindowSize() {
+  Bildbreite = window.innerWidth;
+  nav = document.getElementById("navigation");
+
+  if (Bildbreite > 470) {
+    nav.classList.add("deskview");
+    nav.classList.remove("mobileview");
+  }
+  else {
+    nav.classList.add("mobileview");
+    nav.classList.remove("deskview");
+  }
+}
+
 window.onscroll = schongescrollt;
-// window.onload = neuerinhalt
 
 function schongescrollt() {
-
   var scrollposition = window.pageYOffset;
   var dasda = document.getElementById("navigation");
   var abstand = document.getElementById("section1");
@@ -17,17 +32,25 @@ function schongescrollt() {
   }
 }
 
-function sideSetting() {
-  open  = document.getElementById("one");
-  close = document.getElementById("two");
+function chumAbe() {
+  dropdown = document.getElementById("dasmuessabe");
+  ddicon   = document.getElementById("dropdownicon");
 
-  close.classList.toggle("begone");
-  open.classList.toggle("begone");
+  if (dropdown.classList.contains("dunde")){
+    dropdown.classList.remove("dunde");
+    ddicon.classList.remove("drehen");
+  }
+  else {
+    dropdown.classList.add("dunde");
+    ddicon.classList.add("drehen");
+  }
 }
 
 function nav_ine_use() {
+  nav = document.getElementById("dasmuessuebere");
+  leerecont= document.getElementById("leerecontainer");
 
-  nav = document.getElementById("navfuerjs");
+  leerecont.classList.toggle("nope");
 
 // mach das Hamburgermenu zum X und zurück
   document.getElementById("normal1").classList.toggle("gedreht1");
@@ -48,17 +71,10 @@ function nav_ine_use() {
   }
 }
 
-function chumAbe() {
+function sideSetting() {
+  open  = document.getElementById("one");
+  close = document.getElementById("two");
 
-  dropdown = document.getElementById("dasmuessabe");
-  ddicon   = document.getElementById("dropdownicon");
-
-  if (dropdown.classList.contains("dunde")){
-    dropdown.classList.remove("dunde");
-    ddicon.classList.remove("drehen");
-  }
-  else {
-    dropdown.classList.add("dunde");
-    ddicon.classList.add("drehen");
-  }
+  close.classList.toggle("begone");
+  open.classList.toggle("begone");
 }
