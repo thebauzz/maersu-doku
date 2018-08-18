@@ -30,7 +30,8 @@
 
   --body:       var(--hellstesgrau);
   --navbg:      var(--hellstesgrau);
-  --icons:      var(--dunkelgrau);
+  --navcolor:   var(--dunklestgrau);
+  --icon:       var(--dunkelgrau);
   --closeicon:  var(--rot);
   --hoverfarbe: var(--blau);
 }

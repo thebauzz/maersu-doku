@@ -19,7 +19,10 @@ header { user-select: none; }
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 4vw), 0 100%);
 }
-
+.two-nav {
+  position: relative;
+  z-index: 9000;
+}
 .header-cover {
   position: absolute;
   top: 0;
@@ -59,15 +62,20 @@ header { user-select: none; }
   left: 0;
 }
 
-#nav-menu,
-#nav-einst {
+/* Hovereffekt über Menu oder Einstellungen */
+#nav-menu:hover > #nav-menu-linien,
+#nav-menu:hover > #nav-menu-close,
+#nav-einst:hover > #nav-einst-gear,
+#nav-einst:hover > #nav-einst-close {
+  background: var(--hoverfarbe);
   cursor: pointer;
 }
 
-#menu-linien {
+/* Menu Linien Icon */
+#nav-menu-linien {
   -webkit-mask: url("../img/linien.svg") no-repeat center;
   mask: url("../img/linien.svg") no-repeat center;
-  background: black;
+  background: var(--icon);
   height: 40px;
   width: 35px;
   transition: var(--trans-duration);
@@ -75,9 +83,8 @@ header { user-select: none; }
   left: 28px;
   top: 15px;
 }
-
-
-#menu-close {
+/* Menu Schliessen Icon */
+#nav-menu-close {
   -webkit-mask: url("../img/close.svg") no-repeat center;
   mask: url("../img/close.svg") no-repeat center;
   background: var(--closeicon);
@@ -88,36 +95,11 @@ header { user-select: none; }
   left: 30px;
   top: 20px;
 }
-
-/* die transformation vom obersten strich */
-.liniegedreht-1 {
-  transform: matrix(0.85, 0.8, -0.7, 0.7, 0, 11);
-  background: var(--closeicon)!important;
-}
-
-/* der zweite strich soll verschwinden */
-.liniegedreht-2 {
-  opacity: 0;
-}
-
-/* die transformation vom dritten strich */
-.liniegedreht-3 {
-  transform: matrix(0.85, -0.8, 0.7, 0.7, 0, -11);
-  background: var(--closeicon)!important;
-}
-
-#nav-menu:hover > #menu-linien,
-#nav-menu:hover > #menu-close,
-#nav-einst:hover > #einst-gear,
-#nav-einst:hover > #einst-close {
-  background: var(--hoverfarbe);
-}
-
-/* div für das settings icon */
-#einst-gear {
+/* Einstellungen Einstellungs Icon */
+#nav-einst-gear {
   -webkit-mask: url("../img/gear.svg") no-repeat center;
   mask: url("../img/gear.svg") no-repeat center;
-  background: black;
+  background: var(--icon);
   height: 35px;
   width: 35px;
   transition: var(--trans-duration);
@@ -125,9 +107,8 @@ header { user-select: none; }
   right: 30px;
   top: 17px;
 }
-
-/* div für das schliessen icon */
-#einst-close {
+/* Einstellungen Schliessen Icon */
+#nav-einst-close {
   -webkit-mask: url("../img/close.svg") no-repeat center;
   mask: url("../img/close.svg") no-repeat center;
   background: var(--closeicon);
@@ -139,10 +120,196 @@ header { user-select: none; }
   top: 20px;
 }
 
-#menu-linien.menu-weg,
-#menu-close.menu-weg,
-#einst-gear.einst-weg,
-#einst-close.einst-weg {
+/* Effekt bei onClick */
+#nav-menu-linien.menu-weg,
+#nav-menu-close.menu-weg,
+#nav-einst-gear.einst-weg,
+#nav-einst-close.einst-weg {
   opacity: 0;
   transform: rotate(360deg);
+}
+
+/* hinzugefügt, dass nicht beide gleichzeitig ausgeführt werden können */
+.unsichtbar {
+  display: none;
+}
+
+#nav-menu-nav {
+  position: absolute;
+  top: 70px;
+  left: -100%;
+  width: 250px;
+  height: 100vh;
+  padding: 0 30px;
+  background: var(--navbg);
+  transition: 0.5s;
+}
+#nav-menu-nav.nav-rein {
+  left: 0;
+}
+#nav-menu-nav > ul {
+  border-bottom: 1px solid black;
+}
+#nav-menu-nav ul li {
+  padding: 15px;
+  list-style: none;
+  text-align: center;
+}
+#nav-menu-nav a {
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.2s;
+  color: var(--navcolor);
+  border-bottom: 4px solid #00000000;
+}
+#nav-menu-nav a:hover {
+  border-bottom: 2px solid var(--navcolor);
+  color: var(--hoverfarbe);
+}
+#dropdownicon {
+  position: relative;
+  top: -2px;
+  left: 4px;
+  border: solid var(--navcolor);
+  border-width: 0 0 3px 3px;
+  display: inline-block;
+  padding: 2.5px;
+  transition: 0.3s;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+#nav-menu-nav a:hover > #dropdownicon,
+#dropdownicon:hover {
+  border: solid var(--hoverfarbe);
+  border-width: 0 0 3px 3px;
+}
+#dropdownicon.drehen {
+  transform: rotate(-135deg);
+  top: -2px;
+}
+
+#nav-dropdown {
+  position: relative;
+  left: -100%;
+  transition: var(--trans-duration);
+}
+#nav-dropdown.dropdown-rein {
+  left: 0;
+}
+
+#nav-einst-einst {
+  position: absolute;
+  top: 60px;
+  right: -100%;
+  width: 250px;
+  height: 100vh;
+  padding: 15px 30px 0 30px;
+  background: var(--navbg);
+  transition: 0.5s;
+}
+#nav-einst-einst.einst-rein {
+  right: 0;
+}
+#nav-einst-einst p {
+  font-weight: bold;
+  line-height: 45px;
+}
+
+.switch {
+  position: absolute;
+  top: 23px;
+  left: 160px;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+/* de grau / blau hintergrundbalke */
+.slider {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  cursor: pointer;
+  background-color: var(--hellgrau);
+  transition: 0.5s;
+  border-radius: 26px;
+}
+/* de wiss kreis wo sich hin und her bewegt */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--weiss);
+  transition: 0.5s;
+  border-radius: 18px;
+}
+.switch input {display:none;}
+/* was sett demit passiere wenns aklickt worde isch? */
+input:checked + .slider {
+  background-color: #24a5e5;
+}
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+/* schriftart auswählen */
+.select-wrapper > select {
+  position: absolute;
+  top: 70px;
+  left: 160px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--select);
+  color: var(--navfont);
+  height: 22px;
+  font-size: 13px;
+  padding-left: 8px;
+  border-radius: 13px;
+  width: 140px;
+}
+select:focus {
+  outline: none;
+}
+
+/* afangstpunkt fürs div vo dene 3 kreis für d'farbuswahl */
+.colorselect {
+  position: absolute;
+  left: 160px;
+  top: 98px;
+}
+
+/* Styling für alli kreisli zum aaklicke */
+.kreis {
+  float: left;
+  width: 22px;
+  height: 22px;
+  margin: 15px 5px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* die drü farbe, weme mit de Muus drüber isch & de rahme, wenn eppis usgwählt isch*/
+.rot { background: var(--rot); }
+.rot:hover { background: var(--dunkelrot); }
+
+.gruen { background: var(--gruen); }
+.gruen:hover { background: var(--dunkelgruen); }
+
+.blau { background: var(--blau); }
+.blau:hover { background: var(--dunkelblau); }
+
+.selected { border: 2px solid #ff9e28; }
+
+#leerecontainer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5000;
 }

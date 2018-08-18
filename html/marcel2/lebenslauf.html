@@ -26,19 +26,60 @@
 
 <!-- das Hamburgermenu-->
         <div id="nav-menu" onclick="menu_icon_change()">
-          <div id="menu-linien"></div>
-          <div id="menu-close" class="menu-weg"></div>
+          <div id="nav-menu-linien"></div>
+          <div id="nav-menu-close" class="menu-weg"></div>
         </div>
+<!-- die eigentlich Navigation mit Dropdown -->
+        <nav id="nav-menu-nav">
+          <ul>
+            <li><a href="javascript:void(0)">Home</a></li>
+            <li><a href="javascript:void(0)">Lebenslauf</a></li>
+            <li><a href="javascript:void(0)" onclick="dropdown_aktiv()">Mehr über mich<i class="" id="dropdownicon"></i></a></li>
+          </ul>
+          <div id="nav-dropdown">
+            <ul>
+              <li><a href="javascript:void(0)">Github</a></li>
+              <li><a href="javascript:void(0)">Instagram</a></li>
+              <li><a href="javascript:void(0)">Projekte</a></li>
+            </ul>
+          </div>
+        </nav>
 
 <!-- Die zwei Icons für den Einstellungsblock -->
         <div id="nav-einst" onclick="einst_icon_change()">
-          <div id="einst-gear"></div>
-          <div id="einst-close" class="einst-weg"></div>
+          <div id="nav-einst-gear"></div>
+          <div id="nav-einst-close" class="einst-weg"></div>
+        </div>
+
+<!-- de Bereich mit allne Einstellungen -->
+        <div id="nav-einst-einst">
+
+<!-- Dark mode -->
+          <p>Dark Mode:</p>
+          <label class="switch">
+            <input type="checkbox" id="box" onclick="switchtheme()">
+            <span class="slider round"></span>
+          </label>
+<!-- Schirftartenauswahl -->
+          <p>Font Selection:</p>
+          <div class="select-wrapper">
+            <select id="fontchange" onchange="fontchange()" class="font1">
+              <option value="default">Standard (Ubuntu)</option>
+              <option value="mina">Titillium</option>
+            </select>
+          </div>
+<!-- Themefarbenauswahl -->
+          <p>Color Selection:</p>
+          <div class="colorselect">
+            <div onclick="setblau()"  id="blau"  class="kreis blau selected"></div>
+            <div onclick="setgruen()" id="gruen" class="kreis gruen"></div>
+            <div onclick="setrot()"   id="rot"   class="kreis rot"></div>
+          </div>
         </div>
 
       </div>
     </section>
-
+    <div class="unsichtbar" id="leerecontainer" onclick="wegmitallem()"></div>
   </header>
   <div class="abstand"></div>
 </body>
