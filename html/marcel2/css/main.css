@@ -47,13 +47,102 @@ header { user-select: none; }
 }
 
 .nav-balken {
+  position: absolute;
   height: 70px;
   width: 100%;
-  background: green; /* var(--body) */
+  background: var(--body); /* var(--body) */
 }
 
-.fixednav {
+.nav-fixed {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+#nav-menu,
+#nav-einst {
+  cursor: pointer;
+}
+
+#menu-linien {
+  -webkit-mask: url("../img/linien.svg") no-repeat center;
+  mask: url("../img/linien.svg") no-repeat center;
+  background: black;
+  height: 40px;
+  width: 35px;
+  transition: var(--trans-duration);
+  position: absolute;
+  left: 28px;
+  top: 15px;
+}
+
+
+#menu-close {
+  -webkit-mask: url("../img/close.svg") no-repeat center;
+  mask: url("../img/close.svg") no-repeat center;
+  background: var(--closeicon);
+  height: 30px;
+  width: 30px;
+  transition: var(--trans-duration);
+  position: absolute;
+  left: 30px;
+  top: 20px;
+}
+
+/* die transformation vom obersten strich */
+.liniegedreht-1 {
+  transform: matrix(0.85, 0.8, -0.7, 0.7, 0, 11);
+  background: var(--closeicon)!important;
+}
+
+/* der zweite strich soll verschwinden */
+.liniegedreht-2 {
+  opacity: 0;
+}
+
+/* die transformation vom dritten strich */
+.liniegedreht-3 {
+  transform: matrix(0.85, -0.8, 0.7, 0.7, 0, -11);
+  background: var(--closeicon)!important;
+}
+
+#nav-menu:hover > #menu-linien,
+#nav-menu:hover > #menu-close,
+#nav-einst:hover > #einst-gear,
+#nav-einst:hover > #einst-close {
+  background: var(--hoverfarbe);
+}
+
+/* div für das settings icon */
+#einst-gear {
+  -webkit-mask: url("../img/gear.svg") no-repeat center;
+  mask: url("../img/gear.svg") no-repeat center;
+  background: black;
+  height: 35px;
+  width: 35px;
+  transition: var(--trans-duration);
+  position: absolute;
+  right: 30px;
+  top: 17px;
+}
+
+/* div für das schliessen icon */
+#einst-close {
+  -webkit-mask: url("../img/close.svg") no-repeat center;
+  mask: url("../img/close.svg") no-repeat center;
+  background: var(--closeicon);
+  height: 30px;
+  width: 30px;
+  transition: var(--trans-duration);
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+#menu-linien.menu-weg,
+#menu-close.menu-weg,
+#einst-gear.einst-weg,
+#einst-close.einst-weg {
+  opacity: 0;
+  transform: rotate(360deg);
 }
