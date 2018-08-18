@@ -6,7 +6,7 @@ header {
   user-select: none;
 }
 
-.headerbild {
+.nav-headerbild {
   width: 100%;
   height: 280px;
   background: url("../img/headercropped.png") no-repeat 50% 25%;
@@ -14,7 +14,7 @@ header {
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 4vw), 0 100%);
 }
 
-.headerbild p {
+.nav-headerbild p {
   font-family: "consolas", sans-serif;
   height: 280px;
   line-height: 275px;
@@ -26,12 +26,12 @@ header {
   background: #0000004d;
 }
 
-.headerbild p::after {
+.nav-headerbild p::after {
   content: "}";
   color: var(--blau);
 }
 
-.headerbg {
+.nav-headerbg {
   width: 100%;
   height: 280px;
   position: absolute;
@@ -76,7 +76,7 @@ nav.mobileview > ul {
 }
 
 nav ul li a,
-aside#dasmuessabe ul li a {
+aside#nav-dropdown ul li a {
   text-decoration: none;
   font-weight: bold;
   color: var(--font);
@@ -85,29 +85,27 @@ aside#dasmuessabe ul li a {
 }
 
 nav ul li a:hover,
-aside#dasmuessabe ul li a:hover {
+aside#nav-dropdown ul li a:hover {
   color: var(--hoverfarbe);
   border-bottom: 2px solid var(--navsub);
 }
 
-nav.deskview aside#dasmuessabe {
+nav.deskview aside#nav-dropdown {
   line-height: 50px;
   position: absolute;
   left: calc(3vw + 205px);
   top: 70px;
-  opacity: 0;
   transition: var(--default-ad);
   z-index: 9000;
 }
-nav.mobileview aside#dasmuessabe {
+nav.mobileview aside#nav-dropdown {
   line-height: 50px;
   position: absolute;
   top: 250px;
-  opacity: 0;
   transition: var(--default-ad);
 }
 
-nav.deskview aside#dasmuessabe > ul {
+nav.deskview aside#nav-dropdown > ul {
   list-style-type: none;
   text-align: center;
   width: 170px;
@@ -115,18 +113,13 @@ nav.deskview aside#dasmuessabe > ul {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-nav.mobileview aside#dasmuessabe > ul {
+nav.mobileview aside#nav-dropdown > ul {
   list-style-type: none;
   width: 200px;
   padding-left: 20px;
   background: var(--navbg);
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-}
-
-nav.deskview aside#dasmuessabe.dunde,
-nav.mobileview aside#dasmuessabe.dunde {
-  opacity: 1;
 }
 
 #dropdownicon {
@@ -142,7 +135,7 @@ nav.mobileview aside#dasmuessabe.dunde {
   -webkit-transform: rotate(45deg);
 }
 
-nav ul li a:hover>#dropdownicon,
+nav ul li a:hover > #dropdownicon,
 #dropdownicon:hover {
   border: solid var(--hoverfarbe);
   border-width: 0 3px 3px 0;
@@ -162,15 +155,15 @@ nav ul li a:hover>#dropdownicon,
 }
 
 /* styling für die zwei icons */
-#one,
-#two {
+#sett-icon-one,
+#sett-icon-two {
   position: absolute;
   transition: var(--default-ad);
   cursor: pointer;
 }
 
 /* div für das settings icon */
-.gear {
+.sett-icon-gear {
   -webkit-mask: url("../img/gear.svg") no-repeat center;
   mask: url("../img/gear.svg") no-repeat center;
   background: var(--icons);
@@ -181,7 +174,7 @@ nav ul li a:hover>#dropdownicon,
 }
 
 /* div für das schliessen icon */
-.close {
+.sett-icon-close {
   -webkit-mask: url("../img/close.svg") no-repeat center;
   mask: url("../img/close.svg") no-repeat center;
   background: var(--closeicon);
@@ -192,8 +185,8 @@ nav ul li a:hover>#dropdownicon,
 }
 
 /* hovering über die beide icons */
-div.icons:hover>#two,
-div.icons:hover>#one {
+div.nav-sett-icon:hover > #sett-icon-one,
+div.nav-sett-icon:hover > #sett-icon-two {
   background: var(--hoverfarbe);
 }
 
@@ -246,36 +239,6 @@ div.gedreht3 {
   background: var(--hoverfarbe);
 }
 
-/* 0.5s animation, dass die Navigation smooth reinkommt */
-.inemitdem {
-  animation: nachRechts 0.5s forwards;
-}
-
-/* 0.5s animation, dass die Navigation smooth rausgeht */
-.usemitdem {
-  animation: nachLinks 0.5s forwards;
-}
-
-/* animation von der aktuellen Position, 100% nach rechts */
-@keyframes nachRechts {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(100% + 20px));
-  }
-}
-
-/* animation von der aktuellen position, 100% nach links */
-@keyframes nachLinks {
-  0% {
-    transform: translateX(calc(100% + 20px));
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 .nope {
   display: none!important;
 }
@@ -298,13 +261,43 @@ div.gedreht3 {
     top: 20px;
     z-index: 9999;
   }
+  article.mobilesetting {
+    position: absolute;
+    top: 70px;
+    padding-top: 20px;
+    padding-left: 30px;
+    width: calc(100vw - 30px);
+    height: 100vh;
+    background: var(--navbg);
+    color: var(--font);
+  }
 }
 
+/* settings balke wo vo links inechunt */
+article.desksetting {
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  padding-top: 20px;
+  padding-left: 30px;
+  width: 370px;
+  height: 100vh;
+  background: var(--navbg);
+  color: var(--font);
+}
+
+article div.sett-container {
+  position: relative;
+}
+.sett-container p {
+  font-weight: bold;
+  line-height: 50px;
+}
 /* positioniere vom on/off switch */
 .switch {
   position: absolute;
-  top: 95px;
-  left: 165px;
+  top: 10px;
+  left: 140px;
   display: inline-block;
   width: 50px;
   height: 26px;
@@ -331,6 +324,7 @@ div.gedreht3 {
   transition: 0.5s;
   border-radius: 18px;
 }
+.switch input {display:none;}
 /* was sett demit passiere wenns aklickt worde isch? */
 input:checked + .slider {
   background-color: #24a5e5;
@@ -342,8 +336,8 @@ input:checked + .slider:before {
 /* schriftart auswählen */
 article select {
   position: absolute;
-  left: 165px;
-  top: 138px;
+  top: 60px;
+  left: 140px;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -362,8 +356,8 @@ article select:focus {
 /* afangstpunkt fürs div vo dene 3 kreis für d'farbuswahl */
 .colorselect {
   position: absolute;
-  left: 165px;
-  top: 162px;
+  left: 140px;
+  top: 95px;
 }
 
 /* Styling für alli kreisli zum aaklicke */
@@ -389,3 +383,32 @@ article select:focus {
 .blau:hover { background: var(--dunkelblau); }
 
 .selected { border: 2px solid #ff9e28; }
+
+/* 0.5s animation, dass die Navigation smooth reinkommt */
+.inemitdem {
+  animation: nachRechts 0.5s forwards;
+}
+
+/* 0.5s animation, dass die Navigation smooth rausgeht */
+.usemitdem {
+  animation: nachLinks 0.5s forwards;
+}
+
+/* animation von der aktuellen Position, 100% nach rechts */
+@keyframes nachRechts {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(100% + 20px));
+  }
+}
+/* animation von der aktuellen position, 100% nach links */
+@keyframes nachLinks {
+  0% {
+    transform: translateX(calc(100% + 20px));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

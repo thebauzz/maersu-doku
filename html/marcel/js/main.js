@@ -4,14 +4,19 @@ window.onload = displayWindowSize;
 function displayWindowSize() {
   Bildbreite = window.innerWidth;
   nav = document.getElementById("navigation");
+  setting = document.getElementById("settings");
 
   if (Bildbreite > 470) {
     nav.classList.add("deskview");
     nav.classList.remove("mobileview");
+    setting.classList.add("desksetting");
+    setting.classList.remove("mobilesetting");
   }
   else {
     nav.classList.add("mobileview");
     nav.classList.remove("deskview");
+    setting.classList.add("mobilesetting");
+    setting.classList.remove("desksetting");
   }
 }
 
@@ -33,22 +38,25 @@ function schongescrollt() {
 }
 
 function chumAbe() {
-  dropdown = document.getElementById("dasmuessabe");
+  dropdown = document.getElementById("nav-dropdown");
   ddicon   = document.getElementById("dropdownicon");
 
   if (dropdown.classList.contains("dunde")){
+    dropdown.classList.toggle("nope");
     dropdown.classList.remove("dunde");
     ddicon.classList.remove("drehen");
   }
   else {
+    dropdown.classList.toggle("nope");
     dropdown.classList.add("dunde");
     ddicon.classList.add("drehen");
   }
 }
 
 function nav_ine_use() {
-  nav = document.getElementById("dasmuessuebere");
-  leerecont= document.getElementById("leerecontainer");
+  nav = document.getElementById("nav-nachrechts");
+  dropdown  = document.getElementById("nav-dropdown");
+  leerecont = document.getElementById("leerecontainer");
 
   leerecont.classList.toggle("nope");
 
@@ -76,7 +84,7 @@ function unsichtbar() {
   menu = document.getElementById("menu");
   menustrich = document.getElementById("normal1");
   setting = document.getElementById("customsetting");
-  settingicon = document.getElementById("one");
+  settingicon = document.getElementById("sett-icon-one");
 
   if (menustrich.classList.contains("gedreht1")) {
     setting.classList.add("nope");

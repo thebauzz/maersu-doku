@@ -8,8 +8,15 @@ body {
   font-family: "Ubuntu", sans-serif;
   height: 100%;
   width: 100vw;
+  background: var(--body);
 }
+
+.font1 { font-family: var(--schrift1); }
+.font2 { font-family: var(--schrift2); }
+
 :root {
+  --schrift1: "Ubuntu";
+  --schrift2: "Titillium Web", sans-serif;
   --default-ad:   0.5s;
   --weiss:        #ffffff;
   --hellstesgrau: #f4f4f4;
@@ -31,6 +38,7 @@ body {
   --borderclr:    #00b4f0ff;
   --shadowclr:    #00b4f066;
 
+  --body:       var(--weiss);
   --icons:      var(--dunkelgrau);
   --closeicon:  var(--rot);
   --hoverfarbe: var(--blau);
@@ -39,6 +47,22 @@ body {
   --font:       var(--schwarz);
   --fonthover:  var(--weiss);
 }
+.darkmode {
+  --navbg:  var(--dunkelgrau);
+  --font:   var(--weiss);
+  --navsub: var(--weiss);
+  --icons:  var(--weiss);
+  --body:   var(--dunklergrau);
+}
+.rothover {
+  --hoverfarbe: var(--rot);
+}
+.hellrothover {
+  --hoverfarbe: var(--hellrot);
+}
+.gruenhover {
+  --hoverfarbe: var(--gruen);
+}
 
 /*
  * INHALTLICHES
@@ -46,7 +70,7 @@ body {
 section {
   height: 300px;
   width: 100%;
-  border-bottom: 3px solid var(--weiss);
+  border-bottom: 3px solid var(--body);
   position: relative;
 }
 .abstandwegennav {

@@ -1,31 +1,18 @@
 function sideSetting() {
 // erscheinen und verschwinden lassen der icons
-  open   = document.getElementById("one");
-  close = document.getElementById("two");
+  open  = document.getElementById("sett-icon-one");
+  close = document.getElementById("sett-icon-two");
 
   close.classList.toggle("begone");
   open.classList.toggle("begone");
 
-// erscheinen und verschwinden lassen des containers zum wegklicken der Navigation
-  document.getElementById("leerecontainer").classList.toggle("nope");
-
 // entweder einfüge-animation oder entfern-animation der Navigation
   setting = document.getElementById("settings")
 
-  if (setting.classList.contains("inesettings")) {
-    setting.classList.add("usesettings");
-    setting.classList.remove("inesettings");
-  }
-  else if (setting.classList.contains("usesettings")){
-    setting.classList.add("inesettings");
-    setting.classList.remove("usesettings");
-  }
-  else {
-    setting.classList.add("inesettings");
-  }
+  setting.classList.toggle("nope");
 }
 
-function switchtheme() {}/*
+function switchtheme() {
 // entfernen oder hinzufügen vom darkmode
   wechseln = document.getElementById("body");
 
@@ -46,8 +33,8 @@ function switchtheme() {}/*
     body.classList.add("rothover");
   }
 }
-*/
-function fontchange() {}/*
+
+function fontchange() {
 // wenn der wert wechselt ändern der beiden schriftarten
   body   = document.getElementById("body");
   select = document.getElementById("fontchange");
@@ -58,9 +45,9 @@ function fontchange() {}/*
   select.classList.toggle("font1");
   select.classList.toggle("font2");
 }
-*/
+
 // Farb wechslet zu blau
-function setblau() {}/*
+function setblau() {
 
 // welches element hat sich zu verändern?
   gruen = document.getElementById("gruen");
@@ -91,9 +78,9 @@ function setblau() {}/*
     rot.classList.remove("selected");
   }
 }
-*/
+
 // Farb wechslet zu gruen
-function setgruen() {}/*
+function setgruen() {
 // welches element hat sich zu verändern?
   gruen = document.getElementById("gruen");
   rot   = document.getElementById("rot");
@@ -122,9 +109,9 @@ function setgruen() {}/*
     rot.classList.remove("selected");
   }
 }
-*/
+
 // Farb wechslet zu blau
-function setrot() {}/*
+function setrot() {
 // welches element hat sich zu verändern?
   gruen = document.getElementById("gruen");
   rot   = document.getElementById("rot");
@@ -156,4 +143,3 @@ function setrot() {}/*
     gruen.classList.remove("selected");
   }
 }
-*/

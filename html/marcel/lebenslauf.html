@@ -12,21 +12,21 @@
   <script src="js/settingchange.js"></script>
 </head>
 
-<body>
+<body id="body">
   <header>
 <!-- bild meiner heimatstadt bern + logo -->
-    <div class="bilder">
-      <div class="headerbg"></div>
-      <div class="headerbild">
+    <div id="nav-headerbilder">
+      <div class="nav-headerbg"></div>
+      <div class="nav-headerbild">
         <p>m</p><!-- das "logo" -->
       </div>
     </div>
 
     <nav class="deskview" id="navigation">
 <!-- Die zwei Icons für den Einstellungsblock -->
-      <div class="icons" id="customsetting">
-        <div id="two" class="close begone"></div>
-        <div id="one" class="gear" onclick="sideSetting();unsichtbar()"></div>
+      <div class="nav-sett-icon" id="customsetting">
+        <div id="sett-icon-two" class="sett-icon-close begone"></div>
+        <div id="sett-icon-one" class="sett-icon-gear" onclick="sideSetting();unsichtbar()"></div>
       </div>
 
 <!-- das Hamburgermenu-->
@@ -37,14 +37,14 @@
       </div>
 
 <!-- ab da folgt die richtig Navigation -->
-      <ul id="dasmuessuebere">
+      <ul id="nav-nachrechts">
         <li><a href="javascript:void(0)">Home</a></li><!--
      --><li><a href="javascript:void(0)">Lebenslauf</a></li><!--
      --><li><a href="javascript:void(0)" onclick="chumAbe()">Mehr über mich <i class="" id="dropdownicon"></i></a></li>
       </ul>
 
   <!-- s'Dropdown Menu -->
-      <aside class="" id="dasmuessabe">
+      <aside class="nope" id="nav-dropdown">
         <ul>
           <li><a href="https://github.com/thebauzz/"    target="_blank">Github</a></li>
           <li><a href="https://instagram.com/thebauzz/" target="_blank">Instagram</a></li>
@@ -52,32 +52,31 @@
         </ul>
       </aside>
 <!-- das settings menu -->
-      <article id="settings">
+      <article class="nope desksetting" id="settings">
+        <div class="sett-container">
 
-<!-- dark mode an oder ausschalten -->
-        <p>Dark Mode:</p>
-        <label class="switch">
-          <input type="checkbox" id="box" onclick="switchtheme()">
-          <span class="slider round"></span>
-        </label>
 
-<!-- zwischen den schriftarten auswählen -->
-        <p>Font Selection:</p>
-        <div class="select-wrapper">
-          <select id="fontchange" onchange="fontchange()" class="font1">
-            <option value="default">Standard (Ubuntu)</option>
-            <option value="mina">Titillium</option>
-          </select>
+
+          <p>Dark Mode:</p>
+          <label class="switch">
+            <input type="checkbox" id="box" onclick="switchtheme()">
+            <span class="slider round"></span>
+          </label>
+          <p>Font Selection:</p>
+          <div class="select-wrapper">
+            <select id="fontchange" onchange="fontchange()" class="font1">
+              <option value="default">Standard (Ubuntu)</option>
+              <option value="mina">Titillium</option>
+            </select>
+          </div>
+          <p>Color Selection:</p>
+          <div class="colorselect">
+            <div onclick="setblau()"  id="blau"  class="kreis selected blau"></div>
+            <div onclick="setgruen()" id="gruen" class="kreis gruen"></div>
+            <div onclick="setrot()"   id="rot"   class="kreis rot"></div>
+          </div>
+
         </div>
-
-<!-- zwischen den hoverfarben hin und her wechseln -->
-        <p>Color Selection:</p>
-        <div class="colorselect">
-          <div onclick="setblau()"  id="blau"  class="kreis selected blau"></div>
-          <div onclick="setgruen()" id="gruen" class="kreis gruen"></div>
-          <div onclick="setrot()"   id="rot"   class="kreis rot"></div>
-        </div>
-
       </article>
     </nav>
     <div class="nope" id="leerecontainer" onclick="nav_ine_use()"></div>
