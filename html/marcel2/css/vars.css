@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+
+:root {
+  --schrift1: "Ubuntu";
+  --schrift2: "Titillium Web", sans-serif;
+  --schrift3: "Inconsolata", serif;
+  --trans-duration:   0.5s;
+
+  --weiss:        #ffffff;
+  --hellstesgrau: #f4f4f4;
+  --hellgrau:     #dbdbdb;
+  --mittelgrau:   #a3a3a3;
+  --grau:         #5a5a5a;
+  --dunkelgrau:   #474747;
+  --dunklergrau:  #333333;
+  --dunklestgrau: #202020;
+  --schwarz:      #000000;
+  --gruen:        #12bc3d;
+  --dunkelgruen:  #017a20;
+  --hellrot:      #fc5353;
+  --rot:          #cc2020;
+  --dunkelrot:    #960a0a;
+  --hellblau:     #47c2ff;
+  --blau:         #1b8ac1;
+  --dunkelblau:   #00568c;
+  --borderclr:    #00b4f0ff;
+  --shadowclr:    #00b4f066;
+
+  --body:       var(--hellstesgrau);
+  --navbg:      var(--hellstesgrau);
+  --icons:      var(--dunkelgrau);
+  --closeicon:  var(--rot);
+  --hoverfarbe: var(--blau);
+}
