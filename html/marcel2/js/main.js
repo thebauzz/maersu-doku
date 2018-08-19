@@ -43,11 +43,19 @@ function einst_icon_change() {
   einstclose.classList.toggle("einst-weg");
 
   var einst = document.getElementById("nav-einst-einst");
-  einst.classList.toggle("unsichtbar");
 
-  setTimeout(function(){
-        einst.classList.toggle("einst-rein");
+  if (einst.classList.contains("unsichtbar")) {
+    einst.classList.remove("unsichtbar");
+    setTimeout(function(){
+      einst.classList.add("einst-rein");
     }, 10);
+  }
+  else if (einst.classList.contains("einst-rein")) {
+    einst.classList.remove("einst-rein");
+    setTimeout(function(){
+      einst.classList.add("unsichtbar");
+    }, 500);
+  }
 
   var empty = document.getElementById("leerecontainer");
   empty.classList.toggle("unsichtbar");
@@ -95,4 +103,9 @@ function wegmitallem() {
 
   var unsichtbar = document.getElementById("leerecontainer");
   unsichtbar.classList.toggle("unsichtbar")
+}
+
+function schriftwechsel() {
+  document.getElementById("body").classList.toggle("font1");
+  document.getElementById("body").classList.toggle("font2");
 }

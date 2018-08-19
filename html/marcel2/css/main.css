@@ -6,10 +6,12 @@ body {
   width: 100%;
   height: 100vh;
   background: var(--body);
-  font-family: var(--schrift1);
+  font-family: var(--bodyfont);
 }
 
 header { user-select: none; }
+.font1 { --bodyfont: var(--schrift1); }
+.font2 { --bodyfont: var(--schrift2); }
 .abstand { height: 1000px; background: lightgreen; }
 
 .header-image {
