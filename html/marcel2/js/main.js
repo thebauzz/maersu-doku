@@ -24,7 +24,7 @@ function menu_icon_change() {
   var nav = document.getElementById("nav-menu-nav");
   nav.classList.toggle("nav-rein");
 
-  var dropdown   = document.getElementById("nav-dropdown");
+  var dropdown = document.getElementById("nav-dropdown");
   if (dropdown.classList.contains("dropdown-rein")) {
     dropdown.classList.remove("dropdown-rein");
   }
@@ -43,7 +43,11 @@ function einst_icon_change() {
   einstclose.classList.toggle("einst-weg");
 
   var einst = document.getElementById("nav-einst-einst");
-  einst.classList.toggle("einst-rein");
+  einst.classList.toggle("unsichtbar");
+
+  setTimeout(function(){
+        einst.classList.toggle("einst-rein");
+    }, 10);
 
   var empty = document.getElementById("leerecontainer");
   empty.classList.toggle("unsichtbar");
