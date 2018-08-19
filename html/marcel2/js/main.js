@@ -54,7 +54,7 @@ function einst_icon_change() {
     einst.classList.remove("einst-rein");
     setTimeout(function(){
       einst.classList.add("unsichtbar");
-    }, 500);
+    }, 300);
   }
 
   var empty = document.getElementById("leerecontainer");
@@ -90,6 +90,7 @@ function wegmitallem() {
 
   if (einst.classList.contains("einst-rein")) {
     einst.classList.remove("einst-rein");
+    einst.classList.add("unsichtbar");
 
     var navlinie = document.getElementById("nav-menu-linien");
     navlinie.classList.toggle("unsichtbar");
@@ -108,4 +109,106 @@ function wegmitallem() {
 function schriftwechsel() {
   document.getElementById("body").classList.toggle("font1");
   document.getElementById("body").classList.toggle("font2");
+}
+
+function themewechsel() {
+  document.getElementById("body").classList.toggle("darkmode");
+}
+
+// Farb wechslet zu blau
+function setblau() {
+
+// welches element hat sich zu verändern?
+  gruen = document.getElementById("gruen");
+  rot   = document.getElementById("rot");
+  blau  = document.getElementById("blau");
+  body  = document.getElementById("body");
+
+// anderi hoverklasse entferne
+  if (body.classList.contains("gruenhover")) {
+    body.classList.remove("gruenhover");
+  }
+  if (body.classList.contains("rothover")) {
+    body.classList.remove("rothover");
+  }
+  if (body.classList.contains("hellrothover")) {
+    body.classList.remove("hellrothover");
+  }
+
+// orangene rahme um s'blaue kreis
+  blau.classList.add("selected");
+
+// isch vorher gruen gsi? wenn ja, weg mit dem orangene balke
+  if (gruen.classList.contains("selected")) {
+    gruen.classList.remove("selected");
+  }
+// isch vorher rot gsi? wenn ja, weg mit dem orangene balke
+  if (rot.classList.contains("selected")) {
+    rot.classList.remove("selected");
+  }
+}
+
+// Farb wechslet zu gruen
+function setgruen() {
+// welches element hat sich zu verändern?
+  gruen = document.getElementById("gruen");
+  rot   = document.getElementById("rot");
+  blau  = document.getElementById("blau");
+  body  = document.getElementById("body");
+
+  body.classList.add("gruenhover");
+
+// anderi hoverklasse entferne
+  if (body.classList.contains("rothover")) {
+    body.classList.remove("rothover");
+  }
+  if (body.classList.contains("hellrothover")) {
+    body.classList.remove("hellrothover");
+  }
+
+// orangene rahme um s'gruene kreis
+  gruen.classList.add("selected");
+
+// isch vorher blau gsi? wenn ja, weg mit dem orangene balke
+  if (blau.classList.contains("selected")) {
+    blau.classList.remove("selected");
+  }
+// isch vorher rot gsi? wenn ja, weg mit dem orangene balke
+  if (rot.classList.contains("selected")) {
+    rot.classList.remove("selected");
+  }
+}
+
+// Farb wechslet zu blau
+function setrot() {
+// welches element hat sich zu verändern?
+  gruen = document.getElementById("gruen");
+  rot   = document.getElementById("rot");
+  blau  = document.getElementById("blau");
+  body  = document.getElementById("body");
+
+// darkmode aktiv = hellrothover; darkmode inaktiv = rothover
+  if (body.classList.contains("darkmode")) {
+    body.classList.add("hellrothover");
+  }
+  else {
+    body.classList.add("rothover");
+  }
+
+// anderi hoverklasse entferne
+  if (body.classList.contains("gruenhover")) {
+    body.classList.remove("gruenhover");
+  }
+
+// orangene rahme um s'rote kreis
+  rot.classList.add("selected");
+
+// isch vorher blau gsi? wenn ja, weg mit dem orangene balke
+  if (blau.classList.contains("selected")) {
+    blau.classList.remove("selected");
+  }
+// isch vorher gruen gsi? wenn ja, weg mit dem orangene balke
+  if (gruen.classList.contains("selected")) {
+    gruen.classList.remove("selected");
+  }
 }
