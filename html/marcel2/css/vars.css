@@ -25,13 +25,26 @@
   --hellblau:     #47c2ff;
   --blau:         #1b8ac1;
   --dunkelblau:   #00568c;
-  --borderclr:    #00b4f0ff;
-  --shadowclr:    #00b4f066;
 
   --body:       var(--hellstesgrau);
-  --navbg:      var(--hellstesgrau);
+  --navborder:  var(--hellgrau);
   --navcolor:   var(--dunklestgrau);
   --icon:       var(--dunkelgrau);
   --closeicon:  var(--rot);
   --hoverfarbe: var(--blau);
+}
+.darkmode {
+  --body:      var(--dunkelgrau);
+  --navborder: var(--grau);
+  --navcolor:  var(--hellstesgrau);
+  --icon:      var(--hellgrau);
+}
+.rothover {
+  --hoverfarbe: var(--rot);
+}
+.hellrothover {
+  --hoverfarbe: var(--hellrot);
+}
+.gruenhover {
+  --hoverfarbe: var(--gruen);
 }

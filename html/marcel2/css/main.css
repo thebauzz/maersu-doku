@@ -12,7 +12,7 @@ body {
 header { user-select: none; }
 .font1 { --bodyfont: var(--schrift1); }
 .font2 { --bodyfont: var(--schrift2); }
-.abstand { height: 1000px; background: lightgreen; }
+.abstand { height: 1000px; }
 
 .header-image {
   width: 100%;
@@ -55,7 +55,9 @@ header { user-select: none; }
   position: absolute;
   height: 70px;
   width: 100%;
-  background: var(--body); /* var(--body) */
+  background: var(--body);
+  border-bottom: 3px solid var(--navborder);
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.2);
 }
 
 .nav-fixed {
@@ -143,14 +145,14 @@ header { user-select: none; }
   width: 250px;
   height: 100vh;
   padding: 0 30px;
-  background: var(--navbg);
+  background: var(--body);
   transition: 0.5s;
 }
 #nav-menu-nav.nav-rein {
   left: 0;
 }
 #nav-menu-nav > ul {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--navcolor);
 }
 #nav-menu-nav ul li {
   padding: 15px;
@@ -160,7 +162,7 @@ header { user-select: none; }
 #nav-menu-nav a {
   font-weight: bold;
   text-decoration: none;
-  transition: 0.2s;
+  transition: 0.4s;
   color: var(--navcolor);
   border-bottom: 4px solid #00000000;
 }
@@ -206,7 +208,7 @@ header { user-select: none; }
   width: 250px;
   height: 100vh;
   padding: 15px 30px 0 30px;
-  background: var(--navbg);
+  background: var(--body);
   transition: 0.5s;
 }
 #nav-einst-einst.einst-rein {
@@ -215,6 +217,7 @@ header { user-select: none; }
 #nav-einst-einst p {
   font-weight: bold;
   line-height: 45px;
+  color: var(--navcolor);
 }
 
 .switch {
@@ -264,8 +267,8 @@ input:checked + .slider:before {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  background: var(--select);
-  color: var(--navfont);
+  color: var(--navcolor);
+  background: var(--body);
   height: 22px;
   font-size: 13px;
   padding-left: 8px;
