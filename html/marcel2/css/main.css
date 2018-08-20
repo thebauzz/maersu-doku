@@ -1,3 +1,4 @@
+/* löscht alle default margin und pdading werte*/
 * {
   margin: 0;
   padding: 0;
@@ -9,11 +10,17 @@ body {
   font-family: var(--bodyfont);
 }
 
-header { user-select: none; }
+/* nichts im Header soll man selektieren können */
+header {
+  user-select: none;
+}
+/* Die zwei Schriften die man wechseln kann */
 .font1 { --bodyfont: var(--schrift1); }
 .font2 { --bodyfont: var(--schrift2); }
+
 .abstand { height: 1000px; }
 
+/* Headerbild, ein wenig zugeschnitten */
 .header-image {
   width: 100%;
   height: 300px;
@@ -21,10 +28,8 @@ header { user-select: none; }
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 4vw), 0 100%);
 }
-.two-nav {
-  position: relative;
-  z-index: 9000;
-}
+
+/* damit das Bild dunkler ist, schwarzer Balken 70% transparenz */
 .header-cover {
   position: absolute;
   top: 0;
@@ -34,6 +39,7 @@ header { user-select: none; }
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 4vw), 0 100%);
 }
 
+/* das "M" im Logo (Header) */
 .header-text {
   position: absolute;
   top: 0;
@@ -46,11 +52,17 @@ header { user-select: none; }
   color: var(--weiss);
 }
 
+/* Die geschwungene Klammer im Logo (Header) */
 .header-text::after {
   content: "}";
   color: var(--blau);
 }
-
+/* damit alle absoluten positionen einen Anhaltspunkt haben */
+.two-nav {
+  position: relative;
+  z-index: 9000;
+}
+/* der Balken, welcher bei scrollen oben bleibt */
 .nav-balken {
   position: absolute;
   height: 70px;
@@ -60,6 +72,7 @@ header { user-select: none; }
   box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* wenn gescrollt wurde, wird der Balken fixed */
 .nav-fixed {
   position: fixed;
   top: 0;
@@ -87,6 +100,7 @@ header { user-select: none; }
   left: 28px;
   top: 15px;
 }
+
 /* Menu Schliessen Icon */
 #nav-menu-close {
   -webkit-mask: url("../img/close.svg") no-repeat center;
@@ -99,6 +113,7 @@ header { user-select: none; }
   left: 30px;
   top: 20px;
 }
+
 /* Einstellungen Einstellungs Icon */
 #nav-einst-gear {
   -webkit-mask: url("../img/gear.svg") no-repeat center;
@@ -111,6 +126,7 @@ header { user-select: none; }
   right: 30px;
   top: 17px;
 }
+
 /* Einstellungen Schliessen Icon */
 #nav-einst-close {
   -webkit-mask: url("../img/close.svg") no-repeat center;
@@ -133,11 +149,12 @@ header { user-select: none; }
   transform: rotate(360deg);
 }
 
-/* hinzugefügt, dass nicht beide gleichzeitig ausgeführt werden können */
+/* hinzugefügt, wenn etwas ausgeblendet werden soll */
 .unsichtbar {
   display: none;
 }
 
+/* das Navigationsmenu (normalerweise links versteckt) */
 #nav-menu-nav {
   position: absolute;
   top: 70px;
@@ -148,17 +165,25 @@ header { user-select: none; }
   background: var(--body);
   transition: 0.5s;
 }
+
+/* das Navigationsmenu, wenn es sichtbar sein sollte */
 #nav-menu-nav.nav-rein {
   left: 0;
 }
+
+/* Abtrennug zwischen Navigation & Dropdown */
 #nav-menu-nav > ul {
   border-bottom: 1px solid var(--navcolor);
 }
+
+/* Positionierung vom Navigations Text */
 #nav-menu-nav ul li {
   padding: 15px;
   list-style: none;
   text-align: center;
 }
+
+/* Styling vom Navigations Text */
 #nav-menu-nav a {
   font-weight: bold;
   text-decoration: none;
@@ -166,10 +191,14 @@ header { user-select: none; }
   color: var(--navcolor);
   border-bottom: 4px solid #00000000;
 }
+
+/* Hovereffekt vom Navigations Text */
 #nav-menu-nav a:hover {
   border-bottom: 2px solid var(--navcolor);
   color: var(--hoverfarbe);
 }
+
+/* Der Pfeil vom DropdownMenu */
 #dropdownicon {
   position: relative;
   top: -2px;
@@ -182,25 +211,33 @@ header { user-select: none; }
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+
+/* Hovereffekt über NavText oder DropdownMenu */
 #nav-menu-nav a:hover > #dropdownicon,
 #dropdownicon:hover {
   border: solid var(--hoverfarbe);
   border-width: 0 0 3px 3px;
 }
+
+/* dropdown aktiviert, soll das icon sich drehen */
 #dropdownicon.drehen {
   transform: rotate(-135deg);
   top: -2px;
 }
 
+/* DropdownMenu soll default links versteckt sein */
 #nav-dropdown {
   position: relative;
   left: -100%;
   transition: var(--trans-duration);
 }
+
+/* das DropdownMenu, wenn es sichtbar sein sollte */
 #nav-dropdown.dropdown-rein {
   left: 0;
 }
 
+/* EinstellungsMenu soll default rechts versteckt sein */
 #nav-einst-einst {
   position: absolute;
   top: 60px;
@@ -211,15 +248,20 @@ header { user-select: none; }
   background: var(--body);
   transition: 0.5s;
 }
+
+/* das EinstellungsMenu, wenn es sichtbar sein sollte */
 #nav-einst-einst.einst-rein {
   right: 0;
 }
+
+/* EinstellungsText (DarkMode, FontSelection, ColorSelection) */
 #nav-einst-einst p {
   font-weight: bold;
   line-height: 45px;
   color: var(--navcolor);
 }
 
+/* Positionierung vom On/Off Switch */
 .switch {
   position: absolute;
   top: 23px;
@@ -228,7 +270,8 @@ header { user-select: none; }
   width: 50px;
   height: 26px;
 }
-/* de grau / blau hintergrundbalke */
+
+/* der graue / blaue hintergrundbalken */
 .slider {
   position: absolute;
   top: 0; bottom: 0;
@@ -238,7 +281,8 @@ header { user-select: none; }
   transition: 0.5s;
   border-radius: 26px;
 }
-/* de wiss kreis wo sich hin und her bewegt */
+
+/* der weisse Kreis, welcher sich hin und her bewegt */
 .slider:before {
   position: absolute;
   content: "";
@@ -250,11 +294,16 @@ header { user-select: none; }
   transition: 0.5s;
   border-radius: 18px;
 }
-.switch input {display:none;}
-/* was sett demit passiere wenns aklickt worde isch? */
+
+/* das Defaultkästchen soll weg */
+.switch input { display:none; }
+
+/* Hintergrundfarbe, wenn es geklickt wurde */
 input:checked + .slider {
   background-color: #24a5e5;
 }
+
+/* geklickt, geht der Button 24px nach rechts */
 input:checked + .slider:before {
   transform: translateX(24px);
 }
@@ -275,18 +324,20 @@ input:checked + .slider:before {
   border-radius: 13px;
   width: 140px;
 }
+
+/* du verstehst was das soll, wenn dus entfernst und eine Schriftart auswählst.. */
 select:focus {
   outline: none;
 }
 
-/* afangstpunkt fürs div vo dene 3 kreis für d'farbuswahl */
+/* Positionierung der 3 Kreise für die Farbauswahl */
 .colorselect {
   position: absolute;
   left: 160px;
   top: 98px;
 }
 
-/* Styling für alli kreisli zum aaklicke */
+/* Styling für alle Kreise zum anklicken */
 .kreis {
   float: left;
   width: 22px;
@@ -298,18 +349,20 @@ select:focus {
   transition: 0.5s;
 }
 
-/* die drü farbe, weme mit de Muus drüber isch & de rahme, wenn eppis usgwählt isch*/
-.rot { background: var(--rot); }
-.rot:hover { background: var(--dunkelrot); }
-
-.gruen { background: var(--gruen); }
-.gruen:hover { background: var(--dunkelgruen); }
+/* die drei Farbauswahlen, hovereffekt + organgener Rahmen falls ausgewählt*/
 
 .blau { background: var(--blau); }
 .blau:hover { background: var(--dunkelblau); }
 
+.gruen { background: var(--gruen); }
+.gruen:hover { background: var(--dunkelgruen); }
+
+.rot { background: var(--rot); }
+.rot:hover { background: var(--dunkelrot); }
+
 .selected { border: 2px solid #ff9e28; }
 
+/* Container über die gesamte Seite (dass man die Navigation ausserhalb wegklicken kann) */
 #leerecontainer {
   width: 100%;
   height: 100%;

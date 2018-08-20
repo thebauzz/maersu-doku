@@ -33,18 +33,22 @@
   --closeicon:  var(--rot);
   --hoverfarbe: var(--blau);
 }
+/* überschreibt die default Variablen mit den Variablen für Darkmode*/
 .darkmode {
   --body:      var(--dunkelgrau);
   --navborder: var(--grau);
   --navcolor:  var(--hellstesgrau);
   --icon:      var(--hellgrau);
 }
+/* Light mode, rote Themeauswahl  */
 .rothover {
   --hoverfarbe: var(--rot);
 }
+/* Dark mode, rote Themeauswahl */
 .hellrothover {
   --hoverfarbe: var(--hellrot);
 }
+/* Light oder Dark mode, grüne Themeauswhahl */
 .gruenhover {
   --hoverfarbe: var(--gruen);
 }
