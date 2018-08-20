@@ -13,6 +13,7 @@ body {
 /* nichts im Header soll man selektieren können */
 header {
   user-select: none;
+  -moz-user-select: none;
 }
 /* Die zwei Schriften die man wechseln kann */
 .font1 { --bodyfont: var(--schrift1); }
