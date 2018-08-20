@@ -112,7 +112,18 @@ function schriftwechsel() {
 }
 
 function themewechsel() {
-  document.getElementById("body").classList.toggle("darkmode");
+  body = document.getElementById("body");
+
+  body.classList.toggle("darkmode");
+
+  if (body.classList.contains("rothover")) {
+    body.classList.remove("rothover");
+    body.classList.add("hellrothover");
+  }
+  else if (body.classList.contains("hellrothover")) {
+    body.classList.remove("hellrothover");
+    body.classList.add("rothover");
+  }
 }
 
 // Farb wechslet zu blau
