@@ -1,0 +1,140 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs34 \cf0 BLOCK 1
+\b0\fs24 \
+\
+Statische Website:\
+Anfrage geschickt, Server gibt Dateien aus, welche man angefordert hat (Default die index.html Datei), Browser stellt diese Datei dar.\
+\
+Dynamische Website:\
+Anfrage geschickt, Server gibt Dateien aus, welche man angefordert hat (Default die index.
+\b php
+\b0  Datei), Browser stellt diese Datei dar.\
+// MEHR INFOS SAMMELN\
+\
+Serverside programming: PHP, MySQL, Java, ASP.NET\
+Clientside programming: JavaScript\
+\
+Installation XAMPP (Hatte ich schon, daher Zeit f\'fcr mich)\
+\
+PHP - Hypertext Preprocessor (Scriptsprache f\'fcr Webapplikation), Sie wird von einem Server ausgef\'fchrt\
+\
+\'dcbung 1 gemacht Hallo Welt\
+\
+Variable = Zwischenspeicher f\'fcr einen Wert\
+Variablen in PHP haben keinen Datentyp\
+Variablen k\'f6nnen Buchstaben, Zahlen, Unterstrich beinhalten\
+\
+F\'fcr eine Deklaration und Gebrauch von Variablen = $\
+Mit einem Punkt werden Variablen verkettet\
+\
+<?php\
+$wer = damian\
+\
+echo \'84de $wer sich en missge\'93;\
+?>\
+\
+<?php\
+$wer = damian\
+\
+echo \'84de $wer isch en missge\'93;\
+?>\
+Ausgabe: de Damian isch en missge\
+\
+<?php\
+$wer = damian\
+\
+echo \'82de $wer isch en missge\'92;\
+?>\
+Ausgabe: de $wer isch en missge\
+\
+\
+\
+Sonderzeichen\
+Falls ein Sonderzeichen ausgegeben werden soll, muss ein Backslash vorher geschrieben werden.\
+\
+echo \'84Ich bin Marcel \\\'93M\'e4si\\\'93 Gertsch\'93;\
+\
+Konstanten:\
+Konstanten definiert man mit \
+
+\b define(NAME, Wert)
+\b0 ;\
+define(\'84NAME\'93, \'84Marcel Gertsch\'93);\
+\
+Empfehlenswert ist, Variablendefinition am beginn des Dokuments zu machen,\
+um im HTML dann nur <?php echo $var ?>\
+\
+
+\b\fs34 BLOCK 2
+\b0\fs24 \
+\
+Arrays\
+ Werte innerhalb Arrays sind Elemente\
+ Arrays beginnen mit 0\
+\
+PHP Array erstellen und initialisieren\
+\
+$antworten = array(\'84immer\'93, \'84manchmal\'93, \'84nie\'93);\
+	// man kann Datentypen innerhalb eines Arrays mischen\
+\
+$antworten = array(\'84immer\'93, \'84manchmal\'93, \'84nie\'93,1337);\
+echo $antworten[2];\
+	// gibt 1337 aus\
+\
+$antowrten[] = \'84meistens nicht\'93;\
+	// f\'fcgt ein weiteres Element hinzu\
+\
+If ($alter > 80   ||  $alter < 16)\
+	// nur eine Bedingung muss zutreffen\
+If ($alter < 20 && $alter <16)\
+	// beide Bedingungen m\'fcssen zutreffen\
+\
+Short Circuit Validierung\
+If ($alter > 80   ||  $alter < 16) \
+Trifft $alter > 80 zu, dann ignoriert es den Rest der Bedingung (es ist sowieso TRUE)\
+\
+$fall = 2\
+switch ($fall) \{\
+  case 0:\
+     echo \'84fall 1\'93;\
+     break;\
+  case 1:\
+     echo \'84fall 2\'93;\
+     break;\
+
+\b   case 2:\
+     echo \'84fall 3\'93;\
+     break;
+\b0 \
+  default:\
+     echo \'84nada\'93;\
+     break;\
+\}\
+\
+for ($x=1; $x < 8; $x++) \{\
+  echo $x.\'93Ganz cool<br>\'93;\
+\}\
+\
+while ($x < 8) \{\
+  echo $x.\'93Ganz cool<br>\'93;\
+  $x++;\
+\}\
+\
+\
+for($i = 1; $i <= 20; $i++) \{\
+  if($i == 4) \{\
+    continue;\
+   \}\
+\
+   echo "$i.hey <br>";\
+\
+   if($i == 15) \{\
+      break;\
+   \}\
+\}}
