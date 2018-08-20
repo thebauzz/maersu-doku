@@ -362,6 +362,10 @@ select:focus {
 
 .selected { border: 2px solid #ff9e28; }
 
+#nav-einst-einst p.select-vorschau {
+  color: var(--hoverfarbe);
+}
+
 /* Container über die gesamte Seite (dass man die Navigation ausserhalb wegklicken kann) */
 #leerecontainer {
   width: 100%;
