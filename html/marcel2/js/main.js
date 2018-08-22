@@ -1,3 +1,4 @@
+// bei jedem scrollen, soll die Function schongescrollt aufgeruft werden
 window.onscroll = schongescrollt;
 
 function schongescrollt() {
@@ -14,38 +15,50 @@ function schongescrollt() {
   }
 }
 
+// Navigation kommt rein und raus
 function menu_icon_change() {
   var einstgear  = document.getElementById("nav-einst-gear");
   var menulinien = document.getElementById("nav-menu-linien");
   var menuclose  = document.getElementById("nav-menu-close");
 
+// einst wird unsichtbar gemacht, damit nicht beide gleichzeitig aktiv sein können
   einstgear.classList.toggle("unsichtbar");
+// 3 Linien weg, das X erscheint
   menulinien.classList.toggle("menu-weg");
   menuclose.classList.toggle("menu-weg");
 
+// Navigation kommt rein oder raus
   var nav = document.getElementById("nav-menu-nav");
   nav.classList.toggle("nav-rein");
 
+// wurde Dropdown geöffnet, wird es geschlossen wenn die Navigation weg geht
   var dropdown = document.getElementById("nav-dropdown");
   if (dropdown.classList.contains("dropdown-rein")) {
     dropdown.classList.remove("dropdown-rein");
   }
 
+// unsichbarer Container wird hinzugefügt
   var empty = document.getElementById("leerecontainer");
   empty.classList.toggle("unsichtbar");
 }
 
+// Einstellungsmenu wird geöffnet oder geschlossen
 function einst_icon_change() {
   var menulinien = document.getElementById("nav-menu-linien");
   var einstgear  = document.getElementById("nav-einst-gear");
   var einstclose = document.getElementById("nav-einst-close");
 
+// navigation wird unsichtbar gemacht, damit nicht beide gleichzeitig aktiv sein können
   menulinien.classList.toggle("unsichtbar");
+// Zahnrad get weg, X erscheint
   einstgear.classList.toggle("einst-weg");
   einstclose.classList.toggle("einst-weg");
 
   var einst = document.getElementById("nav-einst-einst");
 
+// Das Eingstellungsmenu wird für die Animation folgendermassen bearbeitet..
+// reinkommen: sichtbar gemacht, animation zum reinkommen
+// rauskommen: animation zum rauskommen, unsichtbar (Dafür braucht es die beiden delayss)
   if (einst.classList.contains("unsichtbar")) {
     einst.classList.remove("unsichtbar");
     setTimeout(function(){
@@ -59,10 +72,12 @@ function einst_icon_change() {
     }, 300);
   }
 
+// unsichbarer Container wird hinzugefügt
   var empty = document.getElementById("leerecontainer");
   empty.classList.toggle("unsichtbar");
 }
 
+// Dropdownmenu entweder geöffnet oder geschlossen
 function dropdown_aktiv() {
   var ddicon = document.getElementById("dropdownicon");
   var zeigen = document.getElementById("nav-dropdown");
