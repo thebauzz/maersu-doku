@@ -58,7 +58,7 @@ function einst_icon_change() {
 
 // Das Eingstellungsmenu wird für die Animation folgendermassen bearbeitet..
 // reinkommen: sichtbar gemacht, animation zum reinkommen
-// rauskommen: animation zum rauskommen, unsichtbar (Dafür braucht es die beiden delayss)
+// rauskommen: animation zum rauskommen, unsichtbar (Dafür braucht es die beiden delays)
   if (einst.classList.contains("unsichtbar")) {
     einst.classList.remove("unsichtbar");
     setTimeout(function(){
@@ -87,47 +87,67 @@ function dropdown_aktiv() {
 
 }
 
+// Funktion wird ausgelöst, wenn Nav oder Einstellungsmenu geöffet wurde
 function wegmitallem() {
+// wurde nav ausgelöst? dann wird dieses if getriggered
   var nav = document.getElementById("nav-menu-nav");
-
   if (nav.classList.contains("nav-rein")) {
     nav.classList.remove("nav-rein");
 
+// Zahnrad wieder sichtbar
     var einstgear = document.getElementById("nav-einst-gear");
     einstgear.classList.toggle("unsichtbar");
 
+// drehen vom X zu den 3 Linien
     var menulinien = document.getElementById("nav-menu-linien");
     menulinien.classList.toggle("menu-weg");
-
     var menuclose = document.getElementById("nav-menu-close");
     menuclose.classList.toggle("menu-weg");
   }
 
+// wurde einstellungsmenu ausgelöst? dann wird dieses if getriggered
   var einst = document.getElementById("nav-einst-einst")
-
   if (einst.classList.contains("einst-rein")) {
-    einst.classList.remove("einst-rein");
-    einst.classList.add("unsichtbar");
 
+// 3 Linien wieder sichtbar
     var navlinie = document.getElementById("nav-menu-linien");
     navlinie.classList.toggle("unsichtbar");
 
+// drehe vom X zum Zahnrad
     var einstgear = document.getElementById("nav-einst-gear");
     einstgear.classList.toggle("einst-weg");
-
     var einstclose = document.getElementById("nav-einst-close");
     einstclose.classList.toggle("einst-weg");
+
+// Das Eingstellungsmenu wird für die Animation folgendermassen bearbeitet..
+// reinkommen: sichtbar gemacht, animation zum reinkommen
+// rauskommen: animation zum rauskommen, unsichtbar (Dafür braucht es die beiden delays)
+    if (einst.classList.contains("unsichtbar")) {
+      einst.classList.remove("unsichtbar");
+      setTimeout(function(){
+        einst.classList.add("einst-rein");
+      }, 10);
+    }
+    else if (einst.classList.contains("einst-rein")) {
+      einst.classList.remove("einst-rein");
+      setTimeout(function(){
+        einst.classList.add("unsichtbar");
+      }, 300);
+    }
   }
 
+// unsichtbarer Container wieder weg
   var unsichtbar = document.getElementById("leerecontainer");
   unsichtbar.classList.toggle("unsichtbar")
 }
 
+// wenn die Schrift gewechselt wurde, die beiden Klassen einmal wechseln
 function schriftwechsel() {
   document.getElementById("body").classList.toggle("font1");
   document.getElementById("body").classList.toggle("font2");
 }
 
+// dunkler mode aktiv/inaktiv
 function themewechsel() {
   body = document.getElementById("body");
 
