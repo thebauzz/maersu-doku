@@ -4,6 +4,8 @@ function schongescrollt() {
   var scrollposition = window.pageYOffset;
   var sticky = document.getElementById("stickynav");
 
+// Bereits 300px gescrollt?
+// Ja = .nav-fixed wird geadded, Nein = .nav-fixed wird entfernt
   if (scrollposition >= 300) {
     sticky.classList.add("nav-fixed");
   }
