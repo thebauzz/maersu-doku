@@ -376,3 +376,57 @@ select:focus {
   left: 0;
   z-index: 5000;
 }
+
+/*
+ *
+ * CONTENT
+ *
+*/
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+article {
+  height: 300px;
+  width: 100%;
+  border-bottom: 3px solid var(--body);
+  position: relative;
+  background: green;
+}
+#art1 {
+  background: url("../img/lebenslauf-1.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+#art2 {
+  background: url("../img/lebenslauf-2.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+#art3 {
+  background: url("../img/lebenslauf-3.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+#art4 {
+  background: url("../img/lebenslauf-4.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+#art5 {
+  background: url("../img/lebenslauf-5.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+article#art1 p,
+article#art2 p,
+article#art3 p,
+article#art4 p,
+article#art5 p {
+  width: 100%;
+  color: var(--weiss);
+  font-size: 18px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
