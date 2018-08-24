@@ -16,7 +16,6 @@ body {
  *
 */
 
-
 /* nichts im Header soll man selektieren können */
 header {
   user-select: none;
@@ -25,8 +24,6 @@ header {
 /* Die zwei Schriften die man wechseln kann */
 .font1 { --bodyfont: var(--schrift1); }
 .font2 { --bodyfont: var(--schrift2); }
-
-.abstand { height: 1000px; }
 
 /* Headerbild, ein wenig zugeschnitten */
 .header-image {
