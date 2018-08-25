@@ -415,8 +415,8 @@ article {
   background-size: cover;
 }
 #art5 {
-  background: url("../img/lebenslauf-5.png");
-  background-size: cover!important;
+  background: url("../img/lebenslauf-5.png") no-repeat 50% 50%;
+  background-size: cover;
 }
 #art6 {
   background: url("../img/lebenslauf-6.png") no-repeat 50% 50%;
