@@ -438,3 +438,29 @@ article#art6 p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+div.prjktcontainer {
+  height: 100%;
+  width: 100%;
+  background: var(--dunkelgrau);
+}
+
+div.prjktinhalt {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.prjktinhalt a {
+  margin: 10px 0;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--blau);
+  font-weight: bold;
+  font-size: 18px;
+  transition-duration: 0.3s;
+}
+div.prjktinhalt a:hover {
+  color: var(--weiss);
+}
