@@ -1,102 +1,222 @@
-window.onresize = displayWindowSize;
-window.onload = displayWindowSize;
-
-function displayWindowSize() {
-  Bildbreite = window.innerWidth;
-  nav = document.getElementById("navigation");
-  setting = document.getElementById("settings");
-
-  if (Bildbreite > 470) {
-    nav.classList.add("deskview");
-    nav.classList.remove("mobileview");
-    setting.classList.add("desksetting");
-    setting.classList.remove("mobilesetting");
-  }
-  else {
-    nav.classList.add("mobileview");
-    nav.classList.remove("deskview");
-    setting.classList.add("mobilesetting");
-    setting.classList.remove("desksetting");
-  }
-}
-
+// bei jedem scrollen, soll die Function schongescrollt aufgeruft werden
 window.onscroll = schongescrollt;
 
 function schongescrollt() {
   var scrollposition = window.pageYOffset;
-  var dasda = document.getElementById("navigation");
-  var abstand = document.getElementById("section1");
+  var sticky = document.getElementById("stickynav");
 
-  if (scrollposition >= 280) {
-    dasda.classList.add("blibdobe");
-    abstand.classList.add("abstandwegennav");
+// Bereits 300px gescrollt?
+// Ja = .nav-fixed wird geadded, Nein = .nav-fixed wird entfernt
+  if (scrollposition >= 300) {
+    sticky.classList.add("nav-fixed");
   }
   else {
-    dasda.classList.remove("blibdobe");
-    abstand.classList.remove("abstandwegennav");
+    sticky.classList.remove("nav-fixed");
   }
 }
 
-function chumAbe() {
-  dropdown = document.getElementById("nav-dropdown");
-  ddicon   = document.getElementById("dropdownicon");
+// Navigation kommt rein und raus
+function menu_icon_change() {
+  var einstgear  = document.getElementById("nav-einst-gear");
+  var menulinien = document.getElementById("nav-menu-linien");
+  var menuclose  = document.getElementById("nav-menu-close");
 
-  if (dropdown.classList.contains("dunde")){
-    dropdown.classList.toggle("nope");
-    dropdown.classList.remove("dunde");
-    ddicon.classList.remove("drehen");
+// einst wird unsichtbar gemacht, damit nicht beide gleichzeitig aktiv sein können
+  einstgear.classList.toggle("unsichtbar");
+// 3 Linien weg, das X erscheint
+  menulinien.classList.toggle("menu-weg");
+  menuclose.classList.toggle("menu-weg");
+
+// Navigation kommt rein oder raus
+  var nav = document.getElementById("nav-menu-nav");
+  nav.classList.toggle("nav-rein");
+
+// wurde Dropdown geöffnet, wird es geschlossen wenn die Navigation weg geht
+  var dropdown = document.getElementById("nav-dropdown");
+  if (dropdown.classList.contains("dropdown-rein")) {
+    dropdown.classList.remove("dropdown-rein");
   }
-  else {
-    dropdown.classList.toggle("nope");
-    dropdown.classList.add("dunde");
-    ddicon.classList.add("drehen");
+
+// unsichbarer Container wird hinzugefügt
+  var empty = document.getElementById("leerecontainer");
+  empty.classList.toggle("unsichtbar");
+}
+
+// Einstellungsmenu wird geöffnet oder geschlossen
+function einst_icon_change() {
+  var menulinien = document.getElementById("nav-menu-linien");
+  var einstgear  = document.getElementById("nav-einst-gear");
+  var einstclose = document.getElementById("nav-einst-close");
+
+// navigation wird unsichtbar gemacht, damit nicht beide gleichzeitig aktiv sein können
+  menulinien.classList.toggle("unsichtbar");
+// Zahnrad get weg, X erscheint
+  einstgear.classList.toggle("einst-weg");
+  einstclose.classList.toggle("einst-weg");
+
+  var einst = document.getElementById("nav-einst-einst");
+
+// Das Eingstellungsmenu wird für die Animation folgendermassen bearbeitet..
+// reinkommen: sichtbar gemacht, animation zum reinkommen
+// rauskommen: animation zum rauskommen, unsichtbar (Dafür braucht es die beiden delays)
+  if (einst.classList.contains("unsichtbar")) {
+    einst.classList.remove("unsichtbar");
+    setTimeout(function(){
+      einst.classList.add("einst-rein");
+    }, 10);
+  }
+  else if (einst.classList.contains("einst-rein")) {
+    einst.classList.remove("einst-rein");
+    setTimeout(function(){
+      einst.classList.add("unsichtbar");
+    }, 300);
+  }
+
+// unsichbarer Container wird hinzugefügt
+  var empty = document.getElementById("leerecontainer");
+  empty.classList.toggle("unsichtbar");
+}
+
+// Dropdownmenu entweder geöffnet oder geschlossen
+function dropdown_aktiv() {
+  var ddicon = document.getElementById("dropdownicon");
+  var zeigen = document.getElementById("nav-dropdown");
+
+  ddicon.classList.toggle("drehen");
+  zeigen.classList.toggle("dropdown-rein")
+
+}
+
+// Funktion wird ausgelöst, wenn Nav oder Einstellungsmenu geöffet wurde
+function wegmitallem() {
+// wurde nav ausgelöst? dann wird dieses if getriggered
+  var nav = document.getElementById("nav-menu-nav");
+  var einst = document.getElementById("nav-einst-einst");
+
+  if (nav.classList.contains("nav-rein")) {
+    menu_icon_change();
+  }
+  else if (einst.classList.contains("einst-rein")) {
+    einst_icon_change();
+  };
+}
+
+// wenn die Schrift gewechselt wurde, die beiden Klassen einmal wechseln
+function schriftwechsel() {
+  document.getElementById("body").classList.toggle("font1");
+  document.getElementById("body").classList.toggle("font2");
+}
+
+// dunkler mode aktiv/inaktiv
+function themewechsel() {
+  body = document.getElementById("body");
+
+  body.classList.toggle("darkmode");
+
+  if (body.classList.contains("rothover")) {
+    body.classList.remove("rothover");
+    body.classList.add("hellrothover");
+  }
+  else if (body.classList.contains("hellrothover")) {
+    body.classList.remove("hellrothover");
+    body.classList.add("rothover");
   }
 }
 
-function nav_ine_use() {
-  nav = document.getElementById("nav-nachrechts");
-  dropdown  = document.getElementById("nav-dropdown");
-  leerecont = document.getElementById("leerecontainer");
+// Farb wechslet zu blau
+function setblau() {
 
-  leerecont.classList.toggle("nope");
+// welches element hat sich zu verändern?
+  gruen = document.getElementById("gruen");
+  rot   = document.getElementById("rot");
+  blau  = document.getElementById("blau");
+  body  = document.getElementById("body");
 
-// mach das Hamburgermenu zum X und zurück
-  document.getElementById("normal1").classList.toggle("gedreht1");
-  document.getElementById("normal2").classList.toggle("gedreht2");
-  document.getElementById("normal3").classList.toggle("gedreht3");
-
-// entweder einfüge-animation oder entfern-animation der Navigation
-  if (nav.classList.contains("inemitdem")) {
-    nav.classList.remove("inemitdem");
-    nav.classList.add("usemitdem");
+// anderi hoverklasse entferne
+  if (body.classList.contains("gruenhover")) {
+    body.classList.remove("gruenhover");
   }
-  else if (nav.classList.contains("usemitdem")){
-    nav.classList.remove("usemitdem");
-    nav.classList.add("inemitdem");
+  if (body.classList.contains("rothover")) {
+    body.classList.remove("rothover");
   }
-  else {
-    nav.classList.add("inemitdem");
+  if (body.classList.contains("hellrothover")) {
+    body.classList.remove("hellrothover");
+  }
+
+// orangene rahme um s'blaue kreis
+  blau.classList.add("selected");
+
+// isch vorher gruen gsi? wenn ja, weg mit dem orangene balke
+  if (gruen.classList.contains("selected")) {
+    gruen.classList.remove("selected");
+  }
+// isch vorher rot gsi? wenn ja, weg mit dem orangene balke
+  if (rot.classList.contains("selected")) {
+    rot.classList.remove("selected");
   }
 }
 
-function unsichtbar() {
+// Farb wechslet zu gruen
+function setgruen() {
+// welches element hat sich zu verändern?
+  gruen = document.getElementById("gruen");
+  rot   = document.getElementById("rot");
+  blau  = document.getElementById("blau");
+  body  = document.getElementById("body");
 
-  menu = document.getElementById("menu");
-  menustrich = document.getElementById("normal1");
-  setting = document.getElementById("customsetting");
-  settingicon = document.getElementById("sett-icon-one");
+  body.classList.add("gruenhover");
 
-  if (menustrich.classList.contains("gedreht1")) {
-    setting.classList.add("nope");
+// anderi hoverklasse entferne
+  if (body.classList.contains("rothover")) {
+    body.classList.remove("rothover");
+  }
+  if (body.classList.contains("hellrothover")) {
+    body.classList.remove("hellrothover");
+  }
+
+// orangene rahme um s'gruene kreis
+  gruen.classList.add("selected");
+
+// isch vorher blau gsi? wenn ja, weg mit dem orangene balke
+  if (blau.classList.contains("selected")) {
+    blau.classList.remove("selected");
+  }
+// isch vorher rot gsi? wenn ja, weg mit dem orangene balke
+  if (rot.classList.contains("selected")) {
+    rot.classList.remove("selected");
+  }
+}
+
+// Farb wechslet zu blau
+function setrot() {
+// welches element hat sich zu verändern?
+  gruen = document.getElementById("gruen");
+  rot   = document.getElementById("rot");
+  blau  = document.getElementById("blau");
+  body  = document.getElementById("body");
+
+// darkmode aktiv = hellrothover; darkmode inaktiv = rothover
+  if (body.classList.contains("darkmode")) {
+    body.classList.add("hellrothover");
   }
   else {
-    setting.classList.remove("nope");
+    body.classList.add("rothover");
   }
 
-  if (settingicon.classList.contains("begone")) {
-    menu.classList.add("nope");
+// anderi hoverklasse entferne
+  if (body.classList.contains("gruenhover")) {
+    body.classList.remove("gruenhover");
   }
-  else {
-    menu.classList.remove("nope");
+
+// orangene rahme um s'rote kreis
+  rot.classList.add("selected");
+
+// isch vorher blau gsi? wenn ja, weg mit dem orangene balke
+  if (blau.classList.contains("selected")) {
+    blau.classList.remove("selected");
+  }
+// isch vorher gruen gsi? wenn ja, weg mit dem orangene balke
+  if (gruen.classList.contains("selected")) {
+    gruen.classList.remove("selected");
   }
 }
