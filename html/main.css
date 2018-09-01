@@ -121,8 +121,8 @@ body {
   border-top: 1px solid #ffffff;
   box-shadow: 1px 1px 10px #ffffff;
 }
-/*@media screen and (max-width: 800px){}*/
-ol[start~="5"]{
+/* @media screen and (max-width: 800px){} */
+ol [start~="5"]{
   background: green;
 }
 .bg {
