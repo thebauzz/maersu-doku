@@ -156,3 +156,7 @@ details {
 summary:focus {
   outline: none;
 }
+textarea {
+  color: green;
+  caret-color: red;
+}
