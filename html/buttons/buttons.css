@@ -8,11 +8,11 @@ html, body {
 
 /* Deklarieren einer Variable */
 :root {
-  --rot:      #cc2020;
-  --schwarz:  #000000;
   --weiss:    #ffffff;
   --hellgrau: #e8e8e8;
   --grau:     #292929;
+  --schwarz:  #000000;
+  --rot:      #cc2020;
   --blau:     #1b8ac1;
   --gruen:    #12bc3d;
 }
