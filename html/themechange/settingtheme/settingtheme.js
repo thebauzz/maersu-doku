@@ -1,6 +1,6 @@
 function sideSetting() {
 // erscheinen und verschwinden lassen der icons
-  open   = document.getElementById("one");
+  open  = document.getElementById("one");
   close = document.getElementById("two");
 
   close.classList.toggle("begone");
