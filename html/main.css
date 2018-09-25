@@ -8,21 +8,25 @@ body {
   height: 100%;
   font-family: Verdana, sans-serif;
 }
-#section1,
-#section2,
+#section1 {
+  width: 80%;
+  padding: 50px 10%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  background: #ffffff;
+}
+#section2 {
+  width: 80%;
+  padding: 50px 10%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  background: #f3f3f3;
+}
 #section3 {
   width: 80%;
   padding: 50px 10%;
   display: grid;
   grid-template-columns: 33% 33% 33%;
-}
-#section1 {
-  background: #ffffff;
-}
-#section2 {
-  background: #f3f3f3;
-}
-#section3 {
   background: #36393d;
 }
 .box1 {
