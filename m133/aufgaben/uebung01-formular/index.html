@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Übung 1 - Formular</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <form method="get" action="formular.php">
+      <fieldset>
+        <legend>Übung 1 - Formular</legend><br>
+          <label>Firma*<br>
+            <input name="firma" type="text" required>
+          </label><br>
+
+          <label>Vorname*<br>
+            <input name="vorname" type="text" required>
+          </label><br>
+
+          <label>Nachname*<br>
+            <input name="nachname" type="text" required>
+          </label><br>
+
+          <label>Adresse*<br>
+            <input name="adresse" type="text" required>
+          </label><br>
+
+          <label>PLZ und Ort*<br>
+            <input name="plz" type="text" required>
+          </label><br>
+
+          <label>Telefon*<br>
+            <input name="tel" type="number" required>
+          </label><br>
+
+          <label>E-Mail Adresse*<br>
+            <input name="email" type="email" required>
+          </label><br>
+
+          <label>Sortiment:<br>
+            <select name="sorti">
+              <option value="1">Optische Kohärenztomographie</option>
+              <option value="2">Sonografie</option>
+              <option value="3">Magnetresonanztomographie</option>
+              <option value="4">Computertomographie</option>
+              <option value="5">Szintigraphie</option>
+              <option value="6">Positions-Emissions-Tomographie</option>
+            </select>
+          </label><br>
+
+          <label>Branche:<br>
+            <input type="radio" name="branche" value="Krankenhaus"> Krankenhaus<br>
+            <input type="radio" name="branche" value="Forschung"  > Forschung<br>
+            <input type="radio" name="branche" value="Bildung"    > Bildung<br>
+            <input type="radio" name="branche" value="Endkunde"   > Endkunde<br>
+          </label><br>
+
+          <label>Mitteilung<br>
+            <textarea placeholder="Schreiben Sie uns Ihre Mitteilung..." id="mitteilung" name="mitteilung"></textarea>
+          </label><br>
+
+          <label>Newsletter<br>
+            <input type="checkbox" name="newsletter" id="newsletter">
+          </label><br>
+
+          <input type="submit" value="Submit"><input type="reset" value="Reset">
+
+      </fieldset>
+    </form>
+  </body>
+</html>
