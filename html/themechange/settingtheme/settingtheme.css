@@ -39,8 +39,8 @@ body {
   --icons:      var(--dunkelgrau);
   --closeicon:  var(--rot);
   --body:       var(--weiss);
-  --article:      var(--weiss);
-  --articletext:  var(--schwarz);
+  --article:    var(--weiss);
+  --articletext:var(--schwarz);
   --select:     var(--hellgrau);
   --boxbg:      var(--hellstesgrau);
   --boxhover:   var(--weiss);
@@ -54,8 +54,8 @@ body {
   --icons:      var(--weiss);
   --closeicon:  var(--hellrot);
   --body:       var(--dunklergrau);
-  --article:      var(--grau);
-  --articletext:  var(--weiss);
+  --article:    var(--grau);
+  --articletext:var(--weiss);
   --select:     var(--dunkelgrau);
   --boxbg:      var(--dunkelgrau);
   --boxhover:   var(--dunklergrau);
