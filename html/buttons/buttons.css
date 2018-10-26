@@ -473,9 +473,7 @@ Buttons Reihe 7
 	position: absolute;
 	z-index: -1;
 	transition: all 0.2s;
-}
-.r7_c1:after {
-	width: 0;
+  width: 0;
 	height: 100%;
 	bottom: 0;
 	left: 0;
@@ -502,9 +500,7 @@ Buttons Reihe 7
 	position: absolute;
 	z-index: -1;
 	transition: all 0.2s;
-}
-.r7_c2:after {
-	width: 0;
+  width: 0;
 	height: 100%;
 	bottom: 0;
 	left: 0;
@@ -531,8 +527,6 @@ Buttons Reihe 7
 	position: absolute;
 	z-index: -1;
 	transition: all 0.2s;
-}
-.r7_c3:after {
   width: 0;
 	height: 100%;
 	bottom: 0;
@@ -560,8 +554,6 @@ Buttons Reihe 7
 	position: absolute;
 	z-index: -1;
 	transition: all 0.2s;
-}
-.r7_c4:after {
   width: 0;
 	height: 100%;
 	bottom: 0;
