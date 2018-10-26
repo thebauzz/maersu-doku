@@ -576,3 +576,255 @@ Buttons Reihe 7
 .r7_c4:active:after {
 	width: 104%;
 }
+
+/*
+Buttons Reihe 8
+*/
+.r8_c1 {
+  border: none;
+  text-decoration: none;
+  position: relative;
+}
+.r8_c1:before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  background: var(--schwarz);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
+.r8_c1:hover:before {
+  transform: scaleX(1);
+  transition: transform 0.4s;
+}
+
+.r8_c2 {
+  border: none;
+  color: var(--rot);
+  text-decoration: none;
+  position: relative;
+}
+.r8_c2:before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  background: var(--rot);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
+.r8_c2:hover:before {
+  transform: scaleX(1);
+  transition: transform 0.4s;
+}
+
+.r8_c3 {
+  border: none;
+  color: var(--gruen);
+  text-decoration: none;
+  position: relative;
+}
+.r8_c3:before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  background: var(--gruen);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
+.r8_c3:hover:before {
+  transform: scaleX(1);
+  transition: transform 0.4s;
+}
+
+.r8_c4 {
+  border: none;
+  color: var(--blau);
+  text-decoration: none;
+  position: relative;
+}
+.r8_c4:before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  background: var(--blau);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
+.r8_c4:hover:before {
+  transform: scaleX(1);
+  transition: transform 0.4s;
+}
+
+/*
+Buttons Reihe 9
+*/
+.r9_c1 {
+  border: none;
+  text-decoration: none;
+  position: relative;
+}
+.r9_c1:before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  background: var(--schwarz);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
+.r9_c1:hover:before {
+  transform: scaleX(1);
+  transition: transform 0.4s;
+}
+.r9_c1:after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 0%;
+  width: 100%;
+  height: 2px;
+  background: var(--schwarz);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s;
+}
+.r9_c1:hover:after {
+  transform: scaleX(1);
+  transition: transform 0.4s;
+}
+
+.r9_c2 {
+  border: none;
+  color: var(--rot);
+  text-decoration: none;
+  position: relative;
+}
+.r9_c2:before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  background: var(--rot);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
+.r9_c2:hover:before {
+  transform: scaleX(1);
+  transition: transform 0.4s;
+}
+.r9_c2:after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 0%;
+  width: 100%;
+  height: 2px;
+  background: var(--rot);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s;
+}
+.r9_c2:hover:after {
+  transform: scaleX(1);
+  transition: transform 0.4s;
+}
+
+.r9_c3 {
+  border: none;
+  color: var(--gruen);
+  text-decoration: none;
+  position: relative;
+}
+.r9_c3:before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  background: var(--gruen);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
+.r9_c3:hover:before {
+  transform: scaleX(1);
+  transition: transform 0.4s;
+}
+.r9_c3:after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 0%;
+  width: 100%;
+  height: 2px;
+  background: var(--gruen);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s;
+}
+.r9_c3:hover:after {
+  transform: scaleX(1);
+  transition: transform 0.4s;
+}
+
+.r9_c4 {
+  border: none;
+  color: var(--blau);
+  text-decoration: none;
+  position: relative;
+}
+.r9_c4:before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  background: var(--blau);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
+.r9_c4:hover:before {
+  transform: scaleX(1);
+  transition: transform 0.4s;
+}
+.r9_c4:after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 0%;
+  width: 100%;
+  height: 2px;
+  background: var(--blau);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s;
+}
+.r9_c4:hover:after {
+  transform: scaleX(1);
+  transition: transform 0.4s;
+}
