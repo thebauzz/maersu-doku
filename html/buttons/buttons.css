@@ -828,3 +828,50 @@ Buttons Reihe 9
   transform: scaleX(1);
   transition: transform 0.4s;
 }
+
+/*
+Buttons Reihe 10
+*/
+.r10_c1 {
+  color: var(--schwarz);
+  border: none;
+  border-bottom: 5px solid #00000000;
+}
+
+.r10_c1:hover {
+  padding: 10px 5px;
+  border-bottom: 2px solid var(--schwarz);
+}
+
+.r10_c2 {
+  color: var(--rot);
+  border: none;
+  border-bottom: 5px solid #00000000;
+}
+
+.r10_c2:hover {
+  padding: 10px 5px;
+  border-bottom: 2px solid var(--rot);
+}
+
+.r10_c3 {
+  color: var(--gruen);
+  border: none;
+  border-bottom: 5px solid #00000000;
+}
+
+.r10_c3:hover {
+  padding: 10px 5px;
+  border-bottom: 2px solid var(--gruen);
+}
+
+.r10_c4 {
+  color: var(--blau);
+  border: none;
+  border-bottom: 5px solid #00000000;
+}
+
+.r10_c4:hover {
+  padding: 10px 5px;
+  border-bottom: 2px solid var(--blau);
+}
