@@ -1,0 +1,616 @@
+/*
+** Das ganze ist von oben nach unten sortiert.
+** Headerbilder, Navbalken, Menuicon, Logo, Navigation, Content & dann der Footer
+*/
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: var(--bg);
+  font-family: "Lato", sans-serif;
+}
+
+.content {
+  min-height: 100%;
+  position: relative;
+}
+
+/*
+**
+**
+** === HEADER ===
+*/
+
+/* nichts im header soll selektiert werden können. */
+header {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.titellogo {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  top: 55px;
+  left: calc(50% - 75px);
+}
+
+/* das Curling Bild */
+.titelbild {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background: url("../img/titelbild.png") no-repeat 50% 25%;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 4vw), 0 100%);
+}
+
+/* damit der weggeschnittene Bereich weiss ist, kommt dieser Container dazwischen */
+.titelbg {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 0px;
+  background: var(--nav-bg);
+}
+
+/*
+** === NAVIGATIONSBALKEN ===
+*/
+
+/* Der dunkle Balken */
+.navbalken {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  background: var(--nav-bg);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+  border-bottom: 3px solid var(--nav-border);
+  z-index: 9000;
+}
+
+/* wurde 300px gescrollt, wird diese Klasse dem navalken angehängt dass es oben bleibt */
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Das Bärenlogo rechts */
+.logoimage {
+  height: 66px;
+  width: auto;
+  position: absolute;
+  right: 5%;
+  bottom: 7px;
+  transition: 0.5s;
+}
+
+.hover:hover {
+  opacity: 0.4;
+}
+
+/* Platzieren der drei Strichen fürs Menu */
+#nav-icon {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  z-index: 9999;
+}
+
+/* Die drei Striche */
+#linie1,
+#linie2,
+#linie3 {
+  width: 40px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: var(--icon);
+  margin: 6px 0;
+  transition-duration: 0.5s;
+}
+
+/* damit alle eingefärbt werden beim hovern */
+#nav-icon:hover > #linie1,
+#nav-icon:hover > #linie2,
+#nav-icon:hover > #linie3 {
+  background: var(--iconhover);
+}
+
+/* die transformation vom obersten strich
+Ja, für diese Zahlen hab ich lange gebraucht.
+*/
+#linie1.gedreht1 {
+  transform: matrix(0.85, 0.8, -0.7, 0.7, 0, 11);
+  background: var(--closeicon);
+}
+
+/* der zweite strich soll verschwinden */
+#linie2.gedreht2 {
+  opacity: 0;
+}
+
+/* die transformation vom dritten strich */
+#linie3.gedreht3 {
+  transform: matrix(0.85, -0.8, 0.7, 0.7, 0, -11);
+  background: var(--closeicon);
+}
+
+/*
+** === NAVIGATION ===
+*/
+
+/* Der Kasten mit der Navigation */
+nav {
+  left: -310px; /* breite + 2x padding */
+  width: 250px;
+  height: 100vh;
+  padding: 0 30px;
+  position: absolute;
+  top: 83px;
+  background: var(--nav-bg);
+  transition: 0.5s;
+}
+
+/* wird das Menu gedrückt, erscheint von der linken Seite die Navigation + Schatten */
+#nav.nav-reinraus {
+  left: 0;
+  box-shadow: 8px 0 20px -2px rgba(0, 0, 0, 0.4);
+}
+
+/* Styling für die platzierung der Navigation */
+nav#nav ul li {
+  padding: 15px;
+  list-style: none;
+  text-align: center;
+}
+
+/* Hier wird der Text gestylt */
+#nav a {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.4s;
+  color: var(--nav-font);
+  border-bottom: 4px solid #00000000;
+}
+
+/* hover effekt über der Navigation */
+#nav a:hover {
+  border-bottom: 2px solid var(--nav-font);
+  color: var(--nav-hover);
+}
+
+/* abtrenner zwischen der nav und dem login Bereich */
+#nav ul:nth-child(2)  {
+  border-top: 1px solid var(--nav-font);
+}
+
+/* Das login soll eher dezent gehalten werden und nicht gross "präsentiert" werden */
+#nav ul:nth-child(2) li a {
+  font-size: 14px;
+}
+
+/* Container über die gesamte Seite (dass man die Navigation ausserhalb wegklicken kann) */
+#leerecontainer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+  /* background: green; /* diesen kommentar ausblenden, wenn Sie wissen wollen was genau das ist :) */
+}
+
+/* hinzugefügt, wenn etwas ausgeblendet werden soll */
+.unsichtbar {
+  display: none;
+}
+
+/*
+**
+**
+** === mAIN CONTENT ===
+*/
+
+::selection {
+  color: var(--weiss);
+  background: var(--hover);
+}
+
+/* Hauptteil mit Abstand auf den Seiten */
+main {
+  position: relative;
+  margin: 150px auto 0 auto;
+  width: 90%;
+}
+
+/* Hauptüberschrift */
+h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 48px;
+  margin: 0;
+}
+
+hr.headline {
+  outline: none;
+  border: 1px solid black;
+  width: 200px;
+  margin: 10px auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* So sieht ein Link aus */
+a {
+  font-size: 16px;
+  color: var(--link);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* Hovereffekt über Link */
+a:hover,
+.topfooter a:hover {
+  color: var(--hover);
+}
+
+/* Zentrierter Text auf Startseite */
+p.intro {
+  color: var(--hover);
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Die Boxen über den CC Bern */
+.boxen {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+/* Inhalte in den Boxen */
+.boxen > div {
+  color: var(--boxfarbe);
+  border: 1px solid var(--boxfarbe);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Trennlinie innerhalb der Boxen */
+.boxen div > hr {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--boxfarbe);
+}
+
+/* Variable boxfarbe erhält beim Hovern einen neuen Wert */
+.boxhover:hover {
+  cursor: pointer;
+  --boxfarbe: #00568c;
+}
+
+/*
+** Turniere
+*/
+
+/* Enfernt den Zwischenabstand zwischen den einzelnen Zellen */
+table.saisonplan {
+  margin-top: 25px;
+  border-collapse: collapse;
+}
+
+/* das spricht immer die erste Spalte an (Datum) */
+.saisonplan th:nth-child(1),
+.saisonplan td:nth-child(1) {
+  text-align: right;
+  height: 30px;
+  border-bottom: 1px solid black;
+}
+
+/* das spricht immer die zweite Spalte an (Event) */
+.saisonplan th:nth-child(2),
+.saisonplan td:nth-child(2) {
+  padding-left: 20px;
+  text-align: left;
+  height: 30px;
+  border-bottom: 1px solid black;
+}
+
+/* Zwischen den Monaten füge ich einen kleinen Abstand ein */
+.emptyrow {
+  height: 40px;
+  border: none!important;
+}
+
+/* Hovereffekt bei Links in der Turniertabelle */
+td a:hover {
+  border-bottom: 2px solid black;
+}
+
+/*
+** Nachwuchsteams
+*/
+
+/* Styling der Tabelle mit den Nachwuchsteams */
+.teamtable {
+  margin-top: 25px;
+  border-collapse: collapse;
+}
+
+/* Abstand zwischen 2 Teams */
+.abstand {
+  height: 50px;
+}
+
+/* Teambild in der linken Tabellenspalte */
+.bildlinks {
+  text-align: right;
+}
+
+/* Teambild in der rechten Tabellenspalte */
+.bildrechts {
+  text-align: left;
+}
+
+/* Teamtext in der linken Tabellenspalte */
+.textlinks {
+  text-align: right;
+  padding-right: 5%;
+}
+
+/* Teamtext in der rechten Tabellenspalte */
+.textrechts {
+  text-align: left;
+  padding-left: 5%;
+}
+
+/* Breite der Teambilder */
+.teambild {
+  width: 50%;
+}
+
+/*
+** Curling Bern
+*/
+
+.mitgliederclubs {
+  margin-top: 50px;
+}
+.mitgliederclubs a {
+  line-height: 25px;
+}
+
+/*
+**
+**
+** === FOOTER ===
+*/
+
+footer {
+	width: 100%;
+  background: var(--ftr-oben);
+}
+
+/* der obere Footer Teil mit dem Kontakt/Newsletter */
+.topfooter {
+  height: 200px;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+/* e-mail im Footer */
+.topfooter a {
+  color: var(--ftr-link);
+}
+
+/* schrift + abstand um */
+.topfooter > div {
+  padding: 25px 15px 0 15px;
+  color: var(--ftr-font);
+}
+
+/* der dunkle Footerteil ganz unten */
+.bottomfooter {
+  height: 50px;
+  width: 90%;
+  background: var(--ftr-unten);
+  line-height: 50px;
+  color: var(--link);
+  padding-left: 10%;
+}
+
+/*
+ * Newsletter Formular
+*/
+
+/* das weisse Formularfeld */
+.newsletter input[type="text"] {
+  height: 18px;
+  width: 200px;
+  padding: 2px;
+  border: 2px solid rgba(0,0,0,0);
+}
+
+/* blau Outline, wenn das Feld angeklickt ist */
+.newsletter input[type="text"]:focus,
+.newsletter input[type="submit"]:focus {
+  outline: 2px solid var(--hover);
+}
+
+/* Styling vom Submit button */
+.newsletter input[type="submit"] {
+  width: 100px;
+  padding: 4px;
+  margin: 10px auto 0 auto;
+  cursor: pointer;
+  background: rgba(0,0,0,0);
+  transition: 0.3s;
+  border: 1px solid var(--weiss);
+  color: var(--weiss);
+}
+
+/*
+ * LOGIN / SIGN UP Bereich
+*/
+
+/*  */
+.neuRegistriert {
+  color: rgba(0,0,0,0);
+  padding-bottom: 20px;
+  user-select: none;
+}
+.visible {
+  color: var(--success);
+}
+
+/* login Formularbreite */
+.formular {
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* für das LOGIN / SIGN UP im Fieldset Platz lassen */
+fieldset {
+  position: relative;
+  padding-top: 20px;
+  border: 1px solid var(--schwarz);
+}
+
+/* LOGIN / SIGN UP am Rand vom Formular */
+.textlogin,
+.textsignup {
+  position: absolute;
+  top: -8px;
+  padding: 0 5px;
+  background: var(--bg);
+  user-select: none;
+}
+
+/* LOGIN soll einen kleinen Abstand links haben */
+.textlogin {
+  left: 5px;
+}
+/* SIGN UP soll einen kleinen Abstand rechts haben */
+.textsignup {
+  right: 5px;
+}
+/* Das ausgewählte Formular soll Fett und schwarz sein */
+.formactive {
+  font-weight: 800;
+  color: var(--schwarz);
+}
+/* Man soll wissen, dass man das nicht ausgewählte anklicken kann */
+.forminactive {
+  color: rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+
+/* styling aller Inputs im LOGIN/SIGN UP Formular */
+.signup input[type="text"],
+.signup input[type="password"],
+.signup input[type="email"],
+
+.login  input[type="text"],
+.login  input[type="password"] {
+  height: 18px;
+  width: 200px;
+  padding: 2px;
+  border: 1px solid var(--schwarz);
+}
+
+/* styling aller Inputs, wenn sie ausgewählt sind */
+.signup input[type="text"]:focus,
+.signup input[type="password"]:focus,
+.signup input[type="submit"]:focus,
+.signup input[type="email"]:focus,
+
+.login  input[type="text"]:focus,
+.login  input[type="password"]:focus,
+.login  input[type="submit"]:focus {
+  outline: 2px solid var(--hover);
+}
+
+/* Ausrichtung aller Formularelemente */
+.signup label,
+.signup input[type="text"],
+.signup input[type="password"],
+.signup input[type="email"] ,
+
+.login  label,
+.login  input[type="text"],
+.login  input[type="password"] {
+  display: block;
+  text-align: left;
+  margin-left: 30px;
+}
+
+/* styling der submit buttons */
+.signup input[type="submit"],
+.login  input[type="submit"] {
+  display: block;
+  width: 100px;
+  padding: 4px;
+  margin: 10px auto 0 auto;
+  cursor: pointer;
+  background: rgba(0,0,0,0);
+  transition: 0.3s;
+  border: 1px solid var(--schwarz);
+  color: var(--schwarz);
+}
+
+/* Hovereffekt vom Submit button */
+.newsletter input[type="submit"]:hover,
+.signup input[type="submit"]:hover,
+.login  input[type="submit"]:hover {
+  background: var(--hover);
+  color: var(--weiss);
+}
+
+/* das nicht ausgewählte Formular soll unsichtbar sein */
+.invisible {
+  display: none;
+}
+
+/* um das Passwort anzuzeigen, eine eigene Klasse */
+.passwortZeigen {
+  font-style: normal;
+  cursor: pointer;
+  display: block;
+  text-align: left;
+  margin-left: 30px;
+  font-size: 10px;
+  user-select: none;
+}
+
+/* Umbruch, der nur auf dem Handy sichtbar ist */
+.mobile-br {
+  display: none;
+}
+/* Umbruch, der nur auf dem PC sichtbar ist */
+.desktop-br {
+  display: block;
+}
+
+p[id^=signuperror],
+p[id^=loginerror] {
+  color: var(--error);
+  font-size: 13px;
+  margin-left: 30px;
+}

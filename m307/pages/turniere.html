@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ZP1 - Projektarbeit M. Gertsch</title>
+  <meta name="author"                content="Marcel Gertsch">
+  <meta name="viewport"              content="width=device-width, initial-scale=1">
+  <link href="../img/favicon.ico"    rel="icon">
+  <link href="../css/normalize.css"  rel="stylesheet">
+  <link href="../css/variablen.css"  rel="stylesheet">
+  <link href="../css/main.css"       rel="stylesheet">
+  <link href="../css/responsive.css" rel="stylesheet">
+  <script src="../js/script.js"></script>
+  <script src="../js/formvalidate.js"></script>
+</head>
+
+<body>
+<div class="content">
+  <header>
+    <!-- titelbild + grauer bg aufgrund des clip-path -->
+    <div class="titelbg"></div>
+    <div class="titelbild"></div>
+    <a href="../index.html">
+      <img src="../img/ccb-logo.png" alt="Curling Bern" class="titellogo">
+    </a>
+
+    <!-- dunkler navbalken -->
+    <section class="navbalken" id="fixednav">
+
+      <!-- Das Logo -->
+      <a href="../index.html">
+        <img src="../img/ccb-iconhover.png" rel="Logo CC Bern Hover" class="logoimage" draggable="false">
+        <img src="../img/ccb-icon.png" rel="Logo CC Bern" class="logoimage hover" draggable="false">
+      </a>
+
+      <!-- das Hamburgermenu-->
+      <div class="" id="nav-icon" onclick="toggleNavigation()">
+        <div id="linie1"></div>
+        <div id="linie2"></div>
+        <div id="linie3"></div>
+      </div>
+
+      <!-- die eigentliche Navigation-->
+      <nav id="nav">
+        <ul>
+          <li><a href="../index.html">Startseite</a></li>
+          <li><a href="turniere.html">Turniere</a></li>
+          <li><a href="teams.html">Berner Teams</a></li>
+          <li><a href="curlingbern.html">Der CC Bern</a></li>
+        </ul>
+        <ul>
+          <li><a href="login.html">login / sign up</a></li>
+        </ul>
+      </nav>
+    </section>
+    <div class="unsichtbar" id="leerecontainer" onclick="toggleNavigation()"></div>
+  </header>
+
+  <main>
+    <h1>Curling Club Bern</h1>
+    <hr class="headline">
+    <h2>Turniere</h2>
+
+    <!-- Tabelle mit allen Turnieren -->
+    <div align="center">
+      <table class="saisonplan">
+        <!-- Deklarieren der Breiten von beiden Spalten-->
+        <colgroup>
+          <col width="30%">
+          <col width="80%">
+        </colgroup>
+        <tbody>
+          <!-- Tabellenüberschrift -->
+          <tr>
+            <th>Dauer</th>
+            <th>Event</th>
+          </tr>
+
+          <!-- Turnier 1 -->
+          <tr>
+            <td>12.10.2018 - 14.10.2018</td>
+            <td><a target="_blank" href="https://www.curlingbern.ch/turniere/2018-2019/egger/">22. Egger Trophy</a></td>
+          </tr>
+
+          <!-- Turnier 2 -->
+          <tr>
+            <td>27.10.2018 - 28.10.2018</td>
+            <td><a target="_blank" href="https://www.curlingbern.ch/turniere/2018-2019/linck/">74. Walter Linck Trophy</a></td>
+          </tr>
+
+          <!-- Turnier 3 -->
+          <tr>
+            <td>30.10.2018 - 31.10.2018</td>
+            <td><a target="_blank" href="https://www.curlingbern.ch/turniere/2018-2019/veteranen/">46. BVT Berner Veteranen Turnier</a></td>
+          </tr>
+
+          <!-- Monantsabtrennung -->
+          <tr colspan="2" class="emptyrow"></tr>
+
+          <!-- Turnier 4 -->
+          <tr>
+            <td>02.11.2018 - 04.11.2018</td>
+            <td><a target="_blank" href="https://www.curlingbern.ch/turniere/2018-2019/inter/">22. Grand Prix Bern Inter</a></td>
+          </tr>
+
+          <!-- Turnier 5 -->
+          <tr>
+            <td>10.11.2018</td>
+            <td><a target="_blank" href="https://www.curlingbern.ch/turniere/2018-2019/club_open/">	Club Open</a></td>
+          </tr>
+
+          <!-- Turnier 6 -->
+          <tr>
+            <td>16.11.2018 - 18.11.2018</td>
+            <td><a target="_blank" href="https://www.curlingbern.ch/turniere/2018-2019/mdb/">3. Mixed Doubles Bern</a></td>
+          </tr>
+
+          <!-- Turnier 7 -->
+          <tr>
+            <td>24.11.2018</td>
+            <td><a target="_blank" href="https://www.curlingbern.ch/turniere/2018-2019/fifty/">Fifty-Fifty Cup</a></td>
+          </tr>
+
+          <!-- Turnier 8 -->
+          <tr>
+            <td>25.11.2018 - 26.11.2018</td>
+            <td><a target="_blank" href="https://www.curlingbern.ch/turniere/2018-2019/zibele/">17. Zibele Cup</a></td>
+          </tr>
+
+          <!-- Monantsabtrennung -->
+          <tr colspan="2" class="emptyrow"></tr>
+
+          <!-- Turnier 9 -->
+          <tr>
+            <td>01.12.2018 - 02.12.2018</td>
+            <td><a target="_blank" href="https://www.curlingbern.ch/turniere/2018-2019/yschbaere/">51. Yschbäre Trophy</a></td>
+          </tr>
+
+          <!-- Monantsabtrennung -->
+          <tr colspan="2" class="emptyrow"></tr>
+
+          <!-- Turnier 10 -->
+          <tr>
+            <td>05.01.2019 - 06.01.2019</td>
+            <td><a target="_blank" href="https://www.curlingbern.ch/turniere/2018-2019/njt/">19. Neujahrsturnier</a></td>
+          </tr>
+
+          <!-- Turnier 11 -->
+          <tr>
+            <td>10.01.2019 - 13.01.2019</td>
+            <td><a target="_blank" href="https://www.curlingbern.ch/turniere/2018-2019/ibdc/">51th International Ladies Cup</a></td>
+          </tr>
+
+          <!-- Turnier 12 -->
+          <tr>
+            <td>18.01.2019</td>
+            <td><a target="_blank" href="https://www.curlingbern.ch/turniere/2018-2019/damen/">Ladies Cup</a></td>
+          </tr>
+
+          <!-- Monantsabtrennung -->
+          <tr colspan="2" class="emptyrow"></tr>
+
+          <!-- Turnier 13 -->
+          <tr>
+            <td>09.02.2019 - 10.02.2019</td>
+            <td><a target="_blank" href="https://www.curlingbern.ch/turniere/2018-2019/crystal/">Crystal Trophy 2019</a></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <div style="height:250px;"></div>
+
+  <footer>
+    <div class="topfooter">
+      <!-- dunkler Footer mit Kontaktdaten + Newsletter Anmeldung -->
+      <div class="footerkontakt">
+        <h3>Kontakt</h3>
+        <p><br />Curling Club Bern</p>
+        <p>Mingerstrasse 16</p>
+        <p>CH-3014 Bern</p>
+        <p><br />Tel: +41 31 332 06 20</p>
+        <p>E-Mail: <a href="mailto:info@curlingbern.ch">info@curlingbern.ch</a></p>
+      </div>
+
+      <div class="footernews">
+        <h3>Newsletter</h3><br/>
+        <p id="formErr">&nbsp;<br class="mobile-br"/>&nbsp;</p>
+        <form name="news" class="newsletter" novalidate method="post" autocomplete="off" action="javascript:void(0)" onsubmit="formularCheck()">
+          <input type="text" name="email" id="email"><br class="desktop-br"/>
+          <input type="submit" value="anmelden">
+          <!-- pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" -->
+      </div>
+    </div>
+    <!-- fast schwarzer Footer mit Copyright Informationen -->
+    <div class="bottomfooter">
+      <p>® Curling Club Bern. Created By Marcel Gertsch.</p>
+    </div>
+  </footer>
+</div>
+</body>
+
+</html>

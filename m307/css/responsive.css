@@ -1,0 +1,97 @@
+@media screen and (max-width: 1000px) {
+  /* bei max-width 1000px, auf der Startseite nur noch 2 Boxen nebeneinander anzeigen */
+  .boxen {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  /* vergrössern der Bildbreite bei kleineren Displays */
+  .teambild {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  /* Mobile Version braucht nicht so einen grossen Titel */
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Footerelemente untereinander anzeigen, bei max-width 600px */
+  .topfooter {
+    height: 400px;
+    width: 80%;
+    margin: 10% auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  /* bei Mobile, Feld zentrieren */
+  .newsletter input[type="text"] {
+    display: block;
+    height: 18px;
+    width: 200px;
+    margin: 0 auto;
+    padding: 2px;
+    border: 2px solid rgba(0,0,0,0);
+  }
+
+  /* bei Mobile, Submit Button zentrieren */
+  .newsletter input[type="submit"] {
+    display: block;
+    width: 100px;
+    margin: 10px auto 0 auto;
+    cursor: pointer;
+    padding: 4px;
+    background: rgba(0,0,0,0);
+    transition: 0.3s;
+    border: 1px solid var(--weiss);
+    color: var(--weiss);
+  }
+
+  /* Fehlermeldung auch zentrieren bei Mobile */
+  #formErr {
+    text-align: center;
+  }
+
+  /* Kontakt & Newsletter im Footer zentrieren */
+  h3 {
+    text-align: center;
+  }
+
+  /* Umbrüche entweder anzeigen oder nicht */
+  .mobile-br {
+    display: block;
+  }
+  .desktop-br {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+  /* Bei kleinerer Breite soll die Nav über die ganze 100% gehen */
+  nav {
+    left: -104%; /* breite + 4% padding */
+    width: 90%;
+    height: 100vh;
+    padding: 0 6%;
+    position: absolute;
+    top: 83px;
+    background: var(--nav-bg);
+    box-shadow: none;
+    transition: 0.5s;
+  }
+  /* Copyright soll kleiner sein in der Moile Version */
+  .bottomfooter {
+    font-size: 12px;
+  }
+}

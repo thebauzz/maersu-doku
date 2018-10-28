@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,700i,900");
+:root {
+  --weiss:      #ffffff;
+  --schwarz:    #000000;
+
+  --bg:         #f4f4f4; /* angenehmer als reines weiss */
+  --font:       #333333; /* default schriftfarbe, angenehmer als reines schwarz */
+  --link:       #5a5a5a; /* damit a-tag ein wenig herausstechen */
+  --hover:      #1b8ac1; /* globale hover Farbe */
+  --outline:    #00568c; /* ist ein input Feld aktiv, soll der Rahmen diese Farbe erhalten */
+
+  --success:    #017a20; /* Formular erfolgreich */
+  --error:      #cc2020; /* Formular fehlerhaft  */
+
+  --icon:       #dbdbdb; /* menu-icon standardfarbe */
+  --closeicon:  #fc5353; /* "x" farbe */
+  --iconhover:  #47c2ff; /* farbe beim hovern über die icons */
+
+  --nav-bg:     #5a5a5a; /* dunkler hintergrundbalken */
+  --nav-font:   #f4f4f4; /* helle Schriffarbe */
+  --nav-hover:  #47c2ff; /* selbe Farbe wie hover */
+  --nav-border: #333333; /* dunkler Abschlus der Navigation */
+
+  --ftr-oben:   #282828; /* der obere Teil des Footers */
+  --ftr-unten:  #1d1d1d; /* der untere Teil des Footers */
+  --ftr-font:   #dfdfdf; /* Schrift im Footer */
+  --ftr-link:   #ffffff; /* der Link zum E-Mail im Footer */
+
+  --boxfarbe:   #000000; /* Farbe der Boxen auf der Startseite */
+}
