@@ -5,7 +5,7 @@
   font-family: "Ubuntu", sans-serif;
 }
 
-/* Deklarieren einer Variable */
+/* Deklarieren der Farb Variablen */
 :root {
   --rot:       #cc2020;
   --dunkelrot: #590808;
@@ -55,7 +55,7 @@ nav ul a li:hover {
   background: var(--rot);
 }
 
-/* de container vom dropdown - positionierig isc da s'wichtigste */
+/* de container vom dropdown - positionierig isch da s'wichtigste */
 header aside {
   position: fixed;
   left: 180px;
