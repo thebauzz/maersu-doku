@@ -69,7 +69,7 @@ ul li a:after {
 }
 ul li a:hover:after {
   transform: scaleX(1);
-  transform-origin: right
+  transform-origin: right;
 }
 
 .abstandunde {
