@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Scan Directory</title>
+    <title>Übung 24</title>
     <style>
       h2 {margin-top: 15px;}
     </style>

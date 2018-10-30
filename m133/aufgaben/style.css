@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Ubuntu, sans-serif;
+  height: 100%;
+  width: 100%;
+  background: #333333;
+}
+div.content {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+a {
+  margin: 10px 0;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: #1b8ac1;
+  font-weight: bold;
+  font-size: 18px;
+  transition-duration: 0.3s;
+}
+a:hover {
+  color: white;
+}
