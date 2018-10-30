@@ -36,7 +36,7 @@ nav ul li {
 	display: inline-block;
 }
 
-/* hiermit stylt man den text an ich (zählt auch für das dropdown)*/
+/* hiermit stylt man den text an sich (zählt auch für das dropdown)*/
 nav ul li a {
   width: 150px;
   display: block;
