@@ -5,10 +5,8 @@ Erstellt von [Marcel](https://github.com/thebauzz/ "thebauzz, Ersteller") und [N
 
 ## Stats
 ### c_cpp
-_c-taschenrechner:_ 51
-
-_cpp-TicTacToe.cpp:_ 107
-
+_c-taschenrechner:_ 51\
+_cpp-TicTacToe.cpp:_ 107\
 **_Summary:_** 158
 
 ### html
