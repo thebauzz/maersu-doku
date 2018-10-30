@@ -65,9 +65,9 @@ _nav_centered.html:_ 25
 ##### nav_dropdown_hover
 _nav_dropdown_hover.css:_ 83
 
-_nav_dropdown_hover.html:_ 39
+_nav_dropdown_hover.html:_ 37
 
-**Summary:** 122
+**Summary:** 120
 
 ##### nav_dropdown_press
 _nav_dropdown_press.css:_ 119
@@ -124,7 +124,7 @@ _nav_right_stickynojs2.html:_ 25
 
 **Summary:** 79
 
-**_Summary:_** 1249
+**_Summary:_** 1247
 
 #### themechange
 ##### darktheme
@@ -205,4 +205,4 @@ _loginUser.php:_ 34
 **_Summary:_** 1637
 
 ### Total Lines of Code:
-6961
+6959
