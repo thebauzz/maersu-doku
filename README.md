@@ -19,9 +19,7 @@ _test.html:_ 157
 
 #### buttons
 _buttons.css:_ 869
-
 _buttons.html:_ 98
-
 **_Summary:_** 967
 
 #### formular
