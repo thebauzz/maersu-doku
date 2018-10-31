@@ -43,10 +43,12 @@ Erstellt von **[Marcel](https://github.com/thebauzz/ "thebauzz, Ersteller")** un
   + **Summary Nav Centered: 75**
 
 
+
 + **nav dropdown hover**
   + _nav dropdown hover.css:_ 83
   + _nav dropdown hover.html:_ 37
   + **Summary Nav Dropdown Hover: 120**
+
 
 
 + **nav dropdown press**
@@ -56,11 +58,13 @@ Erstellt von **[Marcel](https://github.com/thebauzz/ "thebauzz, Ersteller")** un
   + **Summary Nav Dropdown Press: 177**
 
 
+
 + **nav hamburgeronly**
   + _nav hamburgeronly.css:_ 199
   + _nav hamburgeronly.html:_ 49
   + _nav hamurgeronly.js:_ 48
   + **Summary Nav Hamburger only: 296**
+
 
 
 + **nav hovereffect**
@@ -69,10 +73,12 @@ Erstellt von **[Marcel](https://github.com/thebauzz/ "thebauzz, Ersteller")** un
   + **Summary Nav Hovereffect: 102**
 
 
+
 + **nav right mitlogo**
   + _nav right mitlogo.css:_ 68
   + _nav right mitlogo.html:_ 31
   + **Summary Nav Right w/ Logo: 99**
+
 
 
 + **nav right sticky**
