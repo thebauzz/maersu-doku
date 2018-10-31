@@ -41,29 +41,34 @@ Erstellt von **[Marcel](https://github.com/thebauzz/ "thebauzz, Ersteller")** un
   + _nav centered.css:_ 50
   + _nav centered.html:_ 25
   + **Summary Nav Centered: 75**
-\
+
+
 + **nav dropdown hover**
   + _nav dropdown hover.css:_ 83
   + _nav dropdown hover.html:_ 37
   + **Summary Nav Dropdown Hover: 120**
-\
+
+
 + **nav dropdown press**
   + _nav dropdown press.css:_ 119
   + _nav dropdown press.html:_ 41
   + _nav dropdown press.js:_ 17
   + **Summary Nav Dropdown Press: 177**
-\
+
+
 + **nav hamburgeronly**
   + _nav hamburgeronly.css:_ 199
   + _nav hamburgeronly.html:_ 49
   + _nav hamurgeronly.js:_ 48
   + **Summary Nav Hamburger only: 296**
-\
+
+
 + **nav hovereffect**
   + _nav hovereffect.css:_ 77
   + _nav hovereffect.html:_ 25
   + **Summary Nav Hovereffect: 102**
-\
+
+
 + **nav right mitlogo**
   + _nav right mitlogo.css:_ 68
   + _nav right mitlogo.html:_ 31
