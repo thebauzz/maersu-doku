@@ -122,10 +122,10 @@ Erstellt von **[Marcel](https://github.com/thebauzz/ "thebauzz, Ersteller")**.
 ### m307
 ### Projekt Marcel
 + **css**
- + _main.css:_ 616
- + _responsive.css:_ 97
- + _variablen.css:_ 30
- + **Summary CSS: 743**
+  + _main.css:_ 616
+  + _responsive.css:_ 97
+  + _variablen.css:_ 30
+  + **Summary CSS: 743**
 
 
 + **js**
