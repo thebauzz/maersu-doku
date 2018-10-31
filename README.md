@@ -1,16 +1,18 @@
-# MAERSU Dokumentation
+# Maersu Dokumentation
 Eine Dokumentation verschiedener Module der WISS Informatikschule in Zürich. Viele HTML Templates und etliche andere Hilfreiche Dateien.
 
 Erstellt von [Marcel](https://github.com/thebauzz/ "thebauzz, Ersteller"). 
 
-## Stats
-### c_cpp
+======
+
+# Stats
+## c_cpp
 _c-taschenrechner:_ 51\
 _cpp-TicTacToe.cpp:_ 107\
 **_Summary C_CPP:_** 158
 
-### html
-#### random tests
+## html
+### random tests
 _main.css:_ 166\
 _test.html:_ 157\
 **_Summary Random Tests:_** 323
