@@ -1,4 +1,3 @@
-***asdfasdf***
 # Maersu Dokumentation
 Eine Dokumentation verschiedener Module der WISS Informatikschule in Zürich. Viele HTML Templates und etliche andere Hilfreiche Dateien.
 
