@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/variables.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10">
+          <header>
+            <nav>
+        			<ul>
+        				<li><a href="../index.html">HOME</a></li><!--
+        		 --><li><a href="gewinnspiel.html">GEWINNSPIEL</a></li><!--
+             --><li><a class="active" href="#">LOGIN / REGISTER</a>
+                  <ul>
+        						<li><a href="login.html">LOGIN</a></li>
+        						<li><a class="active" href="register.html">REGISTER</a></li>
+        					</ul>
+        				</li>
+        			</ul>
+        		</nav>
+          </header>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+          <main>
+            <div class="register">
+              <form id="userform" action="gewinnspiel.html" method="post">
+
+                <div class="form-group">
+                  <div class="uhover">
+                    <label for="username">Username: *</label>
+                  </div><br>
+                  <input class="form-control" type="text" name="username" id="username" autofocus><br>
+                  <div class="uinfo">Darf nur einmal existieren</div><br>
+                </div>
+
+                <div class="form-group">
+                  <div class="nhover">
+                    <label for="nname">Name: *</label>
+                  </div><br>
+                  <input class="form-control" type="text" name="nname" id="nname"><br>
+                  <div class="ninfo">Ihr Nachname</div><br>
+                </div>
+
+                <div class="form-group">
+                  <div class="vnhover">
+                    <label for="vname">Vorname: *</label>
+                  </div><br>
+                  <input class="form-control" type="text" name="vname" id="vname"><br>
+                  <div class="vninfo">Ihr Vorname</div><br>
+                </div>
+
+                <div class="form-group">
+                  <div class="ehover">
+                    <label for="email">E-Mail: *</label>
+                  </div><br>
+                  <input class="form-control" type="email" name="email" id="email" size="30"><br>
+                  <div class="einfo">Ihre E-Mail Adresse z.B. noeamon@gmail.com (max. 30 Zeichen) </div><br>
+                </div>
+
+                <div class="form-group">
+                  <div class="ohover">
+                    <label for="ort">Ort: *</label>
+                  </div><br>
+                  <input class="form-control" type="text" name="ort" id="ort"><br>
+                  <div class="oinfo">Ort z.B. Aarau</div><br>
+                </div>
+
+                <div class="form-group">
+                  <div class="plzhover">
+                    <label for="plz">PLZ: *</label>
+                  </div><br>
+                  <input class="form-control" type="number" name="plz" id="plz"><br>
+                  <div class="plzinfo">Postleitzahl von deiner Stadt / Ortschaft z.B. 5003 (4-5 Zeichen)</div><br>
+                </div>
+
+                <div class="form-group">
+                  <div class="ahover">
+                    <label for="strasse">Adresse: *</label>
+                  </div><br>
+                  <input class="form-control" type="text" name="adresse" id="strasse"><br>
+                  <div class="ainfo">Strasse und Hausnummer</div><br>
+                </div>
+
+                <div class="form-group">
+                  <div class="phover">
+                    <label for="password">Passwort: *</label>
+                  </div><br>
+                  <input class="form-control" type="password" name="pword" id="password"><br>
+                  <div class="pinfo">Muss mindestens 8 Zeichen haben und eine Zahl</div><br>
+                </div>
+                <div class="form-group">
+                  <label class="password-meter-label" for="password">Passwortstärke:</label>
+                    <div class="password-meter">
+                        <div class="password-meter-message">
+                        &nbsp;
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="wphover">
+                    <label for="confirm_password">Passwort Wiederholen: *</label>
+                  </div><br>
+                  <input class="form-control" type="password" name="wpword" id="confirm_password"><br>
+                    <div class="wpinfo">Wiederholen sie das oben eingegebene Passwort</div><br>
+                </div>
+
+                <div class="form-group">
+                  <label class="checkbox-inline" for="newsletter">Newsletter: </label>
+                  <input name="newsletter" id="newsletter" type="checkbox">
+                </div>
+
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary">REGISTRIEREN</button>
+               </div>
+              <br>
+              <a class="reglink" href="../html/login.html">Login</a>
+            </div>
+          </main>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="kontakt">
+              <h2>Kontakt</h2>
+              <p>Noé Lüthold <br>
+                Delfterstrasse 24 <br>
+                5004 Aarau</p>
+              <p>Mobile: 078 720 45 49 <br>
+                E-Mail: <a class="mail" href="mailto:noeamon@gmail.com">noeamon@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/jquery.validate.min.js"></script>
+    <script src="../js/jquery.validate.password.js"></script>
+    <script src="../js/validate.js"></script>
+  </body>
+</html>
