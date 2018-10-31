@@ -1,7 +1,7 @@
 # Maersu Dokumentation
 Eine Dokumentation verschiedener Module der WISS Informatikschule in Zürich. Viele HTML Templates und etliche andere Hilfreiche Dateien.
 
-Erstellt von [Marcel](https://github.com/thebauzz/ "thebauzz, Ersteller").
+Erstellt von **[Marcel](https://github.com/thebauzz/ "thebauzz, Ersteller")**.
 
 
 # Stats
@@ -96,7 +96,7 @@ Erstellt von [Marcel](https://github.com/thebauzz/ "thebauzz, Ersteller").
 **_Summary navigation:_** 1247
 
 ### themechange
-+ darktheme
++ **darktheme**
  + _darktheme.html:_ 59
  + _darktheme.js:_ 11
  + _main darktheme.css:_ 64
@@ -104,55 +104,59 @@ Erstellt von [Marcel](https://github.com/thebauzz/ "thebauzz, Ersteller").
  + **Summary Dark Theme: 255**
 
 
-+ settingtheme
++ **settingtheme**
  + _settingtheme.css:_ 370
  + _settingtheme.html:_ 91
  + _settingtheme.js:_ 158
  + **Summary Setting Themee: 619**
 
 
-+ themeswitch
++ **themeswitch**
  + _themeswitch.css:_ 116
  + _themeswitch.html:_ 42
  + _themeswitch.js:_ 121
  + **Summary Theme Switch: 279**
 
-**_Summary Theme Change:_** 1153
+**_Summary Theme Change:_ 1153**
 
 ### m307
-#### Projekt_Marcel
-##### css
-_main.css:_ 616
-_responsive.css:_ 97
-_variablen.css:_ 30
-**Summary CSS:** 743
+### Projekt Marcel
++ **css**
+ + _main.css:_ 616
+ + _responsive.css:_ 97
+ + _variablen.css:_ 30
+ + **Summary CSS: 743**
 
-##### js
-_formvalidate.js:_ 136
-_script.js:_ 99
-**Summary JS:** 235
 
-##### pages
-_curlingbern.html:_ 133
-_failedlogin.html:_ 159
-_login.html:_ 159
-_mitgliederbereich.html:_ 95
-_teams.html:_ 131
-_turniere.html:_ 206
-**Summary Pages:** 883
++ **js**
+ + _formvalidate.js:_ 136
+ + _script.js:_ 99
+ + **Summary JS: 235**
 
-##### php
-_addUser.php:_ 17
-_checkUser.php:_ 30
-_loginUser.php:_ 34
-**Summary PHP:** 81
 
-##### index.html
-**Summary index.html:** 115
++ **pages**
+ + _curlingbern.html:_ 133
+ + _failedlogin.html:_ 159
+ + _login.html:_ 159
+ + _mitgliederbereich.html:_ 95
+ + _teams.html:_ 131
+ + _turniere.html:_ 206
+ + **Summary Pages: 883**
 
-**_Summary Project Marcel:_** 2057
 
-#### Projekt_Nemo
++ **php**
+ + _addUser.php:_ 17
+ + _checkUser.php:_ 30
+ + _loginUser.php:_ 34
+ + **Summary PHP: 81**
+
+
++ **index.html**
+ + **Summary index.html: 115**
+
+**_Summary Project Marcel:_ 2057**
+
+### Projekt Nemo
 **_Summary Project Nemo:_**
 
 ### Total Lines of Code:
