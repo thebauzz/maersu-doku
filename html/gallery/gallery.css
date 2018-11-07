@@ -11,10 +11,7 @@ html, body {
   --weiss:    #ffffff;
   --hellgrau: #e8e8e8;
   --grau:     #292929;
-  --schwarz:  #000000;
-  --rot:      #cc2020;
   --blau:     #1b8ac196;
-  --gruen:    #12bc3d;
 }
 
 .content {
@@ -88,6 +85,12 @@ html, body {
 	z-index: 99;
 }
 
-#i1:checked ~ #nav_slide #dot1 {background: var(--blau);}
-#i2:checked ~ #nav_slide #dot2 {background: var(--blau);}
-#i3:checked ~ #nav_slide #dot3 {background: var(--blau);}
+#i1:checked ~ #nav_slide #dot1 {
+  background: var(--blau);
+}
+#i2:checked ~ #nav_slide #dot2 {
+  background: var(--blau);
+}
+#i3:checked ~ #nav_slide #dot3 {
+  background: var(--blau);
+}
