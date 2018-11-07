@@ -51,6 +51,7 @@ html, body {
   top: 30px;
   right: 30px;
   cursor: pointer;
+  user-select: none;
 }
 
 .show {
