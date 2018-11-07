@@ -13,7 +13,7 @@ html, body {
   --grau:     #292929;
   --schwarz:  #000000;
   --rot:      #cc2020;
-  --blau:     #1b8ac1;
+  --blau:     #1b8ac196;
   --gruen:    #12bc3d;
 }
 
@@ -28,7 +28,7 @@ html, body {
   position: absolute;
   top: calc(50% - 20px);
   font-size: 40px;
-	color: rgba(0, 0, 0, 0.4);
+	color: rgba(0, 0, 0, 0.15);
   cursor: pointer;
   transition-duration: 0.3s;
 }
@@ -58,24 +58,21 @@ html, body {
 
 #nav_slide {
 	width: 100%;
-	bottom: 12%;
-	height: 11px;
+	bottom: 25px;
 	position: absolute;
 	text-align: center;
 	z-index: 99;
-	cursor: default;
 }
 
 .dots {
-	top: -5px;
-	width: 18px;
-	height: 18px;
-	margin: 0 3px;
+	width: 15px;
+	height: 15px;
+	margin: 0 4px;
 	position: relative;
-	border-radius: 100%;
+	border-radius: 50%;
 	display: inline-block;
 	background: rgba(0, 0, 0, 0.4);
-	transition: .4s;
+	transition: 0.4s;
 	cursor: pointer;
 }
 
