@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+}
+
+/* Deklarieren einer Variable */
+:root {
+  --weiss:    #ffffff;
+  --hellgrau: #e8e8e8;
+  --grau:     #292929;
+  --schwarz:  #000000;
+  --rot:      #cc2020;
+  --blau:     #1b8ac1;
+  --gruen:    #12bc3d;
+}
+
+.content {
+  width: 800px;
+  height: 547px;
+  margin: 0 auto;
+  position: relative;
+  background: grey;
+}
+
+.slide {
+  position: absolute;
+  top: calc(50% - 20px);
+  font-size: 40px;
+  color: #5a5a5a;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.next {
+  right: -40px;
+}
+.prev {
+  left:  -40px;
+}
+
+.next:hover,
+.prev:hover {
+  opacity: 0.7;
+}
+
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.img1 {
+  background: url("img/Team1.jpg");
+  background-size: cover;
+}
+.img2 {
+  background: url("img/Team2.jpg");
+  background-size: cover;
+}
+.img3 {
+  background: url("img/Team3.jpg");
+  background-size: cover;
+}
