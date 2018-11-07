@@ -38,12 +38,12 @@ Erstellt von **[Marcel](https://github.com/thebauzz/ "thebauzz, Ersteller")** un
   - **Summary Gallery: 152**
   
 + **onclick**  
-  - _onclick.css:_ x
-  - _onclick.html:_ x
-  - _onclick.js:_ x
-  - **Summary OnClick: x**
+  - _onclick.css:_ 59
+  - _onclick.html:_ 17
+  - _onclick.js:_ 25
+  - **Summary OnClick: 101**
 
-**_Summary images:_** 152
+**_Summary images:_** 253
 
 ### lists
 + _lists.css:_ 94
@@ -133,7 +133,7 @@ Erstellt von **[Marcel](https://github.com/thebauzz/ "thebauzz, Ersteller")** un
 
 **_Summary Theme Change:_ 1153**
 
-**_Summary HTML:_ 4191**
+**_Summary HTML:_ 4292**
 
 ### m133
 + **ArrayAusgabe**
@@ -329,8 +329,8 @@ Erstellt von **[Marcel](https://github.com/thebauzz/ "thebauzz, Ersteller")** un
 
 
 ### readme.md
-+ _README.MD:_ 327
-+ **Summary Readme: 327**
++ _README.MD:_ 336
++ **Summary Readme: 336**
 
 ## Total Lines of Code:
-10758
+10868
