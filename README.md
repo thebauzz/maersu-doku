@@ -26,6 +26,11 @@ Erstellt von **[Marcel](https://github.com/thebauzz/ "thebauzz, Ersteller")** un
 + _formular.html:_ 71
 + **_Summary Formular:_ 154**
 
+### gallery
++ _gallery.css:_ 96
++ _gallery.html:_ 56
++ **_Summary Gallery:_ 152**
+
 ### gridlayout
 + _gridlayout.css:_ 90
 + _gridlayout.html:_ 48
@@ -119,7 +124,7 @@ Erstellt von **[Marcel](https://github.com/thebauzz/ "thebauzz, Ersteller")** un
 
 **_Summary Theme Change:_ 1153**
 
-**_Summary HTML:_ 4039**
+**_Summary HTML:_ 4191**
 
 ### m133
 + **ArrayAusgabe**
@@ -315,8 +320,8 @@ Erstellt von **[Marcel](https://github.com/thebauzz/ "thebauzz, Ersteller")** un
 
 
 ### readme.md
-+ _README.MD:_ 322
-+ **Summary Readme: 322**
++ _README.MD:_ 327
++ **Summary Readme: 327**
 
 ## Total Lines of Code:
-10601
+10758
