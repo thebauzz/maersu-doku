@@ -11,12 +11,45 @@
 <body>
   <div class="content">
 
-    <div class="slide prev fas fa-chevron-left"></div>
-    <div class="slide next fas fa-chevron-right"></div>
+    <input type="radio" id="i1" name="images" checked hidden>
+	  <input type="radio" id="i2" name="images" hidden>
+	  <input type="radio" id="i3" name="images" hidden>
 
-    <div class="image img1"></div>
-    <div class="image img2"></div>
-    <div class="image img3"></div>
+    <div class="slide_img" id="img3">
+      <img src="img/Team3.jpg" alt="Team 3" class="teamimage">
+      <label class="prev" for="i2">
+        <div class="slide prev fas fa-chevron-left"></div>
+      </label>
+      <label class="next" for="i1">
+        <div class="slide next fas fa-chevron-right"></div>
+      </label>
+    </div>
+
+    <div class="slide_img" id="img2">
+      <img src="img/Team2.jpg" alt="Team 2" class="teamimage">
+      <label class="prev" for="i1">
+        <div class="slide prev fas fa-chevron-left"></div>
+      </label>
+      <label class="next" for="i3">
+        <div class="slide next fas fa-chevron-right"></div>
+      </label>
+    </div>
+
+    <div class="slide_img" id="img1">
+      <img src="img/Team1.jpg" alt="Team 1" class="teamimage">
+      <label class="prev" for="i3">
+        <div class="slide prev fas fa-chevron-left"></div>
+      </label>
+      <label class="next" for="i2">
+        <div class="slide next fas fa-chevron-right"></div>
+      </label>
+    </div>
+
+    <div id="nav_slide">
+		  <label for="i1" class="dots" id="dot1"></label>
+		  <label for="i2" class="dots" id="dot2"></label>
+		  <label for="i3" class="dots" id="dot3"></label>
+	  </div>
 
   </div>
 </body>

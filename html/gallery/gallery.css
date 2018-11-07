@@ -22,14 +22,13 @@ html, body {
   height: 547px;
   margin: 0 auto;
   position: relative;
-  background: grey;
 }
 
 .slide {
   position: absolute;
   top: calc(50% - 20px);
   font-size: 40px;
-  color: #5a5a5a;
+	color: rgba(0, 0, 0, 0.4);
   cursor: pointer;
   transition-duration: 0.3s;
 }
@@ -43,27 +42,55 @@ html, body {
 
 .next:hover,
 .prev:hover {
-  opacity: 0.7;
+  color: var(--blau);
 }
 
 
-.image {
-  position: absolute;
-  top: 0;
-  left: 0;
+.teamimage {
   width: 100%;
   height: 100%;
 }
 
-.img1 {
-  background: url("img/Team1.jpg");
-  background-size: cover;
+.slide_img {
+  position: absolute;
+  z-index: 0;
 }
-.img2 {
-  background: url("img/Team2.jpg");
-  background-size: cover;
+
+#nav_slide {
+	width: 100%;
+	bottom: 12%;
+	height: 11px;
+	position: absolute;
+	text-align: center;
+	z-index: 99;
+	cursor: default;
 }
-.img3 {
-  background: url("img/Team3.jpg");
-  background-size: cover;
+
+.dots {
+	top: -5px;
+	width: 18px;
+	height: 18px;
+	margin: 0 3px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background: rgba(0, 0, 0, 0.4);
+	transition: .4s;
+	cursor: pointer;
 }
+
+#dot1:hover,
+#dot2:hover,
+#dot3:hover {
+  background: var(--blau);
+}
+
+#i1:checked ~ #img1,
+#i2:checked ~ #img2,
+#i3:checked ~ #img3 {
+	z-index: 99;
+}
+
+#i1:checked ~ #nav_slide #dot1 {background: var(--blau);}
+#i2:checked ~ #nav_slide #dot2 {background: var(--blau);}
+#i3:checked ~ #nav_slide #dot3 {background: var(--blau);}
