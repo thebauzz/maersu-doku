@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+}
+
+/* Deklarieren einer Variable */
+:root {
+  --weiss:    #ffffff;
+  --hellgrau: #e8e8e8;
+  --grau:     #292929;
+  --schwarz:  #000000;
+  --rot:      #cc2020;
+  --blau:     #1b8ac1;
+  --gruen:    #12bc3d;
+}
+
+/* Bisschen Abstand am Rand fürs schöne Aussehen.. */
+
+.image {
+  height: 300px;
+  width: auto;
+  cursor: pointer;
+}
+
+.centered {
+  height: 500px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  cursor: default;
+}
+
+.leererContainter {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0; left: 0;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+.leererContainter img {
+  height: 32px;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}
