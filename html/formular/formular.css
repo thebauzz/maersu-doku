@@ -10,7 +10,7 @@ html {
 :root {
   --rot:     #cc2020;
   --schwarz: #000000;
- --weiss:   #ffffff;
+  --weiss:   #ffffff;
 }
 
 /* Hasses wenn es wenns kei Rand het.. */
