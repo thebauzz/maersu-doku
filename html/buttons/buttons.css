@@ -43,19 +43,19 @@ a {
 /*
 Buttons Reihe 1
 */
-.r1_c2:hover {
+.r1_b2:hover {
   background: var(--rot);
   color: var(--weiss);
   border: 1px solid var(--rot)
 }
 
-.r1_c3:hover {
+.r1_b3:hover {
   background: var(--gruen);
   color: var(--weiss);
   border: 1px solid var(--gruen)
 }
 
-.r1_c4:hover {
+.r1_b4:hover {
   background: var(--blau);
   color: var(--weiss);
   border: 1px solid var(--blau)
@@ -64,35 +64,35 @@ Buttons Reihe 1
 /*
 Buttons Reihe 2
 */
-.r2_c1 {
+.r2_b1 {
   border: 1px solid var(--weiss);
 }
-.r2_c1:hover {
+.r2_b1:hover {
   border: 1px solid var(--schwarz);
 }
-.r2_c2 {
+.r2_b2 {
   border: 1px solid var(--rot);
   color: var(--rot);
 }
-.r2_c2:hover {
+.r2_b2:hover {
   border: 1px solid var(--schwarz);
   color: var(--schwarz);
 }
 
-.r2_c3 {
+.r2_b3 {
   border: 1px solid var(--gruen);
   color: var(--gruen);
 }
-.r2_c3:hover {
+.r2_b3:hover {
   border: 1px solid var(--schwarz);
   color: var(--schwarz);
 }
 
-.r2_c4 {
+.r2_b4 {
   border: 1px solid var(--blau);
   color: var(--blau);
 }
-.r2_c4:hover {
+.r2_b4:hover {
   border: 1px solid var(--schwarz);
   color: var(--schwarz);
 }
@@ -100,37 +100,37 @@ Buttons Reihe 2
 /*
 Buttons Reihe 3
 */
-.r3_c1 {
+.r3_b1 {
   border-radius: 5px
 }
-.r3_c1:hover {
+.r3_b1:hover {
   color: var(--weiss);
   background: var(--schwarz);
 }
 
-.r3_c2 {
+.r3_b2 {
   color: var(--rot);
   border-radius: 5px
 }
-.r3_c2:hover {
+.r3_b2:hover {
   background: var(--rot);
   color: var(--weiss)
 }
 
-.r3_c3 {
+.r3_b3 {
   color: var(--gruen);
   border-radius: 5px;
 }
-.r3_c3:hover {
+.r3_b3:hover {
   background: var(--gruen);
   color: var(--weiss);
 }
 
-.r3_c4 {
+.r3_b4 {
   color: var(--blau);
   border-radius: 5px;
 }
-.r3_c4:hover {
+.r3_b4:hover {
   background: var(--blau);
   color: var(--weiss);
 }
@@ -138,93 +138,93 @@ Buttons Reihe 3
 /*
 Buttons Reihe 4
 */
-.r4_c1 {
+.r4_b1 {
   background: linear-gradient(45deg, var(--schwarz) 50%, var(--weiss) 50%);
   position: relative;
 }
-.r4_c1:after {
+.r4_b1:after {
   content: ""; /* obwohl kein inhalt da ist, braucht es content, da ansonsten nichts dargestellt wird */
   position: absolute;
   background: linear-gradient(45deg, var(--weiss) 50%, rgba(0,0,0,0) 50%);
   z-index: -1;
 }
-.r4_c1,
-.r4_c1:after {
+.r4_b1,
+.r4_b1:after {
   background-size: 300%;
   background-position: 100%;
   transition: 0.5s, color 0.3s;
 }
-.r4_c1:hover,
-.r4_c1:hover:after {
+.r4_b1:hover,
+.r4_b1:hover:after {
   color: var(--weiss);
   background-position: 0;
 }
 
-.r4_c2 {
+.r4_b2 {
   background: linear-gradient(45deg, var(--rot) 50%, var(--weiss) 50%);
   position: relative;
   color: var(--rot);
 }
-.r4_c2:after {
+.r4_b2:after {
   content: "";
   position: absolute;
   background: linear-gradient(45deg, var(--weiss) 50%, rgba(0,0,0,0) 50%);
   z-index: -1;
 }
-.r4_c2,
-.r4_c2:after {
+.r4_b2,
+.r4_b2:after {
   background-size: 300%;
   background-position: 100%;
   transition: 0.5s, color 0.3s;
 }
-.r4_c2:hover,
-.r4_c2:hover:after {
+.r4_b2:hover,
+.r4_b2:hover:after {
   color: var(--weiss);
   background-position: 0;
 }
 
-.r4_c3 {
+.r4_b3 {
   background: linear-gradient(45deg, var(--gruen) 50%, var(--weiss) 50%);
   position: relative;
   color: var(--gruen);
 }
-.r4_c3:after {
+.r4_b3:after {
   content: "";
   position: absolute;
   background: linear-gradient(45deg, var(--weiss) 50%, rgba(0,0,0,0) 50%);
   z-index: -1;
 }
-.r4_c3,
-.r4_c3:after {
+.r4_b3,
+.r4_b3:after {
   background-size: 300%;
   background-position: 100%;
   transition: 0.5s, color 0.3s;
 }
-.r4_c3:hover,
-.r4_c3:hover:after {
+.r4_b3:hover,
+.r4_b3:hover:after {
   color: var(--weiss);
   background-position: 0;
 }
 
-.r4_c4 {
+.r4_b4 {
   background: linear-gradient(45deg, var(--blau) 50%, var(--weiss) 50%);
   position: relative;
   color: var(--blau);
 }
-.r4_c4:after {
+.r4_b4:after {
   content: "";
   position: absolute;
   background: linear-gradient(45deg, var(--weiss) 50%, rgba(0,0,0,0) 50%);
   z-index: -1;
 }
-.r4_c4,
-.r4_c4:after {
+.r4_b4,
+.r4_b4:after {
   background-size: 300%;
   background-position: 100%;
   transition: 0.5s, color 0.3s;
 }
-.r4_c4:hover,
-.r4_c4:hover:after {
+.r4_b4:hover,
+.r4_b4:hover:after {
   color: var(--weiss);
   background-position: 0;
 }
@@ -232,243 +232,243 @@ Buttons Reihe 4
 /*
 Buttons Reihe 5
 */
-.r5_c1 {
+.r5_b1 {
 	background: none;
 	position: relative;
 }
-.r5_c1:after {
+.r5_b1:after {
 	content: "";
 	position: absolute;
 	z-index: -1;
 	transition: all 0.2s;
 }
-.r5_c1:after {
+.r5_b1:after {
 	width: 0;
 	height: 100%;
 	top: 0;
 	left: 0;
 	background: var(--schwarz);
 }
-.r5_c1:hover,
-.r5_c1:active {
+.r5_b1:hover,
+.r5_b1:active {
 	color: var(--weiss);
 }
-.r5_c1:hover:after,
-.r5_c1:active:after {
+.r5_b1:hover:after,
+.r5_b1:active:after {
 	width: 100%;
 }
 
-.r5_c2 {
+.r5_b2 {
 	background: none;
 	position: relative;
   color: var(--rot);
 }
-.r5_c2:after {
+.r5_b2:after {
 	content: "";
 	position: absolute;
 	z-index: -1;
 	transition: all 0.2s;
 }
-.r5_c2:after {
+.r5_b2:after {
 	width: 0;
 	height: 100%;
 	top: 0;
 	left: 0;
 	background: var(--rot);
 }
-.r5_c2:hover,
-.r5_c2:active {
+.r5_b2:hover,
+.r5_b2:active {
 	color: var(--weiss);
 }
-.r5_c2:hover:after,
-.r5_c2:active:after {
+.r5_b2:hover:after,
+.r5_b2:active:after {
 	width: 100%;
 }
 
-.r5_c3 {
+.r5_b3 {
 	background: none;
 	position: relative;
   color: var(--gruen);
 }
-.r5_c3:after {
+.r5_b3:after {
 	content: "";
 	position: absolute;
 	z-index: -1;
 	transition: all 0.2s;
 }
-.r5_c3:after {
+.r5_b3:after {
 	width: 100%;
 	height: 0;
 	top: 0;
 	left: 0;
 	background: var(--gruen);
 }
-.r5_c3:hover,
-.r5_c3:active {
+.r5_b3:hover,
+.r5_b3:active {
 	color: var(--weiss);
 }
-.r5_c3:hover:after,
-.r5_c3:active:after {
+.r5_b3:hover:after,
+.r5_b3:active:after {
 	height: 100%;
 }
 
-.r5_c4 {
+.r5_b4 {
 	background: none;
 	position: relative;
   color: var(--blau);
 }
-.r5_c4:after {
+.r5_b4:after {
 	content: "";
 	position: absolute;
 	z-index: -1;
 	transition: all 0.2s;
 }
-.r5_c4:after {
+.r5_b4:after {
 	width: 100%;
 	height: 0;
 	top: 0;
 	left: 0;
 	background: var(--blau);
 }
-.r5_c4:hover,
-.r5_c4:active {
+.r5_b4:hover,
+.r5_b4:active {
 	color: var(--weiss);
 }
-.r5_c4:hover:after,
-.r5_c4:active:after {
+.r5_b4:hover:after,
+.r5_b4:active:after {
 	height: 100%;
 }
 
 /*
 Buttons Reihe 6
 */
-.r6_c1 {
+.r6_b1 {
   border: none;
   border-bottom: 2px solid var(--schwarz);
 	background: none;
 	position: relative;
   color: var(--schwarz);
 }
-.r6_c1:after {
+.r6_b1:after {
 	content: "";
 	position: absolute;
 	z-index: -1;
 	transition: all 0.2s;
 }
-.r6_c1:after {
+.r6_b1:after {
 	width: 100%;
 	height: 0;
 	bottom: 0;
 	left: 0;
 	background: var(--schwarz);
 }
-.r6_c1:hover,
-.r6_c1:active {
+.r6_b1:hover,
+.r6_b1:active {
 	color: var(--weiss);
 }
-.r6_c1:hover:after,
-.r6_c1:active:after {
+.r6_b1:hover:after,
+.r6_b1:active:after {
 	height: 104%;
 } /* Height auf 104%, damit ich die Höhe vom 2x border-line wieder gut machen kann */
 
-.r6_c2 {
+.r6_b2 {
   border: none;
   border-bottom: 2px solid var(--rot);
 	background: none;
 	position: relative;
   color: var(--rot);
 }
-.r6_c2:after {
+.r6_b2:after {
 	content: "";
 	position: absolute;
 	z-index: -1;
 	transition: all 0.2s;
 }
-.r6_c2:after {
+.r6_b2:after {
 	width: 100%;
 	height: 0;
 	bottom: 0;
 	left: 0;
 	background: var(--rot);
 }
-.r6_c2:hover,
-.r6_c2:active {
+.r6_b2:hover,
+.r6_b2:active {
 	color: var(--weiss);
 }
-.r6_c2:hover:after,
-.r6_c2:active:after {
+.r6_b2:hover:after,
+.r6_b2:active:after {
 	height: 104%;
 }
 
-.r6_c3 {
+.r6_b3 {
   border: none;
   border-bottom: 2px solid var(--gruen);
 	background: none;
 	position: relative;
   color: var(--gruen);
 }
-.r6_c3:after {
+.r6_b3:after {
 	content: "";
 	position: absolute;
 	z-index: -1;
 	transition: all 0.2s;
 }
-.r6_c3:after {
+.r6_b3:after {
 	width: 100%;
 	height: 0;
 	bottom: 0;
 	left: 0;
 	background: var(--gruen);
 }
-.r6_c3:hover,
-.r6_c3:active {
+.r6_b3:hover,
+.r6_b3:active {
 	color: var(--weiss);
 }
-.r6_c3:hover:after,
-.r6_c3:active:after {
+.r6_b3:hover:after,
+.r6_b3:active:after {
 	height: 104%;
 }
 
-.r6_c4 {
+.r6_b4 {
   border: none;
   border-bottom: 2px solid var(--blau);
 	background: none;
 	position: relative;
   color: var(--blau);
 }
-.r6_c4:after {
+.r6_b4:after {
 	content: "";
 	position: absolute;
 	z-index: -1;
 	transition: all 0.2s;
 }
-.r6_c4:after {
+.r6_b4:after {
 	width: 100%;
 	height: 0;
 	bottom: 0;
 	left: 0;
 	background: var(--blau);
 }
-.r6_c4:hover,
-.r6_c4:active {
+.r6_b4:hover,
+.r6_b4:active {
 	color: var(--weiss);
 }
-.r6_c4:hover:after,
-.r6_c4:active:after {
+.r6_b4:hover:after,
+.r6_b4:active:after {
 	height: 104%;
 }
 
 /*
 Buttons Reihe 7
 */
-.r7_c1 {
+.r7_b1 {
   border: none;
   border-left: 2px solid var(--schwarz);
 	background: none;
 	position: relative;
   color: var(--schwarz);
 }
-.r7_c1:after {
+.r7_b1:after {
 	content: "";
 	position: absolute;
 	z-index: -1;
@@ -479,23 +479,23 @@ Buttons Reihe 7
 	left: 0;
 	background: var(--schwarz);
 }
-.r7_c1:hover,
-.r7_c1:active {
+.r7_b1:hover,
+.r7_b1:active {
 	color: var(--weiss);
 }
-.r7_c1:hover:after,
-.r7_c1:active:after {
+.r7_b1:hover:after,
+.r7_b1:active:after {
 	width: 104%;
 }
 
-.r7_c2 {
+.r7_b2 {
   border: none;
   border-left: 2px solid var(--rot);
 	background: none;
 	position: relative;
   color: var(--rot);
 }
-.r7_c2:after {
+.r7_b2:after {
 	content: "";
 	position: absolute;
 	z-index: -1;
@@ -506,23 +506,23 @@ Buttons Reihe 7
 	left: 0;
 	background: var(--rot);
 }
-.r7_c2:hover,
-.r7_c2:active {
+.r7_b2:hover,
+.r7_b2:active {
 	color: var(--weiss);
 }
-.r7_c2:hover:after,
-.r7_c2:active:after {
+.r7_b2:hover:after,
+.r7_b2:active:after {
 	width: 104%;
 }
 
-.r7_c3 {
+.r7_b3 {
   border: none;
   border-left: 2px solid var(--gruen);
 	background: none;
 	position: relative;
   color: var(--gruen);
 }
-.r7_c3:after {
+.r7_b3:after {
 	content: "";
 	position: absolute;
 	z-index: -1;
@@ -533,23 +533,23 @@ Buttons Reihe 7
 	left: 0;
 	background: var(--gruen);
 }
-.r7_c3:hover,
-.r7_c3:active {
+.r7_b3:hover,
+.r7_b3:active {
 	color: var(--weiss);
 }
-.r7_c3:hover:after,
-.r7_c3:active:after {
+.r7_b3:hover:after,
+.r7_b3:active:after {
 	width: 104%;
 }
 
-.r7_c4 {
+.r7_b4 {
   border: none;
   border-left: 2px solid var(--blau);
 	background: none;
 	position: relative;
   color: var(--blau);
 }
-.r7_c4:after {
+.r7_b4:after {
 	content: "";
 	position: absolute;
 	z-index: -1;
@@ -560,24 +560,24 @@ Buttons Reihe 7
 	left: 0;
 	background: var(--blau);
 }
-.r7_c4:hover,
-.r7_c4:active {
+.r7_b4:hover,
+.r7_b4:active {
 	color: var(--weiss);
 }
-.r7_c4:hover:after,
-.r7_c4:active:after {
+.r7_b4:hover:after,
+.r7_b4:active:after {
 	width: 104%;
 }
 
 /*
 Buttons Reihe 8
 */
-.r8_c1 {
+.r8_b1 {
   border: none;
   text-decoration: none;
   position: relative;
 }
-.r8_c1:before {
+.r8_b1:before {
   content: "";
   position: absolute;
   bottom: -3px;
@@ -589,18 +589,18 @@ Buttons Reihe 8
   transform-origin: left;
   transition: transform 0.4s;
 }
-.r8_c1:hover:before {
+.r8_b1:hover:before {
   transform: scaleX(1);
   transition: transform 0.4s;
 }
 
-.r8_c2 {
+.r8_b2 {
   border: none;
   color: var(--rot);
   text-decoration: none;
   position: relative;
 }
-.r8_c2:before {
+.r8_b2:before {
   content: "";
   position: absolute;
   bottom: -3px;
@@ -612,18 +612,18 @@ Buttons Reihe 8
   transform-origin: left;
   transition: transform 0.4s;
 }
-.r8_c2:hover:before {
+.r8_b2:hover:before {
   transform: scaleX(1);
   transition: transform 0.4s;
 }
 
-.r8_c3 {
+.r8_b3 {
   border: none;
   color: var(--gruen);
   text-decoration: none;
   position: relative;
 }
-.r8_c3:before {
+.r8_b3:before {
   content: "";
   position: absolute;
   bottom: -3px;
@@ -635,18 +635,18 @@ Buttons Reihe 8
   transform-origin: left;
   transition: transform 0.4s;
 }
-.r8_c3:hover:before {
+.r8_b3:hover:before {
   transform: scaleX(1);
   transition: transform 0.4s;
 }
 
-.r8_c4 {
+.r8_b4 {
   border: none;
   color: var(--blau);
   text-decoration: none;
   position: relative;
 }
-.r8_c4:before {
+.r8_b4:before {
   content: "";
   position: absolute;
   bottom: -3px;
@@ -658,7 +658,7 @@ Buttons Reihe 8
   transform-origin: left;
   transition: transform 0.4s;
 }
-.r8_c4:hover:before {
+.r8_b4:hover:before {
   transform: scaleX(1);
   transition: transform 0.4s;
 }
@@ -666,12 +666,12 @@ Buttons Reihe 8
 /*
 Buttons Reihe 9
 */
-.r9_c1 {
+.r9_b1 {
   border: none;
   text-decoration: none;
   position: relative;
 }
-.r9_c1:before {
+.r9_b1:before {
   content: "";
   position: absolute;
   bottom: -3px;
@@ -683,11 +683,11 @@ Buttons Reihe 9
   transform-origin: left;
   transition: transform 0.4s;
 }
-.r9_c1:hover:before {
+.r9_b1:hover:before {
   transform: scaleX(1);
   transition: transform 0.4s;
 }
-.r9_c1:after {
+.r9_b1:after {
   content: "";
   position: absolute;
   top: -3px;
@@ -699,18 +699,18 @@ Buttons Reihe 9
   transform-origin: right;
   transition: transform 0.4s;
 }
-.r9_c1:hover:after {
+.r9_b1:hover:after {
   transform: scaleX(1);
   transition: transform 0.4s;
 }
 
-.r9_c2 {
+.r9_b2 {
   border: none;
   color: var(--rot);
   text-decoration: none;
   position: relative;
 }
-.r9_c2:before {
+.r9_b2:before {
   content: "";
   position: absolute;
   bottom: -3px;
@@ -722,11 +722,11 @@ Buttons Reihe 9
   transform-origin: left;
   transition: transform 0.4s;
 }
-.r9_c2:hover:before {
+.r9_b2:hover:before {
   transform: scaleX(1);
   transition: transform 0.4s;
 }
-.r9_c2:after {
+.r9_b2:after {
   content: "";
   position: absolute;
   top: -3px;
@@ -738,18 +738,18 @@ Buttons Reihe 9
   transform-origin: right;
   transition: transform 0.4s;
 }
-.r9_c2:hover:after {
+.r9_b2:hover:after {
   transform: scaleX(1);
   transition: transform 0.4s;
 }
 
-.r9_c3 {
+.r9_b3 {
   border: none;
   color: var(--gruen);
   text-decoration: none;
   position: relative;
 }
-.r9_c3:before {
+.r9_b3:before {
   content: "";
   position: absolute;
   bottom: -3px;
@@ -761,11 +761,11 @@ Buttons Reihe 9
   transform-origin: left;
   transition: transform 0.4s;
 }
-.r9_c3:hover:before {
+.r9_b3:hover:before {
   transform: scaleX(1);
   transition: transform 0.4s;
 }
-.r9_c3:after {
+.r9_b3:after {
   content: "";
   position: absolute;
   top: -3px;
@@ -777,18 +777,18 @@ Buttons Reihe 9
   transform-origin: right;
   transition: transform 0.4s;
 }
-.r9_c3:hover:after {
+.r9_b3:hover:after {
   transform: scaleX(1);
   transition: transform 0.4s;
 }
 
-.r9_c4 {
+.r9_b4 {
   border: none;
   color: var(--blau);
   text-decoration: none;
   position: relative;
 }
-.r9_c4:before {
+.r9_b4:before {
   content: "";
   position: absolute;
   bottom: -3px;
@@ -800,11 +800,11 @@ Buttons Reihe 9
   transform-origin: left;
   transition: transform 0.4s;
 }
-.r9_c4:hover:before {
+.r9_b4:hover:before {
   transform: scaleX(1);
   transition: transform 0.4s;
 }
-.r9_c4:after {
+.r9_b4:after {
   content: "";
   position: absolute;
   top: -3px;
@@ -816,7 +816,7 @@ Buttons Reihe 9
   transform-origin: right;
   transition: transform 0.4s;
 }
-.r9_c4:hover:after {
+.r9_b4:hover:after {
   transform: scaleX(1);
   transition: transform 0.4s;
 }
@@ -824,46 +824,46 @@ Buttons Reihe 9
 /*
 Buttons Reihe 10
 */
-.r10_c1 {
+.r10_b1 {
   color: var(--schwarz);
   border: none;
   border-bottom: 5px solid #00000000;
 }
 
-.r10_c1:hover {
+.r10_b1:hover {
   padding: 10px 5px;
   border-bottom: 2px solid var(--schwarz);
 }
 
-.r10_c2 {
+.r10_b2 {
   color: var(--rot);
   border: none;
   border-bottom: 5px solid #00000000;
 }
 
-.r10_c2:hover {
+.r10_b2:hover {
   padding: 10px 5px;
   border-bottom: 2px solid var(--rot);
 }
 
-.r10_c3 {
+.r10_b3 {
   color: var(--gruen);
   border: none;
   border-bottom: 5px solid #00000000;
 }
 
-.r10_c3:hover {
+.r10_b3:hover {
   padding: 10px 5px;
   border-bottom: 2px solid var(--gruen);
 }
 
-.r10_c4 {
+.r10_b4 {
   color: var(--blau);
   border: none;
   border-bottom: 5px solid #00000000;
 }
 
-.r10_c4:hover {
+.r10_b4:hover {
   padding: 10px 5px;
   border-bottom: 2px solid var(--blau);
 }
