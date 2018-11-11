@@ -17,9 +17,9 @@ Erstellt von **[Marcel](https://github.com/thebauzz/ "thebauzz, Ersteller")** un
 + **_Summary Random Tests:_ 323**
 
 ### buttons
-+ _buttons.css:_ 869
-+ _buttons.html:_ 98
-+ **_Summary Buttons:_ 967**
++ _buttons.css:_ 1383
++ _buttons.html:_ 180
++ **_Summary Buttons:_ 1563**
 
 ### formular
 + _formular.css:_ 83
@@ -133,7 +133,7 @@ Erstellt von **[Marcel](https://github.com/thebauzz/ "thebauzz, Ersteller")** un
 
 **_Summary Theme Change:_ 1153**
 
-**_Summary HTML:_ 4292**
+**_Summary HTML:_ 4888**
 
 ### m133
 + **ArrayAusgabe**
@@ -333,4 +333,4 @@ Erstellt von **[Marcel](https://github.com/thebauzz/ "thebauzz, Ersteller")** un
 + **Summary Readme: 336**
 
 ## Total Lines of Code:
-10868
+11464
