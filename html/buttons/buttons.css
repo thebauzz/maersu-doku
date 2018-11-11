@@ -1081,11 +1081,11 @@ Switchs Reihe 2
   border-radius: 18px;
 }
 .r2_s2-checkbox:checked + .r2_s2-slider {
-  border: 1px solid var(--gruen);
+  border: 1px solid var(--rot);
 }
 .r2_s2-checkbox:checked + .r2_s2-slider:before {
   transform: translateX(24px);
-  background: var(--gruen);
+  background: var(--rot);
 }
 
 .r2_s3 {
@@ -1117,11 +1117,11 @@ Switchs Reihe 2
   border-radius: 18px;
 }
 .r2_s3-checkbox:checked + .r2_s3-slider {
-  border: 1px solid var(--rot);
+  border: 1px solid var(--gruen);
 }
 .r2_s3-checkbox:checked + .r2_s3-slider:before {
   transform: translateX(24px);
-  background: var(--rot);
+  background: var(--gruen);
 }
 
 .r2_s4 {
@@ -1379,5 +1379,92 @@ Switchs Reihe 4
   border-radius: 3px;
 }
 .r4_s4-checkbox:checked + .r4_s4-slider {
+  background-color: var(--blau);
+}
+
+/*
+Switchs Reihe 5
+*/
+.r5_s1 {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 30px;
+}
+.r5_s1-slider {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  cursor: pointer;
+  background-color: var(--weiss);
+  border: 2px solid var(--schwarz);
+  transition: 0.4s;
+  border-radius: 3px;
+}
+.r5_s1-checkbox:checked + .r5_s1-slider {
+  background-color: var(--schwarz);
+}
+
+.r5_s2 {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 30px;
+}
+.r5_s2-slider {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  cursor: pointer;
+  background-color: var(--weiss);
+  border: 2px solid var(--rot);
+  transition: 0.4s;
+  border-radius: 3px;
+}
+.r5_s2-checkbox:checked + .r5_s2-slider {
+  background-color: var(--rot);
+}
+
+.r5_s3 {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 30px;
+}
+.r5_s3-slider {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  cursor: pointer;
+  background-color: var(--weiss);
+  border: 2px solid var(--gruen);
+  transition: 0.4s;
+  border-radius: 3px;
+}
+.r5_s3-checkbox:checked + .r5_s3-slider {
+  background-color: var(--gruen);
+}
+
+.r5_s4 {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 30px;
+}
+.r5_s4-slider {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  cursor: pointer;
+  background-color: var(--weiss);
+  border: 2px solid var(--blau);
+  transition: 0.4s;
+  border-radius: 3px;
+}
+.r5_s4-checkbox:checked + .r5_s4-slider {
   background-color: var(--blau);
 }
