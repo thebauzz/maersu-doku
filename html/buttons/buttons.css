@@ -1159,3 +1159,225 @@ Switchs Reihe 2
   transform: translateX(24px);
   background: var(--blau);
 }
+
+/*
+Switchs Reihe 3
+*/
+.r3_s1 {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  margin: 0 15px;
+}
+.r3_s1-slider {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  cursor: pointer;
+  background-color: #cccccc;
+  transition: 0.4s;
+  border-radius: 3px;
+}
+.r3_s1-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--weiss);
+  transition: 0.4s;
+  border-radius: 3px;
+}
+.r3_s1-checkbox:checked + .r3_s1-slider {
+  background-color: var(--schwarz);
+}
+.r3_s1-checkbox:checked + .r3_s1-slider:before {
+  transform: translateX(24px);
+}
+
+.r3_s2 {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  margin: 0 15px;
+}
+.r3_s2-slider {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  cursor: pointer;
+  background-color: #cccccc;
+  transition: 0.4s;
+  border-radius: 3px;
+}
+.r3_s2-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--weiss);
+  transition: 0.4s;
+  border-radius: 3px;
+}
+.r3_s2-checkbox:checked + .r3_s2-slider {
+  background-color: var(--rot);
+}
+.r3_s2-checkbox:checked + .r3_s2-slider:before {
+  transform: translateX(24px);
+}
+
+.r3_s3 {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  margin: 0 15px;
+}
+.r3_s3-slider {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  cursor: pointer;
+  background-color: #cccccc;
+  transition: 0.4s;
+  border-radius: 3px;
+}
+.r3_s3-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--weiss);
+  transition: 0.4s;
+  border-radius: 3px;
+}
+.r3_s3-checkbox:checked + .r3_s3-slider {
+  background-color: var(--gruen);
+}
+.r3_s3-checkbox:checked + .r3_s3-slider:before {
+  transform: translateX(24px);
+}
+
+.r3_s4 {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  margin: 0 15px;
+}
+.r3_s4-slider {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  cursor: pointer;
+  background-color: #cccccc;
+  transition: 0.4s;
+  border-radius: 3px;
+}
+.r3_s4-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--weiss);
+  transition: 0.4s;
+  border-radius: 3px;
+}
+.r3_s4-checkbox:checked + .r3_s4-slider {
+  background-color: var(--blau);
+}
+.r3_s4-checkbox:checked + .r3_s4-slider:before {
+  transform: translateX(24px);
+}
+
+/*
+Switchs Reihe 4
+*/
+.r4_s1 {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 30px;
+}
+.r4_s1-slider {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  cursor: pointer;
+  background-color: #cccccc;
+  transition: 0.4s;
+  border-radius: 3px;
+}
+.r4_s1-checkbox:checked + .r4_s1-slider {
+  background-color: var(--schwarz);
+}
+
+.r4_s2 {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 30px;
+}
+.r4_s2-slider {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  cursor: pointer;
+  background-color: #cccccc;
+  transition: 0.4s;
+  border-radius: 3px;
+}
+.r4_s2-checkbox:checked + .r4_s2-slider {
+  background-color: var(--rot);
+}
+
+.r4_s3 {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 30px;
+}
+.r4_s3-slider {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  cursor: pointer;
+  background-color: #cccccc;
+  transition: 0.4s;
+  border-radius: 3px;
+}
+.r4_s3-checkbox:checked + .r4_s3-slider {
+  background-color: var(--gruen);
+}
+
+.r4_s4 {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 30px;
+}
+.r4_s4-slider {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  cursor: pointer;
+  background-color: #cccccc;
+  transition: 0.4s;
+  border-radius: 3px;
+}
+.r4_s4-checkbox:checked + .r4_s4-slider {
+  background-color: var(--blau);
+}
