@@ -1482,6 +1482,7 @@ Switchs Reihe 6
 .r6_s1-slider {
   position: absolute;
   top: 0; bottom: 0;
+  left: 0; right: 0;
   cursor: pointer;
   background-color: var(--mittelgrau);
   transition: 0.4s;
