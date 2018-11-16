@@ -1,5 +1,9 @@
 // out: ../css/main.css, sourcemap: true, compress: true
 
+@red:   #cc2020;
+@blue:  #1b8ac1;
+@green: #12bc3d;
+
 .content {
   width: 80%;
   height: 100%;
@@ -14,24 +18,41 @@
 
 main {
   position: relative;
+  text-align: center;
 }
 
 .box {
-  width: 100px;
-  height: 100px;
-  position: absolute;
+  width: 250px;
+  height: 150px;
   border-radius: 4px;
+  display: inline-block;
+  transition: 0.3s;
+  cursor: pointer;
+
+  @media (max-width: 1000px) {
+    width: 200px;
+    height: 150px;
+  }
+  @media (max-width: 800px) {
+    width: 150px;
+    height: 100px;
+  }
+  @media (max-width: 600px) {
+    width: 100px;
+    height: 50px;
+  }
 
   &.box--red {
-    left: 20px;
-    background: red;
+    background: @red;
   }
   &.box--green {
-    left: 140px;
-    background: green;
+    background: @green;
   }
   &.box--blue {
-    left: 260px;
-    background: blue;
+    background: @blue;
+  }
+
+  &:hover {
+    background: #555555;
   }
 }
