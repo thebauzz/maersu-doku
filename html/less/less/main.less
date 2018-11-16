@@ -1,0 +1,37 @@
+// out: ../css/main.css, sourcemap: true, compress: true
+
+.content {
+  width: 80%;
+  height: 100%;
+  background: #e0e0e0;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 26px;
+    padding-left: 20px;
+  }
+}
+
+main {
+  position: relative;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 4px;
+
+  &.box--red {
+    left: 20px;
+    background: red;
+  }
+  &.box--green {
+    left: 140px;
+    background: green;
+  }
+  &.box--blue {
+    left: 260px;
+    background: blue;
+  }
+}
