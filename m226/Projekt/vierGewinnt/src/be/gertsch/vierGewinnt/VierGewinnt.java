@@ -144,6 +144,7 @@ public class VierGewinnt {
 					nextTurn = 0;
 					gameOver = false;
 					win = 0;
+					for (int i = 0; i < 100; ++i) System.out.println();
 				}
 			}
 			
@@ -210,8 +211,8 @@ public class VierGewinnt {
 					nextTurn = 0;
 					gameOver = false;
 					win = 0;
+					for (int i = 0; i < 100; ++i) System.out.println();
 				}
-				aufhoehren = true;
 			}
 		}
 	}
