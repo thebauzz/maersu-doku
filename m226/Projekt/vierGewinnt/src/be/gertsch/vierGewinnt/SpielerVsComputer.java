@@ -42,43 +42,36 @@ public class SpielerVsComputer extends VierGewinnt {
 					weiter = true;
 					break;
 				}
-				else { weiter = false; }
 			case 2:
 				if (feld[40] == ' ') {
 					weiter = true;
 					break;
 				}
-				else { weiter = false; }
 			case 3:
 				if (feld[39] == ' ') {
 					weiter = true;
 					break;
 				}
-				else { weiter = false; }
 			case 4:
 				if (feld[38] == ' ') {
 					weiter = true;
 					break;
 				}
-				else { weiter = false; }
 			case 5:
 				if (feld[37] == ' ') {
 					weiter = true;
 					break;
 				}
-				else { weiter = false; }
 			case 6:
 				if (feld[36] == ' ') {
 					weiter = true;
 					break;
 				}
-				else { weiter = false; }
 			case 7:
 				if (feld[35] == ' ') {
 					weiter = true;
 					break;
 				}
-				else { weiter = false; }
 			}
 		}
 	}

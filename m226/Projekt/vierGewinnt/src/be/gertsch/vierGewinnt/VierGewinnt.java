@@ -38,7 +38,7 @@ public class VierGewinnt {
 	/**
 	 * Spielfeld: Copyright Text, der überall eingefügt wird.
 	 */
-	public static String copyright = " ® 2018 TOPOMEDICS - v1.0 M.Gertsch";
+	public static String copyright = " ® 2018 TOPOMEDICS - v1.1 M.Gertsch";
 	
 	/**
 	 * Spielfeld: Die Liste für das Spielfeld (42 Werte insgesamt -> 0 bis 41);
@@ -46,7 +46,7 @@ public class VierGewinnt {
 	static char[] feld = new char[42];
 	
 	/**
-	 * Spieler: Definiert, welcher Sieler dran ist. 0=x, 1=O
+	 * Spieler: Definiert, welcher Spieler dran ist. 0=x, 1=O
 	 */
 	static int nextTurn = 0;
 	
@@ -87,7 +87,8 @@ public class VierGewinnt {
 			 * Entscheid fällen ob Computer oder Spieler als Gegner
 			 */
 			String computer_spieler = ConsoleReader.readString("Möchten Sie gegen den Computer spielen? (Y/n)");
-			if (computer_spieler.equalsIgnoreCase("n") || computer_spieler.equalsIgnoreCase("no")) {
+			if (computer_spieler.equalsIgnoreCase("n")    || computer_spieler.equalsIgnoreCase("no") ||
+				computer_spieler.equalsIgnoreCase("nein") || computer_spieler.equalsIgnoreCase("nope")) {
 				computer = false;
 				System.out.println("\n\n\n");
 			}
@@ -136,7 +137,8 @@ public class VierGewinnt {
 				 * else: setzt alles zurück. Spieler X beginnt wieder
 				 */
 				String ja_nein = ConsoleReader.readString(" Wollen Sie nochmals spielen? (Y/n)");
-				if (ja_nein.equalsIgnoreCase("n") || ja_nein.equalsIgnoreCase("no")) {
+				if (ja_nein.equalsIgnoreCase("n")    || ja_nein.equalsIgnoreCase("no") ||
+					ja_nein.equalsIgnoreCase("nein") || ja_nein.equalsIgnoreCase("nope")) {
 					System.out.println(" Vielen Dank für das Spielen von 4-Gewinnt von Marcel Gertsch!");
 					aufhoehren = true;
 				}
@@ -167,18 +169,20 @@ public class VierGewinnt {
 						gameOver = true;
 					}
 					
-					pc.computerTurn();
-					reihe = pc.getReihe();
-					figur = 'O';
-					spiel.printSpielfeld(reihe, figur);
-					
-					sieger.hatWerGewonnen();
-					if (win == 2) { win = 3; }
-					
-					zaehler += 1;
-					if (zaehler == 42) { // 6 * 7 = Maximal 42 Züge
-						win = 4;
-						gameOver = true;
+					if (!gameOver) {
+						pc.computerTurn();
+						reihe = pc.getReihe();
+						figur = 'O';
+						spiel.printSpielfeld(reihe, figur);
+						
+						sieger.hatWerGewonnen();
+						if (win == 2) { win = 3; }
+						
+						zaehler += 1;
+						if (zaehler == 42) { // 6 * 7 = Maximal 42 Züge
+							win = 4;
+							gameOver = true;
+						}
 					}
 				
 				}
@@ -203,7 +207,8 @@ public class VierGewinnt {
 				 * else: setzt alles zurück. Spieler X beginnt wieder
 				 */
 				String ja_nein = ConsoleReader.readString(" Wollen Sie nochmals spielen? (Y/n)");
-				if (ja_nein.equalsIgnoreCase("n") || ja_nein.equalsIgnoreCase("no")) {
+				if (ja_nein.equalsIgnoreCase("n")    || ja_nein.equalsIgnoreCase("no") ||
+					ja_nein.equalsIgnoreCase("nein") || ja_nein.equalsIgnoreCase("nope")) {
 					System.out.println(" Vielen Dank für das Spielen von 4-Gewinnt von Marcel Gertsch!");
 					aufhoehren = true;
 				}
