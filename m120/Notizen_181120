@@ -9,3 +9,21 @@ Dialogführung
  - Menüs
  - Bildschirmformulare
  - Direkte Manipulation
+
+What You See Is What You Get (WYSIWYG):
+ - Alles, was der Benutzer sieht, ist auch vorhanden.
+ - Nichts von Bedeutung bleibt dem Benutzer verborgen.
+
+Metapher:
+ - Abstrakter, unbekannter Begriff mit einer bildhaften Übertragung als Vergleich "übersetzen".
+(Ordner, Blatt, Papierkorb, fliegen, alle Icons)
+
+Fensteraufbau (Layout)
+ - VBox und HBox (Vertikal oder Horizonzal nebeneinander platziert)
+ - BorderPane (Top, Center, Bottom, Left, Right)
+ - AnchorPane (Einen bestimmten Punkt fixieren > Unten Rechts)
+ - FlowPane (Stellt so viel nebeneinander dar, solang es kein Platz hat > Responsive)
+ - StackPane (Stellt Sachen übereinander dar > vorne oder hinten)
+ - GridPane (Reihen und Spalten, wie eine Tabelle)
+ - ButtonBar (Buttons - Speichern & Abbrechen werden in einer bestimmten Reihenfolge platziert)
+ - Unmanaged Nodes
