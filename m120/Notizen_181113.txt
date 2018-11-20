@@ -1,0 +1,91 @@
+Benutzerschnittstelle (User-Interface)
+
+Software-Ergonomie (menschliche gestalltung des "Software-Arbeitspaltzes")
+
+Gestaltungsregelwerk (Style Guide)
+
+GUI-System (grapfical user interface)
+	in JAVA: Swing oder JavaFX
+
+
+Style Guide
+Was? 
+Richtlinien und Tipps zur Gestaltung
+
+Wofür? 
+Erscheinungsbild und bedienungseigenschaften (Look an feel) anwendungsübergreifend
+einheitlich und effizient gestaltet
+
+Welche? 
+herstellerspezifisch
+unternehmenseigene (corporate Design - CD)
+
+
+Interaktive Benutzerschnittstellen
+-... mittels Kommandosprachen
+-... mittels Menüs
+-... mittels direkter Manipulation (Fenster-orientiert)
+-... mittels Bildschirmformularen
+
+
+DIALOGFÜHRUNG: KONSOLENANWENDUNGEN
+Pro
+-schnelle effiziente arbeit möglich
+-sehr flexibel
+-bietet zahlreiche optionen und parameter
+
+Kontra
+-hoher lernaufwand
+-fehleranfällig
+-auswirkung von fehler können erheblich sein
+
+
+DIALOGFÜHRUNG: MENU
+Pro
+- Schnell verstanden und leicht zu erlernen
+- Kein Syntaxfehler (vertippen nicht möglich)
+- Wenig Aufwand (Eingabe)
+- Strukturierung
+- Kleinerer lernaufwand
+
+Kontra
+- Patzbedarf auf dem Bildschirm
+- Parameterübergabe aufwendig (dialogfenster)
+- Unübersichtlich und aufwendig (kleine schritte) wenn viele Alternativern
+
+
+DIALOGFÜHRUNG: DIREKTE MANIPULATION
+Wesentliche Objekte sind sichtbar, greifbar. Die Rückmeldung über Erflog (Misserfolg) einer Aktion muss unmittelbar erfolgen.
+
+Pro
+- Ergebnis direkt erkennbar (sichtbar)
+- Kleiner lernaufwand
+- Kein Syntaxfehler (vertippen nicht möglich)
+
+Kontra
+- Symbole nicht immer eindeutig --> Fehlhandlungen
+- Platzverbrauch
+
+
+DIALOGFÜHRUNG: FORMULARE 
+Für Eingabe von strukturierten Daten einen Datenbestand (Datenbank).
+
+Pro
+-Erlernen einfach / intuitiv (Analogie zu Papierformularen)
+-Schnell und effizient
+
+
+WIMP --> 
+- Windwos
+- Icons
+- Menus
+- Pointer
+
+FENSTERAUFBAU
+Stage = Anwendungsfenster (Rahmen für den Inhalt)
+
+::::::::::::::::::::::::::
+:: PRESENTATION EDUPLUS ::
+::::::::::::::::::::::::::
+
+
