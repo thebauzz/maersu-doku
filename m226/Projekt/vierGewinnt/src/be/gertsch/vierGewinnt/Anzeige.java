@@ -29,8 +29,8 @@ public class Anzeige {
 	public void creditsAnzeigen() {
 		System.out.println("\n\nCredits:");
 		System.out.println("‾‾‾‾‾‾‾‾");
-		System.out.println("Herausgeber von Vier Gewinnt in Java: TOPOMEDICS");
-		System.out.println("Author: Marcel Gertsch");
-		System.out.println("\nVersion: 1.1 -- Veröffentlicht: 21. November 2018");
+		System.out.println(" Herausgeber von Vier Gewinnt in Java: TOPOMEDICS");
+		System.out.println(" Author: Marcel Gertsch");
+		System.out.println("\n Version: 1.1 -- Veröffentlicht: 21. November 2018\n\n");
 	}
 }

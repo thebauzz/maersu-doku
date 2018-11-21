@@ -1,4 +1,4 @@
-package be.gertsch.vierGewinnt;
+ package be.gertsch.vierGewinnt;
 
 import be.gertsch.utils.ConsoleReader;
 
@@ -85,28 +85,39 @@ public class VierGewinnt {
 			System.out.println("Für eine Spielanleitung, geben Sie 99 ein.");
 			System.out.println("Für die Credits, geben Sie 98 ein.\n");
 			
-			/**
-			 * Entscheid fällen ob Computer oder Spieler als Gegner
-			 */
-			String computer_spieler = ConsoleReader.readString("Möchten Sie gegen den Computer spielen? (Y/n)");
-			if (computer_spieler.equalsIgnoreCase("n")    || computer_spieler.equalsIgnoreCase("no") ||
-				computer_spieler.equalsIgnoreCase("nein") || computer_spieler.equalsIgnoreCase("nope")) {
-				computer = false;
-				System.out.println("\n\n\n");
-			}
-			else {
-				computer = true;
-				System.out.println("\n\n\n");
+			
+			// Entscheid fällen ob Computer oder Spieler als Gegner
+			// Bei Eingabe von 99 / 98 soll die entsprechende Ausgabe angezeigt werden.
+			 
+			String computer_spieler = "99";
+			while (computer_spieler.equals("99") || computer_spieler.equals("98")) {
+				computer_spieler = ConsoleReader.readString("Möchten Sie gegen den Computer spielen? (Y/n)");
+				if (computer_spieler.equals("99")) {
+					Anzeige help = new Anzeige();
+					help.hilfeAnzeigen();
+				}
+				else if (computer_spieler.equals("98")) {
+					Anzeige credit = new Anzeige();
+					credit.creditsAnzeigen();
+				}			
+				else if (computer_spieler.equalsIgnoreCase("n")    || computer_spieler.equalsIgnoreCase("no") ||
+					computer_spieler.equalsIgnoreCase("nein") || computer_spieler.equalsIgnoreCase("nope")) {
+					computer = false;
+					System.out.println("\n\n\n");
+				}
+				else {
+					computer = true;
+					System.out.println("\n\n\n");
+				}
 			}
 			
-			/**
-			 * Spielablauf wenn Spieler gegen Spieler
-			 */
+			// Spielablauf wenn Spieler gegen Spieler
+			 
 			if (computer == false) {
 				spiel.spielStart();
-				/**
-				 *  While Schlaufe für ein Spiel. Entweder 42 Züge oder bis jemand gewonnen hat.
-				 */
+				
+				//  While Schlaufe für ein Spiel. Entweder 42 Züge oder bis jemand gewonnen hat.
+				
 				while (gameOver == false) {
 					player.werIstDran();
 					int reihe = player.getReihe();
@@ -116,7 +127,7 @@ public class VierGewinnt {
 					sieger.hatWerGewonnen();
 					
 					zaehler += 1;
-					if (zaehler == 42) { // 6 * 7 = Maximal 42 Züge
+					if (zaehler == 42) {
 						win = 4;
 						gameOver = true;
 					}
@@ -128,16 +139,20 @@ public class VierGewinnt {
 				else if (win == 2) {
 					System.out.println(" Spieler O hat gewonnen. Glückwunsch!");
 				}
-				if (win == 3) {
+				else if (win == 3) {
+					System.out.println(" Der Computer hat gewonnen!");
+					System.out.println(" Viel Glück beim nächsten Mal");
+				}
+				else {
 					System.out.println(" Unentschieden!");
 					System.out.println(" Alle Züge wurden aufgebraucht.");
 				}
-				/**
-				 * Erneut spielen?
-				 * 
-				 * Solange etwas anderes als n, N, no oder NO eingegeben wird, startet das Spiel neu
-				 * else: setzt alles zurück. Spieler X beginnt wieder
-				 */
+			
+				// Erneut spielen?
+				  
+				//  Solange etwas anderes als n, N, no oder NO eingegeben wird, startet das Spiel neu
+				//  else: setzt alles zurück. Spieler X beginnt wieder
+				 
 				String ja_nein = ConsoleReader.readString(" Wollen Sie nochmals spielen? (Y/n)");
 				if (ja_nein.equalsIgnoreCase("n")    || ja_nein.equalsIgnoreCase("no") ||
 					ja_nein.equalsIgnoreCase("nein") || ja_nein.equalsIgnoreCase("nope")) {
@@ -152,9 +167,9 @@ public class VierGewinnt {
 				}
 			}
 			
-			/**
-			 * Spielablauf wenn Spieler gegen Computer
-			 */
+			
+			//  Spielablauf wenn Spieler gegen Computer
+			 
 			if (computer == true) {
 				spiel.spielStart();
 				while (gameOver == false) {
@@ -203,12 +218,12 @@ public class VierGewinnt {
 					System.out.println(" Unentschieden!");
 					System.out.println(" Alle Züge wurden aufgebraucht.");
 				}
-				/**
-				 * Erneut spielen?
-				 * 
-				 * Solange etwas anderes als n, N, no oder NO eingegeben wird, startet das Spiel neu
-				 * else: setzt alles zurück. Spieler X beginnt wieder
-				 */
+				
+				 // Erneut spielen?
+				  
+				 // Solange etwas anderes als n, N, no oder NO eingegeben wird, startet das Spiel neu
+				 // else: setzt alles zurück. Spieler X beginnt wieder
+		
 				String ja_nein = ConsoleReader.readString(" Wollen Sie nochmals spielen? (Y/n)");
 				if (ja_nein.equalsIgnoreCase("n")    || ja_nein.equalsIgnoreCase("no") ||
 					ja_nein.equalsIgnoreCase("nein") || ja_nein.equalsIgnoreCase("nope")) {

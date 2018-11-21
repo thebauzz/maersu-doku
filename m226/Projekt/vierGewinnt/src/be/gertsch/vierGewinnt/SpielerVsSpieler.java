@@ -32,6 +32,7 @@ public class SpielerVsSpieler extends VierGewinnt {
 		reihe = 0;
 		while (reihe > 7 || reihe < 1) { 
 			reihe = ConsoleReader.readInteger(" Bitte geben Sie eine Zahl zwischen 1 und 7 ein");
+			System.out.println("\n\n"+copyright);
 			if (reihe == 99) {
 				Anzeige help = new Anzeige();
 				help.hilfeAnzeigen();

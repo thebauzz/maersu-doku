@@ -23,7 +23,7 @@ public class HatWerGewonnen extends VierGewinnt {
 	 *  Trifft eine Bedingung zu: So wird win=1 oder win=0 gesetzt, je nach dem wer gewonnen hat. um das Spiel zu beenden gameOver = true;
 	 */
 	public void hatWerGewonnen() {
-	
+		
 		// Überprüft alle SENKRECHTEN Möglichkeiten für X
 		for (int a = 0; a <= 20; a++) {
 			if (feld[a] == 'X' && feld[a+7] == 'X' && feld[a+14] == 'X' && feld[a+21] == 'X') {

@@ -20,6 +20,7 @@ public class SpielerVsComputer extends VierGewinnt {
 		reihe = 0;
 		while (reihe > 7 || reihe < 1) { 
 			reihe = ConsoleReader.readInteger(" Bitte geben Sie eine Zahl zwischen 1 und 7 ein");
+			System.out.println("\n\n"+copyright);
 			if (reihe == 99) {
 				Anzeige help = new Anzeige();
 				help.hilfeAnzeigen();
@@ -40,43 +41,50 @@ public class SpielerVsComputer extends VierGewinnt {
 		boolean weiter = false;
 		while(!weiter) {
 			reihe = (int) (Math.random() * ((7 - 1) + 1)) + 1;
-			if (reihe <= spielerReihe + 1 && reihe >= spielerReihe - 1) {
+			if (reihe <= spielerReihe + 2 && reihe >= spielerReihe - 2) {
 				switch(reihe) {
 				case 1:
 					if (feld[41] == ' ') {
 						weiter = true;
 						break;
 					}
+					else { weiter = false; }
 				case 2:
 					if (feld[40] == ' ') {
 						weiter = true;
 						break;
 					}
+					else { weiter = false; }
 				case 3:
 					if (feld[39] == ' ') {
 						weiter = true;
 						break;
 					}
+					else { weiter = false; }
 				case 4:
 					if (feld[38] == ' ') {
 						weiter = true;
 						break;
 					}
+					else { weiter = false; }
 				case 5:
 					if (feld[37] == ' ') {
 						weiter = true;
 						break;
 					}
+					else { weiter = false; }
 				case 6:
 					if (feld[36] == ' ') {
 						weiter = true;
 						break;
 					}
+					else { weiter = false; }
 				case 7:
 					if (feld[35] == ' ') {
 						weiter = true;
 						break;
 					}
+					else { weiter = false; }
 				}
 			}
 		}
