@@ -71,10 +71,10 @@ public class VierGewinnt {
 		/**
 		 *  Erstellen aller Objekte
 		 */
-		Spielfeld spiel = new Spielfeld();
+		Spielfeld spiel         = new Spielfeld();
 		SpielerVsSpieler player = new SpielerVsSpieler();
-		SpielerVsComputer pc = new SpielerVsComputer();
-		HatWerGewonnen sieger = new HatWerGewonnen();
+		SpielerVsComputer pc    = new SpielerVsComputer();
+		HatWerGewonnen sieger   = new HatWerGewonnen();
 		
 		/**
 		 *  Gesamter Spielablauf. Hier landet der Spieler, wenn er mehr als einmal spielen will.
@@ -82,6 +82,8 @@ public class VierGewinnt {
 		while(aufhoehren == false) {
 			System.out.println(copyright);
 			System.out.println("Willkommen bei 4-Gewinnt!");
+			System.out.println("Für eine Spielanleitung, geben Sie 99 ein.");
+			System.out.println("Für die Credits, geben Sie 98 ein.\n");
 			
 			/**
 			 * Entscheid fällen ob Computer oder Spieler als Gegner
@@ -170,7 +172,8 @@ public class VierGewinnt {
 					}
 					
 					if (!gameOver) {
-						pc.computerTurn();
+						int spielerReihe = reihe;
+						pc.computerTurn(spielerReihe);
 						reihe = pc.getReihe();
 						figur = 'O';
 						spiel.printSpielfeld(reihe, figur);

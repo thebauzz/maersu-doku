@@ -36,6 +36,10 @@ public class SpielerVsSpieler extends VierGewinnt {
 				Anzeige help = new Anzeige();
 				help.hilfeAnzeigen();
 			}
+			if (reihe == 98) {
+				Anzeige credit = new Anzeige();
+				credit.creditsAnzeigen();
+			}
 		}
 	}
 	

@@ -24,6 +24,10 @@ public class SpielerVsComputer extends VierGewinnt {
 				Anzeige help = new Anzeige();
 				help.hilfeAnzeigen();
 			}
+			if (reihe == 98) {
+				Anzeige credit = new Anzeige();
+				credit.creditsAnzeigen();
+			}
 		}
 	}
 	
@@ -32,45 +36,47 @@ public class SpielerVsComputer extends VierGewinnt {
 	 * 
 	 * Generiert eine zufällige Zahl zwischen 1-7. Ist bei der Reihe das MAX erreicht, dann nochmals generieren.
 	 */
-	public void computerTurn() {
+	public void computerTurn(int spielerReihe) {
 		boolean weiter = false;
 		while(!weiter) {
 			reihe = (int) (Math.random() * ((7 - 1) + 1)) + 1;
-			switch(reihe) {
-			case 1:
-				if (feld[41] == ' ') {
-					weiter = true;
-					break;
-				}
-			case 2:
-				if (feld[40] == ' ') {
-					weiter = true;
-					break;
-				}
-			case 3:
-				if (feld[39] == ' ') {
-					weiter = true;
-					break;
-				}
-			case 4:
-				if (feld[38] == ' ') {
-					weiter = true;
-					break;
-				}
-			case 5:
-				if (feld[37] == ' ') {
-					weiter = true;
-					break;
-				}
-			case 6:
-				if (feld[36] == ' ') {
-					weiter = true;
-					break;
-				}
-			case 7:
-				if (feld[35] == ' ') {
-					weiter = true;
-					break;
+			if (reihe <= spielerReihe + 1 && reihe >= spielerReihe - 1) {
+				switch(reihe) {
+				case 1:
+					if (feld[41] == ' ') {
+						weiter = true;
+						break;
+					}
+				case 2:
+					if (feld[40] == ' ') {
+						weiter = true;
+						break;
+					}
+				case 3:
+					if (feld[39] == ' ') {
+						weiter = true;
+						break;
+					}
+				case 4:
+					if (feld[38] == ' ') {
+						weiter = true;
+						break;
+					}
+				case 5:
+					if (feld[37] == ' ') {
+						weiter = true;
+						break;
+					}
+				case 6:
+					if (feld[36] == ' ') {
+						weiter = true;
+						break;
+					}
+				case 7:
+					if (feld[35] == ' ') {
+						weiter = true;
+						break;
+					}
 				}
 			}
 		}

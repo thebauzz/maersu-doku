@@ -1,7 +1,5 @@
 package be.gertsch.vierGewinnt;
 
-import java.util.Arrays;
-
 /**
  * In dieser Klasse ist alles rund um das Spielfeld. Es sagt, wo welcher Spielstein eingefügt und dargestellt werden soll.
  * @author Marcel Gertsch
@@ -279,7 +277,6 @@ public class Spielfeld extends VierGewinnt {
 			}
 		}
 		System.out.println("|\n|---|---|---|---|---|---|---|");
-		System.out.println("  1   2   3   4   5   6   7  \n");
-		System.out.println(Arrays.toString(feld));
+		System.out.println("  1   2   3   4   5   6   7  \n"); 
 	}
 }

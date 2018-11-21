@@ -1,6 +1,6 @@
 package be.gertsch.vierGewinnt;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 import java.util.Arrays;
 import org.junit.Test;
 
@@ -10,13 +10,7 @@ public class SpielfeldTest {
 	
 	@Test
 	public void testSpielfeld() {
-
-		for (int f = feld.length - 1; f >= 0; f--) {
-			feld[f] = ' ';
-		}
-		
-		String testlist = Arrays.toString(feld);
-		assertEquals("[ ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ]", testlist);
+		assertEquals(42, feld.length);
 	}
 	
 	@Test
@@ -26,8 +20,7 @@ public class SpielfeldTest {
 			feld[f] = ' ';
 		}
 		feld[7] = 'X';
-		String testlist2 = Arrays.toString(feld);
-		assertEquals("[ ,  ,  ,  ,  ,  ,  , X,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ]", testlist2);
+		assertEquals('X', feld[7]);
 	}
 	
 	@Test
@@ -41,8 +34,8 @@ public class SpielfeldTest {
 		feld[12] = 'X';
 		feld[18] = 'X';
 		feld[24] = 'X';
-		String testlist3 = Arrays.toString(feld);
-		assertEquals("[ ,  ,  ,  ,  ,  , X,  ,  ,  ,  ,  , X,  ,  ,  ,  ,  , X,  ,  ,  ,  ,  , X,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ]", testlist3);
+		String testlist = Arrays.toString(feld);
+		assertEquals("[ ,  ,  ,  ,  ,  , X,  ,  ,  ,  ,  , X,  ,  ,  ,  ,  , X,  ,  ,  ,  ,  , X,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ]", testlist);
 	}
 
 }
