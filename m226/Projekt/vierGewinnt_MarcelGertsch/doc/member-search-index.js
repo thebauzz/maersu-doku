@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"be.gertsch.vierGewinnt","c":"SpielfeldTest","l":"SpielfeldTest()"},{"p":"be.gertsch.vierGewinnt","c":"SpielfeldTest","l":"testErsteEingabe()"},{"p":"be.gertsch.vierGewinnt","c":"SpielfeldTest","l":"testSieg()"},{"p":"be.gertsch.vierGewinnt","c":"SpielfeldTest","l":"testSpielfeld()"}]
