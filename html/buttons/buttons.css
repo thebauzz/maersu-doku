@@ -960,6 +960,94 @@ Buttons Reihe 11
 }
 
 /*
+Buttons Reihe 12
+*/
+.r12_b1 {
+  border-top: 1px solid var(--schwarz);
+  border-bottom: 1px solid var(--schwarz);
+  border-left: none;
+  border-right: none;
+}
+.r12_b1:hover {
+  box-shadow: inset 0  2px 0 0 var(--schwarz),
+              inset 0 -2px 0 0 var(--schwarz);
+}
+.r12_b2 {
+  border-top: 1px solid var(--rot);
+  border-bottom: 1px solid var(--rot);
+  border-left: none;
+  border-right: none;
+}
+.r12_b2:hover {
+  box-shadow: inset 0  2px 0 0 var(--rot),
+              inset 0 -2px 0 0 var(--rot);
+}
+.r12_b3 {
+  border-top: 1px solid var(--gruen);
+  border-bottom: 1px solid var(--gruen);
+  border-left: none;
+  border-right: none;
+}
+.r12_b3:hover {
+  box-shadow: inset 0  2px 0 0 var(--gruen),
+              inset 0 -2px 0 0 var(--gruen);
+}
+.r12_b4 {
+  border-top: 1px solid var(--blau);
+  border-bottom: 1px solid var(--blau);
+  border-left: none;
+  border-right: none;
+}
+.r12_b4:hover {
+  box-shadow: inset 0  2px 0 0 var(--blau),
+              inset 0 -2px 0 0 var(--blau);
+}
+
+/*
+Buttons Reihe 13
+*/
+.r13_b1 {
+  border: none;
+  border-top: 1px solid var(--schwarz);
+  box-shadow: inset 0 -2px 0 0 var(--schwarz);
+}
+.r13_b1:hover {
+  box-shadow: none;
+  box-shadow: inset 0 2px 0 0 var(--schwarz);
+  border-bottom: 1px solid var(--schwarz);
+}
+.r13_b2 {
+  border: none;
+  border-top: 1px solid var(--rot);
+  box-shadow: inset 0 -2px 0 0 var(--rot);
+}
+.r13_b2:hover {
+  box-shadow: none;
+  box-shadow: inset 0 2px 0 0 var(--rot);
+  border-bottom: 1px solid var(--rot);
+}
+.r13_b3 {
+  border: none;
+  border-top: 1px solid var(--gruen);
+  box-shadow: inset 0 -2px 0 0 var(--gruen);
+}
+.r13_b3:hover {
+  box-shadow: none;
+  box-shadow: inset 0 2px 0 0 var(--gruen);
+  border-bottom: 1px solid var(--gruen);
+}
+.r13_b4 {
+  border: none;
+  border-top: 1px solid var(--blau);
+  box-shadow: inset 0 -2px 0 0 var(--blau);
+}
+.r13_b4:hover {
+  box-shadow: none;
+  box-shadow: inset 0 2px 0 0 var(--blau);
+  border-bottom: 1px solid var(--blau);
+}
+
+/*
 Switchs Reihe 1
 */
 .r1_s1 {
