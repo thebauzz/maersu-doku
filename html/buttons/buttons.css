@@ -1048,6 +1048,130 @@ Buttons Reihe 13
 }
 
 /*
+Buttons Reihe 14
+*/
+.r14_b1 {
+  border: 1px solid var(--schwarz);
+}
+.r14_b1:hover {
+  box-shadow: inset   0   -3px 0 0 var(--schwarz),
+              inset   0    3px 0 0 var(--schwarz),
+              inset  3px   0   0 0 var(--schwarz),
+              inset -3px   0   0 0 var(--schwarz);
+}
+.r14_b2 {
+  border: 1px solid var(--rot);
+}
+.r14_b2:hover {
+  box-shadow: inset   0   -3px 0 0 var(--rot),
+              inset   0    3px 0 0 var(--rot),
+              inset  3px   0   0 0 var(--rot),
+              inset -3px   0   0 0 var(--rot);
+}
+.r14_b3 {
+  border: 1px solid var(--gruen);
+}
+.r14_b3:hover {
+  box-shadow: inset   0   -3px 0 0 var(--gruen),
+              inset   0    3px 0 0 var(--gruen),
+              inset  3px   0   0 0 var(--gruen),
+              inset -3px   0   0 0 var(--gruen);
+}
+.r14_b4 {
+  border: 1px solid var(--blau);
+}
+.r14_b4:hover {
+  box-shadow: inset   0   -3px 0 0 var(--blau),
+              inset   0    3px 0 0 var(--blau),
+              inset  3px   0   0 0 var(--blau),
+              inset -3px   0   0 0 var(--blau);
+}
+
+.r15_b1 {
+	border: none;
+  position: relative;
+}
+.r15_b1::after {
+  content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: var(--schwarz);
+	opacity: 0;
+	transform: translateY(-10px);
+  transition: 0.3s;
+}
+.r15_b1:hover::after {
+	height: 3px;
+	opacity: 1;
+	transform: translateY(0px);
+}
+.r15_b2 {
+	border: none;
+  position: relative;
+}
+.r15_b2::after {
+  content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: var(--rot);
+	opacity: 0;
+	transform: translateY(-10px);
+  transition: 0.3s;
+}
+.r15_b2:hover::after {
+	height: 3px;
+	opacity: 1;
+	transform: translateY(0px);
+}
+.r15_b3 {
+	border: none;
+  position: relative;
+}
+.r15_b3::after {
+  content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: var(--gruen);
+	opacity: 0;
+	transform: translateY(-10px);
+  transition: 0.3s;
+}
+.r15_b3:hover::after {
+	height: 3px;
+	opacity: 1;
+	transform: translateY(0px);
+}
+.r15_b4 {
+	border: none;
+  position: relative;
+}
+.r15_b4::after {
+  content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: var(--blau);
+	opacity: 0;
+	transform: translateY(-10px);
+  transition: 0.3s;
+}
+.r15_b4:hover::after {
+	height: 3px;
+	opacity: 1;
+	transform: translateY(0px);
+}
+/*
 Switchs Reihe 1
 */
 .r1_s1 {
