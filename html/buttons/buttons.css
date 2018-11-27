@@ -886,6 +886,7 @@ Buttons Reihe 11
 .r11_b1:hover:after {
   content: "";
   position: absolute;
+  z-index: -100;
   top: 50%;
   left: 0;
   width: 100%;
@@ -904,6 +905,7 @@ Buttons Reihe 11
 .r11_b2:hover:after {
   content: "";
   position: absolute;
+  z-index: -100;
   top: 50%;
   left: 0;
   width: 100%;
@@ -922,6 +924,7 @@ Buttons Reihe 11
 .r11_b3:hover:after {
   content: "";
   position: absolute;
+  z-index: -100;
   top: 50%;
   left: 0;
   width: 100%;
@@ -940,6 +943,7 @@ Buttons Reihe 11
 .r11_b4:hover:after {
   content: "";
   position: absolute;
+  z-index: -100;
   top: 50%;
   left: 0;
   width: 100%;
