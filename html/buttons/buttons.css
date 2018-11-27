@@ -1171,6 +1171,131 @@ Buttons Reihe 14
 	opacity: 1;
 	transform: translateY(0px);
 }
+
+/*
+Buttons Reihe 16
+*/
+.r16_b1 {
+  position: relative;
+  border: none;
+}
+.r16_b1::before {
+  content: "{";
+  position: absolute;
+  left: 0;
+  color: var(--schwarz);
+  transform: translateX(10px);
+  opacity: 0;
+  transition: 0.3s;
+}
+.r16_b1:hover::before {
+  transform: translate(0);
+  opacity: 1;
+}
+.r16_b1::after {
+  content: "}";
+  position: absolute;
+  right: 0;
+  color: var(--schwarz);
+  transform: translateX(-10px);
+  opacity: 0;
+  transition: 0.3s;
+}
+.r16_b1:hover::after {
+  transform: translate(0);
+  opacity: 1;
+}
+.r16_b2 {
+  position: relative;
+  border: none;
+}
+.r16_b2::before {
+  content: "{";
+  position: absolute;
+  left: 0;
+  color: var(--rot);
+  transform: translateX(10px);
+  opacity: 0;
+  transition: 0.3s;
+}
+.r16_b2:hover::before {
+  transform: translate(0);
+  opacity: 1;
+}
+.r16_b2::after {
+  content: "}";
+  position: absolute;
+  right: 0;
+  color: var(--rot);
+  transform: translateX(-10px);
+  opacity: 0;
+  transition: 0.3s;
+}
+.r16_b2:hover::after {
+  transform: translate(0);
+  opacity: 1;
+}
+.r16_b3 {
+  position: relative;
+  border: none;
+}
+.r16_b3::before {
+  content: "{";
+  position: absolute;
+  left: 0;
+  color: var(--gruen);
+  transform: translateX(10px);
+  opacity: 0;
+  transition: 0.3s;
+}
+.r16_b3:hover::before {
+  transform: translate(0);
+  opacity: 1;
+}
+.r16_b3::after {
+  content: "}";
+  position: absolute;
+  right: 0;
+  color: var(--gruen);
+  transform: translateX(-10px);
+  opacity: 0;
+  transition: 0.3s;
+}
+.r16_b3:hover::after {
+  transform: translate(0);
+  opacity: 1;
+}
+.r16_b4 {
+  position: relative;
+  border: none;
+}
+.r16_b4::before {
+  content: "{";
+  position: absolute;
+  left: 0;
+  color: var(--blau);
+  transform: translateX(10px);
+  opacity: 0;
+  transition: 0.3s;
+}
+.r16_b4:hover::before {
+  transform: translate(0);
+  opacity: 1;
+}
+.r16_b4::after {
+  content: "}";
+  position: absolute;
+  right: 0;
+  color: var(--blau);
+  transform: translateX(-10px);
+  opacity: 0;
+  transition: 0.3s;
+}
+.r16_b4:hover::after {
+  transform: translate(0);
+  opacity: 1;
+}
+
 /*
 Switchs Reihe 1
 */
