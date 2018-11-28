@@ -1,0 +1,44 @@
+BLOCK 03
+
+Grundsätze der Dialoggestalltung (1/3):
+nach DIN EN ISO 9241 Teil 110 (bzw. 10)
+
+- Aufgabenangemessenheit
+Der Benutzer wird unterstützt, seine Arbeitsaufgaben effektiv und effizient zu erledigen.
+
+- Selbstbeschreibungsfähigkeit
+Jeder einzelne Dialogschritt ist verständlich oder wird dem Benutzer auf Anfrage erklärt.
+
+- Steuerbarkeit
+Der Benutzer ist in der Lage, den Dialogablauf zu starten sowie seine Richtung und Geschwindigkeit zu beeinflussen, bis das Ziel erreicht ist.
+
+
+Grundsätze der Dialoggestalltung (2/3):
+nach DIN EN ISO 9241 Teil 110 (bzw. 10)
+
+- Erwartungskonformität 
+Der Dialog ist konsistent und entspricht der Erfahrung des Benutzers und allgemein anerkannten Konventionen.
+
+- Fehlertoleranz
+Das beabsichtigte Arbeitsergebnis kann troz erkennbar fehlerhafter Eingaben entweder mit keinem ider minimalem korrekturaufwand durch den Benutzer erreicht weden
+
+
+Grundsätze der Dialoggestalltung (3/3):
+nach DIN EN ISO 9241 Teil 110 (bzw. 10)
+
+- individualisierbarkeit
+Das Dialogsystem lässt Anpasssungen an die individuelle 
+...
+
+- Lernförderkeit
+...
+
+
+EVENT HANDELING
+
+Anonyme Klassen etc.
+Anonyme Funktion = Lamba expression
+
+
+
+
