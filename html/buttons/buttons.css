@@ -1480,6 +1480,7 @@ Buttons Reihe 18
 }
 .r18_b2::before {
   content: "/";
+  font-weight: bold;
   position: absolute;
   left: 0;
   color: #ff5000;
