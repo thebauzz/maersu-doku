@@ -257,11 +257,11 @@ Buttons Reihe 5
 	content: "";
 	position: absolute;
 	z-index: -1;
-
+	transition: all 0.2s;
 }
 .r5_b1:after {
-	width: 0;
-	height: 100%;
+	width: 100%;
+	height: 0;
 	top: 0;
 	left: 0;
 	background: var(--schwarz);
@@ -272,7 +272,7 @@ Buttons Reihe 5
 }
 .r5_b1:hover:after,
 .r5_b1:active:after {
-	width: 100%;
+	height: 100%;
 }
 
 .r5_b2 {
@@ -287,8 +287,8 @@ Buttons Reihe 5
 	transition: all 0.2s;
 }
 .r5_b2:after {
-	width: 0;
-	height: 100%;
+	width: 100%;
+	height: 0;
 	top: 0;
 	left: 0;
 	background: var(--rot);
@@ -299,7 +299,7 @@ Buttons Reihe 5
 }
 .r5_b2:hover:after,
 .r5_b2:active:after {
-	width: 100%;
+	height: 100%;
 }
 
 .r5_b3 {
