@@ -30,21 +30,20 @@ html, body {
   text-align: center;
 }
 
-#reihe p {
-  display: inline;
-  padding-left: 50px;
-}
-
 #reihe:last-child {
   padding-bottom: 100px;
 }
 
-hr {
-  margin-top: 50px;
+#reihe p {
+  display: inline;
+  padding-left: 50px;
+  font-style: italic;
+  color: #808080;
+  user-select: none;
 }
 
-* {
-  transition-duration: 0.4s;
+hr {
+  margin-top: 50px;
 }
 
 /* styling für alle buttons */
@@ -55,6 +54,7 @@ a {
   color: var(--schwarz);
   text-decoration: none;
   user-select: none;
+  transition-duration: 0.4s;
 }
 
 /*
