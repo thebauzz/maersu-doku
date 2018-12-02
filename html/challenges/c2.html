@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Challenge 1</title>
+    <style>
+      :root { --farbe: #000; }
+      * {margin:0;padding:0;user-select:none;font-family:"Courier New";}
+
+      html,body {height:100%;width:100vw;}
+
+      .content {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 100px;
+      }
+      .checkbox input {
+        display: none;
+      }
+      .checkbox {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+      }
+      .checkbox .toggle {
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        width: 50px;
+        height: 50px;
+        border: 12px solid #cc3f3f;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+      }
+      .checkbox input:checked ~ .toggle {
+        border-width: 4px;
+        background: #5fd17a;
+        border-color: #444444;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="checkbox">
+        <input id="cb" type="checkbox"><label class="toggle" for="cb"></label>
+      </div>
+    </div>
+
+    <script>
+
+    </script>
+  </body>
+</html>
