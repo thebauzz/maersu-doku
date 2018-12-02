@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Challenge 1</title>
+    <style>
+      :root { --farbe: #000; }
+      * {margin:0;padding:0;user-select:none;font-family:"Courier New";}
+
+      html,body {height:100%;width:100vw;}
+
+      .content {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 100px;
+      }
+
+      input[type=range] {
+        width: 250px;
+      }
+
+      input[type=number] {
+        border: none;
+        font-size: 16px;
+        width: 50px;
+        position: relative;
+        top: -2px;
+      }
+
+      #text1, #text2, #text3 {
+        display: inline;
+        font-weight: bold;
+      }
+
+      #farbdarstellung {
+        height: 100px;
+        width: 200px;
+        background: var(--farbe);
+        margin: 30px auto 0;
+        border: 1px solid black;
+      }
+
+      #textdarstellung {
+        user-select: all;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <input type="number" min="0" max="255" value="000" id="text1" oninput="newTextV()">
+      <input type="range"  min="0" max="255" value="000" id="zahl1" oninput="newSlideV()"><br>
+
+      <input type="number" min="0" max="255" value="000" id="text2" oninput="newTextV()">
+      <input type="range"  min="0" max="255" value="000" id="zahl2" oninput="newSlideV()"><br>
+
+      <input type="number" min="0" max="255" value="000" id="text3" oninput="newTextV()">
+      <input type="range"  min="0" max="255" value="000" id="zahl3" oninput="newSlideV()"><br>
+
+      <div id="farbdarstellung"></div> <br> <div id="textdarstellung">#000000</div>
+    </div>
+
+    <script>
+    // v = Wert des Sliders; t = text rechts vom Slider; h = Zahl des Sliders in hex
+      function newSlideV() {
+        v1 = document.getElementById("zahl1").value;
+        t1 = document.getElementById("text1");
+        if (v1 < 10) { q1 = "00" + v1; }
+        else if (v1 < 100) { q1 = "0" + v1; }
+        else { q1 = v1; }
+
+        v2 = document.getElementById("zahl2").value;
+        t2 = document.getElementById("text2");
+        if (v2 < 10) { q2 = "00" + v2; }
+        else if (v2 < 100) { q2 = "0" + v2; }
+        else { q2 = v2; }
+
+        v3 = document.getElementById("zahl3").value;
+        t3 = document.getElementById("text3");
+        if (v3 < 10) { q3 = "00" + v3; }
+        else if (v3 < 100) { q3 = "0" + v3; }
+        else { q3 = v3; }
+
+        h1 = Number(v1).toString(16);
+        h2 = Number(v2).toString(16);
+        h3 = Number(v3).toString(16);
+        if (v1 < 16) { h1 = "0" + h1 }
+        if (v2 < 16) { h2 = "0" + h2 }
+        if (v3 < 16) { h3 = "0" + h3 }
+
+        hex = "#" + h1 + h2 + h3;
+        t1.value = q1;
+        t2.value = q2;
+        t3.value = q3;
+
+        document.getElementById("textdarstellung").innerHTML = hex;
+        document.documentElement.style.setProperty("--farbe", hex);
+      }
+      function newTextV() {
+        t1 = document.getElementById("text1");
+        v1 = document.getElementById("zahl1");
+        if (t1.value > 255) { t1.value = 255 }
+        if (t1.value < 0)   { t1.value = 0   }
+        v1.value = t1.value;
+
+        t2 = document.getElementById("text2");
+        v2 = document.getElementById("zahl2");
+        if (t2.value > 255) { t2.value = 255 }
+        if (t2.value < 0)   { t2.value = 0   }
+        v2.value = t2.value;
+
+        t3 = document.getElementById("text3");
+        v3 = document.getElementById("zahl3")
+        if (t3.value > 255) { t3.value = 255 }
+        if (t3.value < 0)   { t3.value = 0   }
+        v3.value = t3.value;
+
+        h1 = Number(v1.value).toString(16);
+        h2 = Number(v2.value).toString(16);
+        h3 = Number(v3.value).toString(16);
+        if (v1.value < 16) { h1 = "0" + h1 }
+        if (v2.value < 16) { h2 = "0" + h2 }
+        if (v3.value < 16) { h3 = "0" + h3 }
+
+        hex = "#" + h1 + h2 + h3;
+        document.getElementById("textdarstellung").innerHTML = hex;
+        document.documentElement.style.setProperty("--farbe", hex);
+
+      }
+    </script>
+  </body>
+</html>
