@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Challenge 3</title>
+    <style>
+      * {margin:0;padding:0;user-select:none;font-family:"Courier New";font-size:18px;}
+
+      html,body {height:100%;width:100vw;}
+
+      .content {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 100px;
+      }
+
+      .btn {
+        position: relative;
+      }
+
+      .btn a {
+        position: absolute;
+        width: 100px;
+        height: 50px;
+        font-weight: bold;
+        text-decoration: none;
+        box-sizing: border-box;
+        overflow: hidden;
+        border: 1px solid #000000;
+        border-radius: 4px;
+      }
+
+      .btn a::before {
+        content: "GITHUB";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        line-height: 50px;
+        background: #000000;
+        color: #ffffff;
+        transition: 0.2s ease-in-out;
+      }
+      .btn a:hover::before {
+        top: 100%;
+      }
+
+      .btn a::after {
+        content: "GITHUB";
+        position: absolute;
+        top: -100%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        line-height: 50px;
+        background: #eee;
+        color: #000000;
+        transition: 0.2s ease-in-out;
+      }
+      .btn a:hover::after {
+        top: 0;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="btn">
+        <a href="javascript:void(0)"></a>
+      </div>
+    </div>
+  </body>
+</html>
