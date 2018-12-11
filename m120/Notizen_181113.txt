@@ -12,7 +12,7 @@ Style Guide
 Was? 
 Richtlinien und Tipps zur Gestaltung
 
-Wofür? 
+WofŸr? 
 Erscheinungsbild und bedienungseigenschaften (Look an feel) anwendungsübergreifend
 einheitlich und effizient gestaltet
 
@@ -22,10 +22,10 @@ unternehmenseigene (corporate Design - CD)
 
 
 Interaktive Benutzerschnittstellen
--... mittels Kommandosprachen
--... mittels Menüs
--... mittels direkter Manipulation (Fenster-orientiert)
--... mittels Bildschirmformularen
+- mittels Kommandosprachen
+- mittels MenŸs
+- mittels direkter Manipulation (Fenster-orientiert)
+- mittels Bildschirmformularen
 
 
 DIALOGFÜHRUNG: KONSOLENANWENDUNGEN
