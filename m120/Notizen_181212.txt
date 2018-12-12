@@ -1,0 +1,8 @@
+Modul
+
+SDI = Single Document Interface
+
+Klasse zum FXML einbinden = FXMLLoader
+Methode zum laden = load
+
+Arten der verschiedenen Fenster
