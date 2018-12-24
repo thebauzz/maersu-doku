@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+}
+::selection {
+  background: #6d0f0f;
+  color: #eeeeee;
+}
+html, body {
+  height: 100vh;
+  width: 100%;
+}
+
+main {
+  margin-top: 50px;
+}
+
+.title {
+  margin-bottom: 50px;
+}
+
+.title h1 {
+  font-weight: bold;
+  color: #302424;
+  text-align: center;
+}
+
+.title hr {
+  width: 80%;
+  margin: 0 auto;
+  height: 2px;
+  border: 0;
+  background-image: linear-gradient(to right, #00000000, #6d0f0f, #00000000);
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cnt {
+  margin-bottom: 50px;
+}
+
+.cnt hr {
+  outline: none;
+  border-top: 1px solid black;
+  width: 60%;
+}
+
+.cnt h2 {
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.cnt h2::after {
+  content: "⌄⌄⌄";
+  position: absolute;
+  left: -2px;
+  top: 10px;
+  color: #b21c1c;
+  font-size: 20px;
+}
+
+.cnt p::first-letter {
+  font-family: Inconsolata;
+  font-weight: bold;
+}
+
+.cnt i {
+  font-style: normal;
+  color: #b21c1c;
+}
