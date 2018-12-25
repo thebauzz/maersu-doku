@@ -5,8 +5,12 @@
   padding: 0;
   font-family: Montserrat;
 }
+:root {
+  --mred: #b21c1c;
+  --sred: #6d0f0f;
+}
 ::selection {
-  background: #6d0f0f;
+  background: var(--sred);
   color: #eeeeee;
 }
 html, body {
@@ -33,7 +37,7 @@ main {
   margin: 0 auto;
   height: 2px;
   border: 0;
-  background-image: linear-gradient(to right, #00000000, #6d0f0f, #00000000);
+  background-image: linear-gradient(to right, #00000000, var(--sred), #00000000);
 }
 
 .content {
@@ -47,7 +51,7 @@ main {
 
 .cnt hr {
   outline: none;
-  border-top: 1px solid black;
+  border-top: 1px solid var(--sred);
   width: 60%;
 }
 
@@ -62,7 +66,7 @@ main {
   position: absolute;
   left: -2px;
   top: 10px;
-  color: #b21c1c;
+  color: var(--mred);
   font-size: 20px;
 }
 
@@ -73,5 +77,5 @@ main {
 
 .cnt i {
   font-style: normal;
-  color: #b21c1c;
+  color: var(--mred);
 }
