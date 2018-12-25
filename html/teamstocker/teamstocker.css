@@ -64,14 +64,14 @@ main {
 .cnt h2 {
   font-size: 18px;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .cnt h2::after {
   content: "⌄⌄⌄";
   position: absolute;
   left: -2px;
-  top: 10px;
+  top: 8px;
   color: var(--mred);
   font-size: 20px;
 }
