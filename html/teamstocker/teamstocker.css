@@ -36,7 +36,7 @@ main {
   width: 80%;
   margin: 0 auto;
   height: 2px;
-  border: 0;
+  border: none;
   background-image: linear-gradient(to right, #00000000, var(--sred), #00000000);
 }
 
@@ -57,6 +57,7 @@ main {
 
 .cnt hr {
   outline: none;
+  border: none;
   border-top: 1px solid var(--sred);
   width: 60%;
 }
