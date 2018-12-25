@@ -81,7 +81,7 @@ main {
   font-weight: bold;
 }
 
-.cnt i {
+i {
   font-style: normal;
   color: var(--mred);
 }

@@ -16,7 +16,11 @@
             l++;
           }
         }
-        document.getElementById("counter").innerHTML = "Total wins: <strong>" + w + "</strong> // Total losses: <strong>" + l + "</strong>";
+        doc = document.getElementById("counter");
+        doc.innerHTML  = "Total wins: ";
+        doc.innerHTML += "<b>" + w + " </b> ";
+        doc.innerHTML += "<i>//</i> Total losses: ";
+        doc.innerHTML += "<b>" + l + "</b>";
       }
     </script>
   </head>
