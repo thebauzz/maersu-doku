@@ -40,6 +40,12 @@ main {
   background-image: linear-gradient(to right, #00000000, var(--sred), #00000000);
 }
 
+#counter {
+  text-align: center;
+  padding: 10px 0;
+  font-style: italic;
+}
+
 .content {
   width: 80%;
   margin: 0 auto;
