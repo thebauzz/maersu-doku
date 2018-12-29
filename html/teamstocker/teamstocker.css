@@ -33,7 +33,7 @@ main {
 }
 
 .title hr {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   height: 2px;
   border: none;
@@ -47,8 +47,10 @@ main {
 }
 
 .content {
-  width: 80%;
-  margin: 0 auto;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .cnt {
@@ -59,7 +61,6 @@ main {
   outline: none;
   border: none;
   border-top: 1px solid var(--sred);
-  width: 60%;
 }
 
 .cnt h2 {
