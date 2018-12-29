@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Team Tanners's Statistik</title>
+    <link href="teamstocker.css" rel="stylesheet">
+    <script>
+      function count() {
+        var zaehl = document.body.innerText.split(/\s/);
+        var w=0; var l=0;
+        for (var j=0; j<zaehl.length; j++) {
+          if (zaehl[j] == ("W")) {
+            w++;
+          }
+          if (zaehl[j] == ("L")) {
+            l++;
+          }
+        }
+        doc = document.getElementById("counter");
+        doc.innerHTML  = "Total wins: ";
+        doc.innerHTML += "<b>" + w + " </b> ";
+        doc.innerHTML += "<i>//</i> Total losses: ";
+        doc.innerHTML += "<b>" + l + "</b>";
+      }
+    </script>
+  </head>
+  <body onload="count()">
+
+    <main>
+      <div class="title">
+        <h1>Team Tanner's Statistik - Saison 18/19</h1>
+        <hr>
+        <p id="counter"></p>
+      </div>
+
+      <div class="content">
+        <div class="cnt">
+          <hr>
+          <h2>12. - 14. Oktober <i>//</i>&nbsp; Womens Masters in Basel</h2>
+          <strong>DNQ (1W/3L)</strong><br>
+          <p>W vs. Hürlimann <i>//</i>&nbsp; 6-4</p>
+          <p>L vs. Hegner <i>//</i>&nbsp; 3-6</p>
+          <p>L vs. Wrana (SWE) <i>//</i>&nbsp; 3-6</p>
+          <p>L vs. Yoshimura (JAP) <i>//</i>&nbsp; 3-6</p>
+        </div>
+
+        <div class="cnt">
+          <hr>
+          <h2>02. - 04. November <i>//</i>&nbsp; EJCT in Braehead</h2>
+          <strong>Out after QF (3W/2L)</strong><br>
+          <p>W vs. Fransson (SWE) <i>//</i>&nbsp; 8-7</p>
+          <p>W vs. Farmer (SCO) <i>//</i>&nbsp; 7-5</p>
+          <p>W vs. Dandie (SCO) <i>//</i>&nbsp; 6-5</p>
+          <p>L vs. Fransson (SCW) <i>//</i>&nbsp; 5-6</p>
+          <p>L vs. Davie (SCO) <i>//</i>&nbsp; 1-6</p>
+        </div>
+
+        <div class="cnt">
+          <hr>
+          <h2>22. - 24. November <i>//</i>&nbsp; EJCT in Thun</h2>
+          <strong>DNQ (3W/2L)</strong><br>
+          <p>W vs. Lee (KOR) <i>//</i>&nbsp; 9-4</p>
+          <p>W vs. Klimova (CZE) <i>//</i>&nbsp; 8-2</p>
+          <p>L vs. Keiser <i>//</i>&nbsp; 4-6</p>
+          <p>L vs. Wüest <i>//</i>&nbsp; 5-7</p>
+          <p>W vs. Lo Deserto (ITA) <i>//</i>&nbsp; 8-3</p>
+        </div>
+
+        <div class="cnt">
+          <hr>
+          <h2>22. - 24. November <i>//</i>&nbsp; EJCT in Kitzbühel</h2>
+          <strong>Tournament Win (5W/L)</strong><br>
+          <p>W vs. Haidinger (AUT) <i>//</i>&nbsp; 11-5</p>
+          <p>W vs. Gregori (SLO) <i>//</i>&nbsp; 12-2</p>
+          <p>L vs. Hoehne (GER) <i>//</i>&nbsp; 4-5</p>
+          <p>W vs. Schwaller <i>//</i>&nbsp; 6-5</p>
+          <p>W vs. Schwaller <i>//</i>&nbsp; 7-3</p>
+          <p>W vs. Hoehne (GER) <i>//</i>&nbsp; 13-3</p>
+        </div>
+
+        <div class="cnt">
+          <hr>
+          <h2>15. / 16. Dezember <i>//</i>&nbsp; 1. Teil A-Liga in Gstaad</h2>
+          <strong>0W / 3L</strong><br>
+          <p>L vs. Interlaken <i>//</i>&nbsp; 4-5</p>
+          <p>L vs. Bern 1 <i>//</i>&nbsp; 4-5</p>
+          <p>L vs. Luzern <i>//</i>&nbsp; 2-7</p>
+        </div>
+
+        <div class="cnt">
+          <hr>
+          <h2>21. - 23. Dezember <i>//</i>&nbsp; Huus Turnier in Gstaad</h2>
+          <strong>8th Place (2W/2L/1T)</strong>
+          <p>W vs. White Star Basel <i>//</i>&nbsp; 9-5</p>
+          <p>L vs. Solothurn-Regio <i>//</i>&nbsp; 4-7</p>
+          <p>L vs. Langethal <i>//</i>&nbsp; 6-11</p>
+          <p>W vs. eifachöppis <i>//</i>&nbsp; 8-3</p>
+          <p>T vs. Gstaad Senioren <i>//</i>&nbsp; 5-5</p>
+        </div>
+
+        <div class="cnt">
+          <hr>
+          <h2>04. - 06. Januar <i>//</i>&nbsp; Junior Swiss Cup in St. Gallen</h2>
+          <strong>xW / xL</strong><br>
+          <p>x vs. Luzern <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Biel-St.Gallen <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Dübendorf <i>//</i>&nbsp; x-x</p>
+        </div>
+
+        <div class="cnt">
+          <hr>
+          <h2>19. / 20. Januar <i>//</i>&nbsp; 2. Teil A-Liga in Zug</h2>
+          <strong>xW / xL</strong><br>
+          <p>x vs. Baden-Limmattal <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Wetzikon <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Biel-Solothurn <i>//</i>&nbsp; x-x</p>
+        </div>
+
+        <div class="cnt">
+          <hr>
+          <h2>02. / 03. Februar <i>//</i>&nbsp; 3. Teil A-Liga in St. Gallen</h2>
+          <strong>xW / xL</strong><br>
+          <p>x vs. Biel-St.Gallen <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Wallisellen <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Bern 2 <i>//</i>&nbsp; x-x</p>
+        </div>
+
+      </div>
+    </main>
+  </body>
+</html>
