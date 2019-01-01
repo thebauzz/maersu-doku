@@ -6,7 +6,7 @@
 @import  url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 @font-face  {
   font-family: "stencilcreek";
-  src: url("../de/font/stencilcreek.ttf") format("truetype"), url("../fr/font/stencilcreek.tt") format("truetype");
+  src: url("../font/stencilcreek.ttf") format("truetype"), url("../fr/font/stencilcreek.tt") format("truetype");
 }
 
 * {
@@ -143,6 +143,12 @@ header {
   z-index: 9999;
   transition: 0.5s;
 }
+@media only screen and (min-width: 830px) {
+  .header--navigation {
+    width: 400px;
+    left: -463px;
+  }
+}
 .nav-in-out {
   left: 0;
 }
@@ -189,7 +195,7 @@ main {
   }
 }
 .main-right-left {
-  transform: translateX(0);
+  transform: translateX(-100%);
 }
 .main--welcome-text h1 {
   font-family: "stencilcreek";
