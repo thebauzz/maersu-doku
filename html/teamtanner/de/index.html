@@ -13,21 +13,28 @@
   <body>
 
     <header>
-      <div class="header--img" id="img"></div>
-      <div class="header--text">Team Tanner</div>
-      <div class="header--nav" id="nav">
-        <div class="header--icon" id="menu" onclick="toggleMenu()">
-          <div id="line1"></div>
-          <div id="line2"></div>
-          <div id="line3"></div>
+<!-- Section 1 // Header Image & Header Text -->
+      <section>
+        <div class="header--img" id="img"></div>
+        <div class="header--text">Team Tanner</div>
+      </section>
+<!-- Section 2 // Navigation, Navbar with Nav-Icon and Language settings -->
+      <section>
+        <div class="header--navbar" id="navbar">
+          <div class="header--icon" id="menu" onclick="toggleMenu()">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+          </div>
+          <div class="header--lang">
+            <a href="../fr/index.html">fr</a><i>//</i><a href="../de/index.html" class="header--lang-active">de</a>
+          </div>
+          <div class="header--navigation" id="nav"></div>
         </div>
-        <div class="header--lang">
-          <a href="../fr/index.html">fr</a><i>//</i><a href="../de/index.html" class="header--lang-active">de</a>
-        </div>
-      </div>
+      </section>
     </header>
 
-    <main>
+    <main id="main-content">
       <div class="main--welcome-text">
         <h1>Lausanne-Olympique Morges Gstaad</h1>
         <hr>
@@ -42,7 +49,7 @@
 
 
         <h2>Neueste Nachrichten </h2>
-        <p>Wir wünschen euch schöne Festtage!</p>
+        <p>Wir wünschen euch schöne Festtage und alles Gute im Jahr 2019!</p>
         <p class="inbetween">&nbsp;</p>
         <a href="news.html">weitere Neuigkeiten</a>
         <img src="../img/news/news-x.jpg" alt="News X" />

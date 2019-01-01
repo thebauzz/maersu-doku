@@ -1,15 +1,15 @@
-window.onscroll = schonGescrollt;
+window.onscroll = alreadyScrolled;
 
-function schonGescrollt() {
+function alreadyScrolled() {
   var scrollposition = window.pageYOffset;
-  var sticky = document.getElementById("nav");
+  var sticky = document.getElementById("navbar");
   var height = document.getElementById("img").clientHeight;
 
   if (scrollposition >= (height - 60)) {
-    sticky.classList.add("header--nav-fixed");
+    sticky.classList.add("header--navbar-fixed");
   }
   else {
-    sticky.classList.remove("header--nav-fixed");
+    sticky.classList.remove("header--navbar-fixed");
   }
 }
 
@@ -18,4 +18,10 @@ function toggleMenu() {
   document.getElementById("line1").classList.toggle("clicked1");
   document.getElementById("line2").classList.toggle("clicked2");
   document.getElementById("line3").classList.toggle("clicked3");
+
+  var nav = document.getElementById("nav");
+  nav.classList.toggle("nav-in-out");
+
+  var main = document.getElementById("main-content");
+  main.classList.toggle("main-right-left");
 }

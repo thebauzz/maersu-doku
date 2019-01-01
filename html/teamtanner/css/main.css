@@ -3,7 +3,7 @@
   * GENERAL STYLING
   *
 **/
-@import  url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900');
+@import  url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 @font-face  {
   font-family: "stencilcreek";
   src: url("../de/font/stencilcreek.ttf") format("truetype"), url("../fr/font/stencilcreek.tt") format("truetype");
@@ -71,21 +71,20 @@ header {
   }
 }
 
-.header--nav {
+.header--navbar {
   height: 60px;
   width: 100%;
   position: absolute;
   bottom: 0;
   background: #f4f4f4;
   border-bottom: 3px solid #dbdbdb;
-  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
 }
-
-.header--nav-fixed {
+.header--navbar-fixed {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 9000;
 }
 
 .header--icon {
@@ -95,7 +94,7 @@ header {
   left: 30px;
   top: 10.5px;
   z-index: 9999;
-  transition-duration: 0.5s;
+  transition: 0.5s;
 }
 .header--icon.menu--clicked {
   transform: rotate(180deg);
@@ -108,7 +107,7 @@ header {
   background-color: #474747;
   border-radius: 4px;
   margin: 6px 0;
-  transition-duration: 0.6s;
+  transition: 0.5s;
 }
 .header--icon:hover > #line1,
 .header--icon:hover > #line2,
@@ -132,6 +131,21 @@ header {
   background: #474747;
 }
 
+.header--navigation {
+  position: absolute;
+  top: 60px;
+  left: -313px;
+  width: 250px;
+  height: 100vh;
+  padding: 0 30px;
+  background: #f4f4f4;
+  border-right: 3px solid #e40613;
+  z-index: 9999;
+  transition: 0.5s;
+}
+.nav-in-out {
+  left: 0;
+}
 .header--lang {
   position: absolute;
   right: 30px;
@@ -151,7 +165,6 @@ header {
 .header--lang a:hover {
   text-decoration: underline;
 }
-
 .header--lang i {
   font-style: normal;
   padding: 0 5px;
@@ -164,9 +177,19 @@ header {
   *
 **/
 main {
+  position: relative;
   width: 80%;
   margin: 0 auto;
   padding-top: 60px;
+  transition: 0.5s;
+}
+@media only screen and (max-width: 800px) {
+  .main-right-left {
+    transform: translateX(-100%)!important;
+  }
+}
+.main-right-left {
+  transform: translateX(0);
 }
 .main--welcome-text h1 {
   font-family: "stencilcreek";
