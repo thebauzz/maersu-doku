@@ -187,10 +187,9 @@ main {
 .main--recent-news h2::after {
   content: "⌄⌄⌄";
   position: absolute;
-  left: -2px;
-  bottom: -15px;
+  left: -1px;
+  bottom: -13px;
   color: #e40613;
-  font-size: 25px;
 }
 
 .main--recent-news img {
