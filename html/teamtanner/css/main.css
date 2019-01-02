@@ -236,6 +236,9 @@ main {
   transition: 0.5s;
 }
 @media only screen and (max-width: 800px) {
+  main {
+    width: 90%;
+  }
   .main-right-left {
     transform: translateX(-100%)!important;
   }
@@ -255,9 +258,22 @@ main {
   height: 2px;
   background-image: linear-gradient(to right, #00000000, #e40613, #00000000);
 }
+
+.main--recent-news {
+  background: #f9f9f9;
+  padding: 10px 10px 15px 20px;
+  margin-top: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 800px) {
+  .main--recent-news {
+    padding: 10px;
+  }
+}
 .main--recent-news h2 {
   position: relative;
-  margin: 30px 0 15px 0;
+  margin-bottom: 15px;
 }
 .main--recent-news h2::after {
   content: "⌄⌄⌄";
