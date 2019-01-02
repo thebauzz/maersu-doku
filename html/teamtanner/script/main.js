@@ -24,4 +24,7 @@ function toggleMenu() {
 
   var main = document.getElementById("main-content");
   main.classList.toggle("main-right-left");
+
+  var invis = document.getElementById("container");
+  invis.classList.toggle("invisible");
 }
