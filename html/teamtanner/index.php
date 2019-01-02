@@ -52,15 +52,15 @@ break;}?>
           <div class="header--navigation" id="nav">
             <ul>
 <?php switch($lang) { case 0: echo '
-              <li><a href="/">Home</a></li>
+              <li><a class="nav-active" href="/">Home</a></li>
               <li><a href="team.php">Team</a></li>
               <li><a href="schedule.php">Saisonplan / Resultate</a></li>
               <li><a href="news.php">News</a></li>
               <li><a href="sponsoring.php">Sponsoring</a></li>';
 break; case 1: echo '
-              <li><a href="/">Home</a></li>
+              <li><a class="nav-active" href="/">Home</a></li>
               <li><a href="team.php">Team</a></li>
-              <li><a href="schedule.php">Saisonplan / Résultats</a></li>
+              <li><a href="schedule.php">Programme de la saison / Résultats</a></li>
               <li><a href="news.php">Nouvelles</a></li>
               <li><a href="sponsoring.php">Sponsors</a></li>';
 break;}?>
@@ -75,6 +75,7 @@ break;}?>
       <div class="main--welcome-text">
         <h1>Lausanne Olympique - Morges - Gstaad</h1>
         <hr>
+        <h2>home</h2>
       </div>
 
 <?php switch($lang) { case 0: echo '
@@ -107,7 +108,7 @@ break;}?>
         <p>04. - 06. Janvier 2019<i>&nbsp;//&nbsp;</i>Junior Swiss Cup à Saint-Gall</p>
         <a href="docs/Schedule-JuniorSwissCup.pdf" target="_blank">Plan du jeu Junior Swiss Cup</a>
         <p class="inbetween">&nbsp;</p>
-        <a href="schedule.php">zum Saisonplan</a>
+        <a href="schedule.php">au programme de la saison</a>
       </div>
 
       <div class="main--recent-news">

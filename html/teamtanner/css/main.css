@@ -205,6 +205,13 @@ header {
   background: #000000;
 }
 
+.nav-active::after {
+  content: url("../img/curlingstone.png");
+  position: absolute;
+  top: -2px;
+  left: -25px;
+}
+
 .header--lang {
   position: absolute;
   right: 30px;
@@ -270,12 +277,21 @@ main {
   text-align: center;
 }
 .main--welcome-text hr {
+  position: relative;
+  top: -10px;
   border: none;
   outline: none;
   height: 2px;
   background-image: linear-gradient(to right, #00000000, #e40613, #00000000);
 }
-
+.main--welcome-text h2 {
+  position: relative;
+  top: -8px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+}
 .main--recent-news {
   background: #f9f9f9;
   padding: 10px 10px 15px 20px;
@@ -337,4 +353,63 @@ main {
 }
 .main--recent-news a:hover {
   border-bottom: 1px solid #000000;
+}
+
+.main--saisonplan {
+  background: #f9f9f9;
+  padding: 10px 10px 15px 20px;
+  margin-top: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+}
+.main--saisonplan h2 {
+  position: relative;
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 800px) {
+  .main--saisonplan h2 {
+    margin-left: 15%;
+  }
+}
+.main--saisonplan h2::after {
+  content: "⌄⌄⌄";
+  position: absolute;
+  left: -1px;
+  bottom: -13px;
+  color: #e40613;
+}
+.main--saisonplan table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: 0 auto;
+}
+.main--saisonplan table tr th {
+  border-bottom: 2px solid #e40613;
+}
+.main--saisonplan table tr td {
+  height: 25px;
+  border-bottom: 1px solid #000000;
+}
+.saisonplan--date {
+  text-align: right;
+  padding-right: 10px;
+}
+.saisonplan--info {
+  padding-left: 10px;
+  text-align: left;
+  border-left: 1px solid #00000030;
+}
+@media only screen and (max-width: 800px) {
+  .main--saisonplan table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0;
+  }
+  .saisonplan--date {
+    text-align: right;
+    padding-right: 15px;
+  }
+  .saisonplan--info {
+    text-align: left;
+  }
 }
