@@ -259,12 +259,9 @@ main {
   main {
     width: 90%;
   }
-  .main-right-left {
-    transform: translateX(-100%)!important;
-  }
 }
 .main-right-left {
-  transform: translateX(-100%);
+  transform: translateX(-120%);
 }
 .main--welcome-text h1 {
   font-family: "stencilcreek";
