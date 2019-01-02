@@ -5,7 +5,7 @@ function alreadyScrolled() {
   var sticky = document.getElementById("navbar");
   var height = document.getElementById("img").clientHeight;
 
-  if (scrollposition >= (height - 60)) {
+  if (scrollposition >= (height - 61)) {
     sticky.classList.add("header--navbar-fixed");
   }
   else {
