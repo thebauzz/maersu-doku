@@ -53,16 +53,16 @@ break;}?>
             <ul>
 <?php switch($lang) { case 0: echo '
               <li><a href="/">Home</a></li>
-              <li><a href="team">Team</a></li>
-              <li><a href="saisonplan">Saisonplan / Resultate</a></li>
-              <li><a href="news">News</a></li>
-              <li><a href="sponsoring">Sponsoring</a></li>';
+              <li><a href="team.php">Team</a></li>
+              <li><a href="schedule.php">Saisonplan / Resultate</a></li>
+              <li><a href="news.php">News</a></li>
+              <li><a href="sponsoring.php">Sponsoring</a></li>';
 break; case 1: echo '
               <li><a href="/">Home</a></li>
-              <li><a href="team">Team</a></li>
-              <li><a href="saisonplan">Saisonplan / Résultats</a></li>
-              <li><a href="news">Nouvelles</a></li>
-              <li><a href="sponsoring">Sponsors</a></li>';
+              <li><a href="team.php">Team</a></li>
+              <li><a href="schedule.php">Saisonplan / Résultats</a></li>
+              <li><a href="news.php">Nouvelles</a></li>
+              <li><a href="sponsoring.php">Sponsors</a></li>';
 break;}?>
             </ul>
           </div>
@@ -83,14 +83,14 @@ break;}?>
         <p>04. - 06. Januar 2019<i>&nbsp;//&nbsp;</i>Junior Swiss Cup in St. Gallen</p>
         <a href="docs/Schedule-JuniorSwissCup.pdf" target="_blank">Spielplan Junior Swiss Cup</a>
         <p class="inbetween">&nbsp;</p>
-        <a href="saisonplan">zum Saisonplan</a>
+        <a href="schedule.php">zum Saisonplan</a>
       </div>
 
       <div class="main--recent-news">
         <h2>Neueste Nachrichten </h2>
         <p>Wir wünschen euch schöne Festtage und alles Gute im Jahr 2019!</p>
         <p class="inbetween">&nbsp;</p>
-        <a href="news">weitere Neuigkeiten</a>
+        <a href="news.php">weitere Neuigkeiten</a>
         <img src="img/news/news-x.jpg" alt="News X" />
       </div>
 
@@ -98,7 +98,7 @@ break;}?>
         <h2>Das Team </h2>
         <p>Mélissa Tanner, Celine Schwizgebel, Annaëlle Ciganek, Emma Suter</p>
         <p class="inbetween">&nbsp;</p>
-        <a href="team">mehr über uns</a>
+        <a href="team.php">mehr über uns</a>
         <img src="img/team.jpg" alt="Team LOMG" />
       </div>
 '; break; case 1: echo '
@@ -107,14 +107,14 @@ break;}?>
         <p>04. - 06. Janvier 2019<i>&nbsp;//&nbsp;</i>Junior Swiss Cup à Saint-Gall</p>
         <a href="docs/Schedule-JuniorSwissCup.pdf" target="_blank">Plan du jeu Junior Swiss Cup</a>
         <p class="inbetween">&nbsp;</p>
-        <a href="saisonplan">zum Saisonplan</a>
+        <a href="schedule.php">zum Saisonplan</a>
       </div>
 
       <div class="main--recent-news">
         <h2>Dernièr nouvelles </h2>
         <p>Nous vous souhaitons de joyeuses fêtes!</p>
         <p class="inbetween">&nbsp;</p>
-        <a href="news">plus des nouvelles</a>
+        <a href="news.php">plus des nouvelles</a>
         <img src="img/news/news-x.jpg" alt="News X" />
       </div>
 
@@ -122,7 +122,7 @@ break;}?>
         <h2>Notre Team </h2>
         <p>Mélissa Tanner, Celine Schwizgebel, Annaëlle Ciganek, Emma Suter</p>
         <p class="inbetween">&nbsp;</p>
-        <a href="team">plus de nous</a>
+        <a href="team.php">plus de nous</a>
         <img src="img/team.jpg" alt="Team LOMG" />
       </div>
 '; break; } ?>
