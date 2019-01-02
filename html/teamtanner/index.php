@@ -104,26 +104,26 @@ break;}?>
       </div>
 '; break; case 1: echo '
       <div class="main--recent-news">
-        <h2>Prochaine Tournois </h2>
+        <h2>Prochain Tournois </h2>
         <p>04. - 06. Janvier 2019<i>&nbsp;//&nbsp;</i>Junior Swiss Cup à Saint-Gall</p>
-        <a href="docs/Schedule-JuniorSwissCup.pdf" target="_blank">Plan du jeu Junior Swiss Cup</a>
+        <a href="docs/Schedule-JuniorSwissCup.pdf" target="_blank">Plan des jeux Junior Swiss Cup</a>
         <p class="inbetween">&nbsp;</p>
         <a href="schedule.php">au programme de la saison</a>
       </div>
 
       <div class="main--recent-news">
-        <h2>Dernièr nouvelles </h2>
+        <h2>Dernières nouvelles </h2>
         <p>Nous vous souhaitons de joyeuses fêtes!</p>
         <p class="inbetween">&nbsp;</p>
-        <a href="news.php">plus des nouvelles</a>
+        <a href="news.php">plus de nouvelles</a>
         <img src="img/news/news-x.jpg" alt="News X" />
       </div>
 
       <div class="main--recent-news">
         <h2>Notre Team </h2>
-        <p>Mélissa Tanner, Celine Schwizgebel, Annaëlle Ciganek, Emma Suter</p>
+        <p>Mélissa Tanner, Celine Schwizgebel, Anaëlle Ciganek, Emma Suter</p>
         <p class="inbetween">&nbsp;</p>
-        <a href="team.php">plus de nous</a>
+        <a href="team.php">plus à propos de nous</a>
         <img src="img/team.jpg" alt="Team LOMG" />
       </div>
 '; break; } ?>

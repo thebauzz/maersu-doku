@@ -206,9 +206,8 @@ header {
 }
 
 .nav-active::after {
-  content: url("../img/curlingstone.png");
+  content: url("../img/stone.png");
   position: absolute;
-  top: -2px;
   left: -25px;
 }
 
