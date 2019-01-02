@@ -105,7 +105,7 @@ break; case 1: echo '
           </tr>
           <tr>
             <td class="saisonplan--date">02.10. - 05.10.18</td>
-            <td class="saisonplan--info">Kaderwohe in Biel</td>
+            <td class="saisonplan--info">Kaderwoche in Biel</td>
           </tr>
           <tr>
             <td class="saisonplan--date">12.10. - 14.10.18</td>
@@ -186,7 +186,7 @@ break; case 1: echo '
           </tr>
           <tr>
             <td class="saisonplan--date">02.10. - 05.10.18</td>
-            <td class="saisonplan--info">Kaderwohe à Bienne</td>
+            <td class="saisonplan--info">Kaderwoche à Bienne</td>
           </tr>
           <tr>
             <td class="saisonplan--date">12.10. - 14.10.18</td>

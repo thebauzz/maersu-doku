@@ -20,7 +20,7 @@ html, body {
   background: #f4f4f4;
 }
 ::selection {
-  background: #e40613;
+  background: #c72e54;
   color: #f4f4f4;
 }
 .inbetween {
@@ -112,18 +112,18 @@ header {
 .header--icon:hover > #line1,
 .header--icon:hover > #line2,
 .header--icon:hover > #line3 {
-  background: #e40613;
+  background: #c72e54;
 }
 #line1.clicked1 {
   transform: matrix(0.85, -0.8, 0.7, 0.7, 0, 11);
-  background: #e40613;
+  background: #c72e54;
 }
 #line2.clicked2 {
   opacity: 0;
 }
 #line3.clicked3 {
   transform: matrix(0.85, 0.8, -0.7, 0.7, 0, -11);
-  background: #e40613;
+  background: #c72e54;
 }
 .header--icon:hover > #line1.clicked1,
 .header--icon:hover > #line2.clicked2,
@@ -139,7 +139,7 @@ header {
   height: 100vh;
   padding: 0 30px;
   background: #f4f4f4;
-  border-right: 3px solid #e40613;
+  border-right: 3px solid #c72e54;
   z-index: 9999;
   transition: 0.5s;
 }
@@ -163,7 +163,7 @@ header {
 /* Abtrennug zwischen Navigation & Dropdown */
 #nav > ul {
   padding-top: 30px;
-  border-bottom: 1px solid #e40613;
+  border-bottom: 1px solid #c72e54;
 }
 
 /* Positionierung vom Navigations Text */
@@ -183,7 +183,7 @@ header {
 
 /* Hovereffekt vom Navigations Text */
 #nav a:hover {
-  color: #e40613;
+  color: #c72e54;
 }
 #nav a::before {
   content: "";
@@ -234,7 +234,7 @@ header {
 .header--lang i {
   font-style: normal;
   padding: 0 5px;
-  color: #e40613;
+  color: #c72e54;
 }
 
 #container {
@@ -281,7 +281,7 @@ main {
   border: none;
   outline: none;
   height: 2px;
-  background-image: linear-gradient(to right, #00000000, #e40613, #00000000);
+  background-image: linear-gradient(to right, #00000000, #c72e54, #00000000);
 }
 .main--welcome-text h2 {
   position: relative;
@@ -313,7 +313,7 @@ main {
   position: absolute;
   left: -1px;
   bottom: -13px;
-  color: #e40613;
+  color: #c72e54;
 }
 
 .main--recent-news img {
@@ -341,11 +341,11 @@ main {
 .main--recent-news i {
   font-style: normal;
   padding: 0 5px;
-  color: #e40613;
+  color: #c72e54;
 }
 .main--recent-news a {
   text-decoration: none;
-  color: #e40613;
+  color: #c72e54;
   border-bottom: 1px solid #00000000;
   transition: 0.3s;
   margin-bottom: 5px;
@@ -375,7 +375,7 @@ main {
   position: absolute;
   left: -1px;
   bottom: -13px;
-  color: #e40613;
+  color: #c72e54;
 }
 .main--saisonplan table {
   border-collapse: collapse;
@@ -383,7 +383,7 @@ main {
   margin: 0 auto;
 }
 .main--saisonplan table tr th {
-  border-bottom: 2px solid #e40613;
+  border-bottom: 2px solid #c72e54;
 }
 .main--saisonplan table tr td {
   height: 25px;
