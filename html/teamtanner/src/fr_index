@@ -27,9 +27,17 @@
             <div id="line3"></div>
           </div>
           <div class="header--lang">
-            <a href="fr/index.html">fr</a><i>//</i><a href="index.html" class="header--lang-active">de</a>
+            <a href="?lang=fr" class="header--lang-active">fr</a><i>//</i><a href="?lang=de">de</a>
           </div>
-          <div class="header--navigation" id="nav"></div>
+          <div class="header--navigation" id="nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="saisonplan.html">Saisonplan / Résultats</a></li>
+              <li><a href="news.html">Nouvelles</a></li>
+              <li><a href="sponsoring.html">Sponsors</a></li>
+            </ul>
+          </div>
         </div>
       </section>
     </header>
@@ -41,23 +49,23 @@
       </div>
 
       <div class="main--recent-news">
-        <h2>Nächstes Turnier </h2>
-        <p>04. - 06. Januar 2019<i>&nbsp;//&nbsp;</i>Junior Swiss Cup in St. Gallen</p>
-        <a href="docs/Schedule-JuniorSwissCup.pdf" target="_blank">Spielplan Junior Swiss Cup</a>
+        <h2>Prochaine Tournois </h2>
+        <p>04. - 06. Janvier 2019<i>&nbsp;//&nbsp;</i>Junior Swiss Cup à Saint-Gall</p>
+        <a href="docs/Schedule-JuniorSwissCup.pdf" target="_blank">Plan du jeu Junior Swiss Cup</a>
         <p class="inbetween">&nbsp;</p>
         <a href="saisonplan.html">zum Saisonplan</a>
 
 
-        <h2>Neueste Nachrichten </h2>
-        <p>Wir wünschen euch schöne Festtage und alles Gute im Jahr 2019!</p>
+        <h2>Dernièr nouvelles </h2>
+        <p>Nous vous souhaitons de joyeuses fêtes!</p>
         <p class="inbetween">&nbsp;</p>
-        <a href="news.html">weitere Neuigkeiten</a>
+        <a href="news.html">plus des nouvelles</a>
         <img src="img/news/news-x.jpg" alt="News X" />
 
-        <h2>Das Team </h2>
+        <h2>Notre Team </h2>
         <p>Mélissa Tanner, Celine Schwizgebel, Annaëlle Ciganek, Emma Suter</p>
         <p class="inbetween">&nbsp;</p>
-        <a href="team.html">mehr über uns</a>
+        <a href="team.html">plus de nous</a>
         <img src="img/team.jpg" alt="Team LOMG" />
 
       </div>

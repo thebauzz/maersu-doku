@@ -152,6 +152,52 @@ header {
 .nav-in-out {
   left: 0;
 }
+
+/* Abtrennug zwischen Navigation & Dropdown */
+#nav > ul {
+  padding-top: 30px;
+  border-bottom: 1px solid #e40613;
+}
+
+/* Positionierung vom Navigations Text */
+#nav ul li {
+  padding: 15px;
+  list-style: none;
+}
+
+/* Styling vom Navigations Text */
+#nav a {
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  color: #000000;
+  position: relative;
+}
+
+/* Hovereffekt vom Navigations Text */
+#nav a:hover {
+  color: #e40613;
+}
+#nav a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: #00000000;
+  transition: 0.3s;
+}
+#nav a:hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: #000000;
+}
+
 .header--lang {
   position: absolute;
   right: 30px;
