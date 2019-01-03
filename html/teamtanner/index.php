@@ -23,7 +23,7 @@
     <link href="img/favicon.ico" rel="icon" />
     <link href="css/main.css" rel="Stylesheet" />
     <script src="script/main.js" type="text/javascript"></script>
-    <title>Team Tanner // #LOMG</title>
+    <title>Team Tanner // LOMG</title>
   </head>
   <body>
 
