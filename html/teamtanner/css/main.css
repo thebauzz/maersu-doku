@@ -4,6 +4,7 @@
   *
 **/
 @import  url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:300,400,700');
 @font-face  {
   font-family: "stencilcreek";
   src: url("../font/stencilcreek.ttf") format("truetype");
@@ -211,6 +212,11 @@ header {
   left: -25px;
 }
 
+.header--nav-link {
+  top: 25px;
+  left: 15px;
+}
+
 .header--lang {
   position: absolute;
   right: 30px;
@@ -354,23 +360,27 @@ main {
   border-bottom: 1px solid #000000;
 }
 
-.main--saisonplan {
+.main--saisonplan,
+.main--results {
   background: #f9f9f9;
   padding: 10px 10px 15px 20px;
   margin-top: 30px;
   border-radius: 5px;
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
 }
-.main--saisonplan h2 {
+.main--saisonplan h2,
+.main--results h2 {
   position: relative;
   margin-bottom: 15px;
 }
 @media only screen and (min-width: 800px) {
-  .main--saisonplan h2 {
+  .main--saisonplan h2,
+  .main--results h2 {
     margin-left: 15%;
   }
 }
-.main--saisonplan h2::after {
+.main--saisonplan h2::after,
+.main--results h2::after {
   content: "⌄⌄⌄";
   position: absolute;
   left: -1px;
@@ -411,4 +421,39 @@ main {
   .saisonplan--info {
     text-align: left;
   }
+}
+.saisonplan--next-up td,
+.saisonplan--last-event td {
+  border-bottom: 1px solid #e40613 !important;
+}
+
+i {
+  font-style: normal;
+  color: #c72e54;
+}
+
+.results--content {
+  width: 70%;
+  margin: 0 auto 50px auto;
+}
+@media only screen and (max-width: 800px) {
+  .results--content {
+    width: 100%;
+  }
+}
+
+.results--content hr {
+  outline: none;
+  border: none;
+  border-top: 1px solid #e40613;
+}
+
+.results--content h3 {
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.results--content p::first-letter {
+  font-family: "Inconsolata";
+  font-weight: bold;
 }

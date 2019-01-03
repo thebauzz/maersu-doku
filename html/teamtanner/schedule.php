@@ -23,7 +23,7 @@
     <link href="img/favicon.ico" rel="icon" />
     <link href="css/main.css" rel="Stylesheet" />
     <script src="script/main.js" type="text/javascript"></script>
-    <title>Team Tanner</title>
+    <title>Team Tanner // #LOMG</title>
   </head>
   <body>
 
@@ -44,27 +44,31 @@
           <div class="header--lang">
 
 <?php switch($lang) { case 0: echo '
-            <a href="?lang=fr">fr</a><i>//</i><a href="?lang=de" class="header--lang-active">de</a>';
-break; case 1: echo '
-            <a href="?lang=fr" class="header--lang-active">fr</a><i>//</i><a href="?lang=de">de</a>';
-break;}?>
+            <a href="?lang=fr">fr</a><i>//</i><a href="?lang=de" class="header--lang-active">de</a>
+';break; case 1: echo '
+            <a href="?lang=fr" class="header--lang-active">fr</a><i>//</i><a href="?lang=de">de</a>
+';break;}?>
           </div>
           <div class="header--navigation" id="nav">
-            <ul>
 <?php switch($lang) { case 0: echo '
+            <ul>
               <li><a href="/">Home</a></li>
               <li><a href="team.php">Team</a></li>
               <li><a class="nav-active" href="schedule.php">Saisonplan / Resultate</a></li>
               <li><a href="news.php">News</a></li>
-              <li><a href="sponsoring.php">Sponsoring</a></li>';
-break; case 1: echo '
+              <li><a href="sponsoring.php">Sponsoring</a></li>
+            </ul>
+            <a class="header--nav-link" href="facebook.com/Curling.LOMG" target="_blank">Unser Facebook</a>
+';break; case 1: echo '
+            <ul>
               <li><a href="/">Home</a></li>
               <li><a href="team.php">Team</a></li>
               <li><a class="nav-active" href="schedule.php">Programme de la saison / Résultats</a></li>
               <li><a href="news.php">Nouvelles</a></li>
               <li><a href="sponsoring.php">Sponsors</a></li>
-';break;}?>
             </ul>
+            <a class="header--nav-link" href="facebook.com/Curling.LOMG" target="_blank">Notre Facebook</a>
+';break;}?>
           </div>
         </div>
         <div class="invisible" id="container" onclick="toggleMenu()"></div>
@@ -127,11 +131,11 @@ break; case 1: echo '
             <td class="saisonplan--date">15.12. - 16.12.18</td>
             <td class="saisonplan--info">1. Teil A-Liga in Gstaad</td>
           </tr>
-          <tr>
+          <tr class="saisonplan--last-event">
             <td class="saisonplan--date">22.12. - 23.12.18</td>
             <td class="saisonplan--info">Huus Turnier in Gstaad</td>
           </tr>
-          <tr>
+          <tr class="saisonplan--next-up">
             <td class="saisonplan--date">04.01. - 06.01.19</td>
             <td class="saisonplan--info">Junior Swiss Cup in St.Gallen</td>
           </tr>
@@ -160,9 +164,116 @@ break; case 1: echo '
             <td class="saisonplan--info">Repas de soutien in Savigny</td>
           </tr>
         </table>
+      </div>
 
+      <div class="main--results">
         <h2>Resultate</h2>
-        <p>coming soon.. by the way, <strong>Emma</strong>, i <span style="color:#e40613">love</span> you.</p>
+        <div class="results--content">
+          <hr>
+          <h3>Sommerturnier in Adelboden</h3>
+          <strong>Turniersieg (5W / 0L)</strong><br>
+          <p>W vs. Langenthal <i>//</i>&nbsp; 6-2</p>
+          <p>W vs. Interlaken <i>//</i>&nbsp; 10-4</p>
+          <p>W vs. Hoehne (GER) <i>//</i>&nbsp; 6-5</p>
+          <p>W vs. Kapp (GER) <i>//</i>&nbsp; 9-5</p>
+          <p>W vs. Bern <i>//</i>&nbsp; 10-6</p>
+        </div>
+
+        <div class="results--content">
+          <hr>
+          <h3>Womens Masters in Basel</h3>
+          <strong>DNQ (1W / 3L)</strong><br>
+          <p>W vs. Hürlimann <i>//</i>&nbsp; 6-4</p>
+          <p>L vs. Hegner <i>//</i>&nbsp; 3-6</p>
+          <p>L vs. Wrana (SWE) <i>//</i>&nbsp; 3-6</p>
+          <p>L vs. Yoshimura (JAP) <i>//</i>&nbsp; 3-6</p>
+        </div>
+
+        <div class="results--content">
+          <hr>
+          <h3>EJCT in Braehead</h3>
+          <strong>Ausgeschieden nach QF (3W / 2L)</strong><br>
+          <p>W vs. Fransson (SWE) <i>//</i>&nbsp; 8-7</p>
+          <p>W vs. Farmer (SCO) <i>//</i>&nbsp; 7-5</p>
+          <p>W vs. Dandie (SCO) <i>//</i>&nbsp; 6-5</p>
+          <p>L vs. Fransson (SWE) <i>//</i>&nbsp; 5-6</p>
+          <p>L vs. Davie (SCO) <i>//</i>&nbsp; 1-6</p>
+        </div>
+
+        <div class="results--content">
+          <hr>
+          <h3>EJCT in Thun</h3>
+          <strong>DNQ (3W / 2L)</strong><br>
+          <p>W vs. Lee (KOR) <i>//</i>&nbsp; 9-4</p>
+          <p>W vs. Klimova (CZE) <i>//</i>&nbsp; 8-2</p>
+          <p>L vs. Keiser <i>//</i>&nbsp; 4-6</p>
+          <p>L vs. Wüest <i>//</i>&nbsp; 5-7</p>
+          <p>W vs. Lo Deserto (ITA) <i>//</i>&nbsp; 8-3</p>
+        </div>
+
+        <div class="results--content">
+          <hr>
+          <h3>EJCT in Kitzbühel</h3>
+          <strong>Turniersieg (5W / 1L)</strong><br>
+          <p>W vs. Haidinger (AUT) <i>//</i>&nbsp; 11-5</p>
+          <p>W vs. Gregori (SLO) <i>//</i>&nbsp; 12-2</p>
+          <p>L vs. Hoehne (GER) <i>//</i>&nbsp; 4-5</p>
+          <p>W vs. Schwaller <i>//</i>&nbsp; 6-5</p>
+          <p>W vs. Schwaller <i>//</i>&nbsp; 7-3</p>
+          <p>W vs. Hoehne (GER) <i>//</i>&nbsp; 13-3</p>
+        </div>
+
+        <div class="results--content">
+          <hr>
+          <h3>1. Teil A-Liga in Gstaad</h3>
+          <strong>0W / 3L</strong><br>
+          <p>L vs. Interlaken <i>//</i>&nbsp; 4-5</p>
+          <p>L vs. Bern 1 <i>//</i>&nbsp; 4-5</p>
+          <p>L vs. Luzern <i>//</i>&nbsp; 2-7</p>
+        </div>
+
+        <div class="results--content">
+          <hr>
+          <h3>Huus Turnier in Gstaad</h3>
+          <strong>8. Rang (2W / 2L / 1T)</strong>
+          <p>W vs. White Star Basel <i>//</i>&nbsp; 9-5</p>
+          <p>L vs. Solothurn-Regio <i>//</i>&nbsp; 4-7</p>
+          <p>L vs. Langethal <i>//</i>&nbsp; 6-11</p>
+          <p>W vs. eifachöppis <i>//</i>&nbsp; 8-3</p>
+          <p>T vs. Gstaad Senioren <i>//</i>&nbsp; 5-5</p>
+        </div>
+
+<!--
+        <div class="results--content">
+          <hr>
+          <h3>Junior Swiss Cup in St. Gallen</h3>
+          <strong>xW / xL</strong><br>
+          <p>x vs. Luzern <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Biel-St.Gallen <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Dübendorf <i>//</i>&nbsp; x-x</p>
+        </div>
+-->
+
+<!--    <div class="results--content">
+          <hr>
+          <h3>2. Teil A-Liga in Zug</h3>
+          <strong>xW / xL</strong><br>
+          <p>x vs. Baden-Limmattal <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Wetzikon <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Biel-Solothurn <i>//</i>&nbsp; x-x</p>
+        </div>
+-->
+
+<!--    <div class="results--content">
+          <hr>
+          <h3>3. Teil A-Liga in St. Gallen</h3>
+          <strong>xW / xL</strong><br>
+          <p>x vs. Biel-St.Gallen <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Wallisellen <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Bern 2 <i>//</i>&nbsp; x-x</p>
+        </div>
+-->
+
       </div>
 ';break; case 1: echo '
       <div class="main--saisonplan">
@@ -208,11 +319,11 @@ break; case 1: echo '
             <td class="saisonplan--date">15.12. - 16.12.18</td>
             <td class="saisonplan--info">1er tour A-Ligue à Gstaad</td>
           </tr>
-          <tr>
+          <tr class="saisonplan--last-event">
             <td class="saisonplan--date">22.12. - 23.12.18</td>
             <td class="saisonplan--info">Huus tournoi à Gstaad</td>
           </tr>
-          <tr>
+          <tr class="saisonplan--next-up">
             <td class="saisonplan--date">04.01. - 06.01.19</td>
             <td class="saisonplan--info">Junior Swiss Cup à Saint-Gall</td>
           </tr>
@@ -241,9 +352,116 @@ break; case 1: echo '
             <td class="saisonplan--info">Repas de soutien à Savigny</td>
           </tr>
         </table>
+      </div>
 
+      <div class="main--results">
         <h2>Résultats</h2>
-        <p>coming soon.. by the way, <strong>Emma</strong>, i <span style="color:#e40613">love</span> you.</p>
+        <div class="results--content">
+          <hr>
+          <h3>Tournoi d&#039;été à Adelboden</h3>
+          <strong>Victoire du tournoi (5W / 0L)</strong><br>
+          <p>W vs. Langenthal <i>//</i>&nbsp; 6-2</p>
+          <p>W vs. Interlaken <i>//</i>&nbsp; 10-4</p>
+          <p>W vs. Hoehne (GER) <i>//</i>&nbsp; 6-5</p>
+          <p>W vs. Kapp (GER) <i>//</i>&nbsp; 9-5</p>
+          <p>W vs. Berne <i>//</i>&nbsp; 10-6</p>
+        </div>
+
+        <div class="results--content">
+          <hr>
+          <h3>Womens Masters à Bâle</h3>
+          <strong>DNQ (1W / 3L)</strong><br>
+          <p>W vs. Hürlimann <i>//</i>&nbsp; 6-4</p>
+          <p>L vs. Hegner <i>//</i>&nbsp; 3-6</p>
+          <p>L vs. Wrana (SWE) <i>//</i>&nbsp; 3-6</p>
+          <p>L vs. Yoshimura (JAP) <i>//</i>&nbsp; 3-6</p>
+        </div>
+
+        <div class="results--content">
+          <hr>
+          <h3>EJCT à Braehead</h3>
+          <strong>Eliminé après QF (3W / 2L)</strong><br>
+          <p>W vs. Fransson (SWE) <i>//</i>&nbsp; 8-7</p>
+          <p>W vs. Farmer (SCO) <i>//</i>&nbsp; 7-5</p>
+          <p>W vs. Dandie (SCO) <i>//</i>&nbsp; 6-5</p>
+          <p>L vs. Fransson (SWE) <i>//</i>&nbsp; 5-6</p>
+          <p>L vs. Davie (SCO) <i>//</i>&nbsp; 1-6</p>
+        </div>
+
+        <div class="results--content">
+          <hr>
+          <h3>EJCT à Thoune</h3>
+          <strong>DNQ (3W / 2L)</strong><br>
+          <p>W vs. Lee (KOR) <i>//</i>&nbsp; 9-4</p>
+          <p>W vs. Klimova (CZE) <i>//</i>&nbsp; 8-2</p>
+          <p>L vs. Keiser <i>//</i>&nbsp; 4-6</p>
+          <p>L vs. Wüest <i>//</i>&nbsp; 5-7</p>
+          <p>W vs. Lo Deserto (ITA) <i>//</i>&nbsp; 8-3</p>
+        </div>
+
+        <div class="results--content">
+          <hr>
+          <h3>EJCT à Kitzbühel</h3>
+          <strong>Victoire du tournoi (5W / 1L)</strong><br>
+          <p>W vs. Haidinger (AUT) <i>//</i>&nbsp; 11-5</p>
+          <p>W vs. Gregori (SLO) <i>//</i>&nbsp; 12-2</p>
+          <p>L vs. Hoehne (GER) <i>//</i>&nbsp; 4-5</p>
+          <p>W vs. Schwaller <i>//</i>&nbsp; 6-5</p>
+          <p>W vs. Schwaller <i>//</i>&nbsp; 7-3</p>
+          <p>W vs. Hoehne (GER) <i>//</i>&nbsp; 13-3</p>
+        </div>
+
+        <div class="results--content">
+          <hr>
+          <h3>1er tour de A-Ligue à Gstaad</h3>
+          <strong>0W / 3L</strong><br>
+          <p>L vs. Interlaken <i>//</i>&nbsp; 4-5</p>
+          <p>L vs. Berne 1 <i>//</i>&nbsp; 4-5</p>
+          <p>L vs. Lucerne <i>//</i>&nbsp; 2-7</p>
+        </div>
+
+        <div class="results--content">
+          <hr>
+          <h3>Huus tournoi à Gstaad</h3>
+          <strong>8ème place (2W / 2L / 1T)</strong>
+          <p>W vs. White Star Bâle <i>//</i>&nbsp; 9-5</p>
+          <p>L vs. Soleure-Regio <i>//</i>&nbsp; 4-7</p>
+          <p>L vs. Langethal <i>//</i>&nbsp; 6-11</p>
+          <p>W vs. eifachöppis <i>//</i>&nbsp; 8-3</p>
+          <p>T vs. Gstaad Senioren <i>//</i>&nbsp; 5-5</p>
+        </div>
+
+<!--
+        <div class="results--content">
+          <hr>
+          <h3>Junior Swiss Cup à Saint-Gall</h3>
+          <strong>xW / xL</strong><br>
+          <p>x vs. Lucerne <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Bienne-Saint-Gall <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Dübendorf <i>//</i>&nbsp; x-x</p>
+        </div>
+-->
+
+<!--    <div class="results--content">
+          <hr>
+          <h3>2ème tour de A-Ligue à Zoug</h3>
+          <strong>xW / xL</strong><br>
+          <p>x vs. Baden-Limmattal <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Wetzikon <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Bienne-Soleure <i>//</i>&nbsp; x-x</p>
+        </div>
+-->
+
+<!--    <div class="results--content">
+          <hr>
+          <h3>3ème tour de A-Ligue à Saint-Gall</h3>
+          <strong>xW / xL</strong><br>
+          <p>x vs. Biel-St.Gallen <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Wallisellen <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Bern 2 <i>//</i>&nbsp; x-x</p>
+        </div>
+-->
+
       </div>
 ';break;}?>
 

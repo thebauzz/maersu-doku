@@ -23,7 +23,7 @@
     <link href="img/favicon.ico" rel="icon" />
     <link href="css/main.css" rel="Stylesheet" />
     <script src="script/main.js" type="text/javascript"></script>
-    <title>Team Tanner</title>
+    <title>Team Tanner // #LOMG</title>
   </head>
   <body>
 
@@ -44,27 +44,31 @@
           <div class="header--lang">
 
 <?php switch($lang) { case 0: echo '
-            <a href="?lang=fr">fr</a><i>//</i><a href="?lang=de" class="header--lang-active">de</a>';
-break; case 1: echo '
-            <a href="?lang=fr" class="header--lang-active">fr</a><i>//</i><a href="?lang=de">de</a>';
-break;}?>
+            <a href="?lang=fr">fr</a><i>//</i><a href="?lang=de" class="header--lang-active">de</a>
+';break; case 1: echo '
+            <a href="?lang=fr" class="header--lang-active">fr</a><i>//</i><a href="?lang=de">de</a>
+';break;}?>
           </div>
           <div class="header--navigation" id="nav">
-            <ul>
 <?php switch($lang) { case 0: echo '
-              <li><a class="nav-active" href="/">Home</a></li>
+            <ul>
+              <li><a href="/">Home</a></li>
               <li><a href="team.php">Team</a></li>
-              <li><a href="schedule.php">Saisonplan / Resultate</a></li>
+              <li><a class="nav-active" href="schedule.php">Saisonplan / Resultate</a></li>
               <li><a href="news.php">News</a></li>
-              <li><a href="sponsoring.php">Sponsoring</a></li>';
-break; case 1: echo '
-              <li><a class="nav-active" href="/">Home</a></li>
-              <li><a href="team.php">Team</a></li>
-              <li><a href="schedule.php">Programme de la saison / Résultats</a></li>
-              <li><a href="news.php">Nouvelles</a></li>
-              <li><a href="sponsoring.php">Sponsors</a></li>';
-break;}?>
+              <li><a href="sponsoring.php">Sponsoring</a></li>
             </ul>
+            <a class="header--nav-link" href="https://facebook.com/Curling.LOMG" target="_blank">Unser Facebook</a>
+';break; case 1: echo '
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="team.php">Team</a></li>
+              <li><a class="nav-active" href="schedule.php">Programme de la saison / Résultats</a></li>
+              <li><a href="news.php">Nouvelles</a></li>
+              <li><a href="sponsoring.php">Sponsors</a></li>
+            </ul>
+            <a class="header--nav-link" href="https://facebook.com/Curling.LOMG" target="_blank">Notre Facebook</a>
+';break;}?>
           </div>
         </div>
         <div class="invisible" id="container" onclick="toggleMenu()"></div>
@@ -106,7 +110,7 @@ break;}?>
       <div class="main--recent-news">
         <h2>Prochain Tournois </h2>
         <p>04. - 06. Janvier 2019<i>&nbsp;//&nbsp;</i>Junior Swiss Cup à Saint-Gall</p>
-        <a href="docs/Schedule-JuniorSwissCup.pdf" target="_blank">Plan des jeux Junior Swiss Cup</a>
+        <a href="docs/Schedule-JuniorSwissCup.pdf" target="_blank">Plan des jeux</a>
         <p class="inbetween">&nbsp;</p>
         <a href="schedule.php">au programme de la saison</a>
       </div>
