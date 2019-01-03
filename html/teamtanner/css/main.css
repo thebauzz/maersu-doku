@@ -325,6 +325,12 @@ main {
   bottom: -13px;
   color: #c72e54;
 }
+@media only screen and (max-width: 800px) {
+  .main--recent-news h2::after {
+    font-size: 20px;
+    bottom: -9px;
+  }
+}
 
 .main--recent-news img {
   width: 30%;
@@ -390,6 +396,13 @@ main {
   left: -1px;
   bottom: -13px;
   color: #c72e54;
+}
+@media only screen and (max-width: 800px) {
+  .main--saisonplan h2::after,
+  .main--results h2::after {
+    font-size: 20px;
+    bottom: -9px;
+  }
 }
 .main--saisonplan table {
   border-collapse: collapse;
