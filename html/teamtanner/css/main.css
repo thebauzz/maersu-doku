@@ -1,15 +1,15 @@
 /**
   *
+  *
   * GENERAL STYLING
   *
 **/
-@import  url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:300,400,700');
 @font-face  {
   font-family: "stencilcreek";
   src: url("../font/stencilcreek.ttf") format("truetype");
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -20,15 +20,17 @@ html, body {
   height: 100vh;
   background: #f4f4f4;
 }
+i {
+  font-style: normal;
+  color: #c72e54;
+}
 ::selection {
   background: #c72e54;
   color: #f4f4f4;
 }
-.inbetween {
-  line-height: 8px;
-}
 
 /**
+  *
   *
   * HEADER
   *
@@ -160,20 +162,14 @@ header {
 .nav-in-out {
   left: 0;
 }
-
-/* Abtrennug zwischen Navigation & Dropdown */
 #nav > ul {
   padding-top: 30px;
   border-bottom: 1px solid #c72e54;
 }
-
-/* Positionierung vom Navigations Text */
 #nav ul li {
   padding: 15px;
   list-style: none;
 }
-
-/* Styling vom Navigations Text */
 #nav a {
   font-weight: bold;
   text-decoration: none;
@@ -181,8 +177,6 @@ header {
   color: #000000;
   position: relative;
 }
-
-/* Hovereffekt vom Navigations Text */
 #nav a:hover {
   color: #c72e54;
 }
@@ -205,7 +199,6 @@ header {
   height: 1px;
   background: #000000;
 }
-
 .nav-active::after {
   content: url("../img/stone.png");
   position: absolute;
@@ -220,7 +213,6 @@ header {
   top: 25px;
   left: 15px;
 }
-
 .header--lang {
   position: absolute;
   right: 30px;
@@ -229,7 +221,6 @@ header {
   font-size: 20px;
   z-index: 9990;
 }
-
 .header--lang a {
   position: relative;
   text-decoration: none;
@@ -246,7 +237,6 @@ header {
   padding: 0 5px;
   color: #c72e54;
 }
-
 #container {
   position: fixed;
   height: 100vh;
@@ -254,14 +244,14 @@ header {
   top: 0; left: 0;
   z-index: 4000;
 }
-
 .invisible {
   display: none;
 }
 
 /**
   *
-  * MAIN CONTENT // index.html
+  *
+  * MAIN CONTENT // index.php
   *
 **/
 main {
@@ -331,7 +321,9 @@ main {
     bottom: -9px;
   }
 }
-
+.main--inbetween-space {
+  line-height: 8px;
+}
 .main--recent-news img {
   width: 30%;
   display: block;
@@ -353,7 +345,6 @@ main {
     width: 90%;
   }
 }
-
 .main--recent-news i {
   font-style: normal;
   padding: 0 5px;
@@ -369,28 +360,28 @@ main {
 .main--recent-news a:hover {
   border-bottom: 1px solid #000000;
 }
-
-.main--saisonplan,
-.main--results {
+/**
+  *
+  * MAIN CONTENT // saisonplan.php
+  *
+**/
+.main--saisonplan {
   background: #f9f9f9;
   padding: 10px 10px 15px 20px;
   margin-top: 30px;
   border-radius: 5px;
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
 }
-.main--saisonplan h2,
-.main--results h2 {
+.main--saisonplan h2 {
   position: relative;
   margin-bottom: 15px;
 }
 @media only screen and (min-width: 800px) {
-  .main--saisonplan h2,
-  .main--results h2 {
+  .main--saisonplan h2 {
     margin-left: 15%;
   }
 }
-.main--saisonplan h2::after,
-.main--results h2::after {
+.main--saisonplan h2::after {
   content: "⌄⌄⌄";
   position: absolute;
   left: -1px;
@@ -398,8 +389,7 @@ main {
   color: #c72e54;
 }
 @media only screen and (max-width: 800px) {
-  .main--saisonplan h2::after,
-  .main--results h2::after {
+  .main--saisonplan h2::after {
     font-size: 20px;
     bottom: -9px;
   }
@@ -444,11 +434,35 @@ main {
   border-bottom: 1px solid #e40613 !important;
 }
 
-i {
-  font-style: normal;
+.main--results {
+  background: #f9f9f9;
+  padding: 10px 10px 15px 20px;
+  margin-top: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+}
+.main--results h2 {
+  position: relative;
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 800px) {
+  .main--results h2 {
+    margin-left: 15%;
+  }
+}
+.main--results h2::after {
+  content: "⌄⌄⌄";
+  position: absolute;
+  left: -1px;
+  bottom: -13px;
   color: #c72e54;
 }
-
+@media only screen and (max-width: 800px) {
+  .main--results h2::after {
+    font-size: 20px;
+    bottom: -9px;
+  }
+}
 .results--content {
   width: 70%;
   margin: 0 auto 50px auto;
@@ -458,13 +472,11 @@ i {
     width: 100%;
   }
 }
-
 .results--content hr {
   outline: none;
   border: none;
   border-top: 1px solid #e40613;
 }
-
 .results--content h3 {
   font-size: 18px;
   position: relative;
@@ -473,4 +485,46 @@ i {
 .results--content p::first-letter {
   font-family: "Inconsolata";
   font-weight: bold;
+}
+
+
+.main--team table tr {
+  background: #f9f9f9;
+  height: 350px;
+  padding: 10px 10px 15px 20px;
+  margin-top: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+}
+.main--team img {
+  height: 330px;
+}
+@media only screen and (max-width: 800px) {
+  .main--team table tr {
+    height: 240px;
+  }
+  .main--team img {
+    height: 220px;
+  }
+}
+.main--team table tr.team--abstand {
+  height: 30px;
+  background: #f4f4f4;
+  box-shadow: none;
+}
+.team--bild-links {
+  text-align: right;
+  user-select: none;
+}
+.team--bild-rechts {
+  text-align: left;
+  user-select: none;
+}
+.team--text-links {
+  text-align: right;
+  padding-right: 5%;
+}
+.team--text-rechts {
+  text-align: left;
+  padding-left: 5%;
 }

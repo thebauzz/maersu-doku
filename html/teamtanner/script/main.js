@@ -3,7 +3,7 @@ window.onscroll = alreadyScrolled;
 function alreadyScrolled() {
   var scrollposition = window.pageYOffset;
   var sticky = document.getElementById("navbar");
-  var height = document.getElementById("img").clientHeight;
+  var height = document.getElementById("header--img").clientHeight;
 
   if (scrollposition >= (height - 61)) {
     sticky.classList.add("header--navbar-fixed");

@@ -30,7 +30,7 @@
     <header>
 <!-- Section 1 // Header Image & Header Text -->
       <section>
-        <div class="header--img" id="img"></div>
+        <div class="header--img" id="header--img"></div>
         <div class="header--text">Team Tanner</div>
       </section>
 <!-- Section 2 // Navigation, Navbar with Nav-Icon and Language settings -->
@@ -87,22 +87,22 @@
         <h2>Nächstes Turnier </h2>
         <p>04. - 06. Januar 2019<i>&nbsp;//&nbsp;</i>Junior Swiss Cup in St. Gallen</p>
         <a href="docs/Schedule-JuniorSwissCup.pdf" target="_blank">Spielplan Junior Swiss Cup</a>
-        <p class="inbetween">&nbsp;</p>
+        <p class="main--inbetween-space">&nbsp;</p>
         <a href="schedule.php">zum Saisonplan</a>
       </div>
 
       <div class="main--recent-news">
         <h2>Neueste Nachrichten </h2>
         <p>Wir wünschen euch schöne Festtage und alles Gute im Jahr 2019!</p>
-        <p class="inbetween">&nbsp;</p>
+        <p class="main--inbetween-space">&nbsp;</p>
         <a href="news.php">weitere Neuigkeiten</a>
         <img src="img/news/news-x.jpg" alt="News X" />
       </div>
 
       <div class="main--recent-news">
         <h2>Das Team </h2>
-        <p>Mélissa Tanner, Celine Schwizgebel, Annaëlle Ciganek, Emma Suter</p>
-        <p class="inbetween">&nbsp;</p>
+        <p>Mélissa Tanner, Celine Schwizgebel, Anaëlle Ciganek, Emma Suter</p>
+        <p class="main--inbetween-space">&nbsp;</p>
         <a href="team.php">mehr über uns</a>
         <img src="img/team.jpg" alt="Team LOMG" />
       </div>
@@ -111,14 +111,14 @@
         <h2>Prochain Tournois </h2>
         <p>04. - 06. Janvier 2019<i>&nbsp;//&nbsp;</i>Junior Swiss Cup à Saint-Gall</p>
         <a href="docs/Schedule-JuniorSwissCup.pdf" target="_blank">Plan des jeux</a>
-        <p class="inbetween">&nbsp;</p>
+        <p class="main--inbetween-space">&nbsp;</p>
         <a href="schedule.php">au programme de la saison</a>
       </div>
 
       <div class="main--recent-news">
         <h2>Dernières nouvelles </h2>
         <p>Nous vous souhaitons de joyeuses fêtes!</p>
-        <p class="inbetween">&nbsp;</p>
+        <p class="main--inbetween-space">&nbsp;</p>
         <a href="news.php">plus de nouvelles</a>
         <img src="img/news/news-x.jpg" alt="News X" />
       </div>
@@ -126,7 +126,7 @@
       <div class="main--recent-news">
         <h2>Notre Team </h2>
         <p>Mélissa Tanner, Celine Schwizgebel, Anaëlle Ciganek, Emma Suter</p>
-        <p class="inbetween">&nbsp;</p>
+        <p class="main--inbetween-space">&nbsp;</p>
         <a href="team.php">plus à propos de nous</a>
         <img src="img/team.jpg" alt="Team LOMG" />
       </div>

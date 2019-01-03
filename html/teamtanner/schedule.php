@@ -30,7 +30,7 @@
     <header>
 <!-- Section 1 // Header Image & Header Text -->
       <section>
-        <div class="header--img" id="img"></div>
+        <div class="header--img" id="header--img"></div>
         <div class="header--text">Team Tanner</div>
       </section>
 <!-- Section 2 // Navigation, Navbar with Nav-Icon and Language settings -->
