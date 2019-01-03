@@ -104,7 +104,7 @@
             </tr>
             <tr class="team--abstand"></tr>
             <tr>
-              <td class="team--text-links"><strong>Emma Suter</strong><br>20/10/2000</td>
+              <td class="team--text-links"><strong>Emma Suter</strong> (♡) <br>20/10/2000</td>
               <td class="team--billd-rechts"><img src="img/EmmaSuter.jpeg" alt="Emma Suter"></td>
             </tr>
           </tbody>
@@ -132,7 +132,7 @@
             </tr>
             <tr class="team--abstand"></tr>
             <tr>
-              <td class="team--text-links"><strong>Emma Suter</strong><br>20/10/2000</td>
+              <td class="team--text-links"><strong>Emma Suter</strong> (♡) <br>20/10/2000</td>
               <td class="team--billd-rechts"><img src="img/EmmaSuter.jpeg" alt="Emma Suter"></td>
             </tr>
           </tbody>
