@@ -377,6 +377,10 @@ main {
   margin-bottom: 15px;
 }
 @media only screen and (min-width: 800px) {
+  .main--saisonplan {
+    padding: 10px;
+    border-radius: 3px;
+  }
   .main--saisonplan h2 {
     margin-left: 15%;
   }
@@ -446,6 +450,10 @@ main {
   margin-bottom: 15px;
 }
 @media only screen and (min-width: 800px) {
+  .main--results {
+    padding: 10px;
+    border-radius: 3px;
+  }
   .main--results h2 {
     margin-left: 15%;
   }
@@ -487,23 +495,29 @@ main {
   font-weight: bold;
 }
 
-
+.main--team table {
+  border-collapse: collapse;
+}
 .main--team table tr {
   background: #f9f9f9;
   height: 350px;
   padding: 10px 10px 15px 20px;
   margin-top: 30px;
-  border-radius: 5px;
+  border-radius: 6px !important;
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
 }
 .main--team img {
   height: 330px;
+  border-radius: 5px;
 }
 @media only screen and (max-width: 800px) {
   .main--team table tr {
+    padding: 10px;
+    border-radius: 3px;
     height: 240px;
   }
   .main--team img {
+    border-radius: 3px;
     height: 220px;
   }
 }
