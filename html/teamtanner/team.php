@@ -90,21 +90,21 @@
             <tr class="team--abstand"></tr>
             <tr>
               <td class="team--bild-links"><img src="img/MelissaTanner.jpeg" alt="Mélissa Tanner"></td>
-              <td class="team--text-rechts"><strong>Mélissa Tanner</strong><br>20/02/1999<br>Fourth (S)</td>
+              <td class="team--text-rechts"><strong>Mélissa Tanner</strong><br>Fourth (S)<br>20/02/1999</td>
             </tr>
             <tr class="team--abstand"></tr>
             <tr>
-              <td class="team--text-links"><strong>Celine Schwizgebel</strong><br>12/10/1999<br>Third</td>
+              <td class="team--text-links"><strong>Celine Schwizgebel</strong><br>Third<br>12/10/1999</td>
               <td class="team--bild-rechts"><img src="img/CelineSchwizgebel.jpeg" alt="CelineSchwizgebel"></td>
             </tr>
             <tr class="team--abstand"></tr>
             <tr>
               <td class="team--bild-links"><img src="img/AnaelleCiganek.jpeg" alt="Anaëlle Ciganek"></td>
-              <td class="team--text-rechts"><strong>Anaëlle Ciganek</strong><br>23/11/1999<br>Second</td>
+              <td class="team--text-rechts"><strong>Anaëlle Ciganek</strong><br>Second<br>23/11/1999</td>
             </tr>
             <tr class="team--abstand"></tr>
             <tr>
-              <td class="team--text-links"><strong>Emma Suter</strong><br>20/10/2000<br>Lead (V)</td>
+              <td class="team--text-links"><strong>Emma Suter</strong><br>Lead (V)<br>20/10/2000</td>
               <td class="team--billd-rechts"><img src="img/EmmaSuter.jpeg" alt="Emma Suter"></td>
             </tr>
           </tbody>
@@ -118,21 +118,21 @@
             <tr class="team--abstand"></tr>
             <tr>
               <td class="team--bild-links"><img src="img/MelissaTanner.jpeg" alt="Mélissa Tanner"></td>
-              <td class="team--text-rechts"><strong>Mélissa Tanner</strong><br>20/02/1999<br>Fourth (S)</td>
+              <td class="team--text-rechts"><strong>Mélissa Tanner</strong><br>Fourth (S)<br>20/02/1999</td>
             </tr>
             <tr class="team--abstand"></tr>
             <tr>
-              <td class="team--text-links"><strong>Celine Schwizgebel</strong><br>12/10/1999<br>Third</td>
+              <td class="team--text-links"><strong>Celine Schwizgebel</strong><br>Third<br>12/10/1999</td>
               <td class="team--bild-rechts"><img src="img/CelineSchwizgebel.jpeg" alt="CelineSchwizgebel"></td>
             </tr>
             <tr class="team--abstand"></tr>
             <tr>
               <td class="team--bild-links"><img src="img/AnaelleCiganek.jpeg" alt="Anaëlle Ciganek"></td>
-              <td class="team--text-rechts"><strong>Anaëlle Ciganek</strong><br>23/11/1999<br>Second</td>
+              <td class="team--text-rechts"><strong>Anaëlle Ciganek</strong><br>Second<br>23/11/1999</td>
             </tr>
             <tr class="team--abstand"></tr>
             <tr>
-              <td class="team--text-links"><strong>Emma Suter</strong><br>20/10/2000<br>Lead (V)</td>
+              <td class="team--text-links"><strong>Emma Suter</strong><br>Lead (V)<br>20/10/2000</td>
               <td class="team--billd-rechts"><img src="img/EmmaSuter.jpeg" alt="Emma Suter"></td>
             </tr>
           </tbody>
