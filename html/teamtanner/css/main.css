@@ -211,7 +211,11 @@ header {
   position: absolute;
   left: -25px;
 }
-
+@media only screen and (max-width: 800px) {
+  #icon-to-high.nav-active::after {
+    top: 10px;
+  }
+}
 .header--nav-link {
   top: 25px;
   left: 15px;

@@ -63,7 +63,7 @@
             <ul>
               <li><a href="/">Home</a></li>
               <li><a href="team.php">Team</a></li>
-              <li><a class="nav-active" href="schedule.php">Programme de la saison / Résultats</a></li>
+              <li><a class="nav-active" id="icon-to-high" href="schedule.php">Programme de la saison / Résultats</a></li>
               <li><a href="news.php">Nouvelles</a></li>
               <li><a href="sponsoring.php">Sponsors</a></li>
             </ul>

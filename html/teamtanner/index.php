@@ -52,18 +52,18 @@
           <div class="header--navigation" id="nav">
 <?php switch($lang) { case 0: echo '
             <ul>
-              <li><a href="/">Home</a></li>
+              <li><a class="nav-active" href="/">Home</a></li>
               <li><a href="team.php">Team</a></li>
-              <li><a class="nav-active" href="schedule.php">Saisonplan / Resultate</a></li>
+              <li><a href="schedule.php">Saisonplan / Resultate</a></li>
               <li><a href="news.php">News</a></li>
               <li><a href="sponsoring.php">Sponsoring</a></li>
             </ul>
             <a class="header--nav-link" href="https://facebook.com/Curling.LOMG" target="_blank">Unser Facebook</a>
 ';break; case 1: echo '
             <ul>
-              <li><a href="/">Home</a></li>
+              <li><a class="nav-active" href="/">Home</a></li>
               <li><a href="team.php">Team</a></li>
-              <li><a class="nav-active" href="schedule.php">Programme de la saison / Résultats</a></li>
+              <li><a href="schedule.php">Programme de la saison / Résultats</a></li>
               <li><a href="news.php">Nouvelles</a></li>
               <li><a href="sponsoring.php">Sponsors</a></li>
             </ul>
