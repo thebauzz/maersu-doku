@@ -86,7 +86,8 @@
       <div class="main--recent-news">
         <h2>Nächstes Turnier </h2>
         <p>04. - 06. Januar 2019<i>&nbsp;//&nbsp;</i>Junior Swiss Cup in St. Gallen</p>
-        <a href="docs/Schedule-JuniorSwissCup.pdf" target="_blank">Spielplan Junior Swiss Cup</a>
+        <a href="docs/Schedule-JuniorSwissCup.pdf" target="_blank">Spielplan Junior Swiss Cup</a><br>
+        <a href="http://www.curling-results.ch/resultat/jun/2018-19/juniorinnen/cup/tg.html" target="_blank">Livescores</a>
         <p class="main--inbetween-space">&nbsp;</p>
         <a href="schedule.php">zum Saisonplan</a>
       </div>
@@ -110,7 +111,8 @@
       <div class="main--recent-news">
         <h2>Prochain Tournois </h2>
         <p>04. - 06. Janvier 2019<i>&nbsp;//&nbsp;</i>Junior Swiss Cup à Saint-Gall</p>
-        <a href="docs/Schedule-JuniorSwissCup.pdf" target="_blank">Plan des jeux</a>
+        <a href="docs/Schedule-JuniorSwissCup.pdf" target="_blank">Plan des jeux</a><br>
+        <a href="http://www.curling-results.ch/resultat/jun/2018-19/juniorinnen/cup/tg.html" target="_blank">Livescores</a>
         <p class="main--inbetween-space">&nbsp;</p>
         <a href="schedule.php">au programme de la saison</a>
       </div>

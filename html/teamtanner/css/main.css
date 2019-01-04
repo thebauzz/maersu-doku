@@ -495,6 +495,18 @@ main {
   font-family: "Inconsolata";
   font-weight: bold;
 }
+.results--content a {
+  display: inline-block;
+  margin-top: 5px;
+  text-decoration: none;
+  color: #c72e54;
+  border-bottom: 1px solid #00000000;
+  transition: 0.3s;
+  margin-bottom: 5px;
+}
+.results--content a:hover {
+  border-bottom: 1px solid #000000;
+}
 
 .main--team table {
   border-collapse: collapse;

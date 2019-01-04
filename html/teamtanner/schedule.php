@@ -86,7 +86,6 @@
 ';break;}?>
       </div>
 
-
 <?php switch($lang) { case 0: echo '
       <div class="main--saisonplan">
         <h2>Saisonplan</h2>
@@ -165,117 +164,7 @@
           </tr>
         </table>
       </div>
-
-      <div class="main--results">
-        <h2>Resultate</h2>
-        <div class="results--content">
-          <hr>
-          <h3>Sommerturnier in Adelboden</h3>
-          <strong>Turniersieg (5W / 0L)</strong><br>
-          <p>W vs. Langenthal <i>//</i>&nbsp; 6-2</p>
-          <p>W vs. Interlaken <i>//</i>&nbsp; 10-4</p>
-          <p>W vs. Hoehne (GER) <i>//</i>&nbsp; 6-5</p>
-          <p>W vs. Kapp (GER) <i>//</i>&nbsp; 9-5</p>
-          <p>W vs. Bern <i>//</i>&nbsp; 10-6</p>
-        </div>
-
-        <div class="results--content">
-          <hr>
-          <h3>Womens Masters in Basel</h3>
-          <strong>DNQ (1W / 3L)</strong><br>
-          <p>W vs. Hürlimann <i>//</i>&nbsp; 6-4</p>
-          <p>L vs. Hegner <i>//</i>&nbsp; 3-6</p>
-          <p>L vs. Wrana (SWE) <i>//</i>&nbsp; 3-6</p>
-          <p>L vs. Yoshimura (JAP) <i>//</i>&nbsp; 3-6</p>
-        </div>
-
-        <div class="results--content">
-          <hr>
-          <h3>EJCT in Braehead</h3>
-          <strong>Ausgeschieden nach QF (3W / 2L)</strong><br>
-          <p>W vs. Fransson (SWE) <i>//</i>&nbsp; 8-7</p>
-          <p>W vs. Farmer (SCO) <i>//</i>&nbsp; 7-5</p>
-          <p>W vs. Dandie (SCO) <i>//</i>&nbsp; 6-5</p>
-          <p>L vs. Fransson (SWE) <i>//</i>&nbsp; 5-6</p>
-          <p>L vs. Davie (SCO) <i>//</i>&nbsp; 1-6</p>
-        </div>
-
-        <div class="results--content">
-          <hr>
-          <h3>EJCT in Thun</h3>
-          <strong>DNQ (3W / 2L)</strong><br>
-          <p>W vs. Lee (KOR) <i>//</i>&nbsp; 9-4</p>
-          <p>W vs. Klimova (CZE) <i>//</i>&nbsp; 8-2</p>
-          <p>L vs. Keiser <i>//</i>&nbsp; 4-6</p>
-          <p>L vs. Wüest <i>//</i>&nbsp; 5-7</p>
-          <p>W vs. Lo Deserto (ITA) <i>//</i>&nbsp; 8-3</p>
-        </div>
-
-        <div class="results--content">
-          <hr>
-          <h3>EJCT in Kitzbühel</h3>
-          <strong>Turniersieg (5W / 1L)</strong><br>
-          <p>W vs. Haidinger (AUT) <i>//</i>&nbsp; 11-5</p>
-          <p>W vs. Gregori (SLO) <i>//</i>&nbsp; 12-2</p>
-          <p>L vs. Hoehne (GER) <i>//</i>&nbsp; 4-5</p>
-          <p>W vs. Schwaller <i>//</i>&nbsp; 6-5</p>
-          <p>W vs. Schwaller <i>//</i>&nbsp; 7-3</p>
-          <p>W vs. Hoehne (GER) <i>//</i>&nbsp; 13-3</p>
-        </div>
-
-        <div class="results--content">
-          <hr>
-          <h3>1. Teil A-Liga in Gstaad</h3>
-          <strong>0W / 3L</strong><br>
-          <p>L vs. Interlaken <i>//</i>&nbsp; 4-5</p>
-          <p>L vs. Bern 1 <i>//</i>&nbsp; 4-5</p>
-          <p>L vs. Luzern <i>//</i>&nbsp; 2-7</p>
-        </div>
-
-        <div class="results--content">
-          <hr>
-          <h3>Huus Turnier in Gstaad</h3>
-          <strong>8. Rang (2W / 2L / 1T)</strong>
-          <p>W vs. White Star Basel <i>//</i>&nbsp; 9-5</p>
-          <p>L vs. Solothurn-Regio <i>//</i>&nbsp; 4-7</p>
-          <p>L vs. Langethal <i>//</i>&nbsp; 6-11</p>
-          <p>W vs. eifachöppis <i>//</i>&nbsp; 8-3</p>
-          <p>T vs. Gstaad Senioren <i>//</i>&nbsp; 5-5</p>
-        </div>
-
-<!--
-        <div class="results--content">
-          <hr>
-          <h3>Junior Swiss Cup in St. Gallen</h3>
-          <strong>xW / xL</strong><br>
-          <p>x vs. Luzern <i>//</i>&nbsp; x-x</p>
-          <p>x vs. Biel-St.Gallen <i>//</i>&nbsp; x-x</p>
-          <p>x vs. Dübendorf <i>//</i>&nbsp; x-x</p>
-        </div>
--->
-
-<!--    <div class="results--content">
-          <hr>
-          <h3>2. Teil A-Liga in Zug</h3>
-          <strong>xW / xL</strong><br>
-          <p>x vs. Baden-Limmattal <i>//</i>&nbsp; x-x</p>
-          <p>x vs. Wetzikon <i>//</i>&nbsp; x-x</p>
-          <p>x vs. Biel-Solothurn <i>//</i>&nbsp; x-x</p>
-        </div>
--->
-
-<!--    <div class="results--content">
-          <hr>
-          <h3>3. Teil A-Liga in St. Gallen</h3>
-          <strong>xW / xL</strong><br>
-          <p>x vs. Biel-St.Gallen <i>//</i>&nbsp; x-x</p>
-          <p>x vs. Wallisellen <i>//</i>&nbsp; x-x</p>
-          <p>x vs. Bern 2 <i>//</i>&nbsp; x-x</p>
-        </div>
--->
-
-      </div>
-';break; case 1: echo '
+'; break; case 1: echo '
       <div class="main--saisonplan">
         <h2>Programme de la saison</h2>
         <table>
@@ -289,15 +178,15 @@
           </tr>
           <tr>
             <td class="saisonplan--date">15.09. - 16.09.18</td>
-            <td class="saisonplan--info">Kaderweekend à Berne</td>
+            <td class="saisonplan--info">weekend du cadre à Berne</td>
           </tr>
           <tr>
             <td class="saisonplan--date">22.09. - 23.09.18</td>
-            <td class="saisonplan--info">Kaderweekend à Bienne</td>
+            <td class="saisonplan--info">weekend du cadre à Bienne</td>
           </tr>
           <tr>
             <td class="saisonplan--date">02.10. - 05.10.18</td>
-            <td class="saisonplan--info">Kaderwoche à Bienne</td>
+            <td class="saisonplan--info">semaine du cadre à Bienne</td>
           </tr>
           <tr>
             <td class="saisonplan--date">12.10. - 14.10.18</td>
@@ -353,7 +242,125 @@
           </tr>
         </table>
       </div>
+'; break; } ?>
 
+<?php switch($lang) { case 0: echo '
+      <div class="main--results">
+        <h2>Resultate</h2>
+        <div class="results--content">
+          <hr>
+          <h3>Sommerturnier in Adelboden</h3>
+          <strong>Turniersieg (5W / 0L)</strong><br>
+          <p>W vs. Langenthal <i>//</i>&nbsp; 6-2</p>
+          <p>W vs. Interlaken <i>//</i>&nbsp; 10-4</p>
+          <p>W vs. Hoehne (GER) <i>//</i>&nbsp; 6-5</p>
+          <p>W vs. Kapp (GER) <i>//</i>&nbsp; 9-5</p>
+          <p>W vs. Bern <i>//</i>&nbsp; 10-6</p>
+          <a href="docs/Ranking-Adelboden.pdf" target="_blank">Rangliste</a>
+        </div>
+
+        <div class="results--content">
+          <hr>
+          <h3>Womens Masters in Basel</h3>
+          <strong>DNQ (1W / 3L)</strong><br>
+          <p>W vs. Hürlimann <i>//</i>&nbsp; 6-4</p>
+          <p>L vs. Hegner <i>//</i>&nbsp; 3-6</p>
+          <p>L vs. Wrana (SWE) <i>//</i>&nbsp; 3-6</p>
+          <p>L vs. Yoshimura (JAP) <i>//</i>&nbsp; 3-6</p>
+          <a href="http://www.curling-basel.ch/fileadmin/rinkmaster/WMB/m.html#Team19" target="_blank">Resultate</a>
+        </div>
+
+        <div class="results--content">
+          <hr>
+          <h3>EJCT in Braehead</h3>
+          <strong>Ausgeschieden nach QF (3W / 2L)</strong><br>
+          <p>W vs. Fransson (SWE) <i>//</i>&nbsp; 8-7</p>
+          <p>W vs. Farmer (SCO) <i>//</i>&nbsp; 7-5</p>
+          <p>W vs. Dandie (SCO) <i>//</i>&nbsp; 6-5</p>
+          <p>L vs. Fransson (SWE) <i>//</i>&nbsp; 5-6</p>
+          <p>L vs. Davie (SCO) <i>//</i>&nbsp; 1-6</p>
+          <a href="http://www.curlingzone.com/event.php?view=Team&eventid=5388&teamid=127041" target="_blank">Resultate</a>
+        </div>
+
+        <div class="results--content">
+          <hr>
+          <h3>EJCT in Thun</h3>
+          <strong>DNQ (3W / 2L)</strong><br>
+          <p>W vs. Lee (KOR) <i>//</i>&nbsp; 9-4</p>
+          <p>W vs. Klimova (CZE) <i>//</i>&nbsp; 8-2</p>
+          <p>L vs. Keiser <i>//</i>&nbsp; 4-6</p>
+          <p>L vs. Wüest <i>//</i>&nbsp; 5-7</p>
+          <p>W vs. Lo Deserto (ITA) <i>//</i>&nbsp; 8-3</p>
+          <a href="http://ccthunregio.ch/wp-content/uploads/veranstaltungen/7443/spielplan/m.html#Team8" target="_blank">Resultate</a>
+        </div>
+
+        <div class="results--content">
+          <hr>
+          <h3>EJCT in Kitzbühel</h3>
+          <strong>Turniersieg (5W / 1L)</strong><br>
+          <p>W vs. Haidinger (AUT) <i>//</i>&nbsp; 11-5</p>
+          <p>W vs. Gregori (SLO) <i>//</i>&nbsp; 12-2</p>
+          <p>L vs. Hoehne (GER) <i>//</i>&nbsp; 4-5</p>
+          <p>W vs. Schwaller <i>//</i>&nbsp; 6-5</p>
+          <p>W vs. Schwaller <i>//</i>&nbsp; 7-3</p>
+          <p>W vs. Hoehne (GER) <i>//</i>&nbsp; 13-3</p>
+          <a href="http://www.curlingzone.com/event.php?view=Team&eventid=5652&teamid=128987#1" target="_blank">Resultate</a>
+        </div>
+
+        <div class="results--content">
+          <hr>
+          <h3>1. Teil A-Liga in Gstaad</h3>
+          <strong>0W / 3L</strong><br>
+          <p>L vs. Interlaken <i>//</i>&nbsp; 4-5</p>
+          <p>L vs. Bern 1 <i>//</i>&nbsp; 4-5</p>
+          <p>L vs. Luzern <i>//</i>&nbsp; 2-7</p>
+          <a href="http://www.curling-results.ch/resultat/jun/2018-19/juniorinnen/a-liga/m.html#Team7" target="_blank">Resultate</a>
+        </div>
+
+        <div class="results--content">
+          <hr>
+          <h3>Huus Turnier in Gstaad</h3>
+          <strong>8. Rang (2W / 2L / 1T)</strong>
+          <p>W vs. White Star Basel <i>//</i>&nbsp; 9-5</p>
+          <p>L vs. Solothurn-Regio <i>//</i>&nbsp; 4-7</p>
+          <p>L vs. Langethal <i>//</i>&nbsp; 6-11</p>
+          <p>W vs. eifachöppis <i>//</i>&nbsp; 8-3</p>
+          <p>T vs. Gstaad Senioren <i>//</i>&nbsp; 5-5</p>
+        </div>
+
+    <!--
+        <div class="results--content">
+          <hr>
+          <h3>Junior Swiss Cup in St. Gallen</h3>
+          <strong>xW / xL</strong><br>
+          <p>x vs. Luzern <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Biel-St.Gallen <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Dübendorf <i>//</i>&nbsp; x-x</p>
+        </div>
+    -->
+
+    <!--    <div class="results--content">
+          <hr>
+          <h3>2. Teil A-Liga in Zug</h3>
+          <strong>xW / xL</strong><br>
+          <p>x vs. Baden-Limmattal <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Wetzikon <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Biel-Solothurn <i>//</i>&nbsp; x-x</p>
+        </div>
+    -->
+
+    <!--    <div class="results--content">
+          <hr>
+          <h3>3. Teil A-Liga in St. Gallen</h3>
+          <strong>xW / xL</strong><br>
+          <p>x vs. Biel-St.Gallen <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Wallisellen <i>//</i>&nbsp; x-x</p>
+          <p>x vs. Bern 2 <i>//</i>&nbsp; x-x</p>
+        </div>
+    -->
+
+      </div>
+'; break; case 1: echo '
       <div class="main--results">
         <h2>Résultats</h2>
         <div class="results--content">
@@ -365,6 +372,7 @@
           <p>W vs. Hoehne (GER) <i>//</i>&nbsp; 6-5</p>
           <p>W vs. Kapp (GER) <i>//</i>&nbsp; 9-5</p>
           <p>W vs. Berne <i>//</i>&nbsp; 10-6</p>
+          <a href="docs/Ranking-Adelboden.pdf" target="_blank">Classement</a>
         </div>
 
         <div class="results--content">
@@ -375,6 +383,7 @@
           <p>L vs. Hegner <i>//</i>&nbsp; 3-6</p>
           <p>L vs. Wrana (SWE) <i>//</i>&nbsp; 3-6</p>
           <p>L vs. Yoshimura (JAP) <i>//</i>&nbsp; 3-6</p>
+          <a href="http://www.curling-basel.ch/fileadmin/rinkmaster/WMB/m.html#Team19" target="_blank">Résultats</a>
         </div>
 
         <div class="results--content">
@@ -386,6 +395,7 @@
           <p>W vs. Dandie (SCO) <i>//</i>&nbsp; 6-5</p>
           <p>L vs. Fransson (SWE) <i>//</i>&nbsp; 5-6</p>
           <p>L vs. Davie (SCO) <i>//</i>&nbsp; 1-6</p>
+          <a href="http://www.curlingzone.com/event.php?view=Team&eventid=5388&teamid=127041" target="_blank">Résultats</a>
         </div>
 
         <div class="results--content">
@@ -397,6 +407,7 @@
           <p>L vs. Keiser <i>//</i>&nbsp; 4-6</p>
           <p>L vs. Wüest <i>//</i>&nbsp; 5-7</p>
           <p>W vs. Lo Deserto (ITA) <i>//</i>&nbsp; 8-3</p>
+          <a href="http://ccthunregio.ch/wp-content/uploads/veranstaltungen/7443/spielplan/m.html#Team8" target="_blank">Résultats</a>
         </div>
 
         <div class="results--content">
@@ -409,6 +420,7 @@
           <p>W vs. Schwaller <i>//</i>&nbsp; 6-5</p>
           <p>W vs. Schwaller <i>//</i>&nbsp; 7-3</p>
           <p>W vs. Hoehne (GER) <i>//</i>&nbsp; 13-3</p>
+          <a href="http://www.curlingzone.com/event.php?view=Team&eventid=5652&teamid=128987#1" target="_blank">Résultats</a>
         </div>
 
         <div class="results--content">
@@ -418,6 +430,7 @@
           <p>L vs. Interlaken <i>//</i>&nbsp; 4-5</p>
           <p>L vs. Berne 1 <i>//</i>&nbsp; 4-5</p>
           <p>L vs. Lucerne <i>//</i>&nbsp; 2-7</p>
+          <a href="http://www.curling-results.ch/resultat/jun/2018-19/juniorinnen/a-liga/m.html#Team7" target="_blank">Résultats</a>
         </div>
 
         <div class="results--content">
@@ -431,7 +444,7 @@
           <p>T vs. Gstaad Senioren <i>//</i>&nbsp; 5-5</p>
         </div>
 
-<!--
+      <!--
         <div class="results--content">
           <hr>
           <h3>Junior Swiss Cup à Saint-Gall</h3>
@@ -440,9 +453,9 @@
           <p>x vs. Bienne-Saint-Gall <i>//</i>&nbsp; x-x</p>
           <p>x vs. Dübendorf <i>//</i>&nbsp; x-x</p>
         </div>
--->
+      -->
 
-<!--    <div class="results--content">
+      <!--    <div class="results--content">
           <hr>
           <h3>2ème tour de A-Ligue à Zoug</h3>
           <strong>xW / xL</strong><br>
@@ -450,9 +463,9 @@
           <p>x vs. Wetzikon <i>//</i>&nbsp; x-x</p>
           <p>x vs. Bienne-Soleure <i>//</i>&nbsp; x-x</p>
         </div>
--->
+      -->
 
-<!--    <div class="results--content">
+      <!--    <div class="results--content">
           <hr>
           <h3>3ème tour de A-Ligue à Saint-Gall</h3>
           <strong>xW / xL</strong><br>
@@ -460,10 +473,10 @@
           <p>x vs. Wallisellen <i>//</i>&nbsp; x-x</p>
           <p>x vs. Bern 2 <i>//</i>&nbsp; x-x</p>
         </div>
--->
+      -->
 
       </div>
-';break;}?>
+'; break; } ?>
 
     </main>
     <div style="height: 200px;"></div>
