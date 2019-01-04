@@ -291,7 +291,7 @@ main {
   font-weight: 400;
   font-style: italic;
 }
-.main--recent-news {
+.main--preview {
   background: #f9f9f9;
   padding: 10px 10px 15px 20px;
   margin-top: 30px;
@@ -299,16 +299,16 @@ main {
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
 }
 @media only screen and (max-width: 800px) {
-  .main--recent-news {
+  .main--preview {
     padding: 10px;
     border-radius: 3px;
   }
 }
-.main--recent-news h2 {
+.main--preview h2 {
   position: relative;
   margin-bottom: 15px;
 }
-.main--recent-news h2::after {
+.main--preview h2::after {
   content: "⌄⌄⌄";
   position: absolute;
   left: -1px;
@@ -316,49 +316,49 @@ main {
   color: #c72e54;
 }
 @media only screen and (max-width: 800px) {
-  .main--recent-news h2::after {
+  .main--preview h2::after {
     font-size: 20px;
     bottom: -9px;
   }
 }
-.main--inbetween-space {
+.preview--inbetween-space {
   line-height: 8px;
 }
-.main--recent-news img {
+.main--preview img {
   width: 30%;
   display: block;
   margin: 30px auto;
   border-radius: 5px;
 }
 @media only screen and (max-width: 1100px) {
-  .main--recent-news img {
+  .main--preview img {
     width: 50%;
     border-radius: 3px;
   }
 }
 @media only screen and (max-width: 800px) {
-  .main--recent-news img {
+  .main--preview img {
     width: 70%;
   }
 }
 @media only screen and (max-width: 580px) {
-  .main--recent-news img {
+  .main--preview img {
     width: 90%;
   }
 }
-.main--recent-news i {
+.main--preview i {
   font-style: normal;
   padding: 0 5px;
   color: #c72e54;
 }
-.main--recent-news a {
+.main--preview a {
   text-decoration: none;
   color: #c72e54;
   border-bottom: 1px solid #00000000;
   transition: 0.3s;
   margin-bottom: 5px;
 }
-.main--recent-news a:hover {
+.main--preview a:hover {
   border-bottom: 1px solid #000000;
 }
 /**

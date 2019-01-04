@@ -83,52 +83,52 @@
       </div>
 
 <?php switch($lang) { case 0: echo '
-      <div class="main--recent-news">
+      <div class="main--preview">
         <h2>Nächstes Turnier </h2>
         <p>04. - 06. Januar 2019<i>&nbsp;//&nbsp;</i>Junior Swiss Cup in St. Gallen</p>
         <a href="docs/Schedule-JuniorSwissCup.pdf" target="_blank">Spielplan Junior Swiss Cup</a><br>
         <a href="http://www.curling-results.ch/resultat/jun/2018-19/juniorinnen/cup/tg.html" target="_blank">Livescores</a>
-        <p class="main--inbetween-space">&nbsp;</p>
+        <p class="preview--inbetween-space">&nbsp;</p>
         <a href="schedule.php">zum Saisonplan</a>
       </div>
 
-      <div class="main--recent-news">
+      <div class="main--preview">
         <h2>Neueste Nachrichten </h2>
         <p>Wir wünschen euch schöne Festtage und alles Gute im Jahr 2019!</p>
-        <p class="main--inbetween-space">&nbsp;</p>
+        <p class="preview--inbetween-space">&nbsp;</p>
         <a href="news.php">weitere Neuigkeiten</a>
         <img src="img/news/news-x.jpg" alt="News X" />
       </div>
 
-      <div class="main--recent-news">
+      <div class="main--preview">
         <h2>Das Team </h2>
         <p>Mélissa Tanner, Celine Schwizgebel, Anaëlle Ciganek, Emma Suter</p>
-        <p class="main--inbetween-space">&nbsp;</p>
+        <p class="preview--inbetween-space">&nbsp;</p>
         <a href="team.php">mehr über uns</a>
         <img src="img/team.jpg" alt="Team LOMG" />
       </div>
 '; break; case 1: echo '
-      <div class="main--recent-news">
+      <div class="main--preview">
         <h2>Prochain Tournois </h2>
         <p>04. - 06. Janvier 2019<i>&nbsp;//&nbsp;</i>Junior Swiss Cup à Saint-Gall</p>
         <a href="docs/Schedule-JuniorSwissCup.pdf" target="_blank">Plan des jeux</a><br>
         <a href="http://www.curling-results.ch/resultat/jun/2018-19/juniorinnen/cup/tg.html" target="_blank">Livescores</a>
-        <p class="main--inbetween-space">&nbsp;</p>
+        <p class="preview--inbetween-space">&nbsp;</p>
         <a href="schedule.php">au programme de la saison</a>
       </div>
 
-      <div class="main--recent-news">
+      <div class="main--preview">
         <h2>Dernières nouvelles </h2>
         <p>Nous vous souhaitons de joyeuses fêtes!</p>
-        <p class="main--inbetween-space">&nbsp;</p>
+        <p class="preview--inbetween-space">&nbsp;</p>
         <a href="news.php">plus de nouvelles</a>
         <img src="img/news/news-x.jpg" alt="News X" />
       </div>
 
-      <div class="main--recent-news">
+      <div class="main--preview">
         <h2>Notre Team </h2>
         <p>Mélissa Tanner, Celine Schwizgebel, Anaëlle Ciganek, Emma Suter</p>
-        <p class="main--inbetween-space">&nbsp;</p>
+        <p class="preview--inbetween-space">&nbsp;</p>
         <a href="team.php">plus à propos de nous</a>
         <img src="img/team.jpg" alt="Team LOMG" />
       </div>
