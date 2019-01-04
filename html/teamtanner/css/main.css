@@ -328,11 +328,12 @@ main {
   width: 30%;
   display: block;
   margin: 30px auto;
+  border-radius: 5px;
 }
 @media only screen and (max-width: 1100px) {
   .main--recent-news img {
     width: 50%;
-    background-attachment: scroll;
+    border-radius: 3px;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -497,14 +498,12 @@ main {
 
 .main--team table {
   border-collapse: collapse;
+  width: 100%;
+  align: center;
 }
-.main--team table tr {
-  background: #f9f9f9;
-  height: 350px;
-  padding: 10px 10px 15px 20px;
-  margin-top: 30px;
-  border-radius: 6px !important;
-  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+.main--team table tr td {
+  background-clip: padding-box;
+  border-radius: 5px;
 }
 .main--team img {
   height: 330px;
@@ -521,17 +520,27 @@ main {
     height: 220px;
   }
 }
-.main--team table tr.team--abstand {
-  height: 30px;
-  background: #f4f4f4;
-  box-shadow: none;
+.team--table {
+  background: #f9f9f9;
+  border-radius: 5px;
+  padding: 10px 10px 15px 20px;
+  margin-top: 30px;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
 }
+@media only screen and (max-width: 800px) {
+  .team--table {
+    border-radius: 3px;
+  }
+}
+
 .team--bild-links {
   text-align: right;
+  pointer-events: none;
   user-select: none;
 }
 .team--bild-rechts {
   text-align: left;
+  pointer-events: none;
   user-select: none;
 }
 .team--text-links {

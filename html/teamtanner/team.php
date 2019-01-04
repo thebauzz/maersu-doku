@@ -84,59 +84,87 @@
 
 <?php switch($lang) { case 0: echo '
       <div class="main--team">
-        <table align="center" width="100%">
-          <colgroup><col width="50%"><col width="50%"></colgroup>
-          <tbody>
-            <tr class="team--abstand"></tr>
+        <div class="team--table">
+          <table>
+            <colgroup><col width="50%"><col width="50%"></colgroup>
             <tr>
               <td class="team--bild-links"><img src="img/MelissaTanner.jpeg" alt="Mélissa Tanner"></td>
               <td class="team--text-rechts"><strong>Mélissa Tanner</strong><br>Fourth (S)<br>20/02/1999</td>
             </tr>
-            <tr class="team--abstand"></tr>
+          </table>
+        </div>
+
+        <div class="team--table">
+          <table>
+            <colgroup><col width="50%"><col width="50%"></colgroup>
             <tr>
               <td class="team--text-links"><strong>Celine Schwizgebel</strong><br>Third<br>12/10/1999</td>
-              <td class="team--bild-rechts"><img src="img/CelineSchwizgebel.jpeg" alt="CelineSchwizgebel"></td>
+              <td class="team--bild-rechts"><img draggable="false" src="img/CelineSchwizgebel.jpeg" alt="CelineSchwizgebel"></td>
             </tr>
-            <tr class="team--abstand"></tr>
+          </table>
+        </div>
+
+        <div class="team--table">
+          <table>
+            <colgroup><col width="50%"><col width="50%"></colgroup>
             <tr>
               <td class="team--bild-links"><img src="img/AnaelleCiganek.jpeg" alt="Anaëlle Ciganek"></td>
               <td class="team--text-rechts"><strong>Anaëlle Ciganek</strong><br>Second<br>23/11/1999</td>
             </tr>
-            <tr class="team--abstand"></tr>
+          </table>
+        </div>
+
+        <div class="team--table">
+          <table>
+            <colgroup><col width="50%"><col width="50%"></colgroup>
             <tr>
               <td class="team--text-links"><strong>Emma Suter</strong><br>Lead (V)<br>20/10/2000</td>
-              <td class="team--billd-rechts"><img src="img/EmmaSuter.jpeg" alt="Emma Suter"></td>
+              <td class="team--bild-rechts"><img src="img/EmmaSuter.jpeg" alt="Emma Suter"></td>
             </tr>
-          </tbody>
-        </table>
+          </table>
+        </div>
       </div>
 '; break; case 1: echo '
       <div class="main--team">
-        <table align="center" width="100%">
-          <colgroup><col width="50%"><col width="50%"></colgroup>
-          <tbody>
-            <tr class="team--abstand"></tr>
+        <div class="team--table">
+          <table>
+            <colgroup><col width="50%"><col width="50%"></colgroup>
             <tr>
               <td class="team--bild-links"><img src="img/MelissaTanner.jpeg" alt="Mélissa Tanner"></td>
               <td class="team--text-rechts"><strong>Mélissa Tanner</strong><br>Fourth (S)<br>20/02/1999</td>
             </tr>
-            <tr class="team--abstand"></tr>
+          </table>
+        </div>
+
+        <div class="team--table">
+          <table>
+            <colgroup><col width="50%"><col width="50%"></colgroup>
             <tr>
               <td class="team--text-links"><strong>Celine Schwizgebel</strong><br>Third<br>12/10/1999</td>
-              <td class="team--bild-rechts"><img src="img/CelineSchwizgebel.jpeg" alt="CelineSchwizgebel"></td>
+              <td class="team--bild-rechts"><img draggable="false" src="img/CelineSchwizgebel.jpeg" alt="CelineSchwizgebel"></td>
             </tr>
-            <tr class="team--abstand"></tr>
+          </table>
+        </div>
+
+        <div class="team--table">
+          <table>
+            <colgroup><col width="50%"><col width="50%"></colgroup>
             <tr>
               <td class="team--bild-links"><img src="img/AnaelleCiganek.jpeg" alt="Anaëlle Ciganek"></td>
               <td class="team--text-rechts"><strong>Anaëlle Ciganek</strong><br>Second<br>23/11/1999</td>
             </tr>
-            <tr class="team--abstand"></tr>
+          </table>
+        </div>
+
+        <div class="team--table">
+          <table>
+            <colgroup><col width="50%"><col width="50%"></colgroup>
             <tr>
               <td class="team--text-links"><strong>Emma Suter</strong><br>Lead (V)<br>20/10/2000</td>
-              <td class="team--billd-rechts"><img src="img/EmmaSuter.jpeg" alt="Emma Suter"></td>
+              <td class="team--bild-rechts"><img src="img/EmmaSuter.jpeg" alt="Emma Suter"></td>
             </tr>
-          </tbody>
-        </table>
+          </table>
+        </div>
       </div>
 '; break; } ?>
     </main>
