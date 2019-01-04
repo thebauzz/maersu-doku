@@ -58,7 +58,7 @@
               <li><a href="news.php">News</a></li>
               <li><a href="sponsoring.php">Sponsoring</a></li>
             </ul>
-            <a class="header--nav-link" href="facebook.com/Curling.LOMG" target="_blank">Unser Facebook</a>
+            <a class="header--nav-link" href="https://facebook.com/Curling.LOMG" target="_blank">Unser Facebook</a>
 ';break; case 1: echo '
             <ul>
               <li><a href="/">Home</a></li>
@@ -67,7 +67,7 @@
               <li><a href="news.php">Nouvelles</a></li>
               <li><a href="sponsoring.php">Sponsors</a></li>
             </ul>
-            <a class="header--nav-link" href="facebook.com/Curling.LOMG" target="_blank">Notre Facebook</a>
+            <a class="header--nav-link" href="https://facebook.com/Curling.LOMG" target="_blank">Notre Facebook</a>
 ';break;}?>
           </div>
         </div>
@@ -328,16 +328,14 @@
           <p>T vs. Gstaad Senioren <i>//</i>&nbsp; 5-5</p>
         </div>
 
-    <!--
         <div class="results--content">
           <hr>
           <h3>Junior Swiss Cup in St. Gallen</h3>
           <strong>xW / xL</strong><br>
-          <p>x vs. Luzern <i>//</i>&nbsp; x-x</p>
+          <p>L vs. Luzern <i>//</i>&nbsp; 2-8</p>
           <p>x vs. Biel-St.Gallen <i>//</i>&nbsp; x-x</p>
           <p>x vs. Dübendorf <i>//</i>&nbsp; x-x</p>
         </div>
-    -->
 
     <!--    <div class="results--content">
           <hr>
@@ -444,16 +442,14 @@
           <p>T vs. Gstaad Senioren <i>//</i>&nbsp; 5-5</p>
         </div>
 
-      <!--
         <div class="results--content">
           <hr>
           <h3>Junior Swiss Cup à Saint-Gall</h3>
           <strong>xW / xL</strong><br>
-          <p>x vs. Lucerne <i>//</i>&nbsp; x-x</p>
+          <p>L vs. Lucerne <i>//</i>&nbsp; 2-8</p>
           <p>x vs. Bienne-Saint-Gall <i>//</i>&nbsp; x-x</p>
           <p>x vs. Dübendorf <i>//</i>&nbsp; x-x</p>
         </div>
-      -->
 
       <!--    <div class="results--content">
           <hr>
