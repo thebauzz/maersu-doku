@@ -85,9 +85,8 @@
 <?php switch($lang) { case 0: echo '
       <div class="main--preview">
         <h2>Nächstes Turnier </h2>
-        <p>04. - 06. Januar 2019<i>&nbsp;//&nbsp;</i>Junior Swiss Cup in St. Gallen</p>
-        <a href="docs/Schedule-JuniorSwissCup.pdf" target="_blank">Spielplan Junior Swiss Cup</a><br>
-        <a href="http://www.curling-results.ch/resultat/jun/2018-19/juniorinnen/cup/tg.html" target="_blank">Livescores</a>
+        <p>10. - 13. Januar 2019<i>&nbsp;//&nbsp;</i>Ladies Cup in Bern</p>
+        <a href="https://www.curlingbern.ch/turniere/2018-2019/51-internationaler-berner-damen-cup/spielplan-resultate-schedule-results/" target="_blank">Spielplan Ladies Cup</a><br>
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="schedule.php">zum Saisonplan</a>
       </div>
@@ -110,9 +109,8 @@
 '; break; case 1: echo '
       <div class="main--preview">
         <h2>Prochain Tournois </h2>
-        <p>04. - 06. Janvier 2019<i>&nbsp;//&nbsp;</i>Junior Swiss Cup à Saint-Gall</p>
-        <a href="docs/Schedule-JuniorSwissCup.pdf" target="_blank">Plan des jeux</a><br>
-        <a href="http://www.curling-results.ch/resultat/jun/2018-19/juniorinnen/cup/tg.html" target="_blank">Livescores</a>
+        <p>10. - 13. Janvier 2019<i>&nbsp;//&nbsp;</i>Ladies Cup à Berne</p>
+        <a href="https://www.curlingbern.ch/turniere/2018-2019/51-internationaler-berner-damen-cup/spielplan-resultate-schedule-results/" target="_blank">Plan des jeux</a><br>
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="schedule.php">au programme de la saison</a>
       </div>
