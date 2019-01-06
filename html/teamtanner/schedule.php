@@ -130,15 +130,15 @@
             <td class="saisonplan--date">15.12. - 16.12.18</td>
             <td class="saisonplan--info">1. Teil A-Liga in Gstaad</td>
           </tr>
-          <tr class="saisonplan--last-event">
+          <tr>
             <td class="saisonplan--date">22.12. - 23.12.18</td>
             <td class="saisonplan--info">Huus Turnier in Gstaad</td>
           </tr>
-          <tr class="saisonplan--next-up">
+          <tr class="saisonplan--last-event">
             <td class="saisonplan--date">04.01. - 06.01.19</td>
             <td class="saisonplan--info">Junior Swiss Cup in St.Gallen</td>
           </tr>
-          <tr>
+          <tr class="saisonplan--next-up">
             <td class="saisonplan--date">10.01. - 13.01.19</td>
             <td class="saisonplan--info">Ladies Cup in Bern</td>
           </tr>
