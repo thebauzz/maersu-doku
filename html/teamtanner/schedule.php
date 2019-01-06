@@ -331,10 +331,11 @@
         <div class="results--content">
           <hr>
           <h3>Junior Swiss Cup in St. Gallen</h3>
-          <strong>xW / xL</strong><br>
+          <strong>Ausgeschieden nach QF (2W / 2L)</strong><br>
           <p>L vs. Luzern <i>//</i>&nbsp; 2-8</p>
-          <p>x vs. Biel-St.Gallen <i>//</i>&nbsp; x-x</p>
-          <p>x vs. Dübendorf <i>//</i>&nbsp; x-x</p>
+          <p>W vs. Biel-St.Gallen <i>//</i>&nbsp; 5-4</p>
+          <p>W vs. Dübendorf <i>//</i>&nbsp; 10-2</p>
+          <p>L vs. Baden-Limmattal <i>//</i>&nbsp; 5-6</p>
         </div>
 
     <!--    <div class="results--content">
@@ -445,10 +446,11 @@
         <div class="results--content">
           <hr>
           <h3>Junior Swiss Cup à Saint-Gall</h3>
-          <strong>xW / xL</strong><br>
-          <p>L vs. Lucerne <i>//</i>&nbsp; 2-8</p>
-          <p>x vs. Bienne-Saint-Gall <i>//</i>&nbsp; x-x</p>
-          <p>x vs. Dübendorf <i>//</i>&nbsp; x-x</p>
+          <strong>Eliminé après QF (2W / 2L)</strong><br>
+          <p>L vs. Luzern <i>//</i>&nbsp; 2-8</p>
+          <p>W vs. Biel-St.Gallen <i>//</i>&nbsp; 5-4</p>
+          <p>W vs. Dübendorf <i>//</i>&nbsp; 10-2</p>
+          <p>L vs. Baden-Limmattal <i>//</i>&nbsp; 5-6</p>
         </div>
 
       <!--    <div class="results--content">
