@@ -338,7 +338,16 @@
           <p>L vs. Baden-Limmattal <i>//</i>&nbsp; 5-6</p>
         </div>
 
-    <!--    <div class="results--content">
+<!--
+        <div class="results--content">
+          <hr>
+          <h3>Ladies Cup in Bern</h3>
+          <strong>xW / xL</strong><br>
+          <p>x vs. Kim (KOR) <i>//</i>&nbsp; x-x</p>
+        </div>
+-->
+
+<!--    <div class="results--content">
           <hr>
           <h3>2. Teil A-Liga in Zug</h3>
           <strong>xW / xL</strong><br>
@@ -453,7 +462,16 @@
           <p>L vs. Baden-Limmattal <i>//</i>&nbsp; 5-6</p>
         </div>
 
-      <!--    <div class="results--content">
+<!--
+        <div class="results--content">
+          <hr>
+          <h3>Ladies Cup à Berne</h3>
+          <strong>xW / xL</strong><br>
+          <p>x vs. Kim (KOR) <i>//</i>&nbsp; x-x</p>
+        </div>
+-->
+
+<!--    <div class="results--content">
           <hr>
           <h3>2ème tour de A-Ligue à Zoug</h3>
           <strong>xW / xL</strong><br>
@@ -461,9 +479,9 @@
           <p>x vs. Wetzikon <i>//</i>&nbsp; x-x</p>
           <p>x vs. Bienne-Soleure <i>//</i>&nbsp; x-x</p>
         </div>
-      -->
+-->
 
-      <!--    <div class="results--content">
+<!--    <div class="results--content">
           <hr>
           <h3>3ème tour de A-Ligue à Saint-Gall</h3>
           <strong>xW / xL</strong><br>
@@ -471,7 +489,7 @@
           <p>x vs. Wallisellen <i>//</i>&nbsp; x-x</p>
           <p>x vs. Bern 2 <i>//</i>&nbsp; x-x</p>
         </div>
-      -->
+-->
 
       </div>
 '; break; } ?>
