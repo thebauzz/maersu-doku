@@ -94,10 +94,13 @@
 
       <div class="main--preview">
         <h2>Neueste Nachrichten </h2>
-        <p>Wir wünschen euch schöne Festtage und alles Gute im Jahr 2019!</p>
+        <p>Nach zwei gewonnenen Spielen heute gegen Biel-St. Gallen und Dübendorf, qualifizierten wir uns für den Viertelfinal, welcher direkt anschliessend stattfand. Dirsen verloren wir leider knapp im Zusatzend.<br>
+           Next up: Ladies Cup Bern 10-13 Januar<br>
+           #LOMG 💪🏼
+        </p>
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="news.php">weitere Neuigkeiten</a>
-        <img src="img/news/news-x.jpg" alt="News X" />
+        <img src="img/news/news-28.jpg" alt="News 28" />
       </div>
 
       <div class="main--preview">
@@ -119,10 +122,13 @@
 
       <div class="main--preview">
         <h2>Dernières nouvelles </h2>
-        <p>Nous vous souhaitons de joyeuses fêtes!</p>
+        <p>Après deux victoires aujourd’hui contre Dübendorf et Bienne-St-Galle, nous nous sommes qualifiées pour les quarts de finales que nous avons malheureusement perdus au end supplémentaire. Le week-end est donc fini pour nous.<br>
+           Next-up: Ladies Cup Bern 10-13 janvier<br>
+           #LOMG 💪🏼
+        </p>
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="news.php">plus de nouvelles</a>
-        <img src="img/news/news-x.jpg" alt="News X" />
+        <img src="img/news/news-28.jpg" alt="News 28" />
       </div>
 
       <div class="main--preview">

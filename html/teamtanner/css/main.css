@@ -584,6 +584,7 @@ main {
 .news--content {
   width: 70%;
   margin: 0 auto;
+  padding: 15px 0 40px 0;
 }
 @media only screen and (max-width: 800px) {
   .news--content{
@@ -600,10 +601,11 @@ main {
   position: relative;
   margin-bottom: 15px;
 }
-.news--content .news--img {
-  width: 60%;
+.news--img,
+.news--video {
+  width: 70%;
   display: block;
-  margin: 15px auto 40px auto;
+  margin: 10px auto 0 auto;
   border-radius: 5px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
 }
@@ -611,10 +613,20 @@ main {
   display: inline;
   height: 14px;
   position: relative;
-  top: 1px;
+  top: 2px;
+}
+.jpn {
+  box-shadow:0 0 2px rgba(0, 0, 0, 0.7);
 }
 @media only screen and (max-width: 800px) {
-  .news--content .news--img {
+  .news--img,
+  .news--video {
     width: 95%;
   }
+}
+
+.news--video {
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
 }
