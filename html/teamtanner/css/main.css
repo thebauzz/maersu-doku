@@ -368,7 +368,7 @@ main {
 **/
 .main--saisonplan {
   background: #f9f9f9;
-  padding: 10px 10px 15px 20px;
+  padding: 10px 10px 50px 20px;
   margin-top: 30px;
   border-radius: 5px;
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
@@ -379,7 +379,7 @@ main {
 }
 @media only screen and (min-width: 800px) {
   .main--saisonplan {
-    padding: 10px;
+    padding: 10px 10px 50px 10px;
     border-radius: 3px;
   }
   .main--saisonplan h2 {
@@ -438,6 +438,7 @@ main {
 .saisonplan--last-event td {
   border-bottom: 1px solid #e40613 !important;
 }
+
 
 .main--results {
   background: #f9f9f9;
@@ -508,6 +509,11 @@ main {
   border-bottom: 1px solid #000000;
 }
 
+/**
+  *
+  * MAIN CONTENT // team.php
+  *
+**/
 .main--team table {
   border-collapse: collapse;
   width: 100%;
@@ -562,4 +568,45 @@ main {
 .team--text-rechts {
   text-align: left;
   padding-left: 5%;
+}
+/**
+  *
+  * MAIN CONTENT // news.php
+  *
+**/
+.main--news {
+  background: #f9f9f9;
+  padding: 10px 10px 15px 20px;
+  margin-top: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+}
+.news--content {
+  width: 70%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 800px) {
+  .news--content{
+    width: 95%;
+  }
+}
+.news--content hr {
+  outline: none;
+  border: none;
+  border-top: 1px solid #e40613;
+}
+.news--content h3 {
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.news--content img {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 800px) {
+  .news--content img {
+    width: 95%;
+  }
 }

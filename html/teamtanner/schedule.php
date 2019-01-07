@@ -178,15 +178,15 @@
           </tr>
           <tr>
             <td class="saisonplan--date">15.09. - 16.09.18</td>
-            <td class="saisonplan--info">weekend du cadre à Berne</td>
+            <td class="saisonplan--info">Weekend du cadre à Berne</td>
           </tr>
           <tr>
             <td class="saisonplan--date">22.09. - 23.09.18</td>
-            <td class="saisonplan--info">weekend du cadre à Bienne</td>
+            <td class="saisonplan--info">Weekend du cadre à Bienne</td>
           </tr>
           <tr>
             <td class="saisonplan--date">02.10. - 05.10.18</td>
-            <td class="saisonplan--info">semaine du cadre à Bienne</td>
+            <td class="saisonplan--info">Semaine du cadre à Bienne</td>
           </tr>
           <tr>
             <td class="saisonplan--date">12.10. - 14.10.18</td>
@@ -336,6 +336,7 @@
           <p>W vs. Biel-St.Gallen <i>//</i>&nbsp; 5-4</p>
           <p>W vs. Dübendorf <i>//</i>&nbsp; 10-2</p>
           <p>L vs. Baden-Limmattal <i>//</i>&nbsp; 5-6</p>
+          <a href="http://curling-results.ch/resultat/jun/2018-19/juniorinnen/cup/" target="_blank">Rangliste</a>
         </div>
 
 <!--
@@ -460,6 +461,7 @@
           <p>W vs. Biel-St.Gallen <i>//</i>&nbsp; 5-4</p>
           <p>W vs. Dübendorf <i>//</i>&nbsp; 10-2</p>
           <p>L vs. Baden-Limmattal <i>//</i>&nbsp; 5-6</p>
+          <a href="http://curling-results.ch/resultat/jun/2018-19/juniorinnen/cup/" target="_blank">Classement</a>
         </div>
 
 <!--
