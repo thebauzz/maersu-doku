@@ -636,3 +636,64 @@ main {
   max-width: 100%;
   height: auto;
 }
+
+/**
+  *
+  * MAIN CONTENT // sponsoring.php
+  *
+**/
+.sponsoring--principal,
+.sponsoring--others {
+  background: #f9f9f9;
+  padding: 10px 10px 15px 20px;
+  margin-top: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 800px) {
+  .sponsoring--principal,
+  .sponsoring--others {
+    padding: 10px;
+    border-radius: 3px;
+  }
+}
+.sponsoring--principal h2,
+.sponsoring--others h2 {
+  position: relative;
+  margin-bottom: 15px;
+}
+.sponsoring--principal h2::after,
+.sponsoring--others h2::after {
+  content: "⌄⌄⌄";
+  position: absolute;
+  left: -1px;
+  bottom: -17px;
+  color: #c72e54;
+}
+@media only screen and (max-width: 800px) {
+  .sponsoring--principal h2::after,
+  .sponsoring--others h2::after {
+    font-size: 20px;
+    bottom: -14px;
+  }
+}
+.sponsoring--principal img,
+.sponsoring--others img {
+  height: 150px;
+  display: block;
+}
+.sponsoring--others img {
+  padding: 15px 0;
+}
+img.reichenbach {
+  height: 100px;
+}
+@media only screen and (max-width: 800px) {
+  .sponsoring--principal img,
+  .sponsoring--others img {
+    height: 100px;
+  }
+  img.reichenbach {
+    height: 70px;
+  }
+}
