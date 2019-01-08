@@ -87,7 +87,7 @@
         <div class="news--content">
           <hr>
           <h3>6. Januar 2019</h3>
-          <p>Nach zwei gewonnenen Spielen heute gegen Biel-St. Gallen und Dübendorf, qualifizierten wir uns für den Viertelfinal, welcher direkt anschliessend stattfand. Dirsen verloren wir leider knapp im Zusatzend.<br>
+          <p>Nach zwei gewonnenen Spielen heute gegen Biel-St. Gallen und Dübendorf, qualifizierten wir uns für den Viertelfinal, welcher direkt anschliessend stattfand. Diesen verloren wir leider knapp im Zusatzend.<br>
              Next up: Ladies Cup Bern 10-13 Januar<br>
              #LOMG 💪🏼
           </p>
