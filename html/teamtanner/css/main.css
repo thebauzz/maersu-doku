@@ -162,7 +162,7 @@ header {
   z-index: 9999;
   transition: 0.5s;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   .header--navigation {
     top: 80px;
     border: none;
@@ -220,7 +220,7 @@ header {
   position: absolute;
   left: -25px;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   #icon-to-high.nav-active::after {
     top: 10px;
   }
@@ -277,7 +277,7 @@ main {
   padding-top: 60px;
   transition: 0.5s;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   main {
     width: 90%;
   }
@@ -314,7 +314,7 @@ main {
   border-radius: 5px;
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   .main--preview {
     padding: 10px;
     border-radius: 3px;
@@ -331,7 +331,7 @@ main {
   bottom: -13px;
   color: #c72e54;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   .main--preview h2::after {
     font-size: 20px;
     bottom: -9px;
@@ -346,7 +346,7 @@ main {
   margin: 30px auto;
   border-radius: 5px;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   .main--preview img {
     width: 95%;
     border-radius: 3px;
@@ -383,7 +383,7 @@ main {
   position: relative;
   margin-bottom: 15px;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1024px) {
   .main--saisonplan {
     padding: 10px 10px 50px 10px;
     border-radius: 3px;
@@ -399,7 +399,7 @@ main {
   bottom: -13px;
   color: #c72e54;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   .main--saisonplan h2::after {
     font-size: 20px;
     bottom: -9px;
@@ -426,7 +426,7 @@ main {
   text-align: left;
   border-left: 1px solid #00000030;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   .main--saisonplan table {
     border-collapse: collapse;
     width: 100%;
@@ -457,7 +457,7 @@ main {
   position: relative;
   margin-bottom: 15px;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1024px) {
   .main--results {
     padding: 10px;
     border-radius: 3px;
@@ -473,7 +473,7 @@ main {
   bottom: -13px;
   color: #c72e54;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   .main--results h2::after {
     font-size: 20px;
     bottom: -9px;
@@ -483,7 +483,7 @@ main {
   width: 70%;
   margin: 0 auto 50px auto;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   .results--content {
     width: 100%;
   }
@@ -533,7 +533,7 @@ main {
   height: 330px;
   border-radius: 5px;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   .main--team table tr {
     padding: 10px;
     border-radius: 3px;
@@ -551,7 +551,7 @@ main {
   margin-top: 30px;
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   .team--table {
     border-radius: 3px;
   }
@@ -592,7 +592,7 @@ main {
   margin: 0 auto;
   padding: 15px 0 40px 0;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   .news--content{
     width: 95%;
   }
@@ -624,7 +624,7 @@ main {
 .jpn {
   box-shadow:0 0 2px rgba(0, 0, 0, 0.7);
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   .news--img,
   .news--video {
     width: 95%;
@@ -650,7 +650,7 @@ main {
   border-radius: 5px;
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   .sponsoring--principal,
   .sponsoring--others {
     padding: 10px;
@@ -670,7 +670,7 @@ main {
   bottom: -17px;
   color: #c72e54;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   .sponsoring--principal h2::after,
   .sponsoring--others h2::after {
     font-size: 20px;
@@ -688,7 +688,7 @@ main {
 img.reichenbach {
   height: 100px;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   .sponsoring--principal img,
   .sponsoring--others img {
     height: 100px;

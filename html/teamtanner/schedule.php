@@ -326,6 +326,7 @@
           <p>L vs. Langethal <i>//</i>&nbsp; 6-11</p>
           <p>W vs. eifachöppis <i>//</i>&nbsp; 8-3</p>
           <p>T vs. Gstaad Senioren <i>//</i>&nbsp; 5-5</p>
+          <a href="docs/Ranking-Gstaad.pdf" target="_blank">Rangliste</a>
         </div>
 
         <div class="results--content">
@@ -451,6 +452,7 @@
           <p>L vs. Langethal <i>//</i>&nbsp; 6-11</p>
           <p>W vs. eifachöppis <i>//</i>&nbsp; 8-3</p>
           <p>T vs. Gstaad Senioren <i>//</i>&nbsp; 5-5</p>
+          <a href="docs/Ranking-Gstaad.pdf" target="_blank">Classement</a>
         </div>
 
         <div class="results--content">
