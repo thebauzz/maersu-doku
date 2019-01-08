@@ -394,8 +394,312 @@
         </div>
       </div>
 '; break; case 1: echo '
-fr (working on it.. check the german part lol <3)
-<div style="height: 300px"></div>
+      <div class="main--news">
+        <div class="news--content">
+          <hr>
+          <h3>6. janvier 2019</h3>
+          <p>Après deux victoires aujourd’hui contre Dübendorf et Bienne-St-Galle, nous nous sommes qualifiées pour les quarts de finales que nous avons malheureusement perdus au end supplémentaire. Le week-end est donc fini pour nous.<br>
+             Next-up: Ladies Cup Bern 10-13 janvier<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-28.jpg" alt="News 28" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>4. janvier 2019</h3>
+          <p>Ce week-end nous jouons la Swisscup à St-Galle et nous avons perdu notre premier match contre Lucerne.<br>
+             Demain nous jouerons à 8:00 contre Bienne-St-Galle.<br>
+             #LOMG 💪🏼
+          </p>
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>25. décembre 2018</h3>
+          <p>Nous vous souhaitons de joyeuses fêtes! <br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-27.jpg" alt="News 27" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>23. décembre 2018</h3>
+          <p>Nous finissions notre week-end sur une égalité contre Gstaad Senioren 5-5 et à la 8ème place du tournois.<br>
+             Nous remercions l’organisation du tournois Huus pour ce week-end et la soirée offerte dans l’hôtel Huus.<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-26.jpg" alt="News 26" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>23. décembre 2018</h3>
+          <p>Après deux défaites hier nous avons gagné notre match ce matin. Nous sommes donc qualifiées pour le dernier tour à 14:00 contre Gstaad Senioren.<br>
+             #LOMG 💪🏼
+          </p>
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>21. décembre 2018</h3>
+          <p>Nous avons gagné notre premier match du tournois Huus à Gstaad 9-5!<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-25.jpg" alt="News 25" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>16. décembre 2018</h3>
+          <p>Nous finissons notre premier week-end de ligue avec trois défaites. Nous sommes bien évidemment déçues du résultat mais sommes motivées à travailler pour les prochains tours de ligue.<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-24.jpg" alt="News 24" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>14. décembre 2018</h3>
+          <p>Ce week-end nous participons à la première partie des ligues A à Gstaad. Nous jouons:<br>
+             Samedi à 12:30 contre Interlaken, à 19:30 contre Berne et dimanche à 11:30 contre Lucerne.<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-23.jpg" alt="News 23" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>2. décembre 2018</h3>
+          <p>1ST PLACE! <br>
+             Nous avons gagné la finale 13-3 contre l’Allemagne (Höhne) <img class="news--flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/de.svg"> !! <br>
+             Nous félicitons également Team Mancini pour leur victoire <img class="news--flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/ch.svg"> !<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-22.jpg" alt="News 22" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>2. décembre 2018</h3>
+          <p>Nous avons gagné la demi-finale 5-3 contre la Suisse <img class="news--flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/ch.svg"> (Schwaller) et sommes donc qualifiées pour la finale à 13:30 contre l’Allemagne <img class="news--flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/de.svg"> (Höhne) !!<br>
+             #LOMG💪🏼
+          </p>
+          <img src="img/news/news-21.jpg" alt="News 21" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>1. décembre 2018</h3>
+          <p>Après une défaite 4-5 contre l’Allemagne <img class="news--flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/de.svg"> (Höhne) au end supplémentaire ce matin et une victoire contre 6-5 conte la Suisse <img class="news--flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/ch.svg"> (Schwaller) aussi au end supplémentaire, nous sommes qualifiées pour les demi-finales demain matin à 8:30 contre la Suisse <img class="news--flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/ch.svg"> (Schwaller) !<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-20.jpg" alt="News 20" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>30. novembre 2018</h3>
+          <p>Aujourd’hui nous avons gagné nos deux premier matchs du WCT Kitzbühel. 11-5 conte l’Autriche <img class="news--flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/at.svg"> et 12-2 contre la Slovénie <img class="news--flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/si.svg"><br>
+             Prochain match demain à 8:00 contre l’Allemagne <img class="news--flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/de.svg"><br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-19.jpg" alt="News 19" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>24. novembre 2018</h3>
+          <p>Nous avons gagné notre dernier match contre l’Italie <img class="news--flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/it.svg">!<br>
+             Nous avions alors le même nombre de points que deux autres équipes et la qualification pour les quarts de finale s’est jouée au LSD. Nous ne sommes donc malencontreusement pas qualifiées pour 1cm. Le tournois prend donc fin ce soir pour nous.<br>
+             Next up: EJCT Kitzbühel 30.12 - 2.12<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-18.jpg" alt="News 18" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>23. novembre 2018</h3>
+          <p>Ce matin nous avons gagné notre deuxième match contre la république Tchèque <img class="news--flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/cz.svg"> (Klimova) et malheureusement perdu les deux suivants contre la Suisse <img class="news--flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/ch.svg"> (Keiser) et la Suisse <img class="news--flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/ch.svg"> (Wüest). <br>
+             Prochain match demain à 13:30 contre l’Italie <img class="news--flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/it.svg"> (Dolomite)<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-17.jpg" alt="News 17" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>22. novembre 2018</h3>
+          <p>Nous avons gagné notre premier match à Thoune 9-4 contre la Corée <img class="news--flag jpn" src="https://lipis.github.io/flag-icon-css/flags/4x3/kr.svg"> (Lee) !<br>
+             Prochain match demain à 8:30 contre la république Tchèque <img class="news--flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/cz.svg"> (Klimova)<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-16.jpg" alt="News 16" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>15. novembre 2018</h3>
+          <p>Le week-end dernier et hier soir nous avons offert un apéro à nos différents sponsors à Gstaad et à Lausanne.<br>
+             Nous les remercions de nous suivre et de nous soutenir!<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-15.jpg" alt="News 15" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>7. novembre 2018</h3>
+          <p>Quelques images de notre week-end à Glasgow !<br>
+             #LOMG 💪🏼
+          </p>
+          <video class="news--video" controls preload="metadata">
+            <source src="img/news/news-14.mp4" type="video/mp4">
+            Your Browser does not support the video element..
+          </video>
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>4. novembre 2018</h3>
+          <p>Nous avons malheureusement perdu le quart de finale contre Davie <img class="news--flag" src="https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Scotland.svg">. Nous avons donc terminé notre EJCT et avons profité du temps libre pour visiter Glasgow.<br>
+             Next EJCT: Thun 22. - 25. novembre<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-13.jpg" alt="News 13" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>3. novembre 2018</h3>
+          <p>Après une défaite contre Fransson <img class="news--flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/se.svg">, nous sommes tout de même qualifiées pour les quarts de finales demain matin contre Davie <img class="news--flag" src="https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Scotland.svg"> !<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-12.jpg" alt="News 12" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>2. novembre 2018</h3>
+          <p>Nous finissons notre journée avec trois victoires contre Fransson <img class="news--flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/se.svg">, Farmer <img class="news--flag" src="https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Scotland.svg"󠁧󠁢󠁳󠁣> et Dandie <img class="news--flag" src="https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Scotland.svg"󠁧󠁢󠁳󠁣>.<br>
+             Prochain match demain à 11:15 (heure locale).<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-11.jpg" alt="News 11" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>1. novembre 2018</h3>
+          <p>Nous sommes en route pour Glasgow! <img class="news--flag" src="https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Scotland.svg"><br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-10.jpg" alt="News 10" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>1. novembre 2018</h3>
+          <p>Dimanche passé, nous étions à Morges pour une matinée avec les membres. Nous les remercions pour leur bonne humeur et leur soutien!<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-09.jpg" alt="News 9" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>14. octobre 2018</h3>
+          <p>Hier nous avons perdu un match serré contre JPN <img class="news--flag jpn" src="https://lipis.github.io/flag-icon-css/flags/4x3/jp.svg" Yoshimura et avons donc terminé notre week-end. <br>
+             Nous avons énormément appris de ces quelques jours et sommes très fières du niveau que nous avons en ce début de saison!<br>
+             Next up: EJCT Glasgow <img class="news--flag" src="https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Scotland.svg"> 2-4.11<br>
+             #LOMG 💪🏼
+          </p>
+          <video class="news--video" controls preload="metadata">
+            <source src="img/news/news-08.mp4" type="video/mp4">
+            Your Browser does not support the video element..
+          </video>
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>13. octobre 2018</h3>
+          <p>Très bon troisième contre SWE <img class="news--flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/se.svg"> Wranå. Mais malheureusement perdu 3-6.<br>
+             Prochain match à 19:00 contre JPN <img class="news--flag jpn" src="https://lipis.github.io/flag-icon-css/flags/4x3/jp.svg"> Yoshimura en live sur le Facebook de Jean-Philippe Suter.<br>
+             #LOMG 💪🏼
+          </p>
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>12. octobre 2018</h3>
+          <p>Deuxième match très serré contre SUI <img class="news--flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/ch.svg"> Hegner mais malheureusement perdu.<br>
+             Prochain match demain à 15:30 contre SWE <img class="news--flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/se.svg"> Wranå.<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-07.jpg" alt="News 7" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>12. octobre 2018</h3>
+          <p>Premier match gagné 6-4 contre SUI <img class="news--flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/ch.svg"> Hürlimann! <br>
+             Prochain match à 15:30 contre SUI <img class="news--flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/ch.svg"> Hegner.<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-06.jpg" alt="News 6" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>10. octobre 2018</h3>
+          <p>Cette semaine nous étions en semaine de cadres à Bienne. Nous avons profité de nous entraîner intensivement sur glace et hors glace. Nous remercions Valentin Tanner pour son engagement en tant que parrain, et également Swiss Curling pour l&apos;organisation.<br>
+             Next up: Basel Woman Masters 12-14.10<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-05.jpg" alt="News 5" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>30. septembre 2018</h3>
+          <p>Ce week-end nous étions à Bienne pour notre deuxième week-end de cadres. Nous avons pu nous entraîner à fond sur glace et hors glace (sport, tactique,psychologie du sport). Les progrès sont présents!<br>
+             Next up: Semaine de cadres à Bienne: 7-10.10<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-04.jpg" alt="News 4" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>27. septembre 2018</h3>
+          <p>Hier nous étions à Champéry pour un entraînement intensif avant que la glace reprenne à Lausanne! <br>
+             Next up: week-end de cadres à Bienne 29-30.09<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-03.jpg" alt="News 3" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>16. septembre 2018</h3>
+          <p>Ce week-end nous étions à Berne pour notre premier week-end de cadres. Nous avons eu des entraînements intensifs sur glace ainsi que hors glace et sommes contentes de nos performances.<br>
+             Next up: cadres à Bienne 29-30.09<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-02.jpg" alt="News 2" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>13. septembre 2018</h3>
+          <p>Nous sommes fières de vous présenter notre parrain pour la saison: Valentin Tanner. Nous sommes reconnaissantes qu&apos;il prenne du temps pour nous et nous lui souhaitons plein de succès pour cette saison.<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-01.jpg" alt="News 1" class="news--img">
+        </div>
+      </div>
 '; break; } ?>
     </main>
     <div style="height: 200px;"></div>
