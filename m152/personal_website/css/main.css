@@ -261,10 +261,15 @@ article {
 
 .main--section {
   background: #f9f9f9;
-  padding: 15px 10px 15px 20px;
+  padding: 15px 20px;
   margin-top: 30px;
   border-radius: 5px;
   box-shadow: 0px 3px 20px rgba(27, 138, 193, 0.2);
+}
+@media only screen and (min-width: 801px) {
+  .main--section {
+    padding: 20px 15%;
+  }
 }
 /* Alle Überschriften auf der Startseite */
 .main--section h3 {
@@ -364,6 +369,46 @@ img.skill {
   top: -40px;
 }
 
+.main--section a {
+  color: var(--hoverfarbe);
+  text-decoration: none;
+  border-bottom: 1px solid #00000000;
+  transition: 0.3s;
+}
+
+.main--section a:hover {
+  border-bottom: 1px solid #000000;
+}
+
+code {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.aufgaben--frame {
+  display: block;
+  height: 500px;
+  min-width: 320px;
+  width: 100%;
+  max-width: 100%;
+  resize: horizontal;
+  overflow: auto;
+  margin: 30px auto;
+  border: 2px solid #000000;
+  outline: none;
+}
+.aufgaben--text {
+  font-weight: bold;
+  display: none;
+}
+@media only screen and (max-width: 500px) {
+  .aufgaben--frame {
+    display: none;
+  }
+  .aufgaben--text {
+    display: block;
+  }
+}
 /*
  *
  *

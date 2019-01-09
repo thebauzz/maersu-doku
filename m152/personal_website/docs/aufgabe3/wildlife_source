@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Wildlife responsive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: green;
+      }
+      .mob {
+        display: none;
+      }
+      #box {
+        width: 80%;
+        margin: 0 auto;
+        background: white;
+        padding: 10px;
+        border-radius: 5%;
+      }
+      #video p {
+        margin-bottom: 20px;
+      }
+      video {
+        border-radius: 20px;
+        max-width: 100%;
+        height: auto;
+      }
+      nav {
+        background: green;
+        height: 80px;
+      }
+      nav li {
+        display: inline-block;
+      }
+      nav ul {
+        padding-top: 20px;
+      }
+      nav li a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        margin-right: 50px;
+      }
+      @media only screen and (min-width : 320px)and (max-width : 480px) {
+        h1 {
+          display: none;
+        }
+        .mob {
+          display: block;
+          font-size: 24px;
+          margin-bottom: 5px;
+          color: purple;
+        }
+        nav li {
+          display: block;
+        }
+        nav li a {
+          color: black;
+          font-weight: bold;
+        }
+        nav ul {
+          padding-top: 5px;
+        }
+        nav {
+          height: 70px;
+          background: yellow;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="box">
+      <header>
+        <h1>Wildlife Video responsive</h1>
+        <h1 class="mob">Welcome Smartphone</h1>
+        <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Wildlife</a></li>
+        </ul>
+        </nav>
+      </header>
+      <section id="video">
+        <h1>The Power of Nature:</h1>
+        <p>Lassen Sie sich in die Welt der Tiere entführen und geniessen Sie knapp 2 Minuten Natur Pur. Viel Spass.</p>
+        <video controls preload="metadata" >
+            <source src="video/wildlive_fertig_ng.mp4" type="video/mp4" />
+           Your Browser does not support the video element.....
+        </video>
+        <p><a href="../video/wildlive_fertig_ng.mp4">Download wildlife Film (mp4)</a></p>
+      </section>
+      <footer>
+        <p>&copy; Modul 152 | WISS</p>
+      </footer>
+    </div>
+</body>
+</html>
