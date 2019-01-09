@@ -1,0 +1,427 @@
+/* löscht alle default margin und pdading werte*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: var(--body);
+  font-family: var(--schrift1);
+}
+
+/*
+ *
+ *
+ * HEADER
+*/
+
+/* nichts im Header soll man selektieren können */
+header {
+  user-select: none;
+  -moz-user-select: none;
+}
+/* der Balken, welcher bei scrollen oben bleibt */
+.nav--balken {
+  position: fixed;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  background: var(--body);
+  border-bottom: 3px solid var(--navborder);
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+/* ein div für die drei striche vom hamburgermenu */
+#nav--hamburger {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  left: 28px;
+  top: 16px;
+  z-index: 9999;
+  transition-duration: 0.5s;
+}
+
+/* 360Grad drehanimation beim wechseln vom Ham-Menu zum X */
+#nav--hamburger.menudrehen {
+  transform: rotate(180deg);
+}
+
+/* die drei striche vom hamburgermenu */
+div#linie1,
+div#linie2,
+div#linie3 {
+  width: 35px;
+  height: 5px;
+  background-color: var(--icon);
+  border-radius: 4px;
+  margin: 6px 0;
+  transition-duration: 0.6s;
+}
+
+/* die transformation vom obersten strich */
+#linie1.gedreht1 {
+  transform: matrix(0.85, -0.8, 0.7, 0.7, 0, 11);
+  background-color: var(--closeicon);
+}
+
+/* der zweite strich soll verschwinden */
+#linie2.gedreht2 {
+  opacity: 0;
+}
+
+/* die transformation vom dritten strich */
+#linie3.gedreht3 {
+  transform: matrix(0.85, 0.8, -0.7, 0.7, 0, -11);
+  background-color: var(--closeicon);
+}
+
+/* wenn hover über menu, alle drei striche sollen rot gefärbt werden */
+#nav--hamburger:hover > #linie1,
+#nav--hamburger:hover > #linie2,
+#nav--hamburger:hover > #linie3 {
+  background-color: var(--hoverfarbe);
+}
+
+/* hinzugefügt, wenn etwas ausgeblendet werden soll */
+.unsichtbar {
+  display: none;
+}
+
+/* das Navigationsmenu (normalerweise links versteckt) */
+#nav--menu {
+  position: absolute;
+  top: 70px;
+  left: -100%;
+  width: 250px;
+  height: 100vh;
+  padding: 0 30px;
+  background: var(--body);
+  border-right: 2px solid var(--blau);
+  transition: 0.5s;
+  z-index: 9999;
+}
+
+/* das Navigationsmenu, wenn es sichtbar sein sollte */
+#nav--menu.nav--rein {
+  left: 0;
+}
+
+/* Abtrennug zwischen Navigation & Dropdown */
+#nav--menu > ul {
+  border-bottom: 1px solid var(--navcolor);
+}
+
+/* Positionierung vom Navigations Text */
+#nav--menu ul li {
+  padding: 15px;
+  list-style: none;
+  text-align: center;
+}
+
+/* Styling vom Navigations Text */
+#nav--menu a {
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  color: var(--navcolor);
+  position: relative;
+}
+
+/* Hovereffekt vom Navigations Text */
+#nav--menu a:hover {
+  color: var(--hoverfarbe);
+}
+#nav--menu a::before {
+  content: "{";
+  color: #000000;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translate(-5px);
+}
+#nav--menu a:hover::before {
+  transform: translateX(-20px);
+  opacity: 1;
+  z-index: 20;
+}
+#nav--menu a::after {
+  content: "}";
+  color: #000000;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translate(5px);
+}
+#nav--menu a:hover::after {
+  transform: translateX(20px);
+  opacity: 1;
+  z-index: 20;
+}
+/* Der Pfeil vom DropdownMenu */
+#dropdownicon {
+  position: relative;
+  top: -2px;
+  left: 4px;
+  border: solid var(--navcolor);
+  border-width: 0 0 3px 3px;
+  display: inline-block;
+  padding: 2.5px;
+  transition: 0.3s;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* Hovereffekt über NavText oder DropdownMenu */
+#nav--menu a:hover > #dropdownicon{
+  border: solid var(--hoverfarbe);
+  border-width: 0 0 3px 3px;
+}
+
+/* dropdown aktiviert, soll das icon sich drehen */
+#dropdownicon.drehen {
+  transform: rotate(-135deg);
+  top: -2px;
+}
+
+/* DropdownMenu soll default links versteckt sein */
+#nav--dropdown {
+  position: relative;
+  margin-top: 20px;
+  left: -100%;
+  transition: 0.4s;
+}
+
+/* das DropdownMenu, wenn es sichtbar sein sollte */
+#nav--dropdown.dropdown--rein {
+  left: 0;
+}
+
+/* kleineres padding für die Navigation mit den Blöcken */
+#nav--dropdown ul li {
+  padding: 8px;
+}
+
+/* Container über die gesamte Seite (dass man die Navigation ausserhalb wegklicken kann) */
+#leerecontainer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+}
+
+/*
+ *
+ *
+ * MAIN CONTENT
+*/
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+h2 {
+  margin-top: 40px;
+  text-align: center;
+}
+
+article {
+  width: 100%;
+  border-bottom: 3px solid var(--body);
+  position: relative;
+}
+
+/*
+ *     /index.html
+*/
+
+.main--section {
+  background: #f9f9f9;
+  padding: 15px 10px 15px 20px;
+  margin-top: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+}
+/* Alle Überschriften auf der Startseite */
+.main--section h3 {
+  margin-bottom: 20px;
+  border-top: 2px solid var(--blau);
+}
+
+/* der Willkommenstext */
+p.intro {
+  width: 83%;
+  margin: 0 auto;
+  text-align: justify;
+  color: var(--dunkelblau);
+}
+
+/* Link zum Lebenslauf im Willkommenstext */
+p.intro a {
+  color: var(--schwarz);
+  text-decoration: none;
+  position: relative;
+}
+
+/* Hoverbalken unter dem Linktext */
+p.intro a:before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  background: var(--hoverfarbe);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
+
+/* Breite vom Hoverbalken skaliert sich um 100% nach rechts */
+p.intro a:hover:before {
+  transform: scaleX(1);
+  transition: transform 0.4s;
+}
+
+/* Die beiden Bilder von mir sollten einen kleinen Abstand oben/unten haben */
+.bild-uebermich {
+  margin: 10px auto;
+  display: block;
+}
+
+/* Link zu Github bei "Meine Interessen" */
+.githlink {
+  color: var(--hoverfarbe);
+  text-decoration: none;
+  position: relative;
+}
+
+/* Hoverbalken unter dem Linktext */
+.githlink:before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  background: var(--schwarz);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
+
+/* Breite vom Hoverbalken skaliert sich um 100% nach rechts */
+.githlink:hover:before {
+  transform: scaleX(1);
+  transition: transform 0.4s;
+}
+
+/* Breite von jedem Bild von myskills */
+img.skill {
+  width: 8%;
+}
+
+/* Anpassung der Breiten für Mobileuser */
+@media only screen and (max-width: 800px) {
+  img.skill {
+    width: 9%;
+  }
+}
+
+/*
+ *     /index.html
+*/
+
+#block1, #block2,
+#block3, #block4,
+#block5, #block6,
+#block7, #block8,
+#block9, #block10 {
+  position: relative;
+  top: -40px;
+}
+
+/*
+ *
+ *
+ * FOOTER CONTENT
+*/
+/* Farbverlauf über dem Footer, damit es nicht so abgeschnitten aussieht */
+.prefooter {
+  margin-top: 75px;
+  width: 100%;
+  height: 5px;
+  background-image: linear-gradient(var(--body), var(--grau));
+}
+
+/* der Footer an sich.. (pos:relative damit absolute bezüge ich hier drauf beziehen) */
+footer {
+  position: relative;
+  height: 170px;
+  padding: 30px 5% 0 5%;
+  background: var(--grau);
+  color: var(--hellstesgrau);
+}
+
+/* Abstand unter der Überschrift "Kontakt" */
+footer h3 {
+  margin: 0 0 10px 0;
+  font-style: italic;
+}
+
+/* Link zu meinem E-Mail */
+footer a {
+  color: var(--hellblau);
+  text-decoration: none;
+  position: relative;
+}
+
+/* Hoverbalken unter dem Linktext */
+footer a:before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  background: var(--hellgrau);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
+
+/* Breite vom Hoverbalken skaliert sich um 100% nach rechts */
+footer a:hover:before {
+  transform: scaleX(1);
+  transition: transform 0.4s;
+}
+
+/* Mein Logo rechts mittig im Footer */
+.footerlogo {
+  position: absolute;
+  right: 40px;
+  top: 50px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+/* Grössenanpassung des Logos für Mobileuser */
+@media only screen and (max-width: 500px) {
+  .footerlogo {
+    right: 20px;
+    top: 75px;
+    width: 50px;
+    height: 50px;
+  }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="Marcel Gertsch" />
+  <link href="css/vars.css" rel="Stylesheet" />
+  <link href="css/main.css" rel="Stylesheet" />
+  <link href="img/favicon.ico" rel="icon" />
+  <script src="js/main.js"></script>
+  <title>Marcel's Persöngliche Website</title>
+</head>
+
+<body>
+  <!-- Leitet Benutzer mit IE weiter, da ich IE nicht unterstützt will. -->
+  <script>
+    if ((navigator.userAgent.indexOf("MSIE") != -1) || (!!document.documentMode == true)) {
+      window.location = "internetexplorer";
+    }
+  </script>
+  <section>
+    <div class="nav--balken">
+
+      <!-- das Hamburgermenu-->
+      <div id="nav--hamburger" onclick="navReinRaus()">
+        <div id="linie1"></div>
+        <div id="linie2"></div>
+        <div id="linie3"></div>
+      </div>
+
+      <!-- die eigentlich Navigation mit Dropdown -->
+      <nav id="nav--menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hanoks.html">HANOK&apos;s</a></li>
+          <li><a href="javascript:void(0)" onclick="dropdownToggle()">Tagesjournal<i class="" id="dropdownicon"></i></a></li>
+        </ul>
+
+        <!-- Dropdown Menu -->
+        <div id="nav--dropdown">
+          <ul>
+            <li><a onclick="wegMitAllem()" href="tagesjournal.html#block1">Block 01</a></li>
+            <li><a onclick="wegMitAllem()" href="tagesjournal.html#block2">Block 02</a></li>
+            <li><a onclick="wegMitAllem()" href="tagesjournal.html#block3">Block 03</a></li>
+            <li><a onclick="wegMitAllem()" href="tagesjournal.html#block4">Block 04</a></li>
+            <li><a onclick="wegMitAllem()" href="tagesjournal.html#block5">Block 05</a></li>
+            <li><a onclick="wegMitAllem()" href="tagesjournal.html#block6">Block 06</a></li>
+            <li><a onclick="wegMitAllem()" href="tagesjournal.html#block7">Block 07</a></li>
+            <li><a onclick="wegMitAllem()" href="tagesjournal.html#block8">Block 08</a></li>
+            <li><a onclick="wegMitAllem()" href="tagesjournal.html#block9">Block 09</a></li>
+            <li><a onclick="wegMitAllem()" href="tagesjournal.html#block10">Block 10</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+  </section>
+  <!-- Transparenter Container, damit die Navigation auch ausserhalb weggeklickt werden kann -->
+  <div class="unsichtbar" id="leerecontainer" onclick="wegMitAllem()"></div>
+  </header>
+  <!-- Seiteninhalt -->
+  <main>
+    <section class="main--section">
+      <h2>Tagesjournal</h2>
+    </section>
+
+    <span id="block1">&nbsp;</span>
+    <section class="main--section">
+      <h3>Block 01</h3>
+      <div style="height: 500px;"></div>
+    </section>
+
+    <span id="block2">&nbsp;</span>
+    <section class="main--section">
+      <h3>Block 02</h3>
+      <div style="height: 500px;"></div>
+    </section>
+
+    <span id="block3">&nbsp;</span>
+    <section class="main--section">
+      <h3>Block 03</h3>
+      <div style="height: 500px;"></div>
+    </section>
+
+    <span id="block4">&nbsp;</span>
+    <section class="main--section">
+      <h3>Block 04</h3>
+      <div style="height: 500px;"></div>
+    </section>
+
+    <span id="block5">&nbsp;</span>
+    <section class="main--section">
+      <h3>Block 05</h3>
+      <div style="height: 500px;"></div>
+    </section>
+
+    <span id="block6">&nbsp;</span>
+    <section class="main--section">
+      <h3>Block 06</h3>
+      <div style="height: 500px;"></div>
+    </section>
+
+    <span id="block7">&nbsp;</span>
+    <section class="main--section">
+      <h3>Block 07</h3>
+      <div style="height: 500px;"></div>
+    </section>
+
+    <span id="block8">&nbsp;</span>
+    <section class="main--section">
+      <h3>Block 08</h3>
+      <div style="height: 500px;"></div>
+    </section>
+
+    <span id="block9">&nbsp;</span>
+    <section class="main--section">
+      <h3>Block 09</h3>
+      <div style="height: 500px;"></div>
+    </section>
+
+  </main>
+
+  <!-- Farbverlauf vor dem Footer -->
+  <div class="prefooter"></div>
+  <!-- Footer -->
+  <footer>
+    <!-- Kontaktabschnitt im Footer -->
+    <h3>Kontakt</h3>
+    <p>
+      <strong>Marcel Gertsch</strong><br>
+      Funkstrasse 75<br>
+      3084 Wabern<br>
+      <br>
+      Mobil: 079 213 1999<br>
+      E-Mail: <a href="mailto:marcel@gertsch.be">marcel@gertsch.be</a>
+    </p>
+
+    <!-- Mein Logo im rechten Bereich -->
+    <img src="img/mlogo-light.png" alt="M-Logo" class="footerlogo" onclick="window.location = 'index.html'">
+  </footer>
+</body>
+
+</html>
