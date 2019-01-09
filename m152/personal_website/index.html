@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="Marcel Gertsch" />
+  <link href="css/vars.css" rel="Stylesheet" />
+  <link href="css/main.css" rel="Stylesheet" />
+  <link href="img/favicon.ico" rel="icon" />
+  <script src="js/main.js"></script>
+  <title>Marcel's Persöngliche Website</title>
+</head>
+
+<body>
+  <!-- Leitet Benutzer mit IE weiter, da ich IE nicht unterstützt will. -->
+  <script>
+    if ((navigator.userAgent.indexOf("MSIE") != -1) || (!!document.documentMode == true)) {
+      window.location = "internetexplorer";
+    }
+  </script>
+  <section>
+    <div class="nav--balken">
+
+      <!-- das Hamburgermenu-->
+      <div id="nav--hamburger" onclick="navReinRaus()">
+        <div id="linie1"></div>
+        <div id="linie2"></div>
+        <div id="linie3"></div>
+      </div>
+
+      <!-- die eigentlich Navigation mit Dropdown -->
+      <nav id="nav--menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hanoks.html">HANOK&apos;s</a></li>
+          <li><a href="javascript:void(0)" onclick="dropdownToggle()">Tagesjournal<i class="" id="dropdownicon"></i></a></li>
+        </ul>
+
+        <!-- Dropdown Menu -->
+        <div id="nav--dropdown">
+          <ul>
+            <li><a href="tagesjournal.html#block1">Block 01</a></li>
+            <li><a href="tagesjournal.html#block2">Block 02</a></li>
+            <li><a href="tagesjournal.html#block3">Block 03</a></li>
+            <li><a href="tagesjournal.html#block4">Block 04</a></li>
+            <li><a href="tagesjournal.html#block5">Block 05</a></li>
+            <li><a href="tagesjournal.html#block6">Block 06</a></li>
+            <li><a href="tagesjournal.html#block7">Block 07</a></li>
+            <li><a href="tagesjournal.html#block8">Block 08</a></li>
+            <li><a href="tagesjournal.html#block9">Block 09</a></li>
+            <li><a href="tagesjournal.html#block10">Block 10</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+  </section>
+  <!-- Transparenter Container, damit die Navigation auch ausserhalb weggeklickt werden kann -->
+  <div class="unsichtbar" id="leerecontainer" onclick="wegMitAllem()"></div>
+  </header>
+  <!-- Seiteninhalt -->
+  <main>
+    <section class="main--section">
+      <h2>Marcel Gertsch</h2><br>
+      <p class="intro">
+        Willkommen auf meiner Website. Mit dieser Seite möchte ich mich gerne vorstellen.<br>
+        Auf der Startseite sehen Sie, wer ich bin und was ich so mache.<br><br>
+        Bei den HANOK's sind alle Handlungsnotwendigen Kenntnisse zu finden. Weiter unten in der Navigation finden Sie die Links zu den einzelnen Tagesjournalen und Aufgaben.<br>
+      </p>
+    </section>
+
+    <!-- 1. Teil Über mich -->
+    <section class="main--section">
+      <h3>Kurz vorgestellt</h3>
+      <p>
+        Ich bin ein zuverlässiger, motivierter und aufgestellter Mensch.<br>
+        Aktuell besuche ich das zweite Lehrjahr als Informatiker EFZ, Fachrichtung Applikationsentwicklung in der WISS Zürich.
+      </p>
+      <img class="bild-uebermich" src="img/MarcelGertsch.jpg" alt="Marcel Gertsch" width="200px">
+    </section>
+
+    <!-- 2. Teil Über mich -->
+    <section class="main--section">
+      <h3>Meine Hobbys</h3>
+      <p>
+        In meiner Freizeit spiele ich seit 6 Jahren <strong>Gitarre</strong> und <strong>lese</strong> ab und zu Bücher.<br>
+        Dazu betreibe ich seit 13 Jahren <strong>Curling</strong> und spiele in der höchsten Juniorenliga der Schweiz. Wir werden in dieser Saison diverse internationale Turniere bestreiten können.
+      </p>
+      <img class="bild-uebermich" src="img/MarcelCurling.jpg" alt="Marcel am Curlen" width="200px">
+    </section>
+
+    <!-- 3. Teil Über mich -->
+    <section class="main--section">
+      <h3>Meine Interessen</h3>
+      <p>
+        In meiner Freizeit verbringe ich viel Zeit am Computer. Nicht etwa mit Videospielen, sondern mit meinem Texteditor.<br>
+        Seit den Sommerferien lade ich einiges, was ich gemacht habe, auf <a href="https://github.com/thebauzz" class="githlink" target="_blank">Github</a> hoch. Dort sind HTML Templates, meine Webseiten, Atomthemes und einiges anderes bezüglich
+        diveresen WISS Modulen hochgeladen.
+      </p>
+    </section>
+
+    <!-- 4. Teil Über mich -->
+    <section class="main--section">
+      <h3>Was ich &quot;kann&quot;</h3>
+      <div align="center">
+        <img class="skill1-bild skill" src="img/myskills/HTML.svg">
+        <img class="skill2-bild skill" src="img/myskills/CSS.svg">
+        <img class="skill3-bild skill" src="img/myskills/LESS.svg">
+        <img class="skill4-bild skill" src="img/myskills/JS.svg">
+        <img class="skill5-bild skill" src="img/myskills/PHP.svg">
+        <img class="skill6-bild skill" src="img/myskills/MySQL.svg">
+        <img class="skill7-bild skill" src="img/myskills/C.svg">
+        <img class="skill8-bild skill" src="img/myskills/CPP.svg">
+        <img class="skill9-bild skill" src="img/myskills/AI.svg"><br>
+      </div>
+    </section>
+  </main>
+
+  <!-- Farbverlauf vor dem Footer -->
+  <div class="prefooter"></div>
+  <!-- Footer -->
+  <footer>
+    <!-- Kontaktabschnitt im Footer -->
+    <h3>Kontakt</h3>
+    <p>
+      <strong>Marcel Gertsch</strong><br>
+      Funkstrasse 75<br>
+      3084 Wabern<br>
+      <br>
+      Mobil: 079 213 1999<br>
+      E-Mail: <a href="mailto:marcel@gertsch.be">marcel@gertsch.be</a>
+    </p>
+
+    <!-- Mein Logo im rechten Bereich -->
+    <img src="img/mlogo-light.png" alt="M-Logo" class="footerlogo" onclick="window.location = 'index.html'">
+  </footer>
+</body>
+
+</html>
