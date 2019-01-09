@@ -31,11 +31,22 @@ header {
   height: 70px;
   width: 100%;
   background: var(--body);
-  border-bottom: 3px solid var(--navborder);
   box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.2);
   z-index: 9999;
 }
 
+.scroll-container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+}
+
+.scroll-bar {
+  height: 4px;
+  background: var(--blau);
+  width: 0%;
+}
 /* ein div für die drei striche vom hamburgermenu */
 #nav--hamburger {
   cursor: pointer;
