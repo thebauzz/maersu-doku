@@ -86,7 +86,7 @@
       <div class="main--preview">
         <h2>Nächstes Turnier </h2>
         <p>10. - 13. Januar 2019<i>&nbsp;//&nbsp;</i>Ladies Cup in Bern</p>
-        <a href="https://www.curlingbern.ch/turniere/2018-2019/51-internationaler-berner-damen-cup/spielplan-resultate-schedule-results/" target="_blank">Spielplan Ladies Cup</a><br>
+        <a href="https://www.curlingbern.ch/uploads/media/IBDC_Programm_2019_mit_neuem_Spielplan.pdf" target="_blank">Spielplan Ladies Cup</a><br>
         <a href="https://www.curlingbern.ch/turniere/2018-2019/51-internationaler-berner-damen-cup/jetzt-aktuell-auf-dem-eis-now-on-ice/" target="_blank">Livescores</a><br>
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="schedule.php">zum Saisonplan</a>
@@ -114,7 +114,7 @@
       <div class="main--preview">
         <h2>Prochain Tournois </h2>
         <p>10. - 13. Janvier 2019<i>&nbsp;//&nbsp;</i>Ladies Cup à Berne</p>
-        <a href="https://www.curlingbern.ch/turniere/2018-2019/51-internationaler-berner-damen-cup/spielplan-resultate-schedule-results/" target="_blank">Plan des jeux</a><br>
+        <a href="https://www.curlingbern.ch/uploads/media/IBDC_Programm_2019_mit_neuem_Spielplan.pdf" target="_blank">Plan des jeux</a><br>
         <a href="https://www.curlingbern.ch/turniere/2018-2019/51-internationaler-berner-damen-cup/jetzt-aktuell-auf-dem-eis-now-on-ice/" target="_blank">Livescores</a><br>
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="schedule.php">au programme de la saison</a>
