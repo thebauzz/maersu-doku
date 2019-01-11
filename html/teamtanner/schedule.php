@@ -471,7 +471,7 @@
           <hr>
           <h3>Ladies Cup à Berne</h3>
           <strong>xW / xL</strong><br>
-          <p>x vs. Kim (KOR) <i>//</i>&nbsp; x-x</p>
+          <p>L vs. Kim (KOR) <i>//</i>&nbsp; x-x</p>
         </div>
 -->
 
