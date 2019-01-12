@@ -340,14 +340,15 @@
           <a href="http://curling-results.ch/resultat/jun/2018-19/juniorinnen/cup/" target="_blank">Rangliste</a>
         </div>
 
-<!--
         <div class="results--content">
           <hr>
           <h3>Ladies Cup in Bern</h3>
           <strong>xW / xL</strong><br>
-          <p>x vs. Kim (KOR) <i>//</i>&nbsp; x-x</p>
+          <p>L vs. Kim (KOR) <i>//</i>&nbsp; 4-9</p>
+          <p>L vs. Hürlimann (SUI) <i>//</i>&nbsp; 7-8</p>
+          <p>L vs. Keiser (SUI) <i>//</i>&nbsp; 5-7</p>
+          <p>W vs. Paulaskaite (LTU) <i>//</i>&nbsp; 9-2</p>
         </div>
--->
 
 <!--    <div class="results--content">
           <hr>
@@ -466,14 +467,15 @@
           <a href="http://curling-results.ch/resultat/jun/2018-19/juniorinnen/cup/" target="_blank">Classement</a>
         </div>
 
-<!--
         <div class="results--content">
           <hr>
-          <h3>Ladies Cup à Berne</h3>
+          <h3>Ladies Cup in Bern</h3>
           <strong>xW / xL</strong><br>
-          <p>L vs. Kim (KOR) <i>//</i>&nbsp; x-x</p>
+          <p>L vs. Kim (KOR) <i>//</i>&nbsp; 4-9</p>
+          <p>L vs. Hürlimann (SUI) <i>//</i>&nbsp; 7-8</p>
+          <p>L vs. Keiser (SUI) <i>//</i>&nbsp; 5-7</p>
+          <p>W vs. Paulaskaite (LTU) <i>//</i>&nbsp; 9-2</p>
         </div>
--->
 
 <!--    <div class="results--content">
           <hr>
