@@ -150,7 +150,7 @@ div#linie3 {
 }
 #nav--menu a::before {
   content: "{";
-  color: #000000;
+  color: var(--schwarz);
   font-weight: bold;
   position: absolute;
   left: 0;
@@ -165,7 +165,7 @@ div#linie3 {
 }
 #nav--menu a::after {
   content: "}";
-  color: #000000;
+  color: var(--schwarz);
   font-weight: bold;
   position: absolute;
   right: 0;
@@ -351,7 +351,7 @@ img.skill {
 }
 
 .main--section a:hover {
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid var(--schwarz);
 }
 
 code {
@@ -368,7 +368,7 @@ code {
   resize: horizontal;
   overflow: auto;
   margin: 30px auto;
-  border: 2px solid #000000;
+  border: 2px solid var(--schwarz);
   outline: none;
 }
 .aufgaben--text {
@@ -409,10 +409,14 @@ code {
 .aufgabe--frage {
   display: inline-block;
   font-style: italic;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--schwarz);
 }
 .aufgabe--antwort {
   padding: 0 0 10px 0;
+}
+.aufgabe--antwort i {
+  font-style: normal;
+  color: var(--dunkelblau);
 }
 /*
  *
