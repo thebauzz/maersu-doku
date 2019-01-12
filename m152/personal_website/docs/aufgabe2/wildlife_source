@@ -5,11 +5,7 @@
     <title>Wildlife responsive</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+      * { margin:0; padding:0; box-sizing:border-box; }
       body {
         background: green;
       }
@@ -47,7 +43,7 @@
         text-transform: uppercase;
         margin-right: 50px;
       }
-      @media only screen and (min-width : 320px)and (max-width : 480px) {
+      @media only screen and (min-width: 320px)and (max-width: 480px) {
         h1 {
           display: none;
         }
@@ -95,7 +91,7 @@
             <source src="video/wildlive_fertig_ng.mp4" type="video/mp4" />
            Your Browser does not support the video element.....
         </video>
-        <p><a href="../video/wildlive_fertig_ng.mp4">Download wildlife Film (mp4)</a></p>
+        <p><a href="video/wildlive_fertig_ng.mp4">Download wildlife Film (mp4)</a></p>
       </section>
       <footer>
         <p>&copy; Modul 152 | WISS</p>
