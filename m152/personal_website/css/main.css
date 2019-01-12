@@ -273,6 +273,7 @@ article {
 }
 /* Alle Überschriften auf der Startseite */
 .main--section h3 {
+  font-size: 20px;
   margin-bottom: 20px;
   border-top: 2px solid var(--blau);
 }
@@ -316,33 +317,6 @@ p.intro a:hover:before {
 .bild-uebermich {
   margin: 10px auto;
   display: block;
-}
-
-/* Link zu Github bei "Meine Interessen" */
-.githlink {
-  color: var(--hoverfarbe);
-  text-decoration: none;
-  position: relative;
-}
-
-/* Hoverbalken unter dem Linktext */
-.githlink:before {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: 0%;
-  width: 100%;
-  height: 2px;
-  background: var(--schwarz);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.4s;
-}
-
-/* Breite vom Hoverbalken skaliert sich um 100% nach rechts */
-.githlink:hover:before {
-  transform: scaleX(1);
-  transition: transform 0.4s;
 }
 
 /* Breite von jedem Bild von myskills */
@@ -409,6 +383,37 @@ code {
     display: block;
   }
 }
+
+.section--aufgabe {
+  width: calc(100% - 40px);
+  margin: 20px;
+}
+@media only screen and (max-width: 800px) {
+  .section--aufgabe {
+    margin: 20px 5px;
+    width: calc(100% - 10px);
+  }
+}
+.section--aufgabe h3 {
+  border: none;
+  font-size: 18px;
+  position: relative;
+}
+.section--aufgabe h3::after {
+    content: "⌄⌄⌄";
+    position: absolute;
+    left: -1px;
+    bottom: -13px;
+    color: var(--blau);
+}
+.aufgabe--frage {
+  display: inline-block;
+  font-style: italic;
+  border-bottom: 1px solid black;
+}
+.aufgabe--antwort {
+  padding: 0 0 10px 0;
+}
 /*
  *
  *
@@ -441,27 +446,13 @@ footer h3 {
 footer a {
   color: var(--hellblau);
   text-decoration: none;
-  position: relative;
+  border-bottom: 1px solid #ffffff00;
+  transition: 0.3s;
 }
 
-/* Hoverbalken unter dem Linktext */
-footer a:before {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0%;
-  width: 100%;
-  height: 2px;
-  background: var(--hellgrau);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.4s;
-}
-
-/* Breite vom Hoverbalken skaliert sich um 100% nach rechts */
-footer a:hover:before {
-  transform: scaleX(1);
-  transition: transform 0.4s;
+/* Hovereffekt vom footer link */
+footer a:hover {
+  border-bottom: 1px solid #ffffff;
 }
 
 /* Mein Logo rechts mittig im Footer */

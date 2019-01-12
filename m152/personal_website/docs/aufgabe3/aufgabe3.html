@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Aufgabe 3</title>
+  <style>
+    @font-face {
+      font-family: 'merriweather';
+      src: url('fonts/merriweather.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'merriweather';
+      src: url('fonts/merriweatherb.ttf') format('truetype');
+      font-weight: bold;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'lato';
+      src: url('fonts/lato.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'icomoon';
+      src: url('fonts/icomoon.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      margin: 0;
+      background: #7e9dca;
+    }
+    .header--title {
+      font-family: arial, sans-serif;
+      font-size: 80px;
+      text-align: center;
+      filter: drop-shadow(5px 5px 5px #333);
+      margin: 0;
+    }
+    .header--subtitle {
+      font-family: arial, sans-serif;
+      font-size: 40px;
+      text-align: center;
+      filter: drop-shadow(5px 5px 5px #333);
+      margin: 0;
+    }
+    header img {
+      display: block;
+      margin: 20px auto;
+      transition: 0.6s;
+    }
+    header img:hover {
+      transform: rotate(-180deg);
+      filter: grayscale(1);
+    }
+    #content {
+      background: #cacdc9;
+      padding: 150px 0;
+    }
+    .text {
+      padding: 0 20px;
+      margin: 0 auto;
+      width: 1120px;
+    }
+    .body {
+      column-count: 3;
+      column-width: 30px;
+    }
+    h1 {
+      font-size: 42px;
+      line-height: 44px;
+      letter-spacing: -1px;
+      font-family: 'merriweather';
+      font-weight: bold;
+    }
+    h2 {
+      font-size: 14px;
+      line-height: 22px;
+      font-family: 'merriweather';
+      margin-bottom: 0;
+    }
+    .title {
+      color: #e25f5f;
+      font-size: 14px;
+      line-height: 20px;
+      font-family: 'lato';
+    }
+    a {
+      color: #50ade5;
+    }
+    .center {
+      margin: 50px auto;
+      max-width: 1120px;
+    }
+    hr {
+      width: 30%;
+      border: 1px solid black;
+      margin: 0 auto 0 0;
+    }
+    .footer {
+      text-align: right;
+      font-size: 30px;
+      letter-spacing: 4px;
+      color: #50ade5;
+      border-top: 1px solid #50ade5;
+      width: 1120px;
+      margin: 40px auto;
+      padding: 40px;
+    }
+    .icon {
+      font-size: 35px;
+      margin: 0 5px;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+    .icon:hover {
+      color: #135b86;
+    }
+    .icon-google:before {
+      content: "\ea8b";
+      font-family: 'icomoon';
+    }
+    .icon-facebook:before {
+      content: "\ea90";
+      font-family: 'icomoon';
+    }
+    .icon-twitter:before {
+      content: "\ea96";
+      font-family: 'icomoon';
+    }
+    .icon-vimeo:before {
+      content: "\eaa0";
+      font-family: 'icomoon';
+    }
+    .icon-behance:before {
+      content: "\eaa8";
+      font-family: 'icomoon';
+    }
+    .icon-github:before {
+      content: "\eab0";
+      font-family: 'icomoon';
+    }
+  </style>
+</head>
+
+<body>
+  <div id="content">
+    <header>
+      <p class="header--title">TOPOMEDICS</p>
+      <p class="header--subtitle">Precision by Design</p>
+      <img src="topomedics.svg" alt="topomedics" width="500px">
+    </header>
+    <section class="text">
+      <div class="body">
+        <p class="title">Lucius Annaeus Seneca<br>De vita beata</p>
+        <h1>Glückselig Leben</h1>
+        <hr>
+        <h2>Buch I.</h2>
+        <p>Glückselig zu leben, <a href="https://de.wikipedia.org/wiki/Lucius_Iunius_Gallio_Annaeanus">mein Bruder Gallio</a>, wünschen Alle, aber um zu durchschauen, was es sei, wodurch ein glückseliges Leben bewirkt werde, dazu sind sie zu
+          blödsichtig. Und zu einem glückseligen Leben zu gelangen ist eine so gar nicht leichte Sache, daß Jeder sich um so weiter davon entfernt, je rascher er darauf losgeht, wenn er einmal den Weg verfehlt hat; denn führt dieser nach der
+          entgegengesetzten Seite, so wird gerade die Eile der Grund einer immer größeren Entfernung. Man muß daher zuerst vor <a href="https://de.wikipedia.org/wiki/Auge">Augen</a> stellen, was es sei, worauf man sein Streben richtet; sodann hat
+          man sich darnach umzusehen, auf welchem Wege man am schnellsten dazu gelangen könne, indem man schon auf dem Wege selbst, wenn er nur der rechte ist, einsehen wird, wie viel davon täglich zurückgelegt werde und um wie viel näher man dem
+          Ziele gekommen sei, zu dem uns ein natürliches Verlangen hintreibt. (2.) So lange wir freilich überallhin herumschweifen, keinem Führer folgend, sondern dem verworrenen Gelärme und Geschrei der uns nach ganz verschiedenen Seiten hin
+          Rufenden, wird unser so kurzes Leben unter [stetem] Irregehen verfließen, auch wenn wir uns Tag und Nacht um eine richtige Ansicht bemühen. Daher entscheide man sich, sowohl wohin man wolle, als auf welchem Wege, und nicht ohne einen
+          kundigen [Führer], der das, worauf wir zuschreiten, [bereits] erforscht hat, weil hier nicht dasselbe Verhältniß Statt findet, <a href="https://de.wikipedia.org/wiki/Reise">wie bei den übrigen Reisen</a>. Bei jenen lassen uns ein Fußpfad,
+          den man festhält, und Bewohner [der Gegend], die man befragt, nicht irren, hier aber täuscht gerade der betretenste und besuchteste Weg am meisten. (3.) Deshalb haben wir auf Nichts mehr zu achten, als daß wir nicht nach Art des Viehes der
+          Schaar der Vorangehenden folgen, fortwandernd nicht, wo man gehen soll, sondern wo [von Andern] gegangen wird. Und doch verwickelt uns Nichts in größere Uebel, als daß wir uns nach dem Gerede der Leute richten, indem wir das für das Beste
+          halten, was mit großer Zustimmung angenommen ist und wovon wir viele Beispiele haben, und daß wir nicht nach Vernunftgründen, sondern nach Beispielen leben: daher jene gewaltige Zusammenhäufung von Leuten, die Einer über den Andern
+          hinfallen. (4.) Was bei einem großen Menschengedränge der Fall ist, wo das Volk sich selbst drückt, daß Niemand fällt, ohne noch einen Andern sich nachzuziehen und die Vordersten den Folgenden verderblich werden, das kannst du im ganzen
+          Leben sich ereignen sehen: Niemand irrt nur für sich allein, sondern er ist auch Grund und Urheber fremden Irrthums. Denn es ist schädlich, sich den Vorangehenden anzuschließen; und während ein Jeder lieber glauben, als nachdenken will, so
+          wird über das Leben nie nachgedacht; immer glaubt man nur [Andern], und ein von Hand zu Hand fortgepflanzter Irrthum lenkt uns und stürzt uns [in's Verderben]; durch fremde Beispiele gehen wir zu Grunde.
+
+          (5.) Wir werden geheilt werden, sobald wir uns nur vom großen Haufen absondern; so aber steht der Volkshaufe, der Vertheidiger seines eigenen Verderbens, der <a href="https://de.wikipedia.org/wiki/Vernunft">Vernunft</a> feindlich
+          gegenüber.</p>
+      </div>
+    </section>
+    <footer class="footer">
+      <span class="icon icon-google"></span><!--
+   --><span class="icon icon-facebook"></span><!--
+   --><span class="icon icon-twitter"></span><!--
+   --><span class="icon icon-behance"></span><!--
+   --><span class="icon icon-github"></span><!--
+   --><span class="icon icon-vimeo"></span>
+    </footer>
+
+  </div>
+</body>
+
+</html>
