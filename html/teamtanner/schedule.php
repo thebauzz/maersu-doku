@@ -343,11 +343,13 @@
         <div class="results--content">
           <hr>
           <h3>Ladies Cup in Bern</h3>
-          <strong>xW / xL</strong><br>
+          <strong>2W / 4L</strong><br>
           <p>L vs. Kim (KOR) <i>//</i>&nbsp; 4-9</p>
           <p>L vs. Hürlimann (SUI) <i>//</i>&nbsp; 7-8</p>
           <p>L vs. Keiser (SUI) <i>//</i>&nbsp; 5-7</p>
           <p>W vs. Paulaskaite (LTU) <i>//</i>&nbsp; 9-2</p>
+          <p>W vs. Kubeskova (CZE) <i>//</i>&nbsp; 8-5</p>
+          <p>L vs. Witschonke (SUI) <i>//</i>&nbsp; 2-6</p>
         </div>
 
 <!--    <div class="results--content">
@@ -470,11 +472,13 @@
         <div class="results--content">
           <hr>
           <h3>Ladies Cup in Bern</h3>
-          <strong>xW / xL</strong><br>
+          <strong>2W / 4L</strong><br>
           <p>L vs. Kim (KOR) <i>//</i>&nbsp; 4-9</p>
           <p>L vs. Hürlimann (SUI) <i>//</i>&nbsp; 7-8</p>
           <p>L vs. Keiser (SUI) <i>//</i>&nbsp; 5-7</p>
           <p>W vs. Paulaskaite (LTU) <i>//</i>&nbsp; 9-2</p>
+          <p>W vs. Kubeskova (CZE) <i>//</i>&nbsp; 8-5</p>
+          <p>L vs. Witschonke (SUI) <i>//</i>&nbsp; 2-6</p>
         </div>
 
 <!--    <div class="results--content">
