@@ -34,26 +34,20 @@
       margin: 0;
       background: #7e9dca;
     }
-    .header--title {
-      font-family: arial, sans-serif;
-      font-size: 80px;
-      text-align: center;
-      filter: drop-shadow(5px 5px 5px #333);
-      margin: 0;
+    img.topomedics {
+      width: 700px;
+      display: block;
+      margin: 0 auto;
     }
-    .header--subtitle {
-      font-family: arial, sans-serif;
-      font-size: 40px;
-      text-align: center;
-      filter: drop-shadow(5px 5px 5px #333);
-      margin: 0;
+    img.topomedics:hover {
+      filter: drop-shadow(2px 2px 7px #666666);
     }
-    header img {
+    img.logo {
       display: block;
       margin: 20px auto;
       transition: 0.6s;
     }
-    header img:hover {
+    img.logo:hover {
       transform: rotate(-180deg);
       filter: grayscale(1);
     }
@@ -150,9 +144,8 @@
 <body>
   <div id="content">
     <header>
-      <p class="header--title">TOPOMEDICS</p>
-      <p class="header--subtitle">Precision by Design</p>
-      <img src="topomedics.svg" alt="topomedics" width="500px">
+      <img class="topomedics" src="topomedics.svg" alt="TOPOMEDicS">
+      <img class="logo" src="logo.png" alt="TOPOMEDICS Logo" width="500px">
     </header>
     <section class="text">
       <div class="body">
