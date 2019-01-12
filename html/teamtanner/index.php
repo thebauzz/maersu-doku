@@ -85,9 +85,9 @@
 <?php switch($lang) { case 0: echo '
       <div class="main--preview">
         <h2>Nächstes Turnier </h2>
-        <p>10. - 13. Januar 2019<i>&nbsp;//&nbsp;</i>Ladies Cup in Bern</p>
-        <a href="https://www.curlingbern.ch/uploads/media/IBDC_Programm_2019_mit_neuem_Spielplan.pdf" target="_blank">Spielplan Ladies Cup</a><br>
-        <a href="https://www.curlingbern.ch/turniere/2018-2019/51-internationaler-berner-damen-cup/jetzt-aktuell-auf-dem-eis-now-on-ice/" target="_blank">Livescores</a><br>
+        <p>19. - 20. Januar 2019<i>&nbsp;//&nbsp;</i>2. Teil A-Liga in Zug</p>
+        <a href="docs/Schedule-Zug.pdf" target="_blank">Spielplan</a><br>
+        <a href="http://www.curling-results.ch/resultat/jun/2018-19/juniorinnen/a-liga/m.html#Team7" target="_blank">Resultate</a><br>
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="schedule.php">zum Saisonplan</a>
       </div>
@@ -113,9 +113,9 @@
 '; break; case 1: echo '
       <div class="main--preview">
         <h2>Prochain Tournois </h2>
-        <p>10. - 13. Janvier 2019<i>&nbsp;//&nbsp;</i>Ladies Cup à Berne</p>
-        <a href="https://www.curlingbern.ch/uploads/media/IBDC_Programm_2019_mit_neuem_Spielplan.pdf" target="_blank">Plan des jeux</a><br>
-        <a href="https://www.curlingbern.ch/turniere/2018-2019/51-internationaler-berner-damen-cup/jetzt-aktuell-auf-dem-eis-now-on-ice/" target="_blank">Livescores</a><br>
+        <p>19. - 20. janvier 2019<i>&nbsp;//&nbsp;</i>2ème tour A-Ligue à Zoug</p>
+        <a href="docs/Schedule-Zug.pdf" target="_blank">Plan des jeux</a><br>
+        <a href="http://www.curling-results.ch/resultat/jun/2018-19/juniorinnen/a-liga/m.html#Team7" target="_blank">Résultats</a><br>
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="schedule.php">au programme de la saison</a>
       </div>
