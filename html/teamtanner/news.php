@@ -86,6 +86,26 @@
       <div class="main--news">
         <div class="news--content">
           <hr>
+          <h3>13. Januar 2019</h3>
+          <p>Nach zwei gewonnenen Spielen gegen Lettland und Tschechien verlieren wir leider unseren dritten Match gegen die Schweiz (Witschonke) somit scheiden wir aus dem Turnier aus.<br>
+             Wir bedanken uns beim Organisationskomitee für das tolle Turnier.<br><br>
+             Next up: 2. Qualifikationsrunde der A-Liga 19-20.01<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-30.jpg" alt="News 30" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>11. Januar 2019</h3>
+          <p>Dieses Wochenende spielen wir am Damencup in Bern. Unsere drei heutigen Spielen verliefen ausgeglichen jedoch konnten wir keines davon für uns entscheiden. Es war ein sehr lehrreicher Tag. Nun ist es Zeit sich auszuruhen, um morgen um 09:30 gegen Lettland wieder vollgas zu geben.<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-29.jpg" alt="News 29" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
           <h3>6. Januar 2019</h3>
           <p>Nach zwei gewonnenen Spielen heute gegen Biel-St. Gallen und Dübendorf, qualifizierten wir uns für den Viertelfinal, welcher direkt anschliessend stattfand. Diesen verloren wir leider knapp im Zusatzend.<br>
              Next up: Ladies Cup Bern 10-13 Januar<br>
@@ -395,6 +415,26 @@
       </div>
 '; break; case 1: echo '
       <div class="main--news">
+        <div class="news--content">
+          <hr>
+          <h3>13. janvier 2019</h3>
+          <p>Après deux victoires contre Lituanie et contre la République tchèque (Kubeskova), nous avons perdu notre dernier match de la journée contre Lucerne (Witschonke). Le tournois se termine donc ici pour nous.<br>
+             Nous avons pris beaucoup de plaisir et remercions encore les organisateurs du tournois.<br><br>
+             Next up: Ligue A à Zug 19-20.01<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-30.jpg" alt="News 30" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>11. janvier 2019</h3>
+          <p>Ce week-end nous jouons la Damen Cup à Berne. Nous avons malheureusement perdus nos trois matchs aujourd’hui. Il est maintenant temps de se reposer pour être en pleine forme lors du match de demain matin à 9:30 contre la Lituanie.<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-29.jpg" alt="News 29" class="news--img">
+        </div>
+
         <div class="news--content">
           <hr>
           <h3>6. janvier 2019</h3>

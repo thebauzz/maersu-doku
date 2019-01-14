@@ -94,13 +94,14 @@
 
       <div class="main--preview">
         <h2>Neueste Nachrichten </h2>
-        <p>Nach zwei gewonnenen Spielen heute gegen Biel-St. Gallen und Dübendorf, qualifizierten wir uns für den Viertelfinal, welcher direkt anschliessend stattfand. Diesen verloren wir leider knapp im Zusatzend.<br>
-           Next up: Ladies Cup Bern 10-13 Januar<br>
+        <p>Nach zwei gewonnenen Spielen gegen Lettland und Tschechien verlieren wir leider unseren dritten Match gegen die Schweiz (Witschonke) somit scheiden wir aus dem Turnier aus.<br>
+           Wir bedanken uns beim Organisationskomitee für das tolle Turnier.<br><br>
+           Next up: 2. Qualifikationsrunde der A-Liga 19-20.01<br>
            #LOMG 💪🏼
         </p>
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="news.php">weitere Neuigkeiten</a>
-        <img src="img/news/news-28.jpg" alt="News 28" />
+        <img src="img/news/news-30.jpg" alt="News 30" />
       </div>
 
       <div class="main--preview">
@@ -122,13 +123,15 @@
 
       <div class="main--preview">
         <h2>Dernières nouvelles </h2>
-        <p>Après deux victoires aujourd’hui contre Dübendorf et Bienne-St-Galle, nous nous sommes qualifiées pour les quarts de finales que nous avons malheureusement perdus au end supplémentaire. Le week-end est donc fini pour nous.<br>
-           Next-up: Ladies Cup Bern 10-13 janvier<br>
+        <p>Après deux victoires contre Lituanie et contre la République tchèque (Kubeskova), nous avons perdu notre dernier match de la journée contre Lucerne (Witschonke). Le tournois se termine donc ici pour nous.<br>
+           Nous avons pris beaucoup de plaisir et remercions encore les organisateurs du tournois.<br><br>
+           Next up: Ligue A à Zug 19-20.01<br>
            #LOMG 💪🏼
+
         </p>
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="news.php">plus de nouvelles</a>
-        <img src="img/news/news-28.jpg" alt="News 28" />
+        <img src="img/news/news-30.jpg" alt="News 30" />
       </div>
 
       <div class="main--preview">
