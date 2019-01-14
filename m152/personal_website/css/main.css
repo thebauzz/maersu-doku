@@ -437,6 +437,17 @@ code {
   font-style: normal;
   color: var(--dunkelblau);
 }
+.aufgabe4--bilder {
+  text-align: center;
+}
+.aufgabe4--bilder img {
+  width: 180px;
+}
+@media only screen and (max-width: 800px) {
+  .aufgabe4--bilder img {
+    width: 120px;
+  }
+}
 /*
  *
  *
