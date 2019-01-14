@@ -136,7 +136,8 @@ div#linie3 {
 }
 
 /* Styling vom Navigations Text */
-#nav--menu a {
+.nav--element,
+#nav--dropdown a {
   font-weight: bold;
   text-decoration: none;
   transition: 0.3s;
@@ -145,10 +146,30 @@ div#linie3 {
 }
 
 /* Hovereffekt vom Navigations Text */
-#nav--menu a:hover {
+.nav--element:hover,
+#nav--dropdown a:hover {
   color: var(--hoverfarbe);
 }
-#nav--menu a::before {
+.nav--element::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: #00000000;
+  transition: 0.3s;
+}
+.nav--element:hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: #000000;
+}
+#nav--dropdown a::before {
   content: "{";
   color: var(--schwarz);
   font-weight: bold;
@@ -158,12 +179,11 @@ div#linie3 {
   transition: 0.3s;
   transform: translate(-5px);
 }
-#nav--menu a:hover::before {
+#nav--dropdown a:hover::before {
   transform: translateX(-20px);
   opacity: 1;
-  z-index: 20;
 }
-#nav--menu a::after {
+#nav--dropdown a::after {
   content: "}";
   color: var(--schwarz);
   font-weight: bold;
@@ -173,10 +193,9 @@ div#linie3 {
   transition: 0.3s;
   transform: translate(5px);
 }
-#nav--menu a:hover::after {
+#nav--dropdown a:hover::after {
   transform: translateX(20px);
   opacity: 1;
-  z-index: 20;
 }
 /* Der Pfeil vom DropdownMenu */
 #dropdownicon {
