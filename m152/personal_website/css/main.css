@@ -438,9 +438,36 @@ code {
   color: var(--dunkelblau);
 }
 .aufgabe4--bilder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
   text-align: center;
 }
+@media only screen and (max-width: 620px) {
+  .aufgabe4--bilder {
+    grid-template-columns: 1fr 1fr;
+  }
+  .aufgabe4--bilder img:nth-child(even) {
+    margin: 0 auto 0 0;
+  }
+  .aufgabe4--bilder img:nth-child(odd) {
+    margin: 0 0 0 auto;
+  }
+}
+@media only screen and (min-width: 799px)and (max-width: 1030px) {
+  .aufgabe4--bilder {
+    grid-template-columns: 1fr 1fr;
+  }
+  .aufgabe4--bilder img:nth-child(even) {
+    margin: 0 auto 0 0;
+  }
+  .aufgabe4--bilder img:nth-child(odd) {
+    margin: 0 0 0 auto;
+  }
+}
 .aufgabe4--bilder img {
+  display: block;
+  margin: 0 auto;
   width: 180px;
 }
 @media only screen and (max-width: 800px) {
