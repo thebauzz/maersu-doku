@@ -45,18 +45,6 @@
       #button2.display {
         display: block;
       }
-      .formular {
-        position: fixed;
-        top: 60%;
-        width: 100%;
-        background: #f9f9f9;
-        min-height: 100px;
-        padding-top: 100px;
-      }
-      #img {
-        display: block;
-        margin: 0 auto;
-      }
     </style>
   </head>
   <body>
@@ -68,10 +56,6 @@
     <div class="content">
       <p id="button1">Dieser Text wird durch den Button 1 verändert</p>
       <p id="button2">Mit dem zweiten Button fügen Sie dem body und diesem Text eine Klasse hinzu.</p>
-    </div>
-    <div class="formular">
-      <input id="range" type="range" value="100" min="5" max="200" step="5" onchange="logoSize()">
-      <img src="topomedics.png" id="img" alt="Topomedics Logo" width="100px">
     </div>
   </body>
   <script>
@@ -96,13 +80,6 @@
 
     function reset() {
       window.location = "aufgabe5.html";
-    }
-
-    function logoSize() {
-      var range = document.getElementById("range").value;
-      var img = document.getElementById("img");
-      size = range+"px";
-      img.style.width = size;
     }
   </script>
 </html>
