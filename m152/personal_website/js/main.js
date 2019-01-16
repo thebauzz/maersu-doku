@@ -55,3 +55,16 @@ function wegMitAllem() {
     navReinRaus();
   }
 }
+
+function aufgabe2() {
+  var frm = document.getElementById("aufgabe2--iframe");
+  frm.classList.toggle("mobileview");
+
+  var btn = document.getElementById("aufgabe2--button");
+  if (frm.classList.contains("mobileview")) {
+    btn.innerHTML = "Desktop Version anzeigen";
+  }
+  else {
+    btn.innerHTML = "Mobile Version anzeigen"
+  }
+}

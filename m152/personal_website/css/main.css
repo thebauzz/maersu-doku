@@ -12,6 +12,7 @@ body {
 }
 h1, h2, h3 {
   font-family: "Ubuntu";
+  font-weight: bolder;
 }
 /*
  *
@@ -378,16 +379,37 @@ code {
   font-weight: bold;
 }
 
-.aufgaben--frame {
+.aufgabe--frame {
   display: block;
   height: 500px;
-  min-width: 320px;
   width: 100%;
-  max-width: 100%;
-  resize: horizontal;
+  resize: none;
   overflow: auto;
-  margin: 30px auto;
+  margin: 0 auto 30px auto;
   border: 2px solid var(--schwarz);
+  outline: none;
+}
+.aufgabe--button {
+  display: block;
+  width: 200px;
+  margin: 10px auto;
+  padding: 10px 0;
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--schwarz);
+  background: #f9f9f9;
+  border: 1px solid var(--schwarz);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.mobileview {
+  width: 320px;
+}
+.aufgabe--button:hover {
+  box-shadow: 0px 3px 20px rgba(27, 138, 193, 0.4);
+}
+.aufgabe--button:focus {
   outline: none;
 }
 .aufgaben--text {
@@ -395,14 +417,14 @@ code {
   display: none;
 }
 @media only screen and (max-width: 500px) {
-  .aufgaben--frame {
+  .aufgabe--frame,
+  .aufgabe--button {
     display: none;
   }
   .aufgaben--text {
     display: block;
   }
 }
-
 .section--aufgabe {
   width: calc(100% - 40px);
   margin: 20px;
@@ -475,7 +497,6 @@ code {
     width: 120px;
   }
 }
-
 .aufgabe5--frame {
   display: block;
   height: 500px;

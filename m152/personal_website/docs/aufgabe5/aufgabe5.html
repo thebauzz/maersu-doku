@@ -12,28 +12,27 @@
       .buttons { padding-top: 30px; }
 
       a {
-        text-decoration: none;
+        padding: 10px 15px;
         color: #000000;
+        background: #f9f9f9;
         border: 1px solid #000000;
         border-radius: 3px;
+        font-size: 15px;
+        cursor: pointer;
         transition: 0.3s;
-        padding: 10px 15px;
+        text-decoration: none;
       }
       a:hover {
-        background: #eeeeee;
-        box-shadow: 0px 0px 5px #666666;
+        box-shadow: 0px 3px 20px rgba(27, 138, 193, 0.4);
       }
       .darkmode {
         background: #555555;
         color: #ffffff;
       }
       .darkmode a {
+        background: #555555;
         color: #ffffff;
         border: 1px solid #ffffff;
-      }
-      .darkmode a:hover {
-        background: #666666;
-        box-shadow: 0px 0px 5px #999999;
       }
       #button2 {
         position: fixed;
@@ -66,12 +65,12 @@
       <a href="javascript:void(0)" onclick="button2()" >Button 2</a>
     </div>
     <div class="content">
-      <p id="button1">Dieser Text wird durch den Button 1 verändert</p>
+      <p id="button1">Diesen Text ändern Sie mit dem Button 1.</p>
       <p id="button2">Mit dem zweiten Button fügen Sie dem body und diesem Text eine Klasse hinzu.</p>
     </div>
     <div class="formular">
       <input id="range" type="range" value="100" min="5" max="200" step="5" onchange="logoSize()">
-      <img src="topomedics.png" id="img" alt="Topomedics Logo" width="100px">
+      <img src="topomedics.png" id="img" alt="Topomedics Logo" width="200px">
     </div>
   </body>
   <script>
@@ -101,7 +100,7 @@
     function logoSize() {
       var range = document.getElementById("range").value;
       var img = document.getElementById("img");
-      size = range+"px";
+      size = (range*2)+"px";
       img.style.width = size;
     }
   </script>
