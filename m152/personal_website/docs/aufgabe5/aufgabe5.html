@@ -4,8 +4,48 @@
     <meta charset="utf-8">
     <title>Marcel's Aufgabe 5</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="aufgabe5.js"></script>
-    <link href="aufgabe5.css" rel="Stylesheet">
+    <style>
+      * { margin:0; padding:0; font-family:Arial,sans-serif; text-align:center; }
+      html,body { width:100%; height:100vh; }
+      p { transition-duration: 0.4s; }
+      .content { padding-top: 60px; }
+      .buttons { padding-top: 30px; }
+
+      a {
+        text-decoration: none;
+        color: #000000;
+        border: 1px solid #000000;
+        border-radius: 3px;
+        transition: 0.3s;
+        padding: 10px 15px;
+      }
+      a:hover {
+        background: #eeeeee;
+        box-shadow: 0px 0px 5px #666666;
+      }
+      .darkmode {
+        background: #444444;
+        color: #ffffff;
+      }
+      .darkmode a {
+        color: #ffffff;
+        border: 1px solid #ffffff;
+      }
+      .darkmode a:hover {
+        background: #666666;
+        box-shadow: 0px 0px 5px #999999;
+      }
+      #button2 {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+      }
+      #button2.display {
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <div class="buttons">
@@ -15,6 +55,31 @@
     </div>
     <div class="content">
       <p id="button1">Dieser Text wird durch den Button 1 verändert</p>
+      <p id="button2">Mit dem zweiten Button fügen Sie dem body und diesem Text eine Klasse hinzu.</p>
     </div>
   </body>
+  <script>
+    /* direktes maniulieren des CSS */
+    function button1() {
+      var txt = document.getElementById("button1");
+      txt.style.color = "#47c2ff";
+      txt.style.backgroundColor = "#333333";
+      txt.style.fontWeight = "bold";
+      txt.style.padding = "20px 0";
+      txt.innerHTML = "Sie haben den Text mit dem ersten Button verändert.";
+      var content = document.getElementsByClassName("content");
+      content[0].style.paddingTop = "40px";
+    }
+
+    /* hinzufügen einer Klasse classList.add / remove / toggle */
+    function button2() {
+      document.body.classList.add("darkmode");
+      var txt2 = document.getElementById("button2");
+      txt2.classList.add("display");
+    }
+
+    function reset() {
+      window.location = "aufgabe5.html";
+    }
+  </script>
 </html>
