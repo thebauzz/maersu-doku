@@ -388,6 +388,7 @@ code {
   margin: 0 auto 30px auto;
   border: 2px solid var(--schwarz);
   outline: none;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
 }
 .aufgabe--button {
   display: block;
@@ -505,6 +506,7 @@ code {
   margin: 30px auto;
   border: 2px solid var(--schwarz);
   outline: none;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
 }
 /*
  *
