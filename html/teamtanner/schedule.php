@@ -352,15 +352,14 @@
           <p>L vs. Witschonke (SUI) <i>//</i>&nbsp; 2-6</p>
         </div>
 
-<!--    <div class="results--content">
+        <div class="results--content">
           <hr>
           <h3>2. Teil A-Liga in Zug</h3>
           <strong>xW / xL</strong><br>
-          <p>x vs. Baden-Limmattal <i>//</i>&nbsp; x-x</p>
+          <p>W vs. Baden-Limmattal <i>//</i>&nbsp; 7-0</p>
           <p>x vs. Wetzikon <i>//</i>&nbsp; x-x</p>
           <p>x vs. Biel-Solothurn <i>//</i>&nbsp; x-x</p>
         </div>
-    -->
 
     <!--    <div class="results--content">
           <hr>
@@ -481,15 +480,14 @@
           <p>L vs. Witschonke (SUI) <i>//</i>&nbsp; 2-6</p>
         </div>
 
-<!--    <div class="results--content">
+        <div class="results--content">
           <hr>
           <h3>2ème tour de A-Ligue à Zoug</h3>
           <strong>xW / xL</strong><br>
-          <p>x vs. Baden-Limmattal <i>//</i>&nbsp; x-x</p>
+          <p>W vs. Baden-Limmattal <i>//</i>&nbsp; 7-0</p>
           <p>x vs. Wetzikon <i>//</i>&nbsp; x-x</p>
           <p>x vs. Bienne-Soleure <i>//</i>&nbsp; x-x</p>
         </div>
--->
 
 <!--    <div class="results--content">
           <hr>
