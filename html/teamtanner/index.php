@@ -85,8 +85,8 @@
 <?php switch($lang) { case 0: echo '
       <div class="main--preview">
         <h2>Nächstes Turnier </h2>
-        <p>19. - 20. Januar 2019<i>&nbsp;//&nbsp;</i>2. Teil A-Liga in Zug</p>
-        <a href="docs/Schedule-Zug.pdf" target="_blank">Spielplan</a><br>
+        <p>02. - 03. Februar 2019<i>&nbsp;//&nbsp;</i>3. Teil A-Liga in St.Gallen</p>
+        <a href="docs/Schedule-StGallen.pdf" target="_blank">Spielplan</a><br>
         <a href="http://www.curling-results.ch/resultat/jun/2018-19/juniorinnen/a-liga/m.html#Team7" target="_blank">Resultate</a><br>
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="schedule.php">zum Saisonplan</a>
@@ -114,8 +114,8 @@
 '; break; case 1: echo '
       <div class="main--preview">
         <h2>Prochain Tournois </h2>
-        <p>19. - 20. janvier 2019<i>&nbsp;//&nbsp;</i>2ème tour A-Ligue à Zoug</p>
-        <a href="docs/Schedule-Zug.pdf" target="_blank">Plan des jeux</a><br>
+        <p>02. - 03. février 2019<i>&nbsp;//&nbsp;</i>3ème tour A-Ligue à St-Galle</p>
+        <a href="docs/Schedule-StGallen.pdf" target="_blank">Plan des jeux</a><br>
         <a href="http://www.curling-results.ch/resultat/jun/2018-19/juniorinnen/a-liga/m.html#Team7" target="_blank">Résultats</a><br>
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="schedule.php">au programme de la saison</a>

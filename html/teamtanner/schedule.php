@@ -138,15 +138,15 @@
             <td class="saisonplan--date">04.01. - 06.01.19</td>
             <td class="saisonplan--info">Junior Swiss Cup in St.Gallen</td>
           </tr>
-          <tr class="saisonplan--last-event">
+          <tr>
             <td class="saisonplan--date">10.01. - 13.01.19</td>
             <td class="saisonplan--info">Ladies Cup in Bern</td>
           </tr>
-          <tr class="saisonplan--next-up">
+          <tr class="saisonplan--last-event">
             <td class="saisonplan--date">19.01. - 20.01.19</td>
             <td class="saisonplan--info">2. Teil A-Liga in Zug</td>
           </tr>
-          <tr>
+          <tr class="saisonplan--next-up">
             <td class="saisonplan--date">02.02. - 03.02.19</td>
             <td class="saisonplan--info">3. Teil A-Liga in St.Gallen</td>
           </tr>
@@ -216,15 +216,15 @@
             <td class="saisonplan--date">04.01. - 06.01.19</td>
             <td class="saisonplan--info">Junior Swiss Cup à Saint-Gall</td>
           </tr>
-          <tr class="saisonplan--last-event">
+          <tr>
             <td class="saisonplan--date">10.01. - 13.01.19</td>
             <td class="saisonplan--info">Ladies Cup à Berne</td>
           </tr>
-          <tr class="saisonplan--next-up">
+          <tr class="saisonplan--last-event">
             <td class="saisonplan--date">19.01. - 20.01.19</td>
             <td class="saisonplan--info">2ème tour A-Ligue à Zoug</td>
           </tr>
-          <tr>
+          <tr class="saisonplan--next-up">
             <td class="saisonplan--date">02.02. - 03.02.19</td>
             <td class="saisonplan--info">3ème tour A-Ligue à Saint-Gall</td>
           </tr>
@@ -355,10 +355,10 @@
         <div class="results--content">
           <hr>
           <h3>2. Teil A-Liga in Zug</h3>
-          <strong>xW / xL</strong><br>
+          <strong>2W / 1L</strong><br>
           <p>W vs. Baden-Limmattal <i>//</i>&nbsp; 7-0</p>
-          <p>x vs. Wetzikon <i>//</i>&nbsp; x-x</p>
-          <p>x vs. Biel-Solothurn <i>//</i>&nbsp; x-x</p>
+          <p>W vs. Wetzikon <i>//</i>&nbsp; 7-5</p>
+          <p>L vs. Biel-Solothurn <i>//</i>&nbsp; 5-9</p>
         </div>
 
     <!--    <div class="results--content">
@@ -483,10 +483,10 @@
         <div class="results--content">
           <hr>
           <h3>2ème tour de A-Ligue à Zoug</h3>
-          <strong>xW / xL</strong><br>
+          <strong>2W / 1L</strong><br>
           <p>W vs. Baden-Limmattal <i>//</i>&nbsp; 7-0</p>
-          <p>x vs. Wetzikon <i>//</i>&nbsp; x-x</p>
-          <p>x vs. Bienne-Soleure <i>//</i>&nbsp; x-x</p>
+          <p>W vs. Wetzikon <i>//</i>&nbsp; 7-5</p>
+          <p>L vs. Bienne-Soleure <i>//</i>&nbsp; 5-9</p>
         </div>
 
 <!--    <div class="results--content">
