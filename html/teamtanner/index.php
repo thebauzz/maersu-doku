@@ -20,6 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="author" content="Marcel Gertsch" />
+    <meta name="theme-color" content="#8c1936" />
     <link href="img/favicon.ico" rel="icon" />
     <link href="css/main.css" rel="Stylesheet" />
     <script src="script/main.js" type="text/javascript"></script>
@@ -114,7 +115,7 @@
 '; break; case 1: echo '
       <div class="main--preview">
         <h2>Prochain Tournois </h2>
-        <p>02. - 03. février 2019<i>&nbsp;//&nbsp;</i>3ème tour A-Ligue à St-Galle</p>
+        <p>02 - 03 février 2019<i>&nbsp;//&nbsp;</i>3ème tour A-Ligue à St-Gall</p>
         <a href="docs/Schedule-StGallen.pdf" target="_blank">Plan des jeux</a><br>
         <a href="http://www.curling-results.ch/resultat/jun/2018-19/juniorinnen/a-liga/m.html#Team7" target="_blank">Résultats</a><br>
         <p class="preview--inbetween-space">&nbsp;</p>

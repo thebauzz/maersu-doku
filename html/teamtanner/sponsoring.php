@@ -20,6 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="author" content="Marcel Gertsch" />
+    <meta name="theme-color" content="#c72e54" />
     <link href="img/favicon.ico" rel="icon" />
     <link href="css/main.css" rel="Stylesheet" />
     <script src="script/main.js" type="text/javascript"></script>
