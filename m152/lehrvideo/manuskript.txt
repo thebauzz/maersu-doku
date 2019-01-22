@@ -1,0 +1,40 @@
+Gesamtdauer: 3 Minuten
+
+20s	Intro
+40s	Szene 1
+60s	Szene 2
+80s	Szene 3
+100s	Szene 4
+120s	Szene 4
+140s	Szene 5
+160s	Szene 5
+180s	Outro
+
+Intro:
+z.B Animation mit Transparenz (z.B News) und Einleitung/-führung in Situation/Thema
+z.B News: Terroranschlag schlägt fehl 
+oder Werbung
+oder normale Einführung
+
+Szene 1:
+z.B Rucksack mit Steine gefüllt trifft jemand mit einer dünnen Arbeitmappe und dann irgendwas
+ 
+zu schwerer Sprenggürtel und Leute spazieren davon 
+
+oder sonst etwas
+
+Szene 2:
+Situationsbezogener Kommentar
+
+Szene 3:
+Bezug herstellen zu Web
+
+Szene 4:
+Back-end
+Wer? Wo? Was?
+
+Szene 5:
+(Front-End) oder sonst Thema vertiefen und abschliessen
+
+Outro:
+Video kreativ beenden
