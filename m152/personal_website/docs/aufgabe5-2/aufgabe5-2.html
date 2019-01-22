@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Marcel's Aufgabe 5 Teil 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/lightbox.css" rel="stylesheet" />
+</head>
+
+<body>
+  <h1>Galerie Topomedics mit Lightbox</h1>
+  <section class="content">
+    <a href="images/galerie/1.jpg" data-lightbox="show-1" data-title="thumb 1"><img src="images/galerie/th-1.jpg" alt="thumb1" /></a>
+    <a href="images/galerie/2.jpg" data-lightbox="show-1" data-title="thumb 2"> <img src="images/galerie/th-2.jpg" data-lightbox="show-1" data-title="thumb 2" alt="thumbs2" /></a>
+    <a href="images/galerie/3.jpg" data-lightbox="show-1" data-title="thumb 3"> <img src="images/galerie/th-3.jpg" data-lightbox="show-1" data-title="thumb 3" alt="thumb3" /></a>
+    <a href="images/galerie/4.jpg" data-lightbox="show-1" data-title="thumb 4"> <img src="images/galerie/th-4.jpg" data-lightbox="show-1" data-title="thumb 4" alt="thumb4" /></a>
+    <a href="images/galerie/5.jpg" data-lightbox="show-1" data-title="thumb 5"> <img src="images/galerie/th-5.jpg" data-lightbox="show-1" data-title="thumb 5" alt="thumb5" /></a>
+    <a href="images/galerie/6.jpg" data-lightbox="show-1" data-title="thumb 6"> <img src="images/galerie/th-6.jpg" data-lightbox="show-1" data-title="thumb 6" alt="thumb6" /></a>
+    <a href="images/galerie/7.jpg" data-lightbox="show-1" data-title="thumb 7"> <img src="images/galerie/th-7.jpg" data-lightbox="show-1" data-title="thumb 7" alt="thumb7" /></a>
+    <a href="images/galerie/8.jpg" data-lightbox="show-1" data-title="thumb 8"> <img src="images/galerie/th-8.jpg" data-lightbox="show-1" data-title="thumb 8" alt="thumb8" /></a>
+  </section>
+
+  <h1>Responsive Slider</h1>
+  <ul id="slider" class="slides">
+    <li><img src="images/fjord.jpg" alt=""></li>
+    <li><img src="images/mountains.jpg" alt=""></li>
+    <li><img src="images/nature.jpg" alt=""></li>
+  </ul>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/responsiveslides.min.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script>
+    $("#slider").responsiveSlides({
+      namespace: "slides",
+      auto: true,
+      pager: false,
+      speed: 1000,
+      timeout: 5000,
+      random: true,
+    });
+  </script>
+</body>
+
+</html>

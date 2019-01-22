@@ -68,3 +68,15 @@ function aufgabe2() {
     btn.innerHTML = "Mobile Version anzeigen"
   }
 }
+function aufgabe5() {
+  var frm = document.getElementById("aufgabe5--iframe");
+  frm.classList.toggle("mobileview");
+
+  var btn = document.getElementById("aufgabe5--button");
+  if (frm.classList.contains("mobileview")) {
+    btn.innerHTML = "Desktop Version anzeigen";
+  }
+  else {
+    btn.innerHTML = "Mobile Version anzeigen"
+  }
+}
