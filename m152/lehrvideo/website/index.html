@@ -7,34 +7,32 @@
   <meta name="author" content="Marcel Gertsch, Noé Lüthold, Gabriel Schafflützel" />
   <link href="img/favicon.ico" rel="icon" />
   <link href="css/main.css" rel="Stylesheet" />
-  <title>Lehrvideo Ladeeffizienz</title>
-</head>
-<body>
-  <header>
-    <section class="header--slider">
-      <ul id="slider">
-        <li><img src="img/slider/1.jpg" alt=""></li>
-        <li><img src="img/slider/2.jpg" alt=""></li>
-        <li><img src="img/slider/3.jpg" alt=""></li>
-      </ul>
-    </section>
-    <section class="header--navigation">
-      <div class="navigation--bar">
-      </div>
-    </section>
-  </header>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/responsiveslides.min.js"></script>
+  <script src="js/main.js"></script>
   <script>
     $("#slider").responsiveSlides({
       namespace: "slides",
       auto: true,
-      pager: false,
+      pager: true,
       speed: 1000,
       timeout: 5000,
       random: true,
     });
   </script>
+  <title>Lehrvideo Ladeeffizienz</title>
+</head>
+<body>
+  <header>
+    <section class="header--top-part">
+      <img src="img/logo-weiss.png" alt="Header Logo" class="header--logo">
+      <div class="header--background" id="img--height"></div>
+      <div class="header--titlebar" id="titlebar">Ladeeffizienz</div>
+    </section>
+  </header>
+
+  <main>
+    <div style="height: 1000px"></div>
+  </main>
 </body>
 </html>
