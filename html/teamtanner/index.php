@@ -95,14 +95,13 @@
 
       <div class="main--preview">
         <h2>Neueste Nachrichten </h2>
-        <p>Nach zwei gewonnenen Spielen gegen Lettland und Tschechien verlieren wir leider unseren dritten Match gegen die Schweiz (Witschonke) somit scheiden wir aus dem Turnier aus.<br>
-           Wir bedanken uns beim Organisationskomitee für das tolle Turnier.<br><br>
-           Next up: 2. Qualifikationsrunde der A-Liga 19-20.01<br>
+        <p>Wir beenden die 2. Qualifikationsrunde in Zug mit einem Sieg gegen Wetzikon und einer Niederlage gegen Biel-Solothurn.<br>
+           Next up: 3. Qualifikationsrunde in St. Gallen 02 - 03.02<br>
            #LOMG 💪🏼
         </p>
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="news.php">weitere Neuigkeiten</a>
-        <img src="img/news/news-30.jpg" alt="News 30" />
+        <img src="img/news/news-31.jpg" alt="News 31" />
       </div>
 
       <div class="main--preview">
@@ -124,15 +123,13 @@
 
       <div class="main--preview">
         <h2>Dernières nouvelles </h2>
-        <p>Après deux victoires contre Lituanie et contre la République tchèque (Kubeskova), nous avons perdu notre dernier match de la journée contre Lucerne (Witschonke). Le tournois se termine donc ici pour nous.<br>
-           Nous avons pris beaucoup de plaisir et remercions encore les organisateurs du tournois.<br><br>
-           Next up: Ligue A à Zug 19-20.01<br>
+        <p>Nous avons fini notre week-end avec une victoire contre Wetzikon et une défaite conte Bienne-Soleure.<br>
+           Next up: Troisième tour de ligue A à St-Gall 02 - 03 février<br>
            #LOMG 💪🏼
-
         </p>
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="news.php">plus de nouvelles</a>
-        <img src="img/news/news-30.jpg" alt="News 30" />
+        <img src="img/news/news-31.jpg" alt="News 31" />
       </div>
 
       <div class="main--preview">

@@ -20,7 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="author" content="Marcel Gertsch" />
-    <meta name="theme-color" content="#c72e54" />
+    <meta name="theme-color" content="#8c1936" />
     <link href="img/favicon.ico" rel="icon" />
     <link href="css/main.css" rel="Stylesheet" />
     <script src="script/main.js" type="text/javascript"></script>
@@ -85,6 +85,15 @@
 
 <?php switch($lang) { case 0: echo '
       <div class="main--news">
+        <div class="news--content">
+          <hr>
+          <h3>20. Januar 2019</h3>
+          <p>Wir beenden die 2. Qualifikationsrunde in Zug mit einem Sieg gegen Wetzikon und einer Niederlage gegen Biel-Solothurn.<br>
+             Next up: 3. Qualifikationsrunde in St. Gallen 02 - 03.02<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-31.jpg" alt="News 31" class="news--img">
+        </div>
         <div class="news--content">
           <hr>
           <h3>19. Januar 2019</h3>
@@ -424,6 +433,15 @@
       </div>
 '; break; case 1: echo '
       <div class="main--news">
+        <div class="news--content">
+          <hr>
+          <h3>20 janvier 2019</h3>
+          <p>Nous avons fini notre week-end avec une victoire contre Wetzikon et une défaite conte Bienne-Soleure.<br>
+             Next up: Troisième tour de ligue A à St-Gall 2-3 février<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-31.jpg" alt="News 31" class="news--img">
+        </div>
         <div class="news--content">
           <hr>
           <h3>19 janvier 2019</h3>
