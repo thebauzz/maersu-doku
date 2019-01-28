@@ -7,32 +7,72 @@
   <meta name="author" content="Marcel Gertsch, Noé Lüthold, Gabriel Schafflützel" />
   <link href="img/favicon.ico" rel="icon" />
   <link href="css/main.css" rel="Stylesheet" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/responsiveslides.min.js"></script>
-  <script src="js/main.js"></script>
-  <script>
-    $("#slider").responsiveSlides({
-      namespace: "slides",
-      auto: true,
-      pager: true,
-      speed: 1000,
-      timeout: 5000,
-      random: true,
-    });
-  </script>
   <title>Lehrvideo Ladeeffizienz</title>
 </head>
 <body>
   <header>
     <section class="header--top-part">
-      <img src="img/logo-weiss.png" alt="Header Logo" class="header--logo">
+      <img src="img/logo-hell.png" alt="Header Logo" class="header--logo">
       <div class="header--background" id="img--height"></div>
       <div class="header--titlebar" id="titlebar">Ladeeffizienz</div>
     </section>
   </header>
 
   <main>
-    <div style="height: 1000px"></div>
+    <h1 class="rspnv--title-d"><a class="titlelink" href="https://github.com/thebauzz" target="_blank">Marcel Gertsch</a> - <a class="titlelink" href="https://github.com/neeemoo" target="_blank">Noé Lüthold</a> - <a class="titlelink" href="https://github.com/gasupidupi" target="_blank">Gabriel Schafflützel</a></h1>
+    <h1 class="rspnv--title-m">
+      - <a class="titlelink" href="https://github.com/thebauzz" target="_blank">Marcel Gertsch</a> -<br>
+      - <a class="titlelink" href="https://github.com/neeemoo" target="_blank">Noé Lüthold</a> -<br>
+      - <a class="titlelink" href="https://github.com/gasupidupi" target="_blank">Gabriel Schafflützel</a> -</h1>
+    <hr>
+    <div class="content">
+      <p class="introtext">Auf dieser Seite erfahren Sie, wie Sie die Ladezeit Ihrer Webseite optimisieren.</p>
+      <p class="videotext">Lehnen Sie zurück und geniessen Sie das Video!</p>
+      <video controls src="img/lehrvideo/lehrvideo.mp4" poster="img/lehrvideo/thumbnail.png">Ihr Browser unterstützt leider den Videotag nicht</video>
+      <div>
+        <p>Nun war es unser Auftrag, zu diesem Video eine Galerie und einen Slider dazu zu machen.<p>
+        <div class="making-off">
+          <h2>Galerie</h2>
+          <a href="img/galerie/1.jpg" data-lightbox="show-1" data-title="Szenenplanung"> <img src="img/galerie/th-1.jpg" alt="Szenenplanung"></a>
+          <a href="img/galerie/2.jpg" data-lightbox="show-1" data-title="Szenenplanung"> <img src="img/galerie/th-2.jpg" data-lightbox="show-1" data-title="Szenenplanung" alt="Szenenplanung"></a>
+          <a href="img/galerie/3.jpg" data-lightbox="show-1" data-title="Vorbereitung Szene 3"> <img src="img/galerie/th-3.jpg" data-lightbox="show-1" data-title="Vorbereitung Szene 3" alt="Vorbereitung Szene 3"></a>
+          <a href="img/galerie/4.jpg" data-lightbox="show-1" data-title="Schneiden der Videos"> <img src="img/galerie/th-4.jpg" data-lightbox="show-1" data-title="Schneiden der Videos" alt="Schneiden der Videos"></a>
+          <a href="img/galerie/5.jpg" data-lightbox="show-1" data-title="Umsetzen der Szene 3"> <img src="img/galerie/th-5.jpg" data-lightbox="show-1" data-title="Umsetzen der Szene 3" alt="Umsetzen der Szene 3"></a>
+
+          <h2>Slider</h2>
+          <ul id="slider">
+            <li><img src="img/slider/1.jpg" alt=""></li>
+            <li><img src="img/slider/2.jpg" alt=""></li>
+            <li><img src="img/slider/3.jpg" alt=""></li>
+            <li><img src="img/slider/4.jpg" alt=""></li>
+            <li><img src="img/slider/5.jpg" alt=""></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </main>
+  <div class="prefooter"></div>
+  <footer>
+    <h1 class="rspnv--footer-d"><a class="footerlink" href="https://github.com/thebauzz" target="_blank">Marcel Gertsch</a> - <a class="footerlink" href="https://github.com/neeemoo" target="_blank">Noé Lüthold</a> - <a class="footerlink" href="https://github.com/gasupidupi" target="_blank">Gabriel Schafflützel</a></h1>
+    <h1 class="rspnv--footer-m">
+      - <a class="footerlink" href="https://github.com/thebauzz" target="_blank">Marcel Gertsch</a> -<br>
+      - <a class="footerlink" href="https://github.com/neeemoo" target="_blank">Noé Lüthold</a> -<br>
+      - <a class="footerlink" href="https://github.com/gasupidupi" target="_blank">Gabriel Schafflützel</a> -
+    </h1>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/responsiveslides.min.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $("#slider").responsiveSlides({
+      namespace: "slides",
+      auto: true,
+      pager: false,
+      speed: 1000,
+      timeout: 3000,
+      random: false,
+    });
+  </script>
 </body>
 </html>
