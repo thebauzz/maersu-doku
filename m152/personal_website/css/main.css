@@ -35,14 +35,13 @@ header {
   box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.2);
   z-index: 9999;
 }
-
+/* Unter dem Navbalken ist ein Scrollindikator, welcher zeigt, wieviel Prozent bereits gescrollt wurde */
 .scroll-container {
   width: 100%;
   position: absolute;
   bottom: 0;
   height: 4px;
 }
-
 .scroll-bar {
   height: 4px;
   background: var(--blau);
@@ -508,6 +507,24 @@ code {
   outline: none;
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
 }
+
+.aufgabe6--bild {
+  display: block;
+  margin: 20px auto 0;
+  width: 80%;
+  height: auto;
+}
+.block8--galerie {
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .aufgabe6--bild {
+    width: 100%;
+  }
+}
+
 /*
  *
  *

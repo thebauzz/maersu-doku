@@ -8,8 +8,8 @@
   <meta name="author" content="Marcel Gertsch" />
   <link href="css/vars.css" rel="Stylesheet" />
   <link href="css/main.css" rel="Stylesheet" />
+  <link href="css/lightbox.css" rel="Stylesheet" />
   <link href="img/favicon.ico" rel="icon" />
-  <script src="js/main.js"></script>
   <title>Marcel's Persönliche Website</title>
 </head>
 
@@ -209,19 +209,30 @@
     <span id="block7">&nbsp;</span>
     <section class="main--section">
       <h3>Block 07 - 21. Januar 2019</h3>
-      <p><iframe class="aufgabe5--frame" src="docs/aufgabe6/aufgabe6.html"></iframe></p>
+      <p>In diesem Block habe ich die Aufgabe 6 - Audio und Videoformate gelöst. Die Kompabilität der gängigsten Audio und Videoformate sind nachfolgend zu sehen.<br>
+         <a href="docs/aufgabe6/aufgabe6_source" target="_blank">Hier geht es zum Sourcecode</a>.
+        <img src="img/AudioVideo.png" alt="Audio / Video Kompabilität" class="aufgabe6--bild">
+        <iframe class="aufgabe5--frame" src="docs/aufgabe6/aufgabe6.html"></iframe></p>
     </section>
 
     <span id="block8">&nbsp;</span>
     <section class="main--section">
       <h3>Block 08 - 22. Januar 2019</h3>
-      Haben wir an unserem Lernvideo gearbeitet.
+      <p>In diesem Block haben wir an unserem Projekt gearbeitet.<br>Nachfolgend ist eine Galerie mit Bildern, wie wir am Projekt gearbeitet haben.</p>
+      <div class="block8--galerie">
+        <a href="img/galerie/1.jpg" data-lightbox="show-1" data-title="Szenenplanung"> <img src="img/galerie/th-1.jpg" alt="Szenenplanung"></a>
+        <a href="img/galerie/2.jpg" data-lightbox="show-1" data-title="Szenenplanung"> <img src="img/galerie/th-2.jpg" data-lightbox="show-1" data-title="Szenenplanung" alt="Szenenplanung"></a>
+        <a href="img/galerie/3.jpg" data-lightbox="show-1" data-title="Vorbereitung Szene 3"> <img src="img/galerie/th-3.jpg" data-lightbox="show-1" data-title="Vorbereitung Szene 3" alt="Vorbereitung Szene 3"></a>
+        <a href="img/galerie/4.jpg" data-lightbox="show-1" data-title="Schneiden der Videos"> <img src="img/galerie/th-4.jpg" data-lightbox="show-1" data-title="Schneiden der Videos" alt="Schneiden der Videos"></a>
+        <a href="img/galerie/5.jpg" data-lightbox="show-1" data-title="Umsetzen der Szene 3"> <img src="img/galerie/th-5.jpg" data-lightbox="show-1" data-title="Umsetzen der Szene 3" alt="Umsetzen der Szene 3"></a>
+      </div>
     </section>
 
     <span id="block9">&nbsp;</span>
     <section class="main--section">
-      <h3>Block 09</h3>
-      <div style="height: 500px;"></div>
+      <h3>Block 09 - 28. Januar 2019</h3>
+      <p>Im letzten Block vor der Zwischenprüfung habe ich hauptsäschlich repetiert. Ich hatte alle Aufgaben bereits gelöst. Einigen Kollegen konnte ich noch ein paar Unklarheiten beseitigen.<br>
+         Ich habe den Code dieser Webseite noch ein wenig Optimiert und fertig Kommentiert, damit ich das ganze Projekt heute Abend absenden kann.</p>
     </section>
 
   </main>
@@ -244,6 +255,9 @@
     <!-- Mein Logo im rechten Bereich -->
     <img src="img/mlogo-light.png" alt="M-Logo" class="footerlogo" onclick="window.location = 'index.html'">
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/lightbox.js"></script>
 </body>
 
 </html>

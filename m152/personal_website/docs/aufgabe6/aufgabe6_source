@@ -45,7 +45,8 @@
   <audio src="audio/Kalimba.opus" controls>Ihr Browser unterstützt den Audio-Tag nicht.</audio>
 
   <p>.wav</p>
-  <audio  id="ok" src="audio/Kalimba.wav"  controls>Ihr Browser unterstützt den Audio-Tag nicht.</audio>
+  <audio src="audio/Kalimba.wav"  controls>Ihr Browser unterstützt den Audio-Tag nicht.</audio>
+
   <hr>
 
   <h2>Video Formate</h2>
