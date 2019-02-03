@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100');
+* { margin:0; padding:0; }
+
+html, body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Lato";
+  background: #0e1738;
+}
+
+p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #efe8b8;
+  font-size: 90px;
+}
+@media only screen and (max-width: 480px) {
+  p {
+    font-size: 50px;
+  }
+}
+
+::selection {
+  color: #0e1738;
+  background: #efe8b8;
+}
+::-moz-selection {
+  color: #0e1738;
+  background: #efe8b8;
+}
