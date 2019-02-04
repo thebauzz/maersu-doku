@@ -85,6 +85,37 @@
 
 <?php switch($lang) { case 0: echo '
       <div class="main--news">
+
+        <div class="news--content">
+          <hr>
+          <h3>3. Februar 2019</h3>
+          <p>Wir gewinnen den letzten Match 8:2 gegen Bern 2. Somit sind wir für die Schweizermeisterschaft im März qualifiziert!<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-34.jpg" alt="News 34" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>2. Februar 2019</h3>
+          <p>Auch den zweiten Match konnten wir 7:4 gegen Wallisellen für uns entscheiden.<br>
+             Morgen spielen wir um 11:30 unseren letzten Match gegen Bern 2.<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-33.jpg" alt="News 33" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>2. Februar 2019</h3>
+          <p>Dieses Wochenende spielen wir in St. Gallen den dritten und letzten Teil der Qualifikation für die Schweizermeisterschaft im März.<br>
+             Das erste Spiel konnten wir gegen Biel-St. Gallen 11:7 für und entscheiden.<br>
+             Next up: 18:00 gegen Wallisellen<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-32.jpg" alt="News 32" class="news--img">
+        </div>
+
         <div class="news--content">
           <hr>
           <h3>20. Januar 2019</h3>
@@ -433,6 +464,37 @@
       </div>
 '; break; case 1: echo '
       <div class="main--news">
+
+        <div class="news--content">
+          <hr>
+          <h3>3 février 2019</h3>
+          <p>Nous avons gagné notre dernier match du week-end 8-2 contre Bern 2.<br>
+             Nous sommes donc qualifiées pour les championnats suisses en Mars!<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-34.jpg" alt="News 34" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>2 février 2019</h3>
+          <p>Nous gagnons notre deuxième match 7-4 contre Wallisellen!<br>
+             Demain matin nous jouons contre Bern 2 à 11:30.<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-33.jpg" alt="News 33" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>2 février 2019</h3>
+          <p>Ce week-end nous jouons le dernier tour de ligue A à St-Galle. Nous avons gagné notre premier match contre Bienne-St. Galle!<br>
+             Prochain match à 18:00 contre Wallisellen.<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-32.jpg" alt="News 32" class="news--img">
+        </div>
+
         <div class="news--content">
           <hr>
           <h3>20 janvier 2019</h3>

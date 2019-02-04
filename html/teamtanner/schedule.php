@@ -362,15 +362,14 @@
           <p>L vs. Biel-Solothurn <i>//</i>&nbsp; 5-9</p>
         </div>
 
-    <!--    <div class="results--content">
+        <div class="results--content">
           <hr>
           <h3>3. Teil A-Liga in St. Gallen</h3>
-          <strong>xW / xL</strong><br>
-          <p>x vs. Biel-St.Gallen <i>//</i>&nbsp; x-x</p>
-          <p>x vs. Wallisellen <i>//</i>&nbsp; x-x</p>
-          <p>x vs. Bern 2 <i>//</i>&nbsp; x-x</p>
+          <strong>3W / 0L</strong><br>
+          <p>W vs. Biel-St.Gallen <i>//</i>&nbsp; 11-7</p>
+          <p>W vs. Wallisellen <i>//</i>&nbsp; 6-4</p>
+          <p>W vs. Bern 2 <i>//</i>&nbsp; 8-2</p>
         </div>
-    -->
 
       </div>
 '; break; case 1: echo '
@@ -463,7 +462,7 @@
           <h3>Junior Swiss Cup à Saint-Gall</h3>
           <strong>Eliminé après QF (2W / 2L)</strong><br>
           <p>L vs. Luzern <i>//</i>&nbsp; 2-8</p>
-          <p>W vs. Biel-St.Gallen <i>//</i>&nbsp; 5-4</p>
+          <p>W vs. Bienne-St Gall <i>//</i>&nbsp; 5-4</p>
           <p>W vs. Dübendorf <i>//</i>&nbsp; 10-2</p>
           <p>L vs. Baden-Limmattal <i>//</i>&nbsp; 5-6</p>
           <a href="http://curling-results.ch/resultat/jun/2018-19/juniorinnen/cup/" target="_blank">Classement</a>
@@ -490,15 +489,14 @@
           <p>L vs. Bienne-Soleure <i>//</i>&nbsp; 5-9</p>
         </div>
 
-<!--    <div class="results--content">
+        <div class="results--content">
           <hr>
           <h3>3ème tour de A-Ligue à Saint-Gall</h3>
-          <strong>xW / xL</strong><br>
-          <p>x vs. Biel-St.Gallen <i>//</i>&nbsp; x-x</p>
-          <p>x vs. Wallisellen <i>//</i>&nbsp; x-x</p>
-          <p>x vs. Bern 2 <i>//</i>&nbsp; x-x</p>
+          <strong>3W / 0L</strong><br>
+          <p>W vs. Bienne-St Galle <i>//</i>&nbsp; 11-7</p>
+          <p>W vs. Wallisellen <i>//</i>&nbsp; 6-4</p>
+          <p>W vs. Berne 2 <i>//</i>&nbsp; 8-2</p>
         </div>
--->
 
       </div>
 '; break; } ?>
