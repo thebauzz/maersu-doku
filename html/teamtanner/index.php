@@ -86,22 +86,21 @@
 <?php switch($lang) { case 0: echo '
       <div class="main--preview">
         <h2>Nächstes Turnier </h2>
-        <p>02. - 03. Februar 2019<i>&nbsp;//&nbsp;</i>3. Teil A-Liga in St.Gallen</p>
-        <a href="docs/Schedule-StGallen.pdf" target="_blank">Spielplan</a><br>
-        <a href="http://www.curling-results.ch/resultat/jun/2018-19/juniorinnen/a-liga/m.html#Team7" target="_blank">Resultate</a><br>
+        <p>08. - 10. März 2019<i>&nbsp;//&nbsp;</i>1. Teil Schweizermeisterschaft in Arlesheim</p>
+        <!-- <a href="docs/Schedule-StGallen.pdf" target="_blank">Spielplan</a><br> -->
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="schedule.php">zum Saisonplan</a>
       </div>
 
       <div class="main--preview">
         <h2>Neueste Nachrichten </h2>
-        <p>Wir beenden die 2. Qualifikationsrunde in Zug mit einem Sieg gegen Wetzikon und einer Niederlage gegen Biel-Solothurn.<br>
-           Next up: 3. Qualifikationsrunde in St. Gallen 02 - 03.02<br>
+        <p>Wir gewinnen den letzten Match 8:2 gegen Bern 2.<br>
+           Somit sind wir für die Schweizermeisterschaft im März qualifiziert.<br>
            #LOMG 💪🏼
         </p>
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="news.php">weitere Neuigkeiten</a>
-        <img src="img/news/news-31.jpg" alt="News 31" />
+        <img src="img/news/news-34.jpg" alt="News 34" />
       </div>
 
       <div class="main--preview">
@@ -114,22 +113,21 @@
 '; break; case 1: echo '
       <div class="main--preview">
         <h2>Prochain Tournois </h2>
-        <p>02 - 03 février 2019<i>&nbsp;//&nbsp;</i>3ème tour A-Ligue à St-Gall</p>
-        <a href="docs/Schedule-StGallen.pdf" target="_blank">Plan des jeux</a><br>
-        <a href="http://www.curling-results.ch/resultat/jun/2018-19/juniorinnen/a-liga/m.html#Team7" target="_blank">Résultats</a><br>
+        <p>08 - 10 mars 2019<i>&nbsp;//&nbsp;</i>1er tour final à Arlesheim</p>
+        <!-- <a href="docs/Schedule-StGallen.pdf" target="_blank">Plan des jeux</a><br> -->
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="schedule.php">au programme de la saison</a>
       </div>
 
       <div class="main--preview">
         <h2>Dernières nouvelles </h2>
-        <p>Nous avons fini notre week-end avec une victoire contre Wetzikon et une défaite conte Bienne-Soleure.<br>
-           Next up: Troisième tour de ligue A à St-Gall 02 - 03 février<br>
+        <p>Nous avons gagné notre dernier match du week-end 8-2 contre Bern 2!<br>
+           Nous sommes donc qualifiées pour les championnats suisses en Mars!<br>
            #LOMG 💪🏼
         </p>
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="news.php">plus de nouvelles</a>
-        <img src="img/news/news-31.jpg" alt="News 31" />
+        <img src="img/news/news-34.jpg" alt="News 34" />
       </div>
 
       <div class="main--preview">
