@@ -4,7 +4,7 @@ function currentTime() {
   time = new Date();
 
   dNamen = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
-  mNamen = ["jan", "feb", "mar", "Apr", "Jun", "jul", "aug", "sep", "oct", "nov", "dec"]
+  mNamen = ["jan", "feb", "mar", "apr", "Jun", "jul", "aug", "sep", "oct", "nov", "dec"]
 
   mIndex = time.getMonth();
   dIndex = time.getDay() - 1;
