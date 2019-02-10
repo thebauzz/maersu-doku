@@ -3,12 +3,11 @@ window.onload = currentTime;
 function currentTime() {
   time = new Date();
 
-  dNamen = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+  dNamen = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
   mNamen = ["jan", "feb", "mar", "apr", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
 
   mIndex = time.getMonth();
-  dIndex = time.getDay() - 1;
-
+  dIndex = time.getDay();
   ddd= dNamen[dIndex];
   dd = time.getDate();
   mm = mNamen[mIndex];
