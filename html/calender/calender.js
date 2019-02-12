@@ -1,12 +1,17 @@
 // Holt aktuellen Monat
 var today = new Date();
-aktMonat = today.getMonth();
+var aktMonat = today.getMonth();
+var months = ["Januar", "Februar", "März", "April",
+              "Mai", "Juni", "Juli", "August",
+              "September", "Oktober", "November", "Dezember"];
+
+document.getElementById("current-month").innerHTML = months[aktMonat];
 
 // 31. Dezember des vergangenen Jahres
 var start = new Date(today.getFullYear(), 0, 0);
 // Errechnet Anzahl vergangener Tage bis heute
 var diff = today - start;
-var day = Math.floor(diff / (1000 * 60 * 60 * 24)) - 1;
+var todayDay = Math.floor(diff / (1000 * 60 * 60 * 24)) - 1;
 
 var einJahr = 365
 // Schaltjahr ja oder nein
@@ -60,7 +65,7 @@ while (sd != 1) {
     var count = 1;
     while (count < 7) {
       var newDiv = document.createElement("div");
-      newDiv.textContent = "empty";
+      newDiv.textContent = "&nbsp;";
       newDiv.classList.add("unused");
       newDiv.classList.add("tag");
       document.getElementById("cal--tage").appendChild(newDiv);
@@ -71,7 +76,7 @@ while (sd != 1) {
   }
 
   var newDiv = document.createElement("div");
-  newDiv.textContent = "empty";
+  newDiv.textContent = "&nbsp;";
   newDiv.classList.add("unused");
   newDiv.classList.add("tag");
   document.getElementById("cal--tage").appendChild(newDiv);
@@ -81,9 +86,11 @@ while (sd != 1) {
 while (x <= m) {
   var newDiv = document.createElement("div");
   newDiv.textContent = x;
-  newDiv.classList.add("einzeltag");
   newDiv.classList.add("tag");
   document.getElementById("cal--tage").appendChild(newDiv);
+  if (startDay - 1 + x == todayDay) {
+    newDiv.classList.add("current-day");
+  }
   x++;
   weekdaycounter++;
   if (weekdaycounter %7 === 0) {
@@ -93,7 +100,7 @@ while (x <= m) {
 }
 while (!(weekdaycounter %7 === 0)) {
   var newDiv = document.createElement("div");
-  newDiv.textContent = "empty";
+  newDiv.textContent = "&nbsp;";
   newDiv.classList.add("unused");
   newDiv.classList.add("tag");
   document.getElementById("cal--tage").appendChild(newDiv);
