@@ -65,6 +65,7 @@ while (sd != 1) {
       newDiv.classList.add("tag");
       document.getElementById("cal--tage").appendChild(newDiv);
       count++;
+      weekdaycounter++;
     }
     break;
   }
