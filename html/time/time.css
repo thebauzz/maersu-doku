@@ -18,18 +18,24 @@ div {
   font-size: 90px;
 }
 p.one {
-  color: #89a5f9e0;
-  text-shadow: 0px 0px 10px #688eff;
+  color: #89a5f9;
+  text-shadow: 0px 0px 5px #688eff,
+               0px 0px 10px #688eff,
+               0px 0px 30px #688eff;
 }
 p.two {
-  color: #e24f41e0;
-  text-shadow: 0px 0px 10px #ed8f87;
+  color: #e24f41;
+  text-shadow: 0px 0px 5px #ed8f87,
+               0px 0px 10px #ed8f87,
+               0px 0px 30px #ed8f87;
 }
 
 hr {
   margin: 20px auto;
   outline: none;
   border-top: 0.5px solid #ffffff;
+  box-shadow: 0px 0px 5px #ffffff,
+              0px 0px 20px #ffffff;
 }
 
 @media only screen and (max-width: 1024px) {
