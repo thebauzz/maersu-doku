@@ -8,14 +8,20 @@ var start = new Date(today.getFullYear(), 0, 0);
 var diff = today - start;
 var day = Math.floor(diff / (1000 * 60 * 60 * 24)) - 1;
 
+var einJahr = 365
+// Schaltjahr ja oder nein
+if (today.getFullYear() % 4 === 0) {
+  einJahr = 366;
+  sJahr = true;
+} else {
+  sJahr = false;
+}
+
+
 var alleTage = [];
 var i = 0;
 var weekday  = start.getDay() + 1; // 1. Januar des Jahres als Wochentag
-
-var einJahr = 365
-if (today.getFullYear() % 4 === 0) {
-  einJahr = 366;
-}
+// Teilt jedem Tag im Jahr den Wochentag zu
 while (i < einJahr) {
   var days = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
   alleTage[i] = days[weekday];
@@ -28,7 +34,7 @@ while (i < einJahr) {
 
 switch(aktMonat) {
   case 0:  m = 31; startDay =   0; break;
-  case 1:  if (today.getFullYear() % 4 === 0) {m = 29; startDay =  31; } else {m = 28; startDay = 31;}; break;
+  case 1:  if (sJahr) {m = 29; startDay =  31; } else {m = 28; startDay = 31;}; break;
   case 2:  m = 31; startDay =  59; break;
   case 3:  m = 30; startDay =  90; break;
   case 4:  m = 31; startDay = 120; break;
@@ -41,7 +47,7 @@ switch(aktMonat) {
   case 11: m = 31; startDay = 334; break;
 }
 // Bei einem Schaltjahr
-if (aktMonat > 1 && (today.getFullYear() % 4 === 0)) {
+if (aktMonat > 1 && sJahr) {
   m + 1;
   startDay + 1;
 }
