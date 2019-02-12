@@ -65,8 +65,7 @@ while (sd != 1) {
     while (count < 7) {
       var newDiv = document.createElement("div");
       newDiv.textContent = "&nbsp;";
-      newDiv.classList.add("unused");
-      newDiv.classList.add("tag");
+      newDiv.classList.add("tag", "unused");
       document.getElementById("cal--tage").appendChild(newDiv);
       count++;
       weekdaycounter++;
@@ -76,8 +75,7 @@ while (sd != 1) {
 
   var newDiv = document.createElement("div");
   newDiv.textContent = "&nbsp;";
-  newDiv.classList.add("unused");
-  newDiv.classList.add("tag");
+  newDiv.classList.add("tag", "unused");
   document.getElementById("cal--tage").appendChild(newDiv);
   weekdaycounter++;
   sd--;
@@ -85,7 +83,7 @@ while (sd != 1) {
 while (x <= m) {
   var newDiv = document.createElement("div");
   newDiv.textContent = x;
-  newDiv.classList.add("tag");
+  newDiv.classList.add("tag", "used");
   document.getElementById("cal--tage").appendChild(newDiv);
   if (startDay - 1 + x == todayDay) {
     newDiv.classList.add("current-day");
@@ -100,8 +98,7 @@ while (x <= m) {
 while (!(weekdaycounter %7 === 0)) {
   var newDiv = document.createElement("div");
   newDiv.textContent = "&nbsp;";
-  newDiv.classList.add("unused");
-  newDiv.classList.add("tag");
+  newDiv.classList.add("tag", "unused");
   document.getElementById("cal--tage").appendChild(newDiv);
   weekdaycounter++;
 }

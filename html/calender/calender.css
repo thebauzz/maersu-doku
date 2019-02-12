@@ -51,6 +51,7 @@ body, html {
 
 .tag {
   display: inline-block;
+  position: relative;
   width: 70px;
   height: 150px;
   margin: 5px 2px;
@@ -58,6 +59,9 @@ body, html {
   text-align: left;
   font-size: 20px;
   font-weight: bold;
+}
+
+.used {
   border: 1px solid black;
 }
 
@@ -75,4 +79,12 @@ body, html {
   background: #e2dcdc;
   border: 2px solid black;
   margin: 4px 1px;
+}
+
+.calender--element {
+  position:absolute;
+  left: 0;
+  right: 0;
+  top: 45px;
+  width: 100%;
 }
