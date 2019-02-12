@@ -46,36 +46,55 @@ switch(aktMonat) {
   case 10: m = 30; startDay = 304; break;
   case 11: m = 31; startDay = 334; break;
 }
-// Bei einem Schaltjahr
+// Bei einem Schaltjahr ist der Starttag jedes Monates nach dem Febrar + 1
 if (aktMonat > 1 && sJahr) {
-  m + 1;
   startDay + 1;
 }
 
 var x = 1;
-var f = 0;
-while (x <= m) {
-  if (alleTage[f] != days[0] ) {
-
+sd = days.indexOf(alleTage[startDay])
+var weekdaycounter = 0;
+while (sd != 1) {
+  // Wenn der erste Tag im Monat ein Sonntag ist
+  if (sd == 0) {
+    var count = 1;
+    while (count < 7) {
+      var newDiv = document.createElement("div");
+      newDiv.textContent = "empty";
+      newDiv.classList.add("unused");
+      newDiv.classList.add("tag");
+      document.getElementById("cal--tage").appendChild(newDiv);
+      count++;
+    }
+    break;
   }
-  f++;
 
-
-
-
-      // var newDiv = document.createElement("div");
-      // newDiv.textContent = x;
-      // newDiv.classList.add("einzeltag");
-      // document.getElementById("cal--tage").appendChild(newDiv);
-      //
-      // if (x %7 === 0 ) {
-      //   newDiv.classList.add("sonntag");
-      //   var br = document.createElement("br");
-      //   document.getElementById("cal--tage").appendChild(br)
-      // }
-
-
-
-
-  x++
+  var newDiv = document.createElement("div");
+  newDiv.textContent = "empty";
+  newDiv.classList.add("unused");
+  newDiv.classList.add("tag");
+  document.getElementById("cal--tage").appendChild(newDiv);
+  weekdaycounter++;
+  sd--;
+}
+while (x <= m) {
+  var newDiv = document.createElement("div");
+  newDiv.textContent = x;
+  newDiv.classList.add("einzeltag");
+  newDiv.classList.add("tag");
+  document.getElementById("cal--tage").appendChild(newDiv);
+  x++;
+  weekdaycounter++;
+  if (weekdaycounter %7 === 0) {
+    newDiv.classList.add("sonntag");
+    document.getElementById("cal--tage").appendChild(document.createElement("br"));
+  }
+}
+while (!(weekdaycounter %7 === 0)) {
+  var newDiv = document.createElement("div");
+  newDiv.textContent = "empty";
+  newDiv.classList.add("unused");
+  newDiv.classList.add("tag");
+  document.getElementById("cal--tage").appendChild(newDiv);
+  weekdaycounter++;
 }

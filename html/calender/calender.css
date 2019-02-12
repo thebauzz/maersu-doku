@@ -27,11 +27,25 @@ body, html {
 }
 
 #cal--tage {
+  text-align: center;
+}
+
+.weekdays {
   margin: 50px auto 0;
   text-align: center;
 }
 
-.einzeltag {
+.w-day {
+  display: inline-block;
+  width: 70px;
+  margin: 5px 2px;
+  padding: 10px 0 0 10px;
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.tag {
   display: inline-block;
   width: 70px;
   height: 150px;
@@ -40,7 +54,15 @@ body, html {
   text-align: left;
   font-size: 20px;
   font-weight: bold;
+}
+
+.einzeltag {
   border: 1px solid black;
+}
+.unused {
+  color: #00000000;
+  user-select: none;
+  border: 1px solid #999999;
 }
 
 .sonntag {
