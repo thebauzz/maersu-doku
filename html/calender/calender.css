@@ -73,4 +73,6 @@ body, html {
 
 .current-day {
   background: #e2dcdc;
+  border: 2px solid black;
+  margin: 4px 1px;
 }

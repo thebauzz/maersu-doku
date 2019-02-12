@@ -10,8 +10,7 @@ document.getElementById("current-month").innerHTML = months[aktMonat];
 // 31. Dezember des vergangenen Jahres
 var start = new Date(today.getFullYear(), 0, 0);
 // Errechnet Anzahl vergangener Tage bis heute
-var diff = today - start;
-var todayDay = Math.floor(diff / (1000 * 60 * 60 * 24)) - 1;
+var todayDay = Math.floor((today - start) / (1000 * 60 * 60 * 24)) - 1;
 
 var einJahr = 365
 // Schaltjahr ja oder nein
