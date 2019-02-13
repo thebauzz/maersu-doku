@@ -127,13 +127,9 @@ function newValues(temp) {
   var aktMonat = temp
   document.getElementById("current-month").innerHTML = months[aktMonat];
 
-  // 31. Dezember des vergangenen Jahres
   var start = new Date(today.getFullYear(), 0, 0);
-  // Errechnet Anzahl vergangener Tage bis heute
   var todayDay = Math.floor((today - start) / (1000 * 60 * 60 * 24)) - 1;
-
   var einJahr = 365
-  // Schaltjahr ja oder nein
   if (today.getFullYear() % 4 === 0) {
     einJahr = 366;
     sJahr = true;
@@ -144,7 +140,6 @@ function newValues(temp) {
   var alleTage = [];
   var i = 0;
   var weekday  = start.getDay() + 1; // 1. Januar des Jahres als Wochentag
-  // Teilt jedem Tag im Jahr den Wochentag zu
   while (i < einJahr) {
     var days = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
     alleTage[i] = days[weekday];
@@ -169,7 +164,6 @@ function newValues(temp) {
     case 10: m = 30; startDay = 304; break;
     case 11: m = 31; startDay = 334; break;
   }
-  // Bei einem Schaltjahr ist der Starttag jedes Monates nach dem Febrar + 1
   if (aktMonat > 1 && sJahr) {
     startDay + 1;
   }
@@ -178,7 +172,6 @@ function newValues(temp) {
   sd = days.indexOf(alleTage[startDay])
   var weekdaycounter = 0;
   while (sd != 1) {
-    // Wenn der erste Tag im Monat ein Sonntag ist
     if (sd == 0) {
       var count = 1;
       while (count < 7) {
