@@ -17,6 +17,8 @@ h1 {
   justify-content: center;
   margin: 50px auto 0;
   user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
   text-align: center;
   font-weight: bold;
 }
@@ -88,6 +90,8 @@ h1 {
 .unused {
   color: #00000000;
   user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
   border: 1px solid #bbbbbb;
 }
 
