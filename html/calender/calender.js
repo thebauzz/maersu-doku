@@ -102,17 +102,17 @@ while (!(weekdaycounter %7 === 0)) {
   weekdaycounter++;
 }
 
-var temp = aktMonat;
+var tempM = aktMonat;
 function monthChange(changeValue) {
-  if (changeValue == 1) { temp++; }
-  if (changeValue == 0) { temp--; }
+  if (changeValue == 1) { tempM++; }
+  if (changeValue == 0) { tempM--; }
 
-  if (temp <  0) { temp+=1; }
-  if (temp > 11) { temp-=1; }
+  if (tempM <  0) { tempM+=1; }
+  if (tempM > 11) { tempM-=1; }
 
-  newValues(temp)
+  newMonth(tempM)
 }
-function newValues(temp) {
+function newMonth(tempM) {
   document.getElementById("cal--tage").remove();
 
   var firstStep = document.createElement("div");
@@ -124,7 +124,7 @@ function newValues(temp) {
   var months = ["Januar", "Februar", "März", "April",
                 "Mai", "Juni", "Juli", "August",
                 "September", "Oktober", "November", "Dezember"];
-  var aktMonat = temp
+  var aktMonat = tempM
   document.getElementById("current-month").innerHTML = months[aktMonat];
 
   var start = new Date(today.getFullYear(), 0, 0);

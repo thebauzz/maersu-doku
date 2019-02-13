@@ -15,7 +15,7 @@ h1 {
 .month--titles {
   display: flex;
   justify-content: center;
-  margin: 50px auto 0;
+  margin: 10px auto 0;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -45,10 +45,39 @@ h1 {
 }
 
 .aktueller--monat {
-  text-decoration: overline;
+  text-decoration: underline;
   text-decoration-color: #cc2020;
   -moz-text-decoration-color: #cc2020;
   -webkit-text-decoration-color: #cc2020;
+}
+
+.year--titles {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto 0;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+#current-year {
+  font-size: 25px;
+  min-width: 60px;
+  position: relative;
+}
+
+.cy {
+  flex-basis: auto;
+  font-size: 25px;
+  color: #cc2020;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.cy:hover {
+  color: #000000;
 }
 
 .weekdays {
