@@ -1,10 +1,9 @@
 // Holt aktuellen Monat
 var today = new Date();
-var aktMonat = today.getMonth();
 var months = ["Januar", "Februar", "März", "April",
               "Mai", "Juni", "Juli", "August",
               "September", "Oktober", "November", "Dezember"];
-
+var aktMonat = today.getMonth();
 document.getElementById("current-month").innerHTML = months[aktMonat];
 
 // 31. Dezember des vergangenen Jahres
@@ -20,7 +19,6 @@ if (today.getFullYear() % 4 === 0) {
 } else {
   sJahr = false;
 }
-
 
 var alleTage = [];
 var i = 0;
