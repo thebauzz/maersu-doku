@@ -4,6 +4,7 @@ var months = ["Januar", "Februar", "März", "April",
               "Mai", "Juni", "Juli", "August",
               "September", "Oktober", "November", "Dezember"];
 var aktMonat = today.getMonth();
+document.getElementById("current-month").classList.add("aktueller--monat");
 document.getElementById("current-month").innerHTML = months[aktMonat];
 
 // 31. Dezember des vergangenen Jahres
@@ -100,7 +101,6 @@ while (!(weekdaycounter %7 === 0)) {
   document.getElementById("cal--tage").appendChild(newDiv);
   weekdaycounter++;
 }
-
 
 var temp = aktMonat;
 function monthChange(changeValue) {
@@ -213,5 +213,10 @@ function newValues(temp) {
     newDiv.classList.add("tag", "unused");
     document.getElementById("cal--tage").appendChild(newDiv);
     weekdaycounter++;
+  }
+  if (aktMonat == today.getMonth()) {
+    document.getElementById("current-month").classList.add("aktueller--monat");
+  } else {
+    document.getElementById("current-month").classList.remove("aktueller--monat");
   }
 }

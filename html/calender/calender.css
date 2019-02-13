@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:500');
 ::selection { background:#cc2020; color:#ffffff; }
 * { margin:0; padding:0; }
-body,html { width:100%; height:100vh; background:#efefef; font-family:Rajdhani;}
+body,html { width:100%; height:100vh; background:#f6f6f6; font-family:Rajdhani;}
 
 h1 {
   width: 70%;
@@ -39,6 +39,14 @@ h1 {
 #current-month {
   font-size: 35px;
   min-width: 160px;
+  position: relative;
+}
+
+.aktueller--monat {
+  text-decoration: overline;
+  text-decoration-color: #cc2020;
+  -moz-text-decoration-color: #cc2020;
+  -webkit-text-decoration-color: #cc2020;
 }
 
 .weekdays {
@@ -80,7 +88,7 @@ h1 {
 .unused {
   color: #00000000;
   user-select: none;
-  border: 1px solid #999999;
+  border: 1px solid #bbbbbb;
 }
 
 .sonntag {
@@ -91,12 +99,4 @@ h1 {
   background: #e2dcdc;
   border: 2px solid #000000;
   margin: 4px 1px;
-}
-
-.calender--element {
-  position:absolute;
-  left: 0;
-  right: 0;
-  top: 45px;
-  width: 100%;
 }
