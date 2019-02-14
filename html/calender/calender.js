@@ -54,7 +54,7 @@ if (aktMonat > 1 && sJahr) {
   startDay + 1;
 }
 
-var x = 1;
+// Welcher Wochentag hat der erste Tag des Monats
 sd = days.indexOf(alleTage[startDay])
 var weekdaycounter = 0;
 while (sd != 1) {
@@ -79,6 +79,7 @@ while (sd != 1) {
   weekdaycounter++;
   sd--;
 }
+var x = 1;
 while (x <= m) {
   var newDiv = document.createElement("div");
   newDiv.textContent = x;
