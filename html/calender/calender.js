@@ -33,7 +33,13 @@ function onLoad(int) {
   var months = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
   var aktMonat = newM;
   document.getElementById("current-month").innerHTML = months[aktMonat]
-  document.getElementById("current-year").innerHTML = today.getFullYear() + addYear
+  document.getElementById("current-year").innerHTML = newY
+
+  if (newY+","+newM == today.getFullYear()+","+today.getMonth()) {
+    document.getElementById("current-month").classList.add("current-month")
+  } else {
+    document.getElementById("current-month").classList.remove("current-month")
+  }
 
   var weekdays = ["SO", "MO", "DI", "MI", "DO", "FR", "SA"]
   var sd = weekdays.indexOf(weekdays[firstDay.getDay()])
@@ -71,7 +77,7 @@ function onLoad(int) {
     if (testHeute == istEsHeut) {
       newDiv.classList.add("current-day")
     }
-    s = 0
+    var s = 0
     while (s != source.length) {
       var einTag = source[s].split(";")
       var terminHeut = einTag[0]+","+einTag[1]+","+einTag[2]
