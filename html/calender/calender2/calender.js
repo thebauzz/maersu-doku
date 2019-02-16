@@ -1,8 +1,8 @@
 var addYear  = 0
 var addMonth = 0
-var date = new Date()
-var thisMonth = date.getMonth()
-var thisYear  = date.getFullYear()
+var today = new Date()
+var thisMonth = today.getMonth()
+var thisYear  = today.getFullYear()
 
 function onLoad(int) {
   document.getElementById("cal--tage").remove()
@@ -33,7 +33,7 @@ function onLoad(int) {
   var months = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
   var aktMonat = newM;
   document.getElementById("current-month").innerHTML = months[aktMonat]
-  document.getElementById("current-year").innerHTML = date.getFullYear() + addYear
+  document.getElementById("current-year").innerHTML = today.getFullYear() + addYear
 
   var weekdays = ["SO", "MO", "DI", "MI", "DO", "FR", "SA"]
   var sd = weekdays.indexOf(weekdays[firstDay.getDay()])
@@ -66,6 +66,11 @@ function onLoad(int) {
     newDiv.textContent = x
     newDiv.classList.add("tag", "used")
     document.getElementById("cal--tage").appendChild(newDiv)
+    var testHeute = today.getFullYear()+","+today.getMonth()+","+today.getDate()
+    var istEsHeut = newY+","+newM+","+x
+    if (testHeute == istEsHeut) {
+      newDiv.classList.add("current-day");
+    }
     x++;
     weekdaycounter++;
     if (weekdaycounter %7 === 0) {
