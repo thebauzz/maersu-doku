@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Marcel Gertsch" />
+    <link href="calender.css" rel="Stylesheet" />
+    <title>Marcel's Calender 2</title>
+  </head>
+  <body onload="onLoad()">
+    <h1>This is Marcel's calender project.</h1>
+    <div class="year--titles">
+      <span onclick="onLoad(0)" class="cy left">&lt;</span>
+      <span id="current-year">2019</span>
+      <span onclick="onLoad(1)" class="cy right">&gt;</span>
+    </div>
+    <div class="month--titles">
+      <span onclick="onLoad(2)" class="cm left">&lt;</span>
+      <span id="current-month"></span>
+      <span onclick="onLoad(3)" class="cm right">&gt;</span>
+    </div>
+    <div class="wd--titles">
+      <div class="wd--text">MO</div>
+      <div class="wd--text">DI</div>
+      <div class="wd--text">MI</div>
+      <div class="wd--text">DO</div>
+      <div class="wd--text">FR</div>
+      <div class="wd--text">SA</div>
+      <div class="wd--text sonntag">SO</div>
+    </div>
+    <div id="cal--tage"></div>
+  </body>
+  <script src="calender.js"></script>
+</html>
