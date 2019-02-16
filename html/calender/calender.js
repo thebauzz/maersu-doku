@@ -69,7 +69,19 @@ function onLoad(int) {
     var testHeute = today.getFullYear()+","+today.getMonth()+","+today.getDate()
     var istEsHeut = newY+","+newM+","+x
     if (testHeute == istEsHeut) {
-      newDiv.classList.add("current-day");
+      newDiv.classList.add("current-day")
+    }
+    s = 0
+    while (s != source.length) {
+      var einTag = source[s].split(";")
+      var terminHeut = einTag[0]+","+einTag[1]+","+einTag[2]
+      if (istEsHeut == terminHeut) {
+        var termin = document.createElement("div")
+        termin.textContent = einTag[3]
+        termin.classList.add("day--element")
+        document.getElementsByClassName("used")[x-1].appendChild(termin)
+      }
+      s++
     }
     x++;
     weekdaycounter++;

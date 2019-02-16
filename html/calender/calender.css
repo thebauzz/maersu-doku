@@ -118,3 +118,20 @@ h1 {
   border: 2px solid #000000;
   margin: 4px 1px;
 }
+.current-month {
+  text-decoration: underline;
+  text-decoration-color: #cc2020;
+  -moz-text-decoration-color: #cc2020;
+  -webkit-text-decoration-color: #cc2020;
+}
+
+.day--element {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  font-size: 16px;
+  padding-left: 2px;
+  background: #1b8ac1;
+  color: #ffffff;
+}
