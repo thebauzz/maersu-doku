@@ -1,5 +1,9 @@
 var addYear  = 0
 var addMonth = 0
+var date = new Date()
+var thisMonth = date.getMonth()
+var thisYear  = date.getFullYear()
+
 function onLoad(int) {
   document.getElementById("cal--tage").remove()
   firstStep = document.createElement("div")
@@ -10,15 +14,26 @@ function onLoad(int) {
   else if (int == 1) { addYear++ }
   else if (int == 2) { addMonth-- }
   else if (int == 3) { addMonth++ }
+  if (thisMonth + addMonth == 12) {
+    addYear++
+    addMonth = 0;
+    thisMonth = 0;
+  }
+  if (thisMonth + addMonth == -1) {
+    addYear--
+    addMonth = 11;
+    thisMonth = 0;
+  }
+  newM = thisMonth + addMonth
+  newY = thisYear + addYear
 
-  var date = new Date()
-  var ld = new Date((date.getFullYear() + addYear), (date.getMonth() + addMonth) + 1, 0)
-  var lastDay = ld.getDate()
-  var firstDay = new Date((date.getFullYear() + addYear), (date.getMonth() + addMonth), 1)
+  var lastDay = new Date(newY, newM + 1, 0).getDate()
+  var firstDay = new Date(newY, newM, 1)
 
   var months = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
-  var aktMonat = date.getMonth() + addMonth
+  var aktMonat = newM;
   document.getElementById("current-month").innerHTML = months[aktMonat]
+  document.getElementById("current-year").innerHTML = date.getFullYear() + addYear
 
   var weekdays = ["SO", "MO", "DI", "MI", "DO", "FR", "SA"]
   var sd = weekdays.indexOf(weekdays[firstDay.getDay()])
