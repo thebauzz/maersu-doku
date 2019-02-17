@@ -8,12 +8,15 @@
   </head>
   <body onload="onLoad()">
     <h1>This is Marcel's calender project.</h1>
-    <div class="year--titles">
+    <div class="titles">
+      <span onclick="onLoad(99)" id="back--home">&nbsp;</span>
+    </div>
+    <div class="year titles">
       <span onclick="onLoad(0)" class="cy left">&lt;</span>
       <span id="current-year">2019</span>
       <span onclick="onLoad(1)" class="cy right">&gt;</span>
     </div>
-    <div class="month--titles">
+    <div class="month titles">
       <span onclick="onLoad(2)" class="cm left">&lt;</span>
       <span id="current-month"></span>
       <span onclick="onLoad(3)" class="cm right">&gt;</span>

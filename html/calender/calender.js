@@ -27,6 +27,11 @@ function onLoad(int) {
   newM = thisMonth + addMonth
   newY = thisYear + addYear
 
+  if (int == 99) {
+    newM = today.getMonth()
+    newY  = today.getFullYear()
+  }
+
   var lastDay = new Date(newY, newM + 1, 0).getDate()
   var firstDay = new Date(newY, newM, 1)
 
@@ -37,8 +42,10 @@ function onLoad(int) {
 
   if (newY+","+newM == today.getFullYear()+","+today.getMonth()) {
     document.getElementById("current-month").classList.add("current-month")
+    document.getElementById("back--home").innerHTML = "&nbsp;"
   } else {
     document.getElementById("current-month").classList.remove("current-month")
+    document.getElementById("back--home").innerHTML = "heute"
   }
 
   var weekdays = ["SO", "MO", "DI", "MI", "DO", "FR", "SA"]
