@@ -16,13 +16,13 @@ function onLoad(int) {
   else if (int == 3) { addMonth++ }
   if (thisMonth + addMonth == 12) {
     addYear++
-    addMonth = 0;
-    thisMonth = 0;
+    addMonth = 0
+    thisMonth = 0
   }
   if (thisMonth + addMonth == -1) {
     addYear--
-    addMonth = 11;
-    thisMonth = 0;
+    addMonth = 11
+    thisMonth = 0
   }
   newM = thisMonth + addMonth
   newY = thisYear + addYear
@@ -36,7 +36,7 @@ function onLoad(int) {
   var firstDay = new Date(newY, newM, 1)
 
   var months = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
-  var aktMonat = newM;
+  var aktMonat = newM
   document.getElementById("current-month").innerHTML = months[aktMonat]
   document.getElementById("current-year").innerHTML = newY
 
@@ -45,7 +45,7 @@ function onLoad(int) {
     document.getElementById("back--home").innerHTML = "&nbsp;"
   } else {
     document.getElementById("current-month").classList.remove("current-month")
-    document.getElementById("back--home").innerHTML = "heute"
+    document.getElementById("back--home").innerHTML = "zum aktuellen Monat"
   }
 
   var weekdays = ["SO", "MO", "DI", "MI", "DO", "FR", "SA"]
@@ -54,7 +54,7 @@ function onLoad(int) {
   while (sd != 1) {
     // Wenn der erste Tag im Monat ein Sonntag ist
     if (sd == 0) {
-      var count = 1;
+      var count = 1
       while (count < 7) {
         var newDiv = document.createElement("div")
         newDiv.textContent = "&nbsp;"
@@ -63,7 +63,7 @@ function onLoad(int) {
         count++
         weekdaycounter++
       }
-      break;
+      break
     }
 
     var newDiv = document.createElement("div")
@@ -71,9 +71,9 @@ function onLoad(int) {
     newDiv.classList.add("tag", "unused")
     document.getElementById("cal--tage").appendChild(newDiv)
     weekdaycounter++
-    sd--;
+    sd--
   }
-  var x = 1;
+  var x = 1
   while (x <= lastDay) {
     var newDiv = document.createElement("div")
     newDiv.textContent = x
@@ -97,8 +97,8 @@ function onLoad(int) {
       }
       s++
     }
-    x++;
-    weekdaycounter++;
+    x++
+    weekdaycounter++
     if (weekdaycounter %7 === 0) {
       newDiv.classList.add("sonntag")
       document.getElementById("cal--tage").appendChild(document.createElement("br"))

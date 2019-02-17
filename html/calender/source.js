@@ -10,7 +10,8 @@ var source = [
   "2019;8;23;Paps;var(--bday)",
   "2019;9;20;Emma;var(--bday)",
 
-  "2019;11;6;1 year;var(--special)",
+  "2018;11;6;6/12/18 ♡;var(--special)",
+  "2019;11;6;6/12/18 ♡;var(--special)",
 
   "2019;1;2;3. Teil A-Liga;var(--normal)",
   "2019;1;3;3. Teil A-Liga;var(--normal)",

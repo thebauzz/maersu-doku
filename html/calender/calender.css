@@ -11,6 +11,9 @@
 * {
   margin: 0;
   padding: 0;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 body,html {
   width: 100%;
@@ -31,9 +34,6 @@ h1 {
 .titles {
   display: flex;
   justify-content: center;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
   text-align: center;
   font-weight: bold;
 }
@@ -70,8 +70,8 @@ h1 {
 .cy:hover { color: #000000; }
 .cm:hover { color: #000000; }
 
-.left  { padding-right: 20px; }
-.right { padding-left:  20px; }
+.left  { margin-right: 20px; }
+.right { margin-left:  20px; }
 
 #current-year {
   font-size: 25px;
@@ -122,9 +122,6 @@ h1 {
 
 .unused {
   color: #00000000;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
   border: 1px solid #bbbbbb;
 }
 
@@ -154,4 +151,7 @@ h1 {
   background: #1b8ac1;
   color: #ffffff;
   word-wrap: break-word;
+  user-select: all;
+  -moz-user-select: all;
+  -webkit-user-select: all;
 }
