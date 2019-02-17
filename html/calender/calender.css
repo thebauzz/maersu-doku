@@ -1,7 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:500');
+:root {
+  --normal:  #1b8ac1;
+  --bday:    #9b1515;
+  --special: #13a588;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("Montserrat.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+/* @import url('https://fonts.googleapis.com/css?family=Rajdhani:500'); */
 ::selection { background:#cc2020; color:#ffffff; }
 * { margin:0; padding:0; }
-body,html { width:100%; height:100vh; background:#f6f6f6; font-family:Rajdhani;}
+body,html { width:100%; height:100vh; background:#f6f6f6; font-family:Montserrat;}
 
 h1 {
   width: 70%;

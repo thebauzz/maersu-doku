@@ -85,6 +85,7 @@ function onLoad(int) {
         var termin = document.createElement("div")
         termin.textContent = einTag[3]
         termin.classList.add("day--element")
+        termin.style.background = einTag[4]
         document.getElementsByClassName("used")[x-1].appendChild(termin)
       }
       s++
