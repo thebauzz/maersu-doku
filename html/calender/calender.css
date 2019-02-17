@@ -139,4 +139,5 @@ h1 {
   padding-left: 2px;
   background: #1b8ac1;
   color: #ffffff;
+  word-wrap: break-word;
 }
