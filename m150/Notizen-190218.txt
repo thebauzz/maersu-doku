@@ -1,11 +1,18 @@
 Was ist eine E-Business Applikation?
 
 Begriff:
-  \ Web-Applikation;
-  \ Kommunikation (Kunde - Unternehmen);
-  \ Automatisierte Geschäftsprozesse;
+  \ Web-Applikation
+  \ Kommunikation (Kunde - Unternehmen)
+  \ Automatisierte Geschäftsprozesse
+
 
 E-Business // Geschäftsprozess zwischen Unternehmen (B2B)
+ \ wenige aber standardisierte Vorgänge
+ \ Klar definierter Kundenkreis
+ \ Bezahlvorgang definiert
+
+Dadurch ist eine starke Automatisierung möglich + integration in bestehende ERP-Systeme
+
 
 E-Commerce // Geschäftsprozess zwischen Unternehmen und Kunde (B2C)
  \ Extrem breits Kunden- & Dienstleistungsspektrum
@@ -13,3 +20,24 @@ E-Commerce // Geschäftsprozess zwischen Unternehmen und Kunde (B2C)
  \ Gestaltung des Einkaufserlebnis
  \ Unhandliche sperrige Geräte (PC)
  \ Zahlungsabwicklung
+
+
+Generelle Aspekte
+ \ E-Business-Software
+   - Systemarchitektur von online Anwendungen
+
+ \ Netzwerke und Sicherheit
+   - VPN
+   - Elektronische Zahlungsverfahren
+   - (Mobile Commerce)
+
+ \ Betriebswirtschaftliche und rechtliche Aspekte
+   - E-Marketing
+   - E-Logistik
+   - Internationales Recht
+
+ \ E-Business-Anwendungen
+   - Multimediatechnologien
+   - Knowledge-Management
+   - E-Learning
+   - Virtuelle Gemeinschaften
