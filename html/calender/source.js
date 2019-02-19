@@ -3,15 +3,13 @@
 // Januar = 0; Februar = 1; etc
 
 var source = [
+  "2019;1;24;Noe;var(--bday)",
   "2019;2;29;Mami;var(--bday)",
   "2019;6;31;me;var(--bday)",
   "2019;7;22;Roman;var(--bday)",
   "2019;8;3;Monika;var(--bday)",
   "2019;8;23;Paps;var(--bday)",
   "2019;9;20;Emma;var(--bday)",
-
-  "2018;11;6;6/12/18 ♡;var(--special)",
-  "2019;11;6;6/12/18 ♡;var(--special)",
 
   "2019;1;2;3. Teil A-Liga;var(--normal)",
   "2019;1;3;3. Teil A-Liga;var(--normal)",
@@ -26,4 +24,7 @@ var source = [
   "2019;2;15;SM A-Liga;var(--normal)",
   "2019;2;16;SM A-Liga;var(--normal)",
   "2019;2;17;SM A-Liga;var(--normal)",
+
+  "2018;11;6;6/12/18 ♡;var(--special)",
+  "2019;11;6;6/12/18 ♡;var(--special)",
 ]
