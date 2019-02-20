@@ -10,6 +10,7 @@ var source = [
   "2019;8;3;Monika;var(--bday)",
   "2019;8;23;Paps;var(--bday)",
   "2019;9;20;Emma;var(--bday)",
+  "2019;8;6;Dennis;var(--bday)",
 
   "2019;1;2;3. Teil A-Liga;var(--normal)",
   "2019;1;3;3. Teil A-Liga;var(--normal)",
