@@ -1,7 +1,3 @@
-// WICHTIG!
-// Monat -= 1
-// Januar = 0; Februar = 1; etc
-
 var source = [
   "2019;1;24;Noe;var(--bday)",
   "2019;2;29;Mami;var(--bday)",
@@ -17,8 +13,10 @@ var source = [
   "2019;1;14;Valentine's Day Lausanne;var(--normal)",
   "2019;1;16;At Emma's Place;var(--normal)",
   "2019;1;17;At Emma's Place;var(--normal)",
+  "2019;1;26;Training Küssnacht;var(--normal)",
+  "2019;1;27;Training Küssnacht;var(--normal)",
   "2019;2;2;Help out C-SM Bern;var(--normal)",
-  "2019;2;3;Training Küsnacht;var(--normal)",
+  "2019;2;3;Training Küssnacht;var(--normal)",
   "2019;2;8;SM A-Liga;var(--normal)",
   "2019;2;9;SM A-Liga;var(--normal)",
   "2019;2;10;SM A-Liga;var(--normal)",
