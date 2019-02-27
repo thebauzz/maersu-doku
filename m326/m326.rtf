@@ -1,0 +1,93 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww18140\viewh8240\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Softwareprobleme Ende 1960er\
+\
+Problem 1:\
+	Niedrige Produktivit\'e4t der Programmierer\
+\
+Problem 2:\
+	Unterhalt - Kunden m\'f6chten Programm optimieren / anpassen > Programmierer ist mit code \'fcberfordert\
+\
+Problem 3:\
+	Unterschiedliches Vorgehen - Verschiedene Sprachen f\'fcr Analyse & Entwurf\
+\
+Problem 4:\
+	Wo ist oben? - Kein klarer Programmstart ; Wenn etwas angepasst wird - habe ich \'fcberall alles abge\'e4ndert?\
+\
+Problem 5:\
+	offen oder geschlossen?\
+	Zusammengeh\'f6riger Code wird zu Modulen zusammengefasst.\
+		Vorteil: Lokalisierte, bessere Wartbarkeit, dadurch besser wiederverwendbar\
+		Nachteil: Bei Wiederverwendung passt es dann doch nicht ganz, also doch ab\'e4ndern und anpassen\
+\
+L\'f6sung: Objektorientierte Programmierung\
+\
+\
+Proz: Daten und Operationen; Daten sind statisch, Operationen transient\
+OO: Zus\'e4tzliche Abstraktionsebene, Objekte kapseln Daten und Verhalten, Klassen fassen gleiche Objekttypen zusammen, Erweiterbarkeit durch Vererbung\
+(Anstelle von vielen switch-cases f\'fcr das selbe, nur noch eine Einzige - da, wo die Daten verarbeitet werden (Nur noch an einem Ort anstelle von vielen))\
+\
+Grosser Vorteil OO: Die Analyse, Design, Entwurf und Programmierung an sich haben immer die selbe Sprachen - keine Strukturbr\'fcche mehr, durchg\'e4ngigkeit zwischen Analyse und Entwurf\
+\
+\
+UML - Unified Modelling Language - grafische Modelliersprache - heutiger Standard\
+\
+OOA/OOD (Objectoriented Analysis / Objectoriented Design)\
+\
+Ergebnis des OOA\
+Pflichtenheft - das Einstiegsdokument (Was der Kunde eigentlich will)\
+OOA-Modell - das Fachkonzept (Verst\'e4ndnis - was will der Kunde & nicht mit welcher Sprache das Programm geschrieben wird)\
+Prototyp der Benutzeroberfl\'e4che - Visualisierung des Programmes (Hey Kunde - ist es das, was du willst?)\
+\
+\
+PFLICHTENHEFT : Pr\'e4sentation anschauen\
+\
+Analyse-Modell:\
+Basis-Konzept - Was ist ein Objekt, Klasse, Operation & Attribut?\
+Statisches Konzept - Nicht ver\'e4nderbare Aspekte, grundlegende Struktur (Assoziation, Vererbung, Paket)\
+Dynamisches Konzept - Verhalten des Systems im Zeitverlauf, Abl\'e4ufe, Kommunikationsfluss (Anwendungsfall, Szenario, Botschaft, Zustandsautomat)\
+\
+Use Case\
+Sequenz von Aktionen, welche das System in Interaktion mit Akteuren ausf\'fchrt. Er wird durch ein bestimmtes Ereignis ausgel\'f6st und ausgef\'fchrt, um ein Ziel zu erreichen.\
+Er ist als Black-Box zu verstehen; er beschreibt das extern wahrnehmbare Verhalten des Systems\
+BEISPIEL: Sie wollen ein Word-Dokument ausdrucken. Ein Ziel - und Sie m\'fcssen mit dem System interagieren (Word starten, Datei \'f6ffnen, 1-Seitig oder 2-Seitig, Drucker \
+ausw\'e4hlen, ausdrucken; fertig.\
+\
+Use Case Beschreiben\
+Semiformal oder informal (umgangsprachlich) beschrieben,\
+Beschreibung als Folge von einzelnen Aktionen;\
+Aktionen f\'fcr bessere \'dcbersicht durchnummeriert;\
+Unterscheidung zwischen Standardfall (Zone w\'e4hlen, Bargeld rein, Ticket raus), Erweiterungen (Zone w\'e4hlen, Strecke w\'e4hlen, Abfahrt und Gleis wird angezeigt), Alternative Abl\'e4ufe (Zone w\'e4hlen, Kartenzahlung w\'e4hlen, Karte rein, PIN, Karte raus, Ticket raus);\
+Beschreibung stets unabh\'e4ngig von der Benutzeroberfl\'e4che;\
+\
+Use Case Template\
+Anwendungsfall			< Name des Anwendungfalls >	Ticket kaufen\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\tx7301\tx7690\tx8014\tx8379\tx8745\pardirnatural\partightenfactor0
+\cf0 Ziel					< Zielsetzung beterfolgreicher Ausf\'fchrung des Falles >	Kunde kauft ein Ticket\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Kategorie				< prim\'e4r (notwendig, h\'e4ufig ben\'f6tigt - Ticketverkauf), sekund\'e4r (notwendig, selten ben\'f6tigt - Nachf\'fcllen der Belegrolle druch Mitarbeiter), 					optional (n\'fctzlich, aber nicht notwendig - Aufladen des Handyguthabens w\'e4re ein nice-to-have) >\
+Vorbedingung			< erwarteter Zustand, bevor der Anwendungsfall beginnt > Eine Bestellung muss da sein, um diese bearbeiten zu k\'f6nnen\
+Nachbedingung Erfolg	< > Geld ist einkassiert, Ticket wurde ausgegeben\
+Nachbed. Fehlschlag		< > Paper Jam - Der Drucker verklemmt, kriegt das Ticket nicht mehr raus - Geld muss wieder ausgegeben werden !\
+Akteure				< Alle Akteure, die den Anwendungsfall ausf\'fchren > \
+Ausl\'f6sendes Ereignis	< > Der Kunde w\'e4hlt eine Zone\
+Beschreibung			< Hier wird der Standardfall beschrieben (Aus Sicht des Benutzers) > \
+					Schritt 1: Benutzer w\'e4hlt Zone\
+					Schritt 2: Automat zeigt Preis an\
+					Schritt 3: Benutzer gibt das Geld\
+					\'85..\
+Erweiterungen 			< Erweiterung des Funktionsumfangs der ersten Aktion  > Schritt 1a; Schritt 1b; Schritt 1c (Beispiel: Kunde will mit Kreditkarte bezahlen)\
+Alternativen			< Alternative Ausf\'fchrung der ersten Aktion > Schritt 1a; Schritt 3a; Schritt 3b;\
+\
+Aus einem Use Case Template kann direkt ein Test Case gemacht werden\
+\
+Akteur = keine Person, sondern eine Rolle (mehrere Personen wollen ein Getr\'e4nk kaufen, nicht nur eine) - Symbol = Strichm\'e4nnchen\
+Akteure stehen immer ausserhalb eines Systems\
+\
+\
+}
