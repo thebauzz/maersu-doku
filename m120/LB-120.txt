@@ -1,7 +1,0 @@
-ISO-Grundsätze
-
-Scenebuilder ein korrektes Dialogfenster erstellen (Virtuelle Linien)
-
-Testing
-
-Programmieren wie Übungen
