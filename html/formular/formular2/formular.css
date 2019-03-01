@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
-body,
-html {
+* {
   margin: 0;
   padding: 0;
+}
+body,
+html {
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -15,7 +17,7 @@ form {
   margin: 0 auto;
 }
 
-label {
+.form--label {
   display: block;
   position: relative;
   left: 5px;
@@ -48,8 +50,64 @@ input[type="email"]:focus {
 
 input[name="vname"]:focus ~ label[for="vname"],
 input[name="nname"]:focus ~ label[for="nname"],
-input[name="email"]:focus ~ label[for="email"] {
+input[name="email"]:focus ~ label[for="email"],
+input[name="vname"]:not(:placeholder-shown) ~ label[for="vname"],
+input[name="nname"]:not(:placeholder-shown) ~ label[for="nname"],
+input[name="email"]:not(:placeholder-shown) ~ label[for="email"] {
+
   color: #000000;
   transform: scale(0.9)
              translate(-24px, -28px);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox--text {
+  display: inline;
+  position: relative;
+  top: -40px;
+  left: 25px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.checkbox {
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-top: 2px solid #000000;
+  border-radius: 0 0 5px 5px;
+  margin: 0 0 20px 0;
+}
+
+.span1,
+.span2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 0 0 5px 5px!important;
+  transition: 0.4s;
+  background: #00000020;
+}
+.span1::after,
+.span2::after {
+	content: "";
+	position: absolute;
+  width: 100%;
+	height: 0;
+	top: 0;
+	left: 0;
+  transition: 0.2s;
+  border-radius: 0 0 5px 5px;
+	background: #cc2020;
+}
+.cbox1:checked + .span1::after,
+.cbox2:checked + .span2::after {
+  height: 100%;
 }

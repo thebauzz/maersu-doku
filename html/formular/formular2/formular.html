@@ -11,14 +11,26 @@
     <legend>Kontaktformular</legend>
     <form action="phpfile" method="get">
 
-      <input name="vname" type="text" required autofocus>
-      <label for="vname">Vorname</label><br>
+      <input name="vname" type="text" placeholder="&nbsp;" required autofocus>
+      <label class="form--label" for="vname">Vorname</label><br>
 
-      <input name="nname" type="text" required>
-      <label for="nname">Nachname</label><br>
+      <input name="nname" type="text" placeholder="&nbsp;" required>
+      <label class="form--label" for="nname">Nachname</label><br>
 
-      <input name="email" type="email" required>
-      <label for="email">E-Mail</label><br>
+      <input name="email" type="email" placeholder="&nbsp;" required>
+      <label class="form--label" for="email">E-Mail</label><br>
+
+      <label class="checkbox">
+        <input name="cbox1" class="cbox1" id="cbox1" type="checkbox">
+        <span class="span1"></span>
+      </label>
+      <label for="cbox1" class="checkbox--text">Checkbox 1</label>
+
+      <label class="checkbox">
+        <input name="cbox2" class="cbox2" id="cbox2" type="checkbox">
+        <span class="span2"></span>
+      </label>
+      <label for="cbox2" class="checkbox--text">Checkbox 2</label>
 
     </form>
   </fieldset>
