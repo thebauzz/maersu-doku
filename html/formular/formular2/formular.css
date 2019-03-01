@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+fieldset {
+  margin: 100px;
+}
+
+form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  position: relative;
+  left: 5px;
+  top: -23px;
+  color: #999999;
+  transition: all 0.2s;
+  z-index: -5;
+}
+
+input:first-child {
+  margin-top: 40px;
+}
+
+input[type="text"],
+input[type="email"] {
+  min-width: 50%;
+  padding: 3px 3px;
+  border: 1px solid #000000;
+  border-top: 3px solid #000000;
+  border-radius: 0 0 5px 5px;
+  font-size: 17px;
+  background: #00000009;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-top: 3px solid #cc2020;
+  outline: none;
+}
+
+input[name="vname"]:focus ~ label[for="vname"],
+input[name="nname"]:focus ~ label[for="nname"],
+input[name="email"]:focus ~ label[for="email"] {
+  color: #000000;
+  transform: scale(0.9)
+             translate(-24px, -28px);
+}
