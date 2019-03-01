@@ -1,16 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
-* {
-  margin: 0;
-  padding: 0;
-}
-body,
-html {
-  font-family: "Ubuntu", sans-serif;
-}
-
-fieldset {
-  margin: 100px;
-}
+* { margin:0; padding:0; }
+body, html { font-family:"Ubuntu",sans-serif; }
+legend { margin-left: 20px; }
+fieldset { margin: 100px; }
+input:first-child { margin-top: 40px; }
 
 form {
   width: 60%;
@@ -27,13 +20,9 @@ form {
   z-index: -5;
 }
 
-input:first-child {
-  margin-top: 40px;
-}
-
 input[type="text"],
 input[type="email"] {
-  min-width: 50%;
+  width: 250px;
   padding: 3px 3px;
   border: none;
   border-top: 3px solid #000000;
@@ -54,10 +43,8 @@ input[name="email"]:focus ~ label[for="email"],
 input[name="vname"]:not(:placeholder-shown) ~ label[for="vname"],
 input[name="nname"]:not(:placeholder-shown) ~ label[for="nname"],
 input[name="email"]:not(:placeholder-shown) ~ label[for="email"] {
-
   color: #000000;
-  transform: scale(0.9)
-             translate(-24px, -28px);
+  transform: scale(0.9) translate(-24px, -28px);
 }
 
 input[type="checkbox"] {
@@ -67,7 +54,7 @@ input[type="checkbox"] {
 .checkbox--text {
   display: inline;
   position: relative;
-  top: -40px;
+  top: -20px;
   left: 25px;
   user-select: none;
   -moz-user-select: none;
@@ -82,7 +69,6 @@ input[type="checkbox"] {
   border: none;
   border-top: 2px solid #000000;
   border-radius: 0 0 5px 5px;
-  margin: 0 0 20px 0;
 }
 
 .span1,
@@ -92,7 +78,6 @@ input[type="checkbox"] {
   height: 100%;
   cursor: pointer;
   border-radius: 0 0 5px 5px!important;
-  transition: 0.4s;
   background: #00000020;
 }
 .span1::after,
