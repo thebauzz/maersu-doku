@@ -44,7 +44,7 @@ input[name="vname"]:not(:placeholder-shown) ~ label[for="vname"],
 input[name="nname"]:not(:placeholder-shown) ~ label[for="nname"],
 input[name="email"]:not(:placeholder-shown) ~ label[for="email"] {
   color: #000000;
-  transform: scale(0.9) translate(-24px, -28px);
+  transform: scale(0.9) translate(-45px, -28px);
 }
 
 input[type="checkbox"] {
