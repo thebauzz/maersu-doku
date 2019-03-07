@@ -87,7 +87,7 @@
       <div class="main--preview">
         <h2>Nächstes Turnier </h2>
         <p>08. - 10. März 2019<i>&nbsp;//&nbsp;</i>1. Teil Schweizermeisterschaft in Arlesheim</p>
-        <!-- <a href="docs/Schedule-StGallen.pdf" target="_blank">Spielplan</a><br> -->
+        <a href="docs/Schedule-Arlesheim.pdf" target="_blank">Spielplan</a><br>
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="schedule.php">zum Saisonplan</a>
       </div>
@@ -114,7 +114,7 @@
       <div class="main--preview">
         <h2>Prochain Tournois </h2>
         <p>08 - 10 mars 2019<i>&nbsp;//&nbsp;</i>1er tour final à Arlesheim</p>
-        <!-- <a href="docs/Schedule-StGallen.pdf" target="_blank">Plan des jeux</a><br> -->
+        <a href="docs/Schedule-Arlesheim.pdf" target="_blank">Plan des jeux</a><br>
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="schedule.php">au programme de la saison</a>
       </div>
