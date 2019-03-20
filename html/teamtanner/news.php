@@ -88,6 +88,97 @@
 
         <div class="news--content">
           <hr>
+          <h3>17. März 2019</h3>
+          <p>Silber 🥈 <br>
+             Leider verlieren wir den Final knapp gegen Luzern, jedoch sind wir stolz auf unsere Leistung von diesem Wochenende.<br>
+             Vielen Dank an swisscurling für die ganze Organisation, sowie allen Sponsoren und Familien für die enorme Unterstützung.<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-42.jpg" alt="News 42" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>16. März 2019</h3>
+          <p>Den Halbfinal gewinnen wir nach einem spannenden Spiel gegen Biel-St.Gallen. Das bedeutet für uns den Einzug ins Finale, welcher morgen um 10:30 gegen Luzern stattfindet.<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-41.jpg" alt="News 41" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>16. März 2019</h3>
+          <p>Wir gewinnen den Match gegen Interlaken heute Morgen. Somit sind wir für den Halbfinal um 19:00 gegen Biel-St. Gallen qualifiziert.<br>
+             <a href="https://www.youtube.com/channel/UCEbzd93dc1hH-YcL2VBB9UQ" target="_blank">Dieser Match wird live übertragen.</a><br>
+             #LOMG 💪🏼
+          </p>
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>15. März 2019</h3>
+          <p>Durch unsere zwei Siege von heute gegen Baden-Limmatal & Bern qualifizieren wir uns für die Playoffs.<br>
+             Morgen spielen wir um 12:00 gegen Interlaken!<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-40.jpg" alt="News 40" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>11. März 2019</h3>
+          <p>Mit viel Pech verlieren wir leider den fünften und letzten Match gegen Biel-Solothurn.<br>
+             Next up: zweites Schweizermeisterschaftswochenende 15.-17.3.<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-39.jpg" alt="News 39" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>9. März 2019</h3>
+          <p>Den Match gegen Interlaken gestern morgen konnten wir klar für uns entscheiden leider verlieren wir das sehr ausgeglichene Spiel gegen Biel-St.Gallen.<br>
+             Um 12:00 spielen wir gegen Biel-Solothurn. Dieser Match wird live übertragen.<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-38.jpg" alt="News 38" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>9. März 2019</h3>
+          <p>Nach einer Niederlage im Zusatzend gegen Luzern, konnten wir den zweiten Match gegen Wetzikon für uns entscheiden. Wir sind bereit für die heutigen Spiele.<br>
+             Um 12:00 spielen wir gegen Interlaken, dieser Match wird live übertragen & um 20:00 gegen Biel-St. Gallen.<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-37.jpg" alt="News 37" class="news--img">
+        </div>
+
+        <div class="news--content">
+          <hr>
+          <h3>8. März 2019</h3>
+          <p>Heute beginnen wir die Schweizermeisterschaft in Arlesheim. Heute spielen wir um 11:30 gegen Luzern und um 20:00 gegen Wetzikon. Ihr könnt unsere Resultate live auf der Seite von swisscurling verfolgen.<br>
+             Die gefilmten Matchs findet Ihr <a target="_blank" href="https://www.youtube.com/channel/UCEbzd93dc1hH-YcL2VBB9UQ">hier</a>.
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-36.jpg" alt="News 36" class="news--img">
+        </div>
+
+
+        <div class="news--content">
+          <hr>
+          <h3>17. Februar 2019</h3>
+          <p>Heute absolvierten wir einen intensiven und lehrreichen Trainingstag in Gstaad.<br>
+             Next up: Schweizermeisterschaft 8.-10. März in Arlesheim<br>
+             #LOMG 💪🏼
+          </p>
+          <img src="img/news/news-35.jpg" alt="News 35" class="news--img">
+        </div>
+
+
+        <div class="news--content">
+          <hr>
           <h3>3. Februar 2019</h3>
           <p>Wir gewinnen den letzten Match 8:2 gegen Bern 2. Somit sind wir für die Schweizermeisterschaft im März qualifiziert!<br>
              #LOMG 💪🏼
@@ -464,6 +555,96 @@
       </div>
 '; break; case 1: echo '
       <div class="main--news">
+
+      <div class="news--content">
+        <hr>
+        <h3>17 mars 2019</h3>
+        <p>Silver! 🥈 <br>
+           Nous avons malheureusement perdu la finale contre Lucerne mais sommes fières de notre performance ce week-end! <br>
+           Nous remercions nos sponsors et nos familles ainsi que le comité d’organisation<br>
+           #LOMG 💪🏼
+        </p>
+        <img src="img/news/news-42.jpg" alt="News 42" class="news--img">
+      </div>
+
+      <div class="news--content">
+        <hr>
+        <h3>16 mars 2019</h3>
+        <p>Qualifiées pour la finale !!! <br>
+           Après une victoire contre Bienne-St.Galle, nous jouerons demain à 10:30 contre Luzern la finale!<br>
+           #LOMG 💪🏼
+        </p>
+        <img src="img/news/news-41.jpg" alt="News 41" class="news--img">
+      </div>
+
+      <div class="news--content">
+        <hr>
+        <h3>16 mars 2019</h3>
+        <p>Nous avons gagné notre match contre Interlaken! Nous sommes donc qualifiées pour la demi finale ce soir à 19:00 contre Bienne-St.Gall, <a href="https://www.youtube.com/channel/UCEbzd93dc1hH-YcL2VBB9UQ" target="_blank">et ce match sera filmé</a>!<br>
+           #LOMG 💪🏼
+        </p>
+      </div>
+
+      <div class="news--content">
+        <hr>
+        <h3>15 mars 2019</h3>
+        <p>Avec deux victoires aujourd’hui contre Baden-Limattal et Bern nous sommes qualifiées pour les play-offs!<br>
+           Prochain match demain à 12:00 contre Interlaken!<br>
+           #LOMG 💪🏼
+        </p>
+        <img src="img/news/news-40.jpg" alt="News 40" class="news--img">
+      </div>
+
+      <div class="news--content">
+        <hr>
+        <h3>11 mars 2019</h3>
+        <p>Avec beaucoup de malchance nous avons perdu notre dernier match contre Bienne Soleure. <br>
+           Next up: deuxième week-end de championnat suisse 15-17.03<br>
+           #LOMG 💪🏼
+        </p>
+        <img src="img/news/news-39.jpg" alt="News 39" class="news--img">
+      </div>
+
+      <div class="news--content">
+        <hr>
+        <h3>9 mars 2019</h3>
+        <p>Nous avons gagné notre premier match ce matin contre Interlaken mais malheureusement perdu le deuxième contre Bienne-St. Galle.<br>
+           Demain dernier match du week-end à 12:00 contre Bienne-Soleure (match filmé)<br>
+           #LOMG 💪🏼
+        </p>
+        <img src="img/news/news-38.jpg" alt="News 38" class="news--img">
+      </div>
+
+      <div class="news--content">
+        <hr>
+        <h3>9 mars 2019</h3>
+        <p>Après une défaite au end supplémentaire contre Lucerne et une victoire contre Wetzikon, nous sommes d’attaque pour nos deux matchs aujourd’hui.<br>
+           À 12:00 contre Interlaken (match filmé) et 20:00 contre Bienne-St.Galle.<br>
+           #LOMG 💪🏼
+        </p>
+        <img src="img/news/news-37.jpg" alt="News 37" class="news--img">
+      </div>
+
+      <div class="news--content">
+        <hr>
+        <h3>8 mars 2019</h3>
+        <p>Nous commençons le championnat suisse ce matin à 11:30 contre Luzern et 20:00 ce soir contre Wetzikon. Vous pouvez suivre les résultats sur le site de swisscurling.<br>
+           Les matchs filmés ce trouveront <a href="https://www.youtube.com/channel/UCEbzd93dc1hH-YcL2VBB9UQ" target="_blank">ici</a>.<br>
+           #LOMG 💪🏼
+        </p>
+        <img src="img/news/news-36.jpg" alt="News 36" class="news--img">
+      </div>
+
+
+      <div class="news--content">
+        <hr>
+        <h3>17 février 2019</h3>
+        <p>Aujourd’hui journée d’entraînement intensive à Gstaad!<br>
+           Next up: championnats suisses à Bâle 8.-10. Mars<br>
+           #LOMG 💪🏼
+        </p>
+        <img src="img/news/news-35.jpg" alt="News 35" class="news--img">
+      </div>
 
         <div class="news--content">
           <hr>
@@ -842,4 +1023,3 @@
     <div style="height: 200px;"></div>
   </body>
 </html>
- 
