@@ -1,0 +1,95 @@
+BLOCK 01
+**********************************
+Sicherheit ist kein Zustand sondern ein Prozess			//Wichtig
+
+Vorstellung:
+*************
+
+Gabriel:
+********
+Gabriel Schafflützel
+17 Jahre
+
+Hobbies:
+Bücher Lesen
+
+Praktikum:
+Balzano
+
+
+Noé:
+********
+Noé Lüthold
+17 Jahre
+
+Hobbies:
+Karate
+
+Praktikum:
+Balzano
+
+
+M-183:
+********
+Buch:
+2010
+
+HANOKS:
+relevante stichwörter z.b sicherheitslücken logs verschlüsselung
+audit-trails?
+erwartung: wichtig 
+
+CERT
+CSIRT
+Phishing
+
+********
+Kurzer Phishing test von google gemacht
+
+
+
+
+
+
+
+BLOCK 02
+**********************************
+Bedrohung --> Schwachstelle --> Gefärdung --> Ressource
+Keine Kriminalität = keine Sicherheit (bzw. kein bedürfniss schwachstellen zu beheben)
+
+Eintretungswahrscheinlichkeit * Schadensausmasse
+
+z.B. 	meteoreinschlag eintretungswahrscheinlichkeit = minimal (z.B. 0.1%)
+	schadensausmasse = maximal (100%)
+	0.1 * 100 = 10 = zu kleines risiko
+
+Markus Lanz sendung
+********
+Linus Neumann
+********
+
+REFERATE MIT DEMOS
+********
+DVWA Webapp - DAMM VULNERABLE WEB APP
+	(In PHP/MYSQL geamch, wird benutzt um legal zu hacken ausserdem hilft es webentwickler der prozess des sichern einer webapplikation.)
+Regular expressions
+*SQL Injection
+*Cross Site Scripting (XSS)
+*CSRF - Cross-Site-Request-Forgery
+Defensives Programmieren
+die Kali Linux Plattform
+	(das OWASP-Projekt)
+	(HZ1: MELANI, KOBIK, BSI, SWITCH-CERT)
+
+
+
+
+
+
+
+BLOCK 03
+**********************************
+php:
+	trim
+	htmlspecialchars
+	stripslashes
