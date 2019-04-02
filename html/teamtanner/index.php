@@ -84,6 +84,7 @@
       </div>
 
 <?php switch($lang) { case 0: echo '
+      <!--
       <div class="main--preview">
         <h2>Nächstes Turnier </h2>
         <p>08. - 10. März 2019<i>&nbsp;//&nbsp;</i>1. Teil Schweizermeisterschaft in Arlesheim</p>
@@ -91,16 +92,18 @@
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="schedule.php">zum Saisonplan</a>
       </div>
+      -->
 
       <div class="main--preview">
         <h2>Neueste Nachrichten </h2>
-        <p>Wir gewinnen den letzten Match 8:2 gegen Bern 2.<br>
-           Somit sind wir für die Schweizermeisterschaft im März qualifiziert.<br>
+        <p>Silber 🥈 <br>
+           Leider verlieren wir den Final knapp gegen Luzern, jedoch sind wir stolz auf unsere Leistung von diesem Wochenende.<br>
+           Vielen Dank an swisscurling für die ganze Organisation, sowie allen Sponsoren und Familien für die enorme Unterstützung.<br>
            #LOMG 💪🏼
         </p>
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="news.php">weitere Neuigkeiten</a>
-        <img src="img/news/news-34.jpg" alt="News 34" />
+        <img src="img/news/news-42.jpg" alt="News 42" />
       </div>
 
       <div class="main--preview">
@@ -111,6 +114,7 @@
         <img src="img/team.jpg" alt="Team LOMG" />
       </div>
 '; break; case 1: echo '
+      <!--
       <div class="main--preview">
         <h2>Prochain Tournois </h2>
         <p>08 - 10 mars 2019<i>&nbsp;//&nbsp;</i>1er tour final à Arlesheim</p>
@@ -118,16 +122,18 @@
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="schedule.php">au programme de la saison</a>
       </div>
+      -->
 
       <div class="main--preview">
         <h2>Dernières nouvelles </h2>
-        <p>Nous avons gagné notre dernier match du week-end 8-2 contre Bern 2!<br>
-           Nous sommes donc qualifiées pour les championnats suisses en Mars!<br>
+        <p>Silver! 🥈 <br>
+           Nous avons malheureusement perdu la finale contre Lucerne mais sommes fières de notre performance ce week-end! <br>
+           Nous remercions nos sponsors et nos familles ainsi que le comité d’organisation<br>
            #LOMG 💪🏼
         </p>
         <p class="preview--inbetween-space">&nbsp;</p>
         <a href="news.php">plus de nouvelles</a>
-        <img src="img/news/news-34.jpg" alt="News 34" />
+        <img src="img/news/news-42.jpg" alt="News 42">
       </div>
 
       <div class="main--preview">
