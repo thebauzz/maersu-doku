@@ -93,3 +93,28 @@ php:
 	trim
 	htmlspecialchars
 	stripslashes
+
+Präsentationen vorbereitung 
+Nemo (DVWA)
+Märsu (Kali Linux)
+
+
+
+BLOCK 04
+**********************************
+Präsentation:
+	-DVWA
+
+DVWA anschauen
+
+Präsentation:
+	-SQL-Injections
+	-CROSS SITE SCRIPTING (XSS)
+	-CROSS SITE REQUEST FORGERY (CSRF)
+
+XSS Aufgaben von Max
+
+Präsentation:
+	-Kali Linux + Beispiel
+	-REGEX
+
