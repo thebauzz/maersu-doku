@@ -7,19 +7,19 @@ Vorstellung:
 
 Gabriel:
 ********
-Gabriel Schaffl¸tzel
+Gabriel Schafflützel
 17 Jahre
 
 Hobbies:
-B¸cher Lesen
+Bücher Lesen
 
 Praktikum:
 Balzano
 
 
-NoÈ:
+Noé:
 ********
-NoÈ L¸thold
+Noé Lüthold
 17 Jahre
 
 Hobbies:
@@ -35,7 +35,7 @@ Buch:
 2010
 
 HANOKS:
-relevante stichwˆrter z.b sicherheitsl¸cken logs verschl¸sselung
+relevante stichwörter z.b sicherheitslücken logs verschlüsselung
 audit-trails?
 erwartung: wichtig 
 
@@ -54,8 +54,8 @@ Kurzer Phishing test von google gemacht
 
 BLOCK 02
 **********************************
-Bedrohung --> Schwachstelle --> Gef‰rdung --> Ressource
-Keine Kriminalit‰t = keine Sicherheit (bzw. kein bed¸rfniss schwachstellen zu beheben)
+Bedrohung --> Schwachstelle --> Gefärdung --> Ressource
+Keine Kriminalität = keine Sicherheit (bzw. kein bedürfniss schwachstellen zu beheben)
 
 Eintretungswahrscheinlichkeit * Schadensausmasse
 
@@ -94,27 +94,27 @@ php:
 	htmlspecialchars
 	stripslashes
 
-Pr‰sentationen vorbereitung 
+Präsentationen vorbereitung 
 Nemo (DVWA)
-M‰rsu (Kali Linux)
+Märsu (Kali Linux)
 
 
 
 BLOCK 04
 **********************************
-Pr‰sentation:
+Präsentation:
 	-DVWA
 
 DVWA anschauen
 
-Pr‰sentation:
+Präsentation:
 	-SQL-Injections
 	-CROSS SITE SCRIPTING (XSS)
 	-CROSS SITE REQUEST FORGERY (CSRF)
 
 XSS Aufgaben von Max
 
-Pr‰sentation:
+Präsentation:
 	-Kali Linux + Beispiel
 	-REGEX
 
