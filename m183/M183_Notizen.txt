@@ -118,3 +118,38 @@ Präsentation:
 	-Kali Linux + Beispiel
 	-REGEX
 
+
+
+BLOCK 04
+**********************************
+PDO
+Repetition formular umgehen goldboden.ch/m183/case1/
+Risikomanagement
+
+Defensives programmieren:
+	- Alle Layer der anwendung müssen betrachtet werden - es gibt kein vertrauen
+	- Positives Sicherheitsmodell verwenden (Whitelisting)
+	- Nur mit Least Privilege arbeiten
+	- Verhindere "security by obscurity" (Offenes Design verwenden) (z.B. Zertifikat) (keine eigenen sachen verwenden, erweckt neugierigkeit)
+	- Einfache, überschaubare Sicherheitsmechanismen verwenden
+
+	- Unerlaubte Zugriffe / Handlungen aufzeichen
+	- Vertraue nicht der Infrastruktur
+	- Vertraue nicht den Services
+	- "All input is evil"
+
+Kali Linux
+
+Zwei Faktoren  Authentifizierung
+Faktoren:
+	Besitz: Hardware-Token, Bankkarte, Schlüssel
+
+	Wissen: kennwort, einmalkennwort, Persönliche identifikationsnummer (PIN), Transaktionsnummer (TAN)
+
+	Sein (Inherenz): Fingerabdruck, Muster eine Regenbogenhaut (Iris Erkennung), menschliche Stimme
+
+OWASP (Open Webapp security Project)
+	Achtung: Open? Wer steckt dahinter?
+	OWASP top 10
+	OWASP Cheat Sheet
+	OWASP WebGoat Project
