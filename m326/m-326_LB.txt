@@ -1,0 +1,39 @@
+90min
+schriftlich nur papier
+hilfsmittel: mj
+
+ausgangslage für alle aufgaben
+
+usecase diegram
+
+usecase beschreiben
+
+aufgrund von usecase testfälle herleiten
+
+crc karten auswerten und klassendiagram davon erstellen
+
+sequenzdiagramm von code herauslesen und erstellen
+
+java code implementieren, keine funktionalität, nur gerüst
+
+
+CRC Karten:
+crc = Class-Responsibility-Collaboration-Karten
+
+Das Grundprinzip besteht darin für jede Klasse eine Karteikarte zu erstellen auf welcher deren Eigenschaften aufgeführt wird.
+Für CRC Karten gibt es keine gültige allgemeine Notation jedoch orientiert man sich an den ersten erstellten karten welche aus drei bereichen bestanden:
+	zu oberst steht der name der klasse
+	unter dem Klassen namen gibt es zwei spalten auf der linken wird das Verantwortung gebiet der Klasse aufgetragen (beschreibung der klasse und methoden)
+	in der rechten spalte wird aufgefüht mit welchen anderen Klassen diese kommuniziert
+ ___________________________________________________________
+|       Name der Klasse       |         Superklasse         |
+|_____________________________|_____________________________|
+|  Verantwortungsgebiet       |                             |
+|  Beschreibung der Methoden  |                             |
+|                             |                             |  
+|  Uebersichtliche            |                             |
+|  Beschreibung               |                             |
+|  der Methodenaufgaben       |                             |
+|                             |                             |
+|                             |                             |
+|_____________________________|_____________________________|
