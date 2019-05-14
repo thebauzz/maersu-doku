@@ -87,7 +87,7 @@ die Kali Linux Plattform
 
 
 
-BLOCK 03
+BLOCK 04
 **********************************
 php:
 	trim
@@ -100,7 +100,7 @@ Märsu (Kali Linux)
 
 
 
-BLOCK 04
+BLOCK 05
 **********************************
 Präsentation:
 	-DVWA
@@ -120,7 +120,7 @@ Präsentation:
 
 
 
-BLOCK 04
+BLOCK 06
 **********************************
 PDO
 Repetition formular umgehen goldboden.ch/m183/case1/
@@ -153,3 +153,21 @@ OWASP (Open Webapp security Project)
 	OWASP top 10
 	OWASP Cheat Sheet
 	OWASP WebGoat Project
+
+ZP 1
+
+
+BLOCK 07
+**********************************
+
+Aufgabe 1.1 von Block 07:
+1. CMS (Content-Management-System)
+	Rollen verteilung (min 3)
+2. Formular
+3. Injection (villicht)
+4. Logging
+
+
+BLOCK 08
+**********************************
+
