@@ -62,7 +62,7 @@ Eintretungswahrscheinlichkeit * Schadensausmasse
 z.B. 	meteoreinschlag eintretungswahrscheinlichkeit = minimal (z.B. 0.1%)
 	schadensausmasse = maximal (100%)
 	0.1 * 100 = 10 = zu kleines risiko
-
+	
 Markus Lanz sendung
 ********
 Linus Neumann
@@ -84,7 +84,9 @@ die Kali Linux Plattform
 
 
 
-
+BLOCK 03
+**********************************
+ERROR: 404 "Block 03" NOT FOUND
 
 
 BLOCK 04
