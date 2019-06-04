@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
+* { margin:0; padding:0; }
+body, html { font-family:"Ubuntu",sans-serif; }
+legend { margin-left: 20px; }
+fieldset { margin: 100px; }
+input:first-child { margin-top: 40px; }
+
+#form {
+  width: 300px;
+  margin-left: 100px;
+}
+
+.form--label {
+  display: block;
+  position: relative;
+  left: 5px;
+  top: -23px;
+  color: #999999;
+  transition: all 0.2s;
+  z-index: -5;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 250px;
+  padding: 3px 3px;
+  border: none;
+  border-top: 3px solid #000000;
+  border-radius: 0 0 5px 5px;
+  font-size: 17px;
+  background: #00000009;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-top: 3px solid #cc2020;
+  outline: none;
+}
+
+input[name="username"]:focus ~ label[for="username"],
+input[name="password"]:focus ~ label[for="password"],
+input[name="password"]:focus ~ label[for="password"],
+input[name="username"]:not(:placeholder-shown) ~ label[for="username"],
+input[name="password"]:not(:placeholder-shown) ~ label[for="password"],
+input[name="password"]:not(:placeholder-shown) ~ label[for="password"] {
+  color: #000000;
+  transform: scale(0.9) translate(-20px, -28px);
+}
+
+.span1,
+.span2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 0 0 5px 5px!important;
+  background: #00000020;
+}
+.span1::after,
+.span2::after {
+	content: "";
+	position: absolute;
+  width: 100%;
+	height: 0;
+	top: 0;
+	left: 0;
+  transition: 0.2s;
+  border-radius: 0 0 5px 5px;
+	background: #cc2020;
+}
+
+#login-button {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  border: 1px solid #000000;
+  color: #000000;
+  text-decoration: none;
+  user-select: none;
+  transition-duration: 0.4s;
+  border: none;
+  border-bottom: 2px solid #cc2020;
+	background: none;
+	position: relative;
+  color: #cc2020;
+}
+#login-button:after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	transition: all 0.2s;
+}
+#login-button:after {
+	width: 100%;
+	height: 0;
+	bottom: 0;
+	left: 0;
+	background: #cc2020;
+}
+#login-button:hover,
+#login-button:active {
+	color: #ffffff;
+}
+#login-button:hover:after,
+#login-button:active:after {
+	height: 104%;
+}
+
+#wrong-login {
+  color: #cc2020;
+  margin-bottom: 20px
+}

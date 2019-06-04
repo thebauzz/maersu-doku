@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fallstudie fer-Consulting Login</title>
+    <link href="css/login.css" rel="Stylesheet">
+  </head>
+  <body>
+    <fieldset>
+      <legend>Login-Formular</legend>
+      <div id="form">
+
+        <input id="benutzername" name="username" type="text" placeholder="&nbsp;" required autofocus>
+        <label class="form--label" for="username">Benutzername</label><br>
+
+        <input id="passwort" name="password" type="password" placeholder="&nbsp;" required>
+        <label class="form--label" for="password">Passwort</label><br>
+
+        <button onclick="login()" id="login-button">Login</button>
+        <p id="wrong-login"></p>
+
+      </div>
+    </fieldset>
+    <script src="js/login.js"></script>
+  </body>
+</html>
