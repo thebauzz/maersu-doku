@@ -1,0 +1,102 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fswiss\fcharset0 ArialMT;
+}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs30 \cf0 Notizen Modul 335 - Mobile-Applikation realisieren
+\fs24 \
+\
+
+\f1\b\fs26 Block 1:
+\f0\b0\fs24 \
+Unterscheidung Mobile Apps & Desktop Apps\
+  - Bildschirmgr\'f6sse\
+  - Bildschirmaufl\'f6sung\
+\
+
+\f1\b Was haben wir gemacht?
+\f0\b0 \
+  - Android Studio fertig installiert\
+  - Debug auf Handy aktiviert\
+  - Projekt \'84Hello Altstetten\'93\
+  - Aufgabe 3, 4\
+\
+
+\f1\b Falls es Kompilierung und Installationsprobleme gibt:
+\f0\b0 \
+File 
+\f1\b //
+\f0\b0  Invalidate Caches / Restart..\
+Build 
+\f1\b //
+\f0\b0  Rebuild Project\
+\
+
+\f1\b Benutzeroberfl\'e4che bauen
+\f0\b0 \
+  - Text / textView\
+  - Button\
+  - CheckBox\
+  - Switch\
+  - Text Field / editText\
+  - RadioButton\
+\
+\
+\
+
+\f1\b Aufgabe 3 - Spanische Ausgabe:
+\f0\b0 \
+tts.setLanguage(new Locale("es", "ES"));\
+tts.speak(\'84Hallo Altstetten\'93, TextToSpeech.QUEUE_FLUSH, null, \'841234\'93);\
+
+\fs10  
+\fs24 \
+
+\f1\b Aufgabe 3 - zwei S\'e4tze auf Deutsch ausgeben:
+\f0\b0 \
+tts.setLanguage(Locale.GERMAN);\
+tts.speak(\'84Hallo Altstetten\'93, TextToSpeech.QUEUE_ADD, null, \'841234\'93);\
+tts.speak(\'84Teil Zwei\'93, TextToSpeech.QUEUE_ADD, null, \'841234\'93); \
+\
+
+\f1\b Aufgabe 4
+\f0\b0 \
+Wo sind die Icons abgespeichert?\
+  - Manifests \'97> Zeile 7: android:icon="@mipmap/ic_launcher"\
+
+\fs10  
+\fs24 \
+Wo sind sie im Explorer/Finder?\
+  - app/src/main/res \'97> Rechtsklick auf File // Show in Explorer\
+
+\fs10  
+\fs24 \
+Bildschirmausrichtung auf Portrait \'e4ndern?\
+\pard\pardeftab708\ri-386\sb60\partightenfactor0
+
+\f2 \cf0 AndroidManifest \'97> android:screenOrientation="portrait" bei <activity> hinzuf\'fcgen\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs10 \cf0  
+\f2\fs24 \
+\pard\pardeftab708\ri-386\sb60\partightenfactor0
+\cf0 Hintergrundfarbe der Prim\'e4rfarbe ( Grosser Balken mit Titel )\
+res/values/colors.xml \'97> Colorpicker links mit passenden Farben!!\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs10 \cf0  
+\f2\fs24 \
+\pard\pardeftab708\ri-386\sb60\partightenfactor0
+\cf0 Titel \'e4ndern\
+res/values/strings.xml\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs10 \cf0  
+\f2\fs24 \
+Text Hello World \'e4ndern\
+res/layout/activity_main.xml\
+\
+}
