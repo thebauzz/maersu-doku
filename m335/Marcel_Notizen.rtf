@@ -229,17 +229,68 @@ xxx high density 480-640dpi\
 \
 \
 \
+
+\f1\b\fs26 Block 4 - 26. Juni 2019:\
+
+\f0\b0\fs24 Zwischenpr\'fcfung\
+Besprechung Zwischenpr\'fcfung\
+\
+Aufgaben 23, 24, 25, 26, 27, 34, 35
+\f3 \
+\
+Pr\'e4sentation, welche hochgeladen wurde anschauen!\
+Wenn der Spieler den Bildschirm verl\'e4sst\
+Protected void onPause()\'a0\{\
+	super.onPause();\
+	handler.removeCallbacks(this);\
+\}\
 \
 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f5\b \cf0 Werte permanent speichern (Seite 219 +-  )
+\f3\b0 \
+1 textView @string/highscore\
+1 label \
+@override\
+Protected void onResume() \{\
+	super.onResume();\
+	TextView tv = findViewById(R.id.highscore);\
+	tv.setText(Integer.toString(leseHighscore()));\
+\}\
+Private int leseHighscore() \{\
+	return 0;\
+\}\
+Private void schreibeHighscore(int highscore) \{\
+	SharedPreferences pref = getSharedPreferences("GAME", 0);\
+	SharedPreferences.Editor editor = pref.edit();\
+	editor.putInt("HIGHSCORE", highscore);\
+	editor.apply();\
+\}\
+Private int leseHighscore() \{\
+	SharedPreferences pref = getSharedPreferences("GAME", 0);\
+	return pref.getInt("HIGHSCORE", 0);\
+\}\
 \
 \
+
+\f5\b Activities mit R\'fcckgabewert\
+MueckenfangActivity.java
+\f3\b0 \
+Public void onClick(View v) \{\
+	startActivityForResult(new Intent(this, GameActivity.class), 1);\
+\}\
+Protected void onActivityResult(int requestCode, int resultCode, Intent data) \{\
+	if (requestCode == 1) \{\
+	\}\
+\}\
 \
-\
-\
-\
-\
-\
-\
+
+\f5\b GameActivity.java
+\f3\b0 \
+Private void gameOver() \{\
+	setResult(punkte);\
+\}\
 \
 \
 \
